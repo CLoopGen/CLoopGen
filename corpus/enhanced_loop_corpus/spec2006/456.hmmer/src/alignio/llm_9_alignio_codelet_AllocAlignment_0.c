@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+struct seqinfo_s {
+    int flags;
+    char name[64];
+    char id[64];
+    char acc[64];
+    char desc[128];
+    int len;
+    int start;
+    int stop;
+    int olen;
+    int type;
+    char *ss;
+    char *sa;
+};
+
+
+struct aliinfo_s {
+    int flags;
+    int alen;
+    int nseq;
+    float *wgt;
+    char *cs;
+    char *rf;
+    struct seqinfo_s *sqinfo;
+    char *name;
+    char *desc;
+    char *acc;
+    char *au;
+    float tc1;
+    float tc2;
+    float nc1;
+    float nc2;
+    float ga1;
+    float ga2;
+};
+
+
+typedef struct aliinfo_s AINFO;
+
+extern int nseq;
+extern AINFO *ainfo;
+extern int idx;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop() {
+    int i;
+    for (idx = 0; idx < nseq; idx++) {
+        struct seqinfo_s *si = &ainfo->sqinfo[idx];
+        si->flags = 0;
+        si->len = 0;
+        si->start = 0;
+        si->stop = 0;
+        si->olen = 0;
+        si->type = 0;
+    }
+}

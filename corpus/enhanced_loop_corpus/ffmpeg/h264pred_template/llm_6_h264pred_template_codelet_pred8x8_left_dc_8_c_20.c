@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern ptrdiff_t stride;
+extern int i;
+extern int dc0;
+extern int dc2;
+extern uint8_t *src;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int temp_dc0 = 0;
+    int temp_dc2 = 0;
+    for (i = 0; i < 4; i++) {
+        temp_dc0 += src[-1 + i * stride];
+        temp_dc2 += src[-1 + (i + 4) * stride];
+    }
+    dc0 += temp_dc0;
+    dc2 += temp_dc2;
+}

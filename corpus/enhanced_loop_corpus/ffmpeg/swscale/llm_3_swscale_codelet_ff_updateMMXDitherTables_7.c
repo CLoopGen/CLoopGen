@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int16_t **chrUSrcPtr;
+extern  int16_t **tmpU;
+extern int i;
+extern int end;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Reverse consecutive memory access from end to beginning
+    int idx;
+    for (idx = end - 1; idx >= i; idx--) {
+        tmpU[idx] = chrUSrcPtr[idx];
+    }
+}

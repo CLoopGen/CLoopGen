@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct BandCodingPath {
+    int prev_idx;
+    float cost;
+    int run;
+} BandCodingPath;
+
+extern BandCodingPath path[120][15];
+extern int cb;
+extern  int max_sfb;
+extern int idx;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int i;
+    float min_cost = path[max_sfb][1].cost;
+    idx = 1;
+    for (i = 2; i < 15; i++) {
+        if (path[max_sfb][i].cost < min_cost) {
+            min_cost = path[max_sfb][i].cost;
+            idx = i;
+        }
+    }
+}

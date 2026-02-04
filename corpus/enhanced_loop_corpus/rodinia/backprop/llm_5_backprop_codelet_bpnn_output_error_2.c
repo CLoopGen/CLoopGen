@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern float *delta;
+extern float *target;
+extern float *output;
+extern int nj;
+extern int j;
+extern float o;
+extern float t;
+extern float errsum;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (j = 1; j <= nj; j++) {
+    o = output[j];
+    t = target[j];
+    float diff = t - o;
+    float grad = o * (1. - o) * diff;
+    delta[j] = grad;
+    errsum += grad + (-2.0f * grad * (grad < 0.));
+}
+}

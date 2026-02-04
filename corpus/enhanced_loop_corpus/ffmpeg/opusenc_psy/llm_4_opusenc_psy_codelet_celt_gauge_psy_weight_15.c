@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int i;
+extern float band_score[21];
+extern float max_score;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 21; i++) {
+        max_score = (band_score[i] > max_score) ? band_score[i] : max_score;
+    }
+}

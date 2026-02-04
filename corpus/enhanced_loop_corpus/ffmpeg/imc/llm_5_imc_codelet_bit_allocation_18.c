@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int i;
+extern float lowest;
+extern int low_indx;
+extern float workT[32];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int first = 1;
+    for (i = 0; i < 32; i++) {
+        if (first || workT[i] < lowest) {
+            lowest = workT[i];
+            low_indx = i;
+            first = 0;
+        }
+    }
+}

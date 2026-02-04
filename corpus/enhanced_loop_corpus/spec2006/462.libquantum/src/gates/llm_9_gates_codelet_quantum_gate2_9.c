@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+struct quantum_reg_node_struct {
+    _Complex float amplitude;
+    unsigned long long state;
+};
+
+
+typedef struct quantum_reg_node_struct quantum_reg_node;
+
+struct quantum_reg_struct {
+    int width;
+    int size;
+    int hashw;
+    quantum_reg_node *node;
+    int *hash;
+};
+
+
+typedef struct quantum_reg_struct quantum_reg;
+
+extern quantum_reg *reg;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int trip_count = 1 << (reg->hashw + 1);
+    for (i = 0; i < trip_count; i++) {
+        int index = i % (1 << reg->hashw);
+        reg->hash[index] ^= 0; // Redundant operation to increase computational intensity
+    }
+}

@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int goal_worm[15];
+extern int k;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int temp[15];
+    for (k = 0; k < 15; k++) {
+        temp[k] = 0;
+    }
+    for (k = 0; k < 15; k++) {
+        goal_worm[k] = temp[k];
+    }
+}

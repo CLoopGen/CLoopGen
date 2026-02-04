@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int stride;
+extern int i;
+extern uint8_t *dst;
+extern int16_t *src;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 4; ++i) {
+        if (stride > 1) {
+            dst[0] += (unsigned int)src[0];
+            dst[1] += (unsigned int)src[1];
+            dst[2] += (unsigned int)src[2];
+            dst[3] += (unsigned int)src[3];
+        } else {
+            dst[0] += (unsigned int)(src[0] * 2);
+            dst[1] += (unsigned int)(src[1] * 2);
+        }
+        dst += stride;
+        src += 4;
+    }
+}

@@ -1,0 +1,139 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+struct dc1394_frame_rate {
+    int frame_rate;
+    int frame_rate_id;
+};
+
+
+enum AVOptionType {
+    AV_OPT_TYPE_FLAGS,
+    AV_OPT_TYPE_INT,
+    AV_OPT_TYPE_INT64,
+    AV_OPT_TYPE_DOUBLE,
+    AV_OPT_TYPE_FLOAT,
+    AV_OPT_TYPE_STRING,
+    AV_OPT_TYPE_RATIONAL,
+    AV_OPT_TYPE_BINARY,
+    AV_OPT_TYPE_DICT,
+    AV_OPT_TYPE_UINT64,
+    AV_OPT_TYPE_CONST,
+    AV_OPT_TYPE_IMAGE_SIZE,
+    AV_OPT_TYPE_PIXEL_FMT,
+    AV_OPT_TYPE_SAMPLE_FMT,
+    AV_OPT_TYPE_VIDEO_RATE,
+    AV_OPT_TYPE_DURATION,
+    AV_OPT_TYPE_COLOR,
+    AV_OPT_TYPE_CHANNEL_LAYOUT,
+    AV_OPT_TYPE_BOOL
+};
+
+
+typedef struct AVRational {
+    int num;
+    int den;
+} AVRational;
+
+union {
+    int64_t i64;
+    double dbl;
+    const char *str;
+    AVRational q;
+};
+
+
+struct AVOption {
+    const char *name;
+    const char *help;
+    int offset;
+    enum AVOptionType type;
+    union {
+        int64_t i64;
+        double dbl;
+        const char *str;
+        AVRational q;
+    } default_val;
+    double min;
+    double max;
+    int flags;
+    const char *unit;
+};
+
+
+typedef enum {
+    AV_CLASS_CATEGORY_NA = 0,
+    AV_CLASS_CATEGORY_INPUT,
+    AV_CLASS_CATEGORY_OUTPUT,
+    AV_CLASS_CATEGORY_MUXER,
+    AV_CLASS_CATEGORY_DEMUXER,
+    AV_CLASS_CATEGORY_ENCODER,
+    AV_CLASS_CATEGORY_DECODER,
+    AV_CLASS_CATEGORY_FILTER,
+    AV_CLASS_CATEGORY_BITSTREAM_FILTER,
+    AV_CLASS_CATEGORY_SWSCALER,
+    AV_CLASS_CATEGORY_SWRESAMPLER,
+    AV_CLASS_CATEGORY_DEVICE_VIDEO_OUTPUT = 40,
+    AV_CLASS_CATEGORY_DEVICE_VIDEO_INPUT,
+    AV_CLASS_CATEGORY_DEVICE_AUDIO_OUTPUT,
+    AV_CLASS_CATEGORY_DEVICE_AUDIO_INPUT,
+    AV_CLASS_CATEGORY_DEVICE_OUTPUT,
+    AV_CLASS_CATEGORY_DEVICE_INPUT,
+    AV_CLASS_CATEGORY_NB
+} AVClassCategory;
+
+typedef struct AVClass {
+    const char *class_name;
+    const char *(*item_name)(void *);
+    const struct AVOption *option;
+    int version;
+    int log_level_offset_offset;
+    int parent_log_context_offset;
+    void *(*child_next)(void *, void *);
+    const struct AVClass *(*child_class_next)(const struct AVClass *);
+    AVClassCategory category;
+    AVClassCategory (*get_category)(void *);
+    int (*query_ranges)(struct AVOptionRanges **, void *, const char *, int);
+} AVClass;
+
+typedef struct dc1394_data {
+    AVClass *class;
+    int *d;
+    int *camera;
+    int *frame;
+    int current_frame;
+    int frame_rate;
+    char *video_size;
+    char *pixel_format;
+    char *framerate;
+    int size;
+    int stream_index;
+} dc1394_data;
+
+extern  struct dc1394_frame_rate dc1394_frame_rates[];
+extern dc1394_data *dc1394;
+extern  struct dc1394_frame_rate *fps;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Reduced trip count by early indexing and simplified condition with direct assignment
+    int i;
+    int frame_rate_val;
+    int found_index = -1;
+    const int max_rates = 12; // Assume maximum of 12 known frame rates (common in DC1394)
+    for (i = 0; i < max_rates; i++) {
+        frame_rate_val = dc1394_frame_rates[i].frame_rate;
+        if (frame_rate_val == 0 || frame_rate_val == dc1394->frame_rate) {
+            found_index = i;
+            break;
+        }
+    }
+    // Always assign fps, either to match or to first zero entry
+    fps = &dc1394_frame_rates[found_index != -1 ? found_index : i];
+}

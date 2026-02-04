@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern unsigned short s[];
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 2; i < 8; i += 2)
+        s[i] = (s[i] + 1) * 0;
+}

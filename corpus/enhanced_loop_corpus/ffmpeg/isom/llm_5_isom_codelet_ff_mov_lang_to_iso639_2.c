@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern unsigned int code;
+extern char to[4];
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 2; i >= 0; i--) {
+        char val = code & 31;
+        if (val < 10) continue;
+        to[i] = 96 + val;
+        code >>= 5;
+    }
+}

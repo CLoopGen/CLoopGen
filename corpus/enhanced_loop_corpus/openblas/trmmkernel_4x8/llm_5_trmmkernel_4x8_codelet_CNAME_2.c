@@ -1,0 +1,105 @@
+#include <stdio.h>
+
+typedef long BLASLONG;
+
+extern BLASLONG bm;
+extern BLASLONG bn;
+extern BLASLONG bk;
+extern float alpha;
+extern float *ba;
+extern float *bb;
+extern float *C;
+extern BLASLONG ldc;
+extern BLASLONG i;
+extern BLASLONG j;
+extern BLASLONG k;
+extern float *C0;
+extern float *C1;
+extern float *ptrba;
+extern float *ptrbb;
+extern float res0_0;
+extern float res0_1;
+extern float res0_2;
+extern float res0_3;
+extern float res1_0;
+extern float res1_1;
+extern float res1_2;
+extern float res1_3;
+extern float a0;
+extern float a1;
+extern float b0;
+extern float b1;
+extern BLASLONG off;
+extern BLASLONG temp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (j = 0; j < (bn & 2); j += 2) {
+    C0 = C;
+    C1 = C0 + ldc;
+    ptrba = ba;
+    
+    for (i = 0; i < (bm / 4) + ((bm & 3) ? 1 : 0); i++) {
+        ptrbb = bb;
+        res0_0 = res0_1 = res0_2 = res0_3 = 0;
+        res1_0 = res1_1 = res1_2 = res1_3 = 0;
+
+        temp = off + 2;
+        for (k = 0; k < temp; k++) {
+            b0 = ptrbb[0];
+            b1 = ptrbb[1];
+
+            if (i * 4 + 0 < bm) {
+                a0 = ptrba[0];
+                res0_0 += a0 * b0;
+                res1_0 += a0 * b1;
+            }
+            if (i * 4 + 1 < bm) {
+                a1 = ptrba[1];
+                res0_1 += a1 * b0;
+                res1_1 += a1 * b1;
+            }
+            if (i * 4 + 2 < bm) {
+                a0 = ptrba[2];
+                res0_2 += a0 * b0;
+                res1_2 += a0 * b1;
+            }
+            if (i * 4 + 3 < bm) {
+                a1 = ptrba[3];
+                res0_3 += a1 * b0;
+                res1_3 += a1 * b1;
+            }
+
+            ptrba += 4;
+            ptrbb += 2;
+        }
+
+        res0_0 *= alpha; res0_1 *= alpha; res0_2 *= alpha; res0_3 *= alpha;
+        res1_0 *= alpha; res1_1 *= alpha; res1_2 *= alpha; res1_3 *= alpha;
+
+        if (i * 4 + 0 < bm) C0[0] = res0_0;
+        if (i * 4 + 1 < bm) C0[1] = res0_1;
+        if (i * 4 + 2 < bm) C0[2] = res0_2;
+        if (i * 4 + 3 < bm) C0[3] = res0_3;
+
+        if (i * 4 + 0 < bm) C1[0] = res1_0;
+        if (i * 4 + 1 < bm) C1[1] = res1_1;
+        if (i * 4 + 2 < bm) C1[2] = res1_2;
+        if (i * 4 + 3 < bm) C1[3] = res1_3;
+
+        temp = bk - off - 2;
+        ptrba += temp * 4;
+        ptrbb += temp * 2;
+        C0 += 4;
+        C1 += 4;
+    }
+
+    k = (bk << 1);
+    bb = bb + k;
+    i = (ldc << 1);
+    C = C + i;
+}
+}

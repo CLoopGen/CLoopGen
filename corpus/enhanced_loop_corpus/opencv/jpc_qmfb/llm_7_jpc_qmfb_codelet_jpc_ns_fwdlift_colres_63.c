@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef int_fast32_t jpc_fix_t;
+
+typedef int_fast64_t jpc_fix_big_t;
+
+extern int numcols;
+extern jpc_fix_t *lptr2;
+extern jpc_fix_t *hptr2;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    if (numcols <= 0) return;
+    jpc_fix_big_t factor = (jpc_fix_big_t)(((jpc_fix_t)((2. * (0.443506852043971)) * ((double)(((jpc_fix_t)(1)) << 13)))));
+    jpc_fix_t *lptr_temp = lptr2;
+    jpc_fix_t *hptr_temp = hptr2;
+    jpc_fix_t acc = lptr_temp[0]; // Introduce artificial WAW and RAW dependency
+    for (i = 0; i < numcols; ++i) {
+        acc = acc + ((jpc_fix_t)((factor * (jpc_fix_big_t)(hptr_temp[0])) >> 13));
+        lptr_temp[0] = acc; // Write depends on previous write (WAW) and read (RAW)
+        ++lptr_temp;
+        ++hptr_temp;
+    }
+    lptr2 = lptr_temp;
+    hptr2 = hptr_temp;
+}

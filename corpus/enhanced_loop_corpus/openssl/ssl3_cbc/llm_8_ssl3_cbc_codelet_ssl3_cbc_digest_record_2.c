@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern size_t md_block_size;
+extern unsigned char hmac_pad[128];
+extern size_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < md_block_size; i += 2) {
+        if (i + 1 < md_block_size) {
+            hmac_pad[i] ^= 54;
+            hmac_pad[i + 1] ^= 54;
+        } else {
+            hmac_pad[i] ^= 54;
+        }
+    }
+}

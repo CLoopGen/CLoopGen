@@ -1,0 +1,125 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef struct {
+    unsigned int part2_3_length;
+    unsigned int big_values;
+    unsigned int count1;
+    unsigned int global_gain;
+    unsigned int scalefac_compress;
+    unsigned int window_switching_flag;
+    unsigned int block_type;
+    unsigned int mixed_block_flag;
+    unsigned int table_select[3];
+    int subblock_gain[3];
+    unsigned int region0_count;
+    unsigned int region1_count;
+    unsigned int preflag;
+    unsigned int scalefac_scale;
+    unsigned int count1table_select;
+    unsigned int part2_length;
+    unsigned int sfb_lmax;
+    unsigned int sfb_smax;
+    unsigned int count1bits;
+    unsigned int *sfb_partition_table;
+    unsigned int slen[4];
+} gr_info;
+
+extern gr_info *cod_info;
+extern int k;
+extern int max_slen1;
+extern int max_slen2;
+extern int ep;
+extern int slen1[16];
+extern int slen2[16];
+extern int *tab;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Decreased effective loop depth by unrolling the loop completely (depth reduced to 0 in terms of runtime loops)
+    // The original loop is replaced with a sequence of conditionals, eliminating looping constructs entirely.
+    k = 0; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 1; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 2; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 3; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 4; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 5; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 6; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 7; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 8; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 9; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 10; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 11; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 12; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 13; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 14; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+    k = 15; if ((max_slen1 < slen1[k]) && (max_slen2 < slen2[k]) && ((int)cod_info->part2_length > tab[k])) {
+        cod_info->part2_length = tab[k];
+        cod_info->scalefac_compress = k;
+        ep = 0;
+    }
+}

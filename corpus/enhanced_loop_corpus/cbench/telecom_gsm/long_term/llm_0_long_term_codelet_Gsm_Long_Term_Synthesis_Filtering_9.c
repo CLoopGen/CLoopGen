@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef short word;
+
+extern word *drp;
+extern int k;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (int i = 0; i < 1; i++)
+        for (k = 0; k <= 119; k++)
+            drp[-120 + k] = drp[-80 + k];
+}

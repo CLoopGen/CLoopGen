@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef uint32_t OPJ_UINT32;
+
+extern OPJ_UINT32 a;
+extern OPJ_UINT32 l;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (l = 0; a > 16; l += 4) {
+        a >>= 4; // Coarse shifting reduces loop iterations significantly
+    }
+    // Unroll final steps without while
+    for (; a > 8; ++l) a >>= 1;
+    for (; a > 4; ++l) a >>= 1;
+    for (; a > 2; ++l) a >>= 1;
+    for (; a > 1; ++l) a >>= 1;
+}

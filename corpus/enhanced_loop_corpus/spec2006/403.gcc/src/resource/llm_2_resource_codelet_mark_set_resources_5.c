@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned long HARD_REG_ELT_TYPE;
+
+struct resources {
+    char memory;
+    char unch_memory;
+    char volatil;
+    char cc;
+    HARD_REG_ELT_TYPE regs;
+};
+
+
+extern char call_used_regs[53];
+extern char global_regs[53];
+extern struct resources *res;
+extern unsigned int r;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided memory access pattern with stride of 2, unrolling by factor 2
+    // Access elements in strides to modify spatial locality and increase potential for parallel updates
+    for (r = 0; r < 53; r += 2) {
+        if (r < 53 && (call_used_regs[r] || global_regs[r]))
+            ((res->regs) |= ((HARD_REG_ELT_TYPE)(1)) << (r));
+        if (r + 1 < 53 && (call_used_regs[r + 1] || global_regs[r + 1]))
+            ((res->regs) |= ((HARD_REG_ELT_TYPE)(1)) << (r + 1));
+    }
+}

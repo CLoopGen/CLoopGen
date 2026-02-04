@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+extern  int grid_points[3];
+extern  double u[5][65][65][65];
+extern  double rhs[5][65][65][65];
+extern int i;
+extern int j;
+extern int k;
+extern int m;
+
+
+
+void loop(){
+for (m = 0; m < 5; m += 2) {
+    for (i = 1; i <= grid_points[0] - 2; i++) {
+        for (j = 1; j <= grid_points[1] - 2; j++) {
+            for (k = 1; k <= grid_points[2] - 2; k += 2) {
+                double temp = rhs[m][i][j][k];
+                u[m][i][j][k] = u[m][i][j][k] + temp;
+                if (m + 1 < 5 && k + 1 <= grid_points[2] - 2) {
+                    u[m+1][i][j][k+1] = u[m+1][i][j][k+1] + rhs[m+1][i][j][k+1];
+                }
+            }
+        }
+    }
+}
+}

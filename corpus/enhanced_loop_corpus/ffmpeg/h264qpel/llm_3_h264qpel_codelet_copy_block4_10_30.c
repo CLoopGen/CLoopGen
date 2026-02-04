@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+union __attribute__((packed)) __attribute__((may_alias)) unaligned_64 {
+    uint64_t l;
+};
+
+
+extern uint8_t *dst;
+extern  uint8_t *src;
+extern int dstStride;
+extern int srcStride;
+extern int h;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < h; i += 2) {
+    if (i + 1 < h) {
+        ((union unaligned_64 *)(dst + 0))->l = ((const union unaligned_64 *)(src + 0))->l;
+        ((union unaligned_64 *)(dst + dstStride))->l = ((const union unaligned_64 *)(src + srcStride))->l;
+        dst += 2 * dstStride;
+        src += 2 * srcStride;
+    } else {
+        ((union unaligned_64 *)(dst))->l = ((const union unaligned_64 *)(src))->l;
+    }
+}
+}

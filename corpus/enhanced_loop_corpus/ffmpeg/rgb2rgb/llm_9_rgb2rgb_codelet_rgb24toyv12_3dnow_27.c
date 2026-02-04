@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  uint8_t *src;
+extern uint8_t *ydst;
+extern uint8_t *udst;
+extern uint8_t *vdst;
+extern int height;
+extern int lumStride;
+extern int chromStride;
+extern int srcStride;
+extern int y;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (y = 0; y < height; y++) {
+    ydst += lumStride;
+    src += srcStride;
+    if ((y & 1) == 1) {
+        udst += chromStride;
+        vdst += chromStride;
+    }
+}
+}

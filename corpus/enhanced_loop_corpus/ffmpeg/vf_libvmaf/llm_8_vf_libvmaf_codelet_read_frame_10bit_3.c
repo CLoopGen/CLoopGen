@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int stride;
+extern int ref_stride;
+extern  uint16_t *ref_ptr;
+extern float *ptr;
+extern float factor;
+extern int h;
+extern int w;
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int i, j;
+    for (i = 0; i < h; i++) {
+        float temp_factor = factor * 1.5f;
+        for (j = 0; j < w; j += 2) {
+            if (j + 1 < w) {
+                ptr[j] = ref_ptr[j] * temp_factor;
+                ptr[j+1] = ref_ptr[j+1] * temp_factor;
+            } else {
+                ptr[j] = ref_ptr[j] * temp_factor;
+            }
+        }
+        ref_ptr += ref_stride / sizeof(*ref_ptr);
+        ptr += stride / sizeof(*ptr);
+    }
+}

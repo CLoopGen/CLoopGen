@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef struct {
+    int rgn_nr_blocks;
+    int rgn_blocks;
+} region;
+
+extern int n_basic_blocks;
+extern int nr_regions;
+extern region *rgn_table;
+extern int *rgn_bb_table;
+extern int *block_to_bb;
+extern int *containing_rgn;
+extern int *degree;
+extern int i;
+extern int idx;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided memory access pattern
+    // Instead of iterating sequentially over degree[i], use a stride of 2
+    // and handle even and odd indices in separate passes if needed.
+    // Here we assume n_basic_blocks is even for simplicity.
+    int stride = 2;
+    idx = 0; // assuming idx needs initialization
+    for (i = 0; i < n_basic_blocks; i += stride) {
+        if (degree[i] >= 0) {
+            rgn_bb_table[idx] = i;
+            (rgn_table[nr_regions].rgn_nr_blocks) = 1;
+            (rgn_table[nr_regions].rgn_blocks) = idx++;
+            (containing_rgn[i]) = nr_regions++;
+            (block_to_bb[i]) = 0;
+        }
+        // Process next element in stride if within bounds
+        int j = i + 1;
+        if (j < n_basic_blocks && degree[j] >= 0) {
+            rgn_bb_table[idx] = j;
+            (rgn_table[nr_regions].rgn_nr_blocks) = 1;
+            (rgn_table[nr_regions].rgn_blocks) = idx++;
+            (containing_rgn[j]) = nr_regions++;
+            (block_to_bb[j]) = 0;
+        }
+    }
+}

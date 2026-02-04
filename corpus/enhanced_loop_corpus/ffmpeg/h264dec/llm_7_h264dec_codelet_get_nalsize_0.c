@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int nal_length_size;
+extern  uint8_t *buf;
+extern int *buf_index;
+extern int i;
+extern int nalsize;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    nalsize = 0;
+    for (i = nal_length_size - 1; i >= 0; i--) {
+        nalsize |= ((unsigned int)buf[(*buf_index) + (nal_length_size - 1 - i)]) << (i * 8);
+    }
+    *buf_index += nal_length_size;
+}

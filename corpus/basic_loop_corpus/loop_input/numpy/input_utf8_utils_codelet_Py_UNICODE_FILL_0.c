@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <stdlib.h>
+#include <stddef.h>
+#include <wchar.h>
+#include <string.h>
+#include <time.h>
+
+typedef wchar_t Py_UNICODE;
+typedef ssize_t Py_ssize_t;
+
+Py_UNICODE *target;
+Py_UNICODE value;
+Py_ssize_t length;
+Py_ssize_t i;
+
+void init_vars() {
+    value = L'A';
+    length = 16 * 1024 * 1024 / sizeof(Py_UNICODE);
+    if (length <= 0) length = 1;
+    
+    target = (Py_UNICODE*)calloc(length, sizeof(Py_UNICODE));
+    if (!target) {
+        length = 1;
+        target = (Py_UNICODE*)calloc(1, sizeof(Py_UNICODE));
+    }
+    
+    i = 0;
+}

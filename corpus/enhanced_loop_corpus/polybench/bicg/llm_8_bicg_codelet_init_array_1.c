@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int m;
+extern int n;
+extern double A[2100][1900];
+extern double r[2100];
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < n; i++) {
+    r[i] = (double)(i % n) / n;
+    for (j = 0; j < m; j++) {
+        double temp1 = (double)(i * (j + 1)) / n;
+        double temp2 = (double)(i + j) / n;
+        A[i][j] = temp1 * temp2 + temp1 - temp2;
+    }
+}
+}

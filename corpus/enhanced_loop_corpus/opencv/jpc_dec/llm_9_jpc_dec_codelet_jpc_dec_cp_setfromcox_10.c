@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    int flags;
+    uint_fast8_t csty;
+    uint_fast8_t numrlvls;
+    uint_fast8_t cblkwidthexpn;
+    uint_fast8_t cblkheightexpn;
+    uint_fast8_t qmfbid;
+    uint_fast8_t qsty;
+    uint_fast16_t numstepsizes;
+    uint_fast16_t stepsizes[100];
+    uint_fast8_t numguardbits;
+    uint_fast8_t roishift;
+    uint_fast8_t cblkctx;
+    uint_fast8_t prcwidthexpns[33];
+    uint_fast8_t prcheightexpns[33];
+} jpc_dec_ccp_t;
+
+typedef struct {
+    uint_fast8_t parwidthval;
+    uint_fast8_t parheightval;
+} jpc_coxrlvl_t;
+
+typedef struct {
+    uint_fast8_t csty;
+    uint_fast8_t numdlvls;
+    uint_fast8_t cblkwidthval;
+    uint_fast8_t cblkheightval;
+    uint_fast8_t cblksty;
+    uint_fast8_t qmfbid;
+    int numrlvls;
+    jpc_coxrlvl_t rlvls[33];
+} jpc_coxcp_t;
+
+extern jpc_dec_ccp_t *ccp;
+extern jpc_coxcp_t *compparms;
+extern int rlvlno;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+int step = 1;
+int limit = (compparms->numrlvls + 1) / 2; // Reduce effective trip count by half
+for (rlvlno = 0; rlvlno < limit && rlvlno < 33; rlvlno += step) {
+    int idx = rlvlno * 2; // Stride access pattern
+    ccp->prcwidthexpns[rlvlno] = compparms->rlvls[idx].parwidthval;
+    ccp->prcheightexpns[rlvlno] = compparms->rlvls[idx].parheightval;
+    // Introduce additional arithmetic operations
+    ccp->cblkwidthexpn += (ccp->prcwidthexpns[rlvlno] * 3) - 1;
+    ccp->cblkheightexpn += (ccp->prcheightexpns[rlvlno] * 3) - 1;
+}
+}

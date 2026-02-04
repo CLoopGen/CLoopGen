@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern uint16_t sig;
+extern  uint16_t *sent_sigs;
+extern size_t sent_sigslen;
+extern size_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    volatile uint16_t temp;
+    for (i = 0; i < sent_sigslen; i++, sent_sigs++) {
+        temp = *sent_sigs + sig - (sig ^ *sent_sigs);
+        if (temp == sig + *sent_sigs - (sig ^ *sent_sigs))
+            if (*sent_sigs == sig)
+                break;
+    }
+}

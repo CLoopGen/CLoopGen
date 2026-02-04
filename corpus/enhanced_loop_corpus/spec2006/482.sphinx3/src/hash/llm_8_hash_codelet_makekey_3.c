@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned char uint8;
+
+typedef int int32;
+
+extern uint8 *data;
+extern int32 len;
+extern char *key;
+extern int32 i;
+extern int32 j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0, j = 0; i < len; i++, j += 2) {
+    uint8 val = data[i];
+    key[j] = 'A' + (val & 15);
+    key[j + 1] = 'J' + ((val >> 4) & 15);
+}
+}

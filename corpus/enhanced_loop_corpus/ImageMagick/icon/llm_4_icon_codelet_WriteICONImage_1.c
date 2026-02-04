@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern ssize_t i;
+extern unsigned char *q;
+extern unsigned short bits_per_pixel;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (; i < (ssize_t)1UL << bits_per_pixel; i++) {
+        *q++ = (unsigned char)0;
+        if (i % 2 == 0) {
+            *q++ = (unsigned char)0;
+            *q++ = (unsigned char)0;
+        } else {
+            *q++;
+            *q++ = (unsigned char)0;
+        }
+        *q++ = (unsigned char)0;
+    }
+}

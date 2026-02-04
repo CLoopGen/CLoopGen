@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+typedef long BLASLONG;
+
+float *b;
+BLASLONG ii;
+float *a01;
+float *a02;
+float *a03;
+float *a04;
+float *a05;
+float *a06;
+float *a07;
+float *a08;
+float *a09;
+float *a10;
+float *a11;
+float *a12;
+float *a13;
+float *a14;
+float *a15;
+float *a16;
+
+static float b_data[256 * 1024]; // ~1MB for b (256KB of actual use)
+static float a_data[16][256 * 1024]; // 16 arrays, each ~1MB
+
+void init_vars() {
+    b = b_data;
+    a01 = a_data[0];
+    a02 = a_data[1];
+    a03 = a_data[2];
+    a04 = a_data[3];
+    a05 = a_data[4];
+    a06 = a_data[5];
+    a07 = a_data[6];
+    a08 = a_data[7];
+    a09 = a_data[8];
+    a10 = a_data[9];
+    a11 = a_data[10];
+    a12 = a_data[11];
+    a13 = a_data[12];
+    a14 = a_data[13];
+    a15 = a_data[14];
+    a16 = a_data[15];
+
+    for (int i = 0; i < 16; i++) {
+        for (int j = 0; j < 256 * 1024; j++) {
+            a_data[i][j] = (float)(i + 1) * (j % 251);
+        }
+    }
+
+    for (int i = 0; i < 256 * 1024; i++) {
+        b_data[i] = 0.0f;
+    }
+}

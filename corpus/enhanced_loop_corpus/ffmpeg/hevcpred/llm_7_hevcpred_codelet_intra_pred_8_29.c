@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int i;
+extern uint8_t *top;
+extern uint8_t *filtered_top;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 62; i >= 0; i--) {
+        filtered_top[i] = ((65 - i) * top[-1] + (63 - i) * top[63] + 32) >> 6;
+    }
+}

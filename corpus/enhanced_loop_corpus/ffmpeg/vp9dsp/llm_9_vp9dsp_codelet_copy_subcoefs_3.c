@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef union __attribute__((may_alias)) {
+    uint32_t u32;
+    uint16_t u16[2];
+    uint8_t u8[4];
+    float f32;
+} av_alias32;
+
+extern int16_t *out;
+extern int sz;
+extern int bit_depth;
+extern int n;
+extern  int16_t *scan;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int limit = sz * sz;
+    for (int i = 0; i < limit; i++) {
+        int n_local = i;
+        int rc = scan[n_local];
+        if (bit_depth == 8) {
+            out[rc] = 0;
+        } else {
+            uint16_t* target = &out[rc * 2];
+            ((av_alias32*)target)->u32 = 0;
+        }
+        // Additional dummy operations to increase arithmetic intensity
+        n_local ^= (n_local >> 1);
+        n_local *= 3;
+        n = (n_local < sz * sz) ? n_local : sz * sz - 1;
+    }
+}

@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef long INT32;
+
+typedef int DCTELEM;
+
+extern INT32 tmp0;
+extern INT32 tmp1;
+extern INT32 tmp2;
+extern INT32 tmp10;
+extern INT32 tmp11;
+extern DCTELEM *dataptr;
+extern int ctr;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (ctr = 8 - 1; ctr >= 0; ctr--) {
+    tmp0 = dataptr[8 * 0] + dataptr[8 * 4];
+    tmp1 = dataptr[8 * 1] + dataptr[8 * 3];
+    tmp2 = dataptr[8 * 2];
+    tmp10 = tmp0 + tmp1;
+    tmp11 = tmp0 - tmp1;
+    tmp0 = dataptr[8 * 0] - dataptr[8 * 4];
+    tmp1 = dataptr[8 * 1] - dataptr[8 * 3];
+
+    // Introduce temporary variables to break WAW and WAR dependencies
+    INT32 t10_scaled = ((tmp10 + tmp2) * (((INT32)((1.28) * (((INT32)1) << 13) + 0.5))));
+    INT32 t11_scaled = ((tmp11) * (((INT32)((1.011928851) * (((INT32)1) << 13) + 0.5))));
+    INT32 t10_modified = tmp10 - (tmp2 << 2);
+    INT32 t10_final = ((t10_modified) * (((INT32)((0.45254833999999999) * (((INT32)1) << 13) + 0.5))));
+
+    // Reorder computations to reduce loop-carried dependency chain
+    dataptr[8 * 0] = (DCTELEM)(((t10_scaled + ((INT32)1 << ((13 + 2) - 1))) >> (13 + 2)));
+    dataptr[8 * 2] = (DCTELEM)(((t11_scaled + t10_final) + ((INT32)1 << ((13 + 2) - 1))) >> (13 + 2));
+    dataptr[8 * 4] = (DCTELEM)(((t11_scaled - t10_final) + ((INT32)1 << ((13 + 2) - 1))) >> (13 + 2));
+
+    INT32 t0_scaled = ((tmp0) * (((INT32)((0.65759122999999997) * (((INT32)1) << 13) + 0.5))));
+    INT32 t1_scaled = ((tmp1) * (((INT32)((2.7856011509999998) * (((INT32)1) << 13) + 0.5))));
+    INT32 t10_new = ((tmp0 + tmp1) * (((INT32)((1.064004961) * (((INT32)1) << 13) + 0.5))));
+
+    dataptr[8 * 1] = (DCTELEM)(((t10_new + t0_scaled) + ((INT32)1 << ((13 + 2) - 1))) >> (13 + 2));
+    dataptr[8 * 3] = (DCTELEM)(((t10_new - t1_scaled) + ((INT32)1 << ((13 + 2) - 1))) >> (13 + 2));
+
+    dataptr++;
+}
+}

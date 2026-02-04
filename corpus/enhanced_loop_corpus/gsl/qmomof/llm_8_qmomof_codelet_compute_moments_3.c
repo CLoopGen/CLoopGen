@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern double v[28];
+extern  double par2;
+extern  double par22;
+extern double ac;
+extern double as;
+extern size_t k;
+extern double an;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (k = 3; k < 15; k++) {
+    double an2 = an * an;
+    double an_plus_1 = an + 1;
+    double an_plus_2 = an + 2;
+    double an_minus_1 = an - 1;
+    double an_minus_2 = an - 2;
+    double term1 = (an2 - 4) * (2 * (par22 - 2 * an2) * v[k - 1] - ac);
+    double term2 = as - par2 * an_plus_1 * an_plus_2 * v[k - 2];
+    double denominator = par2 * an_minus_1 * an_minus_2;
+    v[k] = (term1 + term2) / denominator;
+    an = an + 2.;
+}
+}

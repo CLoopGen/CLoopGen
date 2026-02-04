@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern float (*X_high)[2];
+extern  float (*X_low)[2];
+extern int start;
+extern int end;
+extern float alpha[4];
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = start; i < end; i++) {
+    int idx = i;
+    int prev1 = i - 1;
+    int prev2 = i - 2;
+    X_high[idx][0] = X_low[prev2][0] * alpha[0] - X_low[prev2][1] * alpha[1] + X_low[prev1][0] * alpha[2] - X_low[prev1][1] * alpha[3] + X_low[i][0];
+    X_high[idx][1] = X_low[prev2][1] * alpha[0] + X_low[prev2][0] * alpha[1] + X_low[prev1][1] * alpha[2] + X_low[prev1][0] * alpha[3] + X_low[i][1];
+}
+}

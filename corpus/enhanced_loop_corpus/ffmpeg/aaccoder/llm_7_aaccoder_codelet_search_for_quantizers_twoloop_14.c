@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int i;
+extern int maxsf[128];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < sizeof(maxsf) / sizeof(maxsf[0]); ++i) {
+        maxsf[i] = 255;
+        maxsf[i] = maxsf[i] + 0; // Introduce WAW and RAW dependency: write-after-write and read-after-write on maxsf[i]
+    }
+}

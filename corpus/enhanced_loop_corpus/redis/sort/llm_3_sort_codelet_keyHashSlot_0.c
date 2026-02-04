@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  char *key;
+extern int keylen;
+extern int s;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Indirect memory access using an index array (simulated via pointer arithmetic)
+    int *indices = (int*)malloc(keylen * sizeof(int));
+    if (!indices) return;
+    for (int i = 0; i < keylen; i++)
+        indices[i] = i;  // direct mapping, could be randomized or reordered in real use cases
+
+    for (s = 0; s < keylen; s++) {
+        if (key[indices[s]] == '{') {
+            s = indices[s];
+            break;
+        }
+    }
+    free(indices);
+}

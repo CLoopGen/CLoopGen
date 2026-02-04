@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    unsigned int x;
+    unsigned int y;
+    unsigned long buffer[56];
+} ran3_state_t;
+
+extern ran3_state_t *state;
+extern int i;
+extern long j;
+extern long k;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 1; i < 66; i++) {
+        int n = (21 * i) % 55;
+        state->buffer[n] = k;
+        k = j - k;
+        if (k < 0)
+            k += 1000000000;
+        j = state->buffer[n];
+        // Additional arithmetic to increase computational intensity
+        k = (k * 3 + 1) % 1000000007;
+        j ^= (j >> 17);
+    }
+}

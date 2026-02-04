@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern float mantissa_tab1[17][4];
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 1; i < 17; i++) {
+        mantissa_tab1[i][0] = (i > 8) ? 1.F / (1 << (i - 1)) : 1.F / (1 << (9 - i));
+    }
+}

@@ -1,0 +1,89 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned long HARD_REG_ELT_TYPE;
+
+enum reload_type {
+    RELOAD_FOR_INPUT,
+    RELOAD_FOR_OUTPUT,
+    RELOAD_FOR_INSN,
+    RELOAD_FOR_INPUT_ADDRESS,
+    RELOAD_FOR_INPADDR_ADDRESS,
+    RELOAD_FOR_OUTPUT_ADDRESS,
+    RELOAD_FOR_OUTADDR_ADDRESS,
+    RELOAD_FOR_OPERAND_ADDRESS,
+    RELOAD_FOR_OPADDR_ADDR,
+    RELOAD_OTHER,
+    RELOAD_FOR_OTHER_ADDRESS
+};
+
+
+extern HARD_REG_ELT_TYPE reload_reg_used;
+extern HARD_REG_ELT_TYPE reload_reg_used_in_input_addr[30];
+extern HARD_REG_ELT_TYPE reload_reg_used_in_inpaddr_addr[30];
+extern HARD_REG_ELT_TYPE reload_reg_used_in_output_addr[30];
+extern HARD_REG_ELT_TYPE reload_reg_used_in_outaddr_addr[30];
+extern HARD_REG_ELT_TYPE reload_reg_used_in_input[30];
+extern HARD_REG_ELT_TYPE reload_reg_used_in_output[30];
+extern HARD_REG_ELT_TYPE reload_reg_used_in_op_addr;
+extern HARD_REG_ELT_TYPE reload_reg_used_in_op_addr_reload;
+extern HARD_REG_ELT_TYPE reload_reg_used_in_insn;
+extern HARD_REG_ELT_TYPE reload_reg_used_in_other_addr;
+extern HARD_REG_ELT_TYPE reload_reg_used_at_all;
+extern unsigned int regno;
+extern int opnum;
+extern enum reload_type type;
+extern unsigned int nregs;
+extern unsigned int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    HARD_REG_ELT_TYPE prev_mask = (i == regno) ? 0 : ((HARD_REG_ELT_TYPE)(1)) << (regno);
+    for (i = regno; i < nregs + regno; i++) {
+        HARD_REG_ELT_TYPE current_bit = ((HARD_REG_ELT_TYPE)(1)) << (i);
+        if (prev_mask & current_bit) {
+            current_bit ^= prev_mask;
+        }
+        switch (type) {
+          case RELOAD_OTHER:
+            ((reload_reg_used) |= current_bit);
+            break;
+          case RELOAD_FOR_INPUT_ADDRESS:
+            ((reload_reg_used_in_input_addr[opnum]) |= current_bit);
+            break;
+          case RELOAD_FOR_INPADDR_ADDRESS:
+            ((reload_reg_used_in_inpaddr_addr[opnum]) |= current_bit);
+            break;
+          case RELOAD_FOR_OUTPUT_ADDRESS:
+            ((reload_reg_used_in_output_addr[opnum]) |= current_bit);
+            break;
+          case RELOAD_FOR_OUTADDR_ADDRESS:
+            ((reload_reg_used_in_outaddr_addr[opnum]) |= current_bit);
+            break;
+          case RELOAD_FOR_OPERAND_ADDRESS:
+            ((reload_reg_used_in_op_addr) |= current_bit);
+            break;
+          case RELOAD_FOR_OPADDR_ADDR:
+            ((reload_reg_used_in_op_addr_reload) |= current_bit);
+            break;
+          case RELOAD_FOR_OTHER_ADDRESS:
+            ((reload_reg_used_in_other_addr) |= current_bit);
+            break;
+          case RELOAD_FOR_INPUT:
+            ((reload_reg_used_in_input[opnum]) |= current_bit);
+            break;
+          case RELOAD_FOR_OUTPUT:
+            ((reload_reg_used_in_output[opnum]) |= current_bit);
+            break;
+          case RELOAD_FOR_INSN:
+            ((reload_reg_used_in_insn) |= current_bit);
+            break;
+        }
+        ((reload_reg_used_at_all) |= current_bit);
+        prev_mask = current_bit;
+    }
+}

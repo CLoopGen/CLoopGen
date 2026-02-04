@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef double doublereal;
+
+typedef int integer;
+
+extern doublereal *c__;
+extern integer c_dim1;
+extern integer i__1;
+extern integer j;
+extern doublereal t1;
+extern doublereal t2;
+extern doublereal t3;
+extern doublereal t4;
+extern doublereal t5;
+extern doublereal t6;
+extern doublereal v1;
+extern doublereal v2;
+extern doublereal v3;
+extern doublereal v4;
+extern doublereal v5;
+extern doublereal v6;
+extern doublereal sum;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    integer j_inner;
+    for (j = 1; j <= i__1; ++j) {
+        sum = v1 * c__[j * c_dim1 + 1] + v2 * c__[j * c_dim1 + 2] + v3 * c__[j * c_dim1 + 3] + v4 * c__[j * c_dim1 + 4] + v5 * c__[j * c_dim1 + 5] + v6 * c__[j * c_dim1 + 6];
+        for (j_inner = 1; j_inner <= 6; ++j_inner) {
+            c__[j * c_dim1 + j_inner] -= sum * *((&t1) + (j_inner - 1));
+        }
+    }
+}

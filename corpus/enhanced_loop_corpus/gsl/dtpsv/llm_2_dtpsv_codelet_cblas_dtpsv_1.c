@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int N;
+extern  double *Ap;
+extern double *X;
+extern  int incX;
+extern int i;
+extern int j;
+extern  int nonunit;
+extern int ix;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 1; i < N; i++) {
+    double tmp = X[ix];
+    int jx = ((incX) > 0 ? 0 : ((N) - 1) * (-(incX)));
+    for (j = 0; j < i; j++) {
+        const double Aij = Ap[(i*(i+1))/2 + j];
+        tmp -= Aij * X[jx];
+        jx += incX;
+    }
+    if (nonunit) {
+        X[ix] = tmp / Ap[(i*(i+1))/2 + i];
+    } else {
+        X[ix] = tmp;
+    }
+    ix += incX;
+}
+}

@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int M;
+extern  int N;
+extern  float alpha;
+extern  float *X;
+extern  int incX;
+extern  float *Y;
+extern  int incY;
+extern float *A;
+extern  int lda;
+extern int i;
+extern int j;
+extern int ix;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < M; i++) {
+    const float tmp = alpha * X[ix];
+    int jy = ((incY) > 0 ? 0 : ((N) - 1) * (-(incY)));
+    float temp_sum = 0.0f;
+    for (j = 0; j < N; j++) {
+        temp_sum += Y[jy] * tmp;
+        jy += incY;
+    }
+    // Introduce WAW dependency by aggregating before write
+    A[lda * i + 0] += temp_sum;
+    ix += incX;
+}
+}

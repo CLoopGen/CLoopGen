@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern  unsigned char *uni;
+extern int unilen;
+extern int i;
+extern char *asctmp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    unsigned char temp;
+    for (i = 0; i < unilen; i += 2) {
+        temp = uni[i];
+        asctmp[i >> 1] = temp;
+    }
+}

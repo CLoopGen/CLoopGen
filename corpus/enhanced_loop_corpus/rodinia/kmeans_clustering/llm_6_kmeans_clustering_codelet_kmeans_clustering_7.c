@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int nfeatures;
+extern int nclusters;
+extern int i;
+extern int j;
+extern int k;
+extern int *new_centers_len;
+extern float **new_centers;
+extern int nthreads;
+extern int **partial_new_centers_len;
+extern float ***partial_new_centers;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < nclusters; i++) {
+    for (j = 0; j < nthreads; j++) {
+        int temp_len = partial_new_centers_len[j][i];
+        new_centers_len[i] += temp_len;
+        for (k = 0; k < nfeatures; k++) {
+            float temp_val = partial_new_centers[j][i][k];
+            new_centers[i][k] += temp_val;
+            partial_new_centers[j][i][k] = 0.0f;
+        }
+        partial_new_centers_len[j][i] = 0;
+    }
+}
+}

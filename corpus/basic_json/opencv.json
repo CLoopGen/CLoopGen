@@ -1,0 +1,3122 @@
+[
+    {
+        "codelet": "basic_loop_corpus/opencv/vp8_dec/vp8_dec_codelet_ParseResiduals_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_vp8_dec_codelet_ParseResiduals_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_cm/jas_cm_codelet_jas_cmpxform_createshapmat_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_cm_codelet_jas_cmpxform_createshapmat_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/function_list/function_list_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_function_list_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/function_list/function_list_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_function_list_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/quant_levels_utils/quant_levels_utils_codelet_QuantizeLevels_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_quant_levels_utils_codelet_QuantizeLevels_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/quant_levels_utils/quant_levels_utils_codelet_QuantizeLevels_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_quant_levels_utils_codelet_QuantizeLevels_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/iterator_enc/iterator_enc_codelet_VP8IteratorSaveBoundary_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_iterator_enc_codelet_VP8IteratorSaveBoundary_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/iterator_enc/iterator_enc_codelet_VP8IteratorRotateI4_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_iterator_enc_codelet_VP8IteratorRotateI4_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/quant_levels_utils/quant_levels_utils_codelet_QuantizeLevels_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_quant_levels_utils_codelet_QuantizeLevels_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jp2/jp2_codelet_opj_jp2_check_color_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jp2_codelet_opj_jp2_check_color_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/iterator_enc/iterator_enc_codelet_VP8IteratorSaveBoundary_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_iterator_enc_codelet_VP8IteratorSaveBoundary_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jp2/jp2_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jp2_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcparam/jcparam_codelet_jpeg_add_quant_table_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcparam_codelet_jpeg_add_quant_table_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcparam/jcparam_codelet_add_huff_table_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcparam_codelet_add_huff_table_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcparam/jcparam_codelet_fill_scans_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcparam_codelet_fill_scans_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ppix_manager/ppix_manager_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ppix_manager_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/crc32_braid_c/crc32_braid_c_codelet_crc_word_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_crc32_braid_c_codelet_crc_word_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ppix_manager/ppix_manager_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ppix_manager_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_cm/jas_cm_codelet_triclr_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_cm_codelet_triclr_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jp2/jp2_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jp2_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcphuff/jcphuff_codelet_encode_mcu_AC_first_prepare_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcphuff_codelet_encode_mcu_AC_first_prepare_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jp2/jp2_codelet_opj_jp2_check_color_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jp2_codelet_opj_jp2_check_color_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcsample/jcsample_codelet_h2v2_downsample_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcsample_codelet_h2v2_downsample_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_win32/tif_win32_codelet_TIFFFdOpenExt_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_win32_codelet_TIFFFdOpenExt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/iterator_enc/iterator_enc_codelet_VP8IteratorRotateI4_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_iterator_enc_codelet_VP8IteratorRotateI4_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_cm/jas_cm_codelet_triclr_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_cm_codelet_triclr_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/test_sparse_array/test_sparse_array_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_test_sparse_array_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/analysis_enc/analysis_enc_codelet_AssignSegments_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_analysis_enc_codelet_AssignSegments_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcsample/jcsample_codelet_h2v1_downsample_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcsample_codelet_h2v1_downsample_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/phix_manager/phix_manager_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_phix_manager_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcsample/jcsample_codelet_int_downsample_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcsample_codelet_int_downsample_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/quant_levels_utils/quant_levels_utils_codelet_QuantizeLevels_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_quant_levels_utils_codelet_QuantizeLevels_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcparam/jcparam_codelet_fill_dc_scans_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcparam_codelet_fill_dc_scans_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/iterator_enc/iterator_enc_codelet_VP8IteratorRotateI4_13.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_iterator_enc_codelet_VP8IteratorRotateI4_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/analysis_enc/analysis_enc_codelet_FastMBAnalyze_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_analysis_enc_codelet_FastMBAnalyze_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcsample/jcsample_codelet_expand_right_edge_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcsample_codelet_expand_right_edge_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/cio/cio_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_cio_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcsample/jcsample_codelet_h2v2_smooth_downsample_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcsample_codelet_h2v2_smooth_downsample_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t2/t2_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t2_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/cio/cio_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_cio_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/analysis_enc/analysis_enc_codelet_AssignSegments_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_analysis_enc_codelet_AssignSegments_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcparam/jcparam_codelet_jpeg_add_quant_table_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcparam_codelet_jpeg_add_quant_table_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcparam/jcparam_codelet_fill_dc_scans_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcparam_codelet_fill_dc_scans_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcparam/jcparam_codelet_fill_scans_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcparam_codelet_fill_scans_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/phix_manager/phix_manager_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_phix_manager_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/quant_enc/quant_enc_codelet_StoreDiffusionErrors_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_quant_enc_codelet_StoreDiffusionErrors_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/test_sparse_array/test_sparse_array_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_test_sparse_array_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t2/t2_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t2_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/analysis_enc/analysis_enc_codelet_SmoothSegmentMap_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_analysis_enc_codelet_SmoothSegmentMap_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/crc32_braid_c/crc32_braid_c_codelet_zng_crc32_braid_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_crc32_braid_c_codelet_zng_crc32_braid_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdhuff/jdhuff_codelet_jpeg_make_d_derived_tbl_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdhuff_codelet_jpeg_make_d_derived_tbl_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdhuff/jdhuff_codelet_jpeg_make_d_derived_tbl_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdhuff_codelet_jpeg_make_d_derived_tbl_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdhuff/jdhuff_codelet_jpeg_make_d_derived_tbl_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdhuff_codelet_jpeg_make_d_derived_tbl_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcphuff/jcphuff_codelet_encode_mcu_AC_refine_prepare_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcphuff_codelet_encode_mcu_AC_refine_prepare_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/cio/cio_codelet_opj_read_bytes_LE_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_cio_codelet_opj_read_bytes_LE_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcphuff/jcphuff_codelet_encode_mcu_AC_refine_prepare_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcphuff_codelet_encode_mcu_AC_refine_prepare_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_cm/jas_cm_codelet_jas_cmshapmatlut_set_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_cm_codelet_jas_cmshapmatlut_set_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_mct/jpc_mct_codelet_jpc_ict_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_mct_codelet_jpc_ict_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_mct/jpc_mct_codelet_jpc_irct_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_mct_codelet_jpc_irct_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_cm/jas_cm_codelet_jas_cmshapmatlut_invert_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_cm_codelet_jas_cmshapmatlut_invert_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_mct/jpc_mct_codelet_jpc_iict_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_mct_codelet_jpc_iict_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdhuff/jdhuff_codelet_add_huff_table_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdhuff_codelet_add_huff_table_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/cio/cio_codelet_opj_write_bytes_LE_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_cio_codelet_opj_write_bytes_LE_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pi/pi_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pi_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_aux/tif_aux_codelet_TIFFDefaultTransferFunction_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_aux_codelet_TIFFDefaultTransferFunction_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pi/pi_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pi_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdhuff/jdhuff_codelet_jpeg_make_d_derived_tbl_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdhuff_codelet_jpeg_make_d_derived_tbl_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pi/pi_codelet_opj_pi_create_decode_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pi_codelet_opj_pi_create_decode_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pi/pi_codelet_opj_pi_create_decode_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pi_codelet_opj_pi_create_decode_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/frame_enc/frame_enc_codelet_PostLoopFinalize_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_frame_enc_codelet_PostLoopFinalize_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pi/pi_codelet_opj_pi_initialise_encode_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pi_codelet_opj_pi_initialise_encode_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdhuff/jdhuff_codelet_jpeg_make_d_derived_tbl_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdhuff_codelet_jpeg_make_d_derived_tbl_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pi/pi_codelet_opj_pi_initialise_encode_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pi_codelet_opj_pi_initialise_encode_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/bench_dwt/bench_dwt_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_bench_dwt_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcdctmgr/jcdctmgr_codelet_convsamp_float_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcdctmgr_codelet_convsamp_float_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/sparse_array/sparse_array_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_sparse_array_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcdctmgr/jcdctmgr_codelet_quantize_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcdctmgr_codelet_quantize_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/bench_dwt/bench_dwt_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_bench_dwt_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/sparse_array/sparse_array_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_sparse_array_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcdctmgr/jcdctmgr_codelet_convsamp_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcdctmgr_codelet_convsamp_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/predictor_enc/predictor_enc_codelet_VP8LResidualImage_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_predictor_enc_codelet_VP8LResidualImage_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/enc/enc_codelet_TTransform_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_enc_codelet_TTransform_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcdctmgr/jcdctmgr_codelet_quantize_float_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcdctmgr_codelet_quantize_float_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwtran/pngwtran_codelet_png_do_write_invert_alpha_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwtran_codelet_png_do_write_invert_alpha_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/enc/enc_codelet_FTransformWHT_C_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_enc_codelet_FTransformWHT_C_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/opj_clock/opj_clock_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_opj_clock_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/predictor_enc/predictor_enc_codelet_VP8LResidualImage_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_predictor_enc_codelet_VP8LResidualImage_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_util/jpc_util_codelet_jpc_seq_norm_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_util_codelet_jpc_seq_norm_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/vp8l_dec/vp8l_dec_codelet_ReadHuffmanCodes_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_vp8l_dec_codelet_ReadHuffmanCodes_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/vp8l_dec/vp8l_dec_codelet_ExpandColorMap_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_vp8l_dec_codelet_ExpandColorMap_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwtran/pngwtran_codelet_png_do_write_swap_alpha_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwtran_codelet_png_do_write_swap_alpha_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/enc/enc_codelet_FTransformWHT_C_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_enc_codelet_FTransformWHT_C_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/vp8l_dec/vp8l_dec_codelet_ExpandColorMap_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_vp8l_dec_codelet_ExpandColorMap_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/opj_clock/opj_clock_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_opj_clock_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/vp8l_dec/vp8l_dec_codelet_CopySmallPattern32b_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_vp8l_dec_codelet_CopySmallPattern32b_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/vp8l_dec/vp8l_dec_codelet_CopySmallPattern8b_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_vp8l_dec_codelet_CopySmallPattern8b_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwtran/pngwtran_codelet_png_do_write_swap_alpha_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwtran_codelet_png_do_write_swap_alpha_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/enc/enc_codelet_Mean16x4_C_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_enc_codelet_Mean16x4_C_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/enc/enc_codelet_FTransform_C_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_enc_codelet_FTransform_C_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/enc/enc_codelet_FTransform_C_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_enc_codelet_FTransform_C_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_horAcc8_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_horAcc8_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/enc/enc_codelet_TTransform_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_enc_codelet_TTransform_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwtran/pngwtran_codelet_png_do_pack_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwtran_codelet_png_do_pack_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/enc/enc_codelet_TM4_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_enc_codelet_TM4_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/slide_hash_c/slide_hash_c_codelet_slide_hash_c_chain_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_slide_hash_c_codelet_slide_hash_c_chain_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_horAcc8_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_horAcc8_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/vp8l_dec/vp8l_dec_codelet_ReadHuffmanCodes_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_vp8l_dec_codelet_ReadHuffmanCodes_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_t2cod/jpc_t2cod_codelet_jpc_pchglist_remove_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_t2cod_codelet_jpc_pchglist_remove_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_horDiff8_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_horDiff8_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_fpAcc_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_fpAcc_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_util/jpc_util_codelet_jpc_seq_upsample_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_util_codelet_jpc_seq_upsample_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_fpAcc_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_fpAcc_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_horAcc8_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_horAcc8_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwtran/pngwtran_codelet_png_do_write_swap_alpha_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwtran_codelet_png_do_write_swap_alpha_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_horAcc16_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_horAcc16_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_horAcc8_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_horAcc8_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwtran/pngwtran_codelet_png_do_shift_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwtran_codelet_png_do_shift_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_horAcc64_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_horAcc64_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_fpDiff_17.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_fpDiff_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_horAcc8_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_horAcc8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_fpAcc_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_fpAcc_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwtran/pngwtran_codelet_png_do_pack_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwtran_codelet_png_do_pack_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwtran/pngwtran_codelet_png_do_write_swap_alpha_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwtran_codelet_png_do_write_swap_alpha_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwtran/pngwtran_codelet_png_do_write_invert_alpha_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwtran_codelet_png_do_write_invert_alpha_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwtran/pngwtran_codelet_png_do_shift_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwtran_codelet_png_do_shift_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_horDiff16_13.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_horDiff16_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_predict/tif_predict_codelet_horDiff64_15.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_predict_codelet_horDiff64_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_46.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_46.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_51.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_51.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwtran/pngwtran_codelet_png_do_shift_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwtran_codelet_png_do_shift_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_57.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_57.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colgrp_28.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colgrp_28.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_17.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_56.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_56.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colres_35.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colres_35.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_77.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_77.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_qmfb_split_colgrp_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_qmfb_split_colgrp_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_67.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_67.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_93.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_93.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colgrp_26.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colgrp_26.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_qmfb_split_colgrp_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_qmfb_split_colgrp_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_49.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_49.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_52.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_52.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colgrp_30.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colgrp_30.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colres_21.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colres_21.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_40.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_40.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_76.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_76.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_44.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_44.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_14.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_72.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_72.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_18.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_60.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_60.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_45.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_45.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_83.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_83.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwtran/pngwtran_codelet_png_do_pack_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwtran_codelet_png_do_pack_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_66.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_66.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colres_24.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colres_24.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colres_19.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colres_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_78.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_78.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_qmfb_split_colgrp_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_qmfb_split_colgrp_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_74.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_74.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_84.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_84.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colres_37.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colres_37.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_qmfb_join_colgrp_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_qmfb_join_colgrp_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_64.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_64.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_71.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_71.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_94.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_94.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_41.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_41.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_91.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_91.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_70.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_70.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_qmfb_split_colres_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_qmfb_split_colres_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_qmfb_join_colres_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_qmfb_join_colres_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_50.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_50.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_95.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_95.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_79.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_79.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_61.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_61.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colres_20.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colres_20.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_48.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_48.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_15.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colres_36.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colres_36.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colres_22.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colres_22.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_t2cod/jpc_t2cod_codelet_jpc_pchglist_insert_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_t2cod_codelet_jpc_pchglist_insert_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_43.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_43.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_86.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_86.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_55.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_55.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_qmfb_split_colres_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_qmfb_split_colres_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colgrp_27.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colgrp_27.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_88.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_88.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_53.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_53.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_68.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_68.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_81.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_81.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_82.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_82.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_qmfb_join_colgrp_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_qmfb_join_colgrp_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colgrp_29.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colgrp_29.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colgrp_32.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colgrp_32.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colgrp_31.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colgrp_31.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_qmfb_join_colgrp_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_qmfb_join_colgrp_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_75.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_75.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_59.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_59.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_65.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_65.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colres_25.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colres_25.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_54.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_54.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_47.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_47.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_89.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_89.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/inftrees/inftrees_codelet_inflate_table_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_inftrees_codelet_inflate_table_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_90.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_90.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_qmfb_split_colres_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_qmfb_split_colres_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_42.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colgrp_42.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/inftrees/inftrees_codelet_zng_inflate_table_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_inftrees_codelet_zng_inflate_table_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_73.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_73.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_87.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_87.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_80.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_80.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_92.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_92.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colres_85.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colres_85.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/inftrees/inftrees_codelet_inflate_table_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_inftrees_codelet_inflate_table_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colres_38.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colres_38.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/inftrees/inftrees_codelet_zng_inflate_table_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_inftrees_codelet_zng_inflate_table_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/inftrees/inftrees_codelet_inflate_table_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_inftrees_codelet_inflate_table_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/inftrees/inftrees_codelet_zng_inflate_table_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_inftrees_codelet_zng_inflate_table_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colres_34.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colres_34.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/inftrees/inftrees_codelet_zng_inflate_table_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_inftrees_codelet_zng_inflate_table_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/inftrees/inftrees_codelet_inflate_table_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_inftrees_codelet_inflate_table_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/j2k/j2k_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_j2k_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/inftrees/inftrees_codelet_inflate_table_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_inftrees_codelet_inflate_table_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctfst/jfdctfst_codelet_jpeg_fdct_ifast_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctfst_codelet_jpeg_fdct_ifast_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/inftrees/inftrees_codelet_inflate_table_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_inftrees_codelet_inflate_table_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_qmfb_join_colres_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_qmfb_join_colres_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/inftrees/inftrees_codelet_zng_inflate_table_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_inftrees_codelet_zng_inflate_table_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/inftrees/inftrees_codelet_zng_inflate_table_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_inftrees_codelet_zng_inflate_table_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_qmfb_join_colres_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_qmfb_join_colres_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/j2k/j2k_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_j2k_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/j2k/j2k_codelet_opj_j2k_read_SQcd_SQcc_28.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_j2k_codelet_opj_j2k_read_SQcd_SQcc_28.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colres_23.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colres_23.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctfst/jfdctfst_codelet_jpeg_fdct_ifast_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctfst_codelet_jpeg_fdct_ifast_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_63.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_63.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_62.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_62.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jchuff/jchuff_codelet_jpeg_gen_optimal_table_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jchuff_codelet_jpeg_gen_optimal_table_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/j2k/j2k_codelet_opj_j2k_check_poc_val_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_j2k_codelet_opj_j2k_check_poc_val_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/j2k/j2k_codelet_opj_j2k_read_SPCod_SPCoc_25.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_j2k_codelet_opj_j2k_read_SPCod_SPCoc_25.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_invlift_colgrp_69.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_invlift_colgrp_69.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colres_33.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colres_33.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_image/jas_image_codelet_jas_image_chclrspc_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_image_codelet_jas_image_chclrspc_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jchuff/jchuff_codelet_jpeg_gen_optimal_table_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jchuff_codelet_jpeg_gen_optimal_table_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jchuff/jchuff_codelet_jpeg_gen_optimal_table_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jchuff_codelet_jpeg_gen_optimal_table_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_image/jas_image_codelet_jas_image_calcbbox2_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_image_codelet_jas_image_calcbbox2_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant2/jquant2_codelet_init_error_limit_19.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant2_codelet_init_error_limit_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_image/jas_image_codelet_jas_image_ishomosamp_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_image_codelet_jas_image_ishomosamp_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jchuff/jchuff_codelet_jpeg_gen_optimal_table_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jchuff_codelet_jpeg_gen_optimal_table_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_image/jas_image_codelet_jas_image_create_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_image_codelet_jas_image_create_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jchuff/jchuff_codelet_jpeg_gen_optimal_table_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jchuff_codelet_jpeg_gen_optimal_table_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant2/jquant2_codelet_find_biggest_color_pop_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant2_codelet_find_biggest_color_pop_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_invlift_colres_39.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_invlift_colres_39.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant2/jquant2_codelet_find_nearby_colors_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant2_codelet_find_nearby_colors_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant2/jquant2_codelet_compute_color_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant2_codelet_compute_color_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant2/jquant2_codelet_init_error_limit_16.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant2_codelet_init_error_limit_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant2/jquant2_codelet_find_best_colors_13.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant2_codelet_find_best_colors_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tcd/tcd_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tcd_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant2/jquant2_codelet_update_box_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant2_codelet_update_box_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant2/jquant2_codelet_init_error_limit_18.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant2_codelet_init_error_limit_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tcd/tcd_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tcd_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant2/jquant2_codelet_prescan_quantize_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant2_codelet_prescan_quantize_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tcd/tcd_codelet_opj_tcd_decode_tile_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tcd_codelet_opj_tcd_decode_tile_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tcd/tcd_codelet_opj_tcd_mct_encode_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tcd_codelet_opj_tcd_mct_encode_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant2/jquant2_codelet_init_error_limit_17.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant2_codelet_init_error_limit_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycck_cmyk_convert_27.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycck_cmyk_convert_27.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycc_extxbgr_convert_internal_15.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycc_extxbgr_convert_internal_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant2/jquant2_codelet_find_biggest_volume_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant2_codelet_find_biggest_volume_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tcd/tcd_codelet_opj_tcd_dc_level_shift_encode_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tcd_codelet_opj_tcd_dc_level_shift_encode_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_gray_convert_23.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_gray_convert_23.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_extrgb_convert_internal_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_extrgb_convert_internal_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_gray_rgb565D_convert_be_39.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_gray_rgb565D_convert_be_39.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_null_convert_24.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_null_convert_24.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_null_convert_26.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_null_convert_26.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_rgb565_convert_be_36.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_rgb565_convert_be_36.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_convert_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_convert_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_extrgbx_convert_internal_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_extrgbx_convert_internal_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_build_rgb_y_table_22.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_build_rgb_y_table_22.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycc_extrgb_convert_internal_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycc_extrgb_convert_internal_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_gray_rgb_convert_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_gray_rgb_convert_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycc_extrgbx_convert_internal_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycc_extrgbx_convert_internal_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycc_rgb565_convert_be_34.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycc_rgb565_convert_be_34.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tgt/tgt_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tgt_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tgt/tgt_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tgt_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ns_fwdlift_colres_58.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ns_fwdlift_colres_58.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/mqc/mqc_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_mqc_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_gray_rgb565_convert_be_38.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_gray_rgb565_convert_be_38.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/mqc/mqc_codelet_opj_mqc_resetstates_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_mqc_codelet_opj_mqc_resetstates_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/sharpyuv/sharpyuv_codelet_SharpYuvConvertWithOptions_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_sharpyuv_codelet_SharpYuvConvertWithOptions_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_gray_rgb_convert_internal_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_gray_rgb_convert_internal_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tgt/tgt_codelet_opj_tgt_create_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tgt_codelet_opj_tgt_create_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycc_rgb565_convert_le_28.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycc_rgb565_convert_le_28.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_gray_extrgb_convert_internal_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_gray_extrgb_convert_internal_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/mqc/mqc_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_mqc_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tgt/tgt_codelet_opj_tgt_reset_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tgt_codelet_opj_tgt_reset_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_gray_extbgr_convert_internal_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_gray_extbgr_convert_internal_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_extxrgb_convert_internal_20.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_extxrgb_convert_internal_20.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb1_rgb_convert_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb1_rgb_convert_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_gray_extxrgb_convert_internal_19.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_gray_extxrgb_convert_internal_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_gray_rgb565_convert_le_32.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_gray_rgb565_convert_le_32.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdsample/jdsample_codelet_int_upsample_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdsample_codelet_int_upsample_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tgt/tgt_codelet_opj_tgt_init_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tgt_codelet_opj_tgt_init_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdsample/jdsample_codelet_h1v2_fancy_upsample_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdsample_codelet_h1v2_fancy_upsample_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_rgb565_convert_le_30.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_rgb565_convert_le_30.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_gray_rgb565D_convert_le_33.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_gray_rgb565D_convert_le_33.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctflt/jidctflt_codelet_jpeg_idct_float_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctflt_codelet_jpeg_idct_float_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycc_extxrgb_convert_internal_18.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycc_extxrgb_convert_internal_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_gray_extbgrx_convert_internal_13.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_gray_extbgrx_convert_internal_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_13.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/thread/thread_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_thread_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycc_rgb565D_convert_be_35.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycc_rgb565D_convert_be_35.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_gray_extxbgr_convert_internal_16.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_gray_extxbgr_convert_internal_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/webp_enc/webp_enc_codelet_StoreStats_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_webp_enc_codelet_StoreStats_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/thread/thread_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_thread_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_gray_extrgbx_convert_internal_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_gray_extrgbx_convert_internal_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb1_gray_convert_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb1_gray_convert_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_mct/jpc_mct_codelet_jpc_rct_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_mct_codelet_jpc_rct_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdsample/jdsample_codelet_h2v2_fancy_upsample_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdsample_codelet_h2v2_fancy_upsample_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctflt/jidctflt_codelet_jpeg_idct_float_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctflt_codelet_jpeg_idct_float_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ht_dec/ht_dec_codelet_frwd_init_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ht_dec_codelet_frwd_init_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ht_dec/ht_dec_codelet_opj_t1_ht_decode_cblk_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ht_dec_codelet_opj_t1_ht_decode_cblk_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcsample-altivec/jcsample-altivec_codelet_expand_right_edge_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcsample-altivec_codelet_expand_right_edge_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ht_dec/ht_dec_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ht_dec_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_extbgr_convert_internal_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_extbgr_convert_internal_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ht_dec/ht_dec_codelet_opj_t1_ht_decode_cblk_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ht_dec_codelet_opj_t1_ht_decode_cblk_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_icc/jas_icc_codelet_jas_icclut16_input_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_icc_codelet_jas_icclut16_input_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/trees/trees_codelet_gen_codes_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_trees_codelet_gen_codes_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_extxbgr_convert_internal_17.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_extxbgr_convert_internal_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdmarker/jdmarker_codelet_get_dqt_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdmarker_codelet_get_dqt_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/openjpeg/openjpeg_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_openjpeg_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycc_extbgrx_convert_internal_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycc_extbgrx_convert_internal_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycc_rgb_convert_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycc_rgb_convert_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_icc/jas_icc_codelet_jas_icclut16_input_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_icc_codelet_jas_icclut16_input_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_rgb565D_convert_be_37.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_rgb565D_convert_be_37.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/openjpeg/openjpeg_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_openjpeg_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_null_convert_25.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_null_convert_25.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_icc/jas_icc_codelet_jas_icclut8_input_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_icc_codelet_jas_icclut8_input_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ht_dec/ht_dec_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ht_dec_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_tagtree/jpc_tagtree_codelet_jpc_tagtree_create_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_tagtree_codelet_jpc_tagtree_create_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdmarker/jdmarker_codelet_get_dqt_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdmarker_codelet_get_dqt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/bio/bio_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_bio_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/bio/bio_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_bio_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_icc/jas_icc_codelet_jas_icclut8_input_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_icc_codelet_jas_icclut8_input_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jmemmgr/jmemmgr_codelet_alloc_sarray_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jmemmgr_codelet_alloc_sarray_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_rgb_convert_internal_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_rgb_convert_internal_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jmemmgr/jmemmgr_codelet_alloc_barray_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jmemmgr_codelet_alloc_barray_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jmemmgr/jmemmgr_codelet_alloc_sarray_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jmemmgr_codelet_alloc_sarray_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/trees/trees_codelet_gen_codes_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_trees_codelet_gen_codes_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jmemmgr/jmemmgr_codelet_alloc_sarray_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jmemmgr_codelet_alloc_sarray_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tpix_manager/tpix_manager_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tpix_manager_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_extbgrx_convert_internal_14.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_extbgrx_convert_internal_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tpix_manager/tpix_manager_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tpix_manager_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dec/dec_codelet_TransformWHT_C_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dec_codelet_TransformWHT_C_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_cmyk_yk_convert_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_cmyk_yk_convert_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycck_cmyk_convert_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycck_cmyk_convert_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dec/dec_codelet_DC8uvNoTop_C_16.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dec_codelet_DC8uvNoTop_C_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dec/dec_codelet_DitherCombine8x8_C_17.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dec_codelet_DitherCombine8x8_C_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dec/dec_codelet_DC16_C_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dec_codelet_DC16_C_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jmemmgr/jmemmgr_codelet_alloc_barray_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jmemmgr_codelet_alloc_barray_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dec/dec_codelet_DC8uvNoLeft_C_15.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dec_codelet_DC8uvNoLeft_C_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dec/dec_codelet_DC16NoLeft_C_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dec_codelet_DC16NoLeft_C_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dec/dec_codelet_DC16NoTop_C_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dec_codelet_DC16NoTop_C_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dec/dec_codelet_TransformWHT_C_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dec_codelet_TransformWHT_C_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dec/dec_codelet_DC8uv_C_14.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dec_codelet_DC8uv_C_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_dec/jpc_dec_codelet_jpc_dec_cp_setfromcox_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_dec_codelet_jpc_dec_cp_setfromcox_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dec/dec_codelet_TransformDC_C_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dec_codelet_TransformDC_C_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_dec/jpc_dec_codelet_jpc_ppxstab_insert_17.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_dec_codelet_jpc_ppxstab_insert_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcsample-mmi/jcsample-mmi_codelet_expand_right_edge_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcsample-mmi_codelet_expand_right_edge_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_dec/jpc_dec_codelet_jpc_dec_cp_resetflags_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_dec_codelet_jpc_dec_cp_resetflags_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_dec/jpc_dec_codelet_jpc_dec_cp_create_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_dec_codelet_jpc_dec_cp_create_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/frame_dec/frame_dec_codelet_ReconstructRow_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_frame_dec_codelet_ReconstructRow_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_dec/jpc_dec_codelet_jpc_dec_cp_setfromqcx_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_dec_codelet_jpc_dec_cp_setfromqcx_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_dec/jpc_dec_codelet_jpc_dequantize_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_dec_codelet_jpc_dequantize_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_dec/jpc_dec_codelet_jpc_ppxstab_insert_16.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_dec_codelet_jpc_ppxstab_insert_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/picture_csp_enc/picture_csp_enc_codelet_WEBP_DSP_INIT_FUNC_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_picture_csp_enc_codelet_WEBP_DSP_INIT_FUNC_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/frame_dec/frame_dec_codelet_ReconstructRow_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_frame_dec_codelet_ReconstructRow_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_qmfb/jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_16.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_qmfb_codelet_jpc_ft_fwdlift_colgrp_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/lossless_enc/lossless_enc_codelet_ExtraCost_C_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_lossless_enc_codelet_ExtraCost_C_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctred/jidctred_codelet_jpeg_idct_4x4_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctred_codelet_jpeg_idct_4x4_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctred/jidctred_codelet_jpeg_idct_4x4_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctred_codelet_jpeg_idct_4x4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwrite/pngwrite_codelet_png_do_write_intrapixel_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwrite_codelet_png_do_write_intrapixel_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_dec/jpc_dec_codelet_jpc_dec_cp_copy_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_dec_codelet_jpc_dec_cp_copy_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/frame_dec/frame_dec_codelet_Dither8x8_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_frame_dec_codelet_Dither8x8_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extrgbx_rgb_convert_internal_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extrgbx_rgb_convert_internal_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_dir/tif_dir_codelet_TIFFUnsetField_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_dir_codelet_TIFFUnsetField_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_null_convert_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_null_convert_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_dir/tif_dir_codelet__TIFFVSetField_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_dir_codelet__TIFFVSetField_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctred/jidctred_codelet_jpeg_idct_2x2_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctred_codelet_jpeg_idct_2x2_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwrite/pngwrite_codelet_png_do_write_intrapixel_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwrite_codelet_png_do_write_intrapixel_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extxrgb_rgb_convert_internal_20.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extxrgb_rgb_convert_internal_20.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extbgrx_rgb_convert_internal_14.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extbgrx_rgb_convert_internal_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_null_convert_26.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_null_convert_26.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_rgb_rgb1_convert_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_rgb_rgb1_convert_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_rgb_ycc_start_21.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_rgb_ycc_start_21.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_null_convert_24.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_null_convert_24.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extxrgb_gray_convert_internal_19.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extxrgb_gray_convert_internal_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_rgb_gray_convert_internal_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_rgb_gray_convert_internal_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extbgrx_gray_convert_internal_13.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extbgrx_gray_convert_internal_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_dir/tif_dir_codelet_countInkNamesString_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_dir_codelet_countInkNamesString_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extrgb_gray_convert_internal_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extrgb_gray_convert_internal_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_null_convert_25.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_null_convert_25.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extrgbx_gray_convert_internal_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extrgbx_gray_convert_internal_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extxbgr_rgb_convert_internal_17.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extxbgr_rgb_convert_internal_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extxbgr_gray_convert_internal_16.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extxbgr_gray_convert_internal_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extrgb_ycc_convert_internal_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extrgb_ycc_convert_internal_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extxrgb_ycc_convert_internal_18.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extxrgb_ycc_convert_internal_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_rgb_ycc_convert_internal_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_rgb_ycc_convert_internal_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extxbgr_ycc_convert_internal_15.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extxbgr_ycc_convert_internal_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_rgb_ycc_start_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_rgb_ycc_start_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_cmyk_ycck_convert_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_cmyk_ycck_convert_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extrgbx_ycc_convert_internal_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extrgbx_ycc_convert_internal_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extbgr_rgb_convert_internal_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extbgr_rgb_convert_internal_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_rgb_rgb_convert_internal_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_rgb_rgb_convert_internal_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycc_rgb565D_convert_le_29.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycc_rgb565D_convert_le_29.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdmaster/jdmaster_codelet_prepare_range_limit_table_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdmaster_codelet_prepare_range_limit_table_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/event/event_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_event_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdmaster/jdmaster_codelet_prepare_range_limit_table_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdmaster_codelet_prepare_range_limit_table_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdmaster/jdmaster_codelet_prepare_range_limit_table_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdmaster_codelet_prepare_range_limit_table_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_rgb_gray_convert_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_rgb_gray_convert_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/event/event_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_event_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extbgr_gray_convert_internal_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extbgr_gray_convert_internal_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extrgb_rgb_convert_internal_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extrgb_rgb_convert_internal_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_cmyk_ycck_convert_22.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_cmyk_ycck_convert_22.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdmaster/jdmaster_codelet_prepare_range_limit_table_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdmaster_codelet_prepare_range_limit_table_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdmaster/jdmaster_codelet_prepare_range_limit_table_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdmaster_codelet_prepare_range_limit_table_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_8x4_36.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_8x4_36.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_15x15_22.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_15x15_22.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdmaster/jdmaster_codelet_prepare_range_limit_table_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdmaster_codelet_prepare_range_limit_table_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_rgb_ycc_convert_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_rgb_ycc_convert_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdmaster/jdmaster_codelet_prepare_range_limit_table_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdmaster_codelet_prepare_range_limit_table_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_6x12_46.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_6x12_46.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_7x7_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_7x7_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_2x4_54.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_2x4_54.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_16x16_27.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_16x16_27.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_12x6_33.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_12x6_33.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_4x2_41.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_4x2_41.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_6x12_47.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_6x12_47.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_7x7_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_7x7_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_rgb565D_convert_le_31.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_rgb565D_convert_le_31.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_10x5_34.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_10x5_34.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_16x8_29.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_16x8_29.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_14x14_20.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_14x14_20.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_9x9_13.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_9x9_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_10x10_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_10x10_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ht_dec/ht_dec_codelet_rev_init_mrp_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ht_dec_codelet_rev_init_mrp_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_5x5_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_5x5_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_13x13_21.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_13x13_21.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extbgr_ycc_convert_internal_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extbgr_ycc_convert_internal_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_3x6_53.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_3x6_53.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycc_extbgr_convert_internal_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycc_extbgr_convert_internal_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_12x12_17.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_12x12_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_9x9_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_9x9_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_grayscale_convert_23.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_grayscale_convert_23.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_grayscale_convert_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_grayscale_convert_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_8x16_43.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_8x16_43.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_7x14_44.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_7x14_44.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_extbgrx_ycc_convert_internal_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_extbgrx_ycc_convert_internal_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_10x5_35.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_10x5_35.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_10x10_15.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_10x10_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_8x4_37.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_8x4_37.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_13x13_20.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_13x13_20.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_14x14_23.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_14x14_23.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_6x3_39.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_6x3_39.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_14x7_30.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_14x7_30.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_12x12_19.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_12x12_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_13x13_19.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_13x13_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_7x14_45.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_7x14_45.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_15x15_23.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_15x15_23.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_15x15_25.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_15x15_25.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_15x15_24.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_15x15_24.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_16x8_28.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_16x8_28.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_16x16_25.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_16x16_25.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jccolor/jccolor_codelet_rgb_convert_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jccolor_codelet_rgb_convert_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_5x10_49.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_5x10_49.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_12x12_18.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_12x12_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_islow_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_islow_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_14x14_22.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_14x14_22.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_5x10_48.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_5x10_48.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_4x8_51.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_4x8_51.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_14x7_31.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_14x7_31.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_6x6_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_6x6_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_9x9_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_9x9_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_14x14_21.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_14x14_21.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_6x6_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_6x6_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_12x12_16.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_12x12_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_2x4_55.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_2x4_55.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_3x3_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_3x3_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_11x11_17.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_11x11_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_6x3_38.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_6x3_38.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctred/jidctred_codelet_jpeg_idct_2x2_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctred_codelet_jpeg_idct_2x2_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_3x3_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_3x3_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_3x6_52.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_3x6_52.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_16x16_26.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_16x16_26.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_4x4_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_4x4_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_13x13_18.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_13x13_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_16x16_24.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_16x16_24.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/image/image_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_image_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ht_dec/ht_dec_codelet_rev_init_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ht_dec_codelet_rev_init_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_5x5_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_5x5_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_islow_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_islow_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ittnotify_static/ittnotify_static_codelet___itt_fsplit_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ittnotify_static_codelet___itt_fsplit_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_3x3_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_3x3_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ittnotify_static/ittnotify_static_codelet___itt_fsplit_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ittnotify_static_codelet___itt_fsplit_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ittnotify_static/ittnotify_static_codelet___itt_fsplit_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ittnotify_static_codelet___itt_fsplit_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_9x9_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_9x9_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/image/image_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_image_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_11x11_15.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_11x11_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/rescaler/rescaler_codelet_WebPRescalerExportRowShrink_C_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_rescaler_codelet_WebPRescalerExportRowShrink_C_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_10x10_14.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_10x10_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ittnotify_static/ittnotify_static_codelet___itt_fsplit_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ittnotify_static_codelet___itt_fsplit_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_11x11_16.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_11x11_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ittnotify_static/ittnotify_static_codelet___itt_fsplit_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ittnotify_static_codelet___itt_fsplit_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_10x10_13.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_10x10_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/rescaler/rescaler_codelet_WebPRescalerExportRowShrink_C_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_rescaler_codelet_WebPRescalerExportRowShrink_C_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/rescaler/rescaler_codelet_WebPRescalerImportRowExpand_C_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_rescaler_codelet_WebPRescalerImportRowExpand_C_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/rescaler/rescaler_codelet_WebPRescalerExportRowExpand_C_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_rescaler_codelet_WebPRescalerExportRowExpand_C_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_6x3_39.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_6x3_39.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/bit_reader_utils/bit_reader_utils_codelet_VP8LInitBitReader_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_bit_reader_utils_codelet_VP8LInitBitReader_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_3x3_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_3x3_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_8x16_42.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_8x16_42.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_4x8_48.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_4x8_48.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_3x3_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_3x3_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_14x7_30.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_14x7_30.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_5x10_46.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_5x10_46.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_6x6_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_6x6_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_4x4_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_4x4_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_10x10_14.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_10x10_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_3x6_51.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_3x6_51.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_8x16_40.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_8x16_40.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_8x16_41.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_8x16_41.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_11x11_16.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_11x11_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_14x14_22.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_14x14_22.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_16x8_29.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_16x8_29.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_8x4_36.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_8x4_36.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_10x5_34.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_10x5_34.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_12x6_32.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_12x6_32.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_7x7_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_7x7_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_15x15_25.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_15x15_25.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_12x6_33.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_12x6_33.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_6x12_45.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_6x12_45.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_6x12_44.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_6x12_44.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_4x8_49.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_4x8_49.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_13x13_20.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_13x13_20.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_12x12_19.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_12x12_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_3x6_50.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_3x6_50.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_5x5_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_5x5_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_7x7_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_7x7_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_4x4_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_4x4_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_4x4_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_4x4_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_3x3_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_3x3_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_islow_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_islow_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_7x14_43.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_7x14_43.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_10x10_15.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_10x10_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_6x6_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_6x6_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_16x16_26.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_16x16_26.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_5x5_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_5x5_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_4x2_40.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_4x2_40.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_2x4_53.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_2x4_53.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_14x7_31.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_14x7_31.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_15x15_24.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_15x15_24.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_9x9_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_9x9_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_12x6_32.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_12x6_32.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_16x16_27.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_16x16_27.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_10x5_35.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_10x5_35.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_6x3_38.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_6x3_38.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_7x14_42.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_7x14_42.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_8x4_37.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_8x4_37.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_5x10_47.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_5x10_47.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_16x8_28.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_16x8_28.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_2x4_52.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_2x4_52.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_14x14_23.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_14x14_23.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_islow_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_islow_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/mct/mct_codelet_opj_mct_encode_custom_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_mct_codelet_opj_mct_encode_custom_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/mct/mct_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_mct_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/mct/mct_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_mct_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/mct/mct_codelet_opj_mct_decode_custom_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_mct_codelet_opj_mct_decode_custom_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_12x12_18.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_12x12_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_13x13_21.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_13x13_21.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_seq/jas_seq_codelet_jas_matrix_create_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_seq_codelet_jas_matrix_create_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_seq/jas_seq_codelet_jas_matrix_create_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_seq_codelet_jas_matrix_create_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdicc/jdicc_codelet_jpeg_read_icc_profile_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdicc_codelet_jpeg_read_icc_profile_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_9x9_13.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_9x9_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/thix_manager/thix_manager_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_thix_manager_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_seq/jas_seq_codelet_jas_matrix_bindsub_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_seq_codelet_jas_matrix_bindsub_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_seq/jas_seq_codelet_jas_matrix_setall_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_seq_codelet_jas_matrix_setall_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_seq/jas_seq_codelet_jas_matrix_resize_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_seq_codelet_jas_matrix_resize_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1_generate_luts/t1_generate_luts_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_generate_luts_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/mct/mct_codelet_opj_mct_decode_real_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_mct_codelet_opj_mct_decode_real_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/mct/mct_codelet_opj_mct_decode_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_mct_codelet_opj_mct_decode_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/mct/mct_codelet_opj_mct_encode_real_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_mct_codelet_opj_mct_encode_real_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1_generate_luts/t1_generate_luts_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_generate_luts_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_seq/jas_seq_codelet_jas_matrix_copy_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_seq_codelet_jas_matrix_copy_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcmarker/jcmarker_codelet_emit_dac_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcmarker_codelet_emit_dac_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/thix_manager/thix_manager_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_thix_manager_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcmarker/jcmarker_codelet_emit_dqt_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcmarker_codelet_emit_dqt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_seq/jas_seq_codelet_jas_seq2d_copy_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_seq_codelet_jas_seq2d_copy_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_4x8_50.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_4x8_50.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/vp8l_enc/vp8l_enc_codelet_StoreFullHuffmanCode_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_vp8l_enc_codelet_StoreFullHuffmanCode_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_seq/jas_seq_codelet_jas_matrix_clip_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_seq_codelet_jas_matrix_clip_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcmarker/jcmarker_codelet_emit_dac_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcmarker_codelet_emit_dac_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_seq/jas_seq_codelet_jas_matrix_asr_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_seq_codelet_jas_matrix_asr_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/mct/mct_codelet_opj_mct_encode_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_mct_codelet_opj_mct_encode_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ittnotify_static/ittnotify_static_codelet___itt_fsplit_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ittnotify_static_codelet___itt_fsplit_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngread/pngread_codelet_png_do_read_intrapixel_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngread_codelet_png_do_read_intrapixel_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/vp8l_enc/vp8l_enc_codelet_AnalyzeEntropy_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_vp8l_enc_codelet_AnalyzeEntropy_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcmarker/jcmarker_codelet_emit_dht_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcmarker_codelet_emit_dht_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngread/pngread_codelet_png_do_read_intrapixel_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngread_codelet_png_do_read_intrapixel_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngtrans/pngtrans_codelet_png_do_bgr_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngtrans_codelet_png_do_bgr_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngtrans/pngtrans_codelet_png_do_bgr_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngtrans_codelet_png_do_bgr_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctint/jfdctint_codelet_jpeg_fdct_11x11_17.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctint_codelet_jpeg_fdct_11x11_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_fetch_cols_vertical_pass_16.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_fetch_cols_vertical_pass_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/ht_dec/ht_dec_codelet_opj_t1_ht_decode_cblk_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_ht_dec_codelet_opj_t1_ht_decode_cblk_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_decode_partial_1_24.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_decode_partial_1_24.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_decode_partial_1_parallel_33.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_decode_partial_1_parallel_33.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_seq/jas_seq_codelet_jas_matrix_divpow2_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_seq_codelet_jas_matrix_divpow2_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngread/pngread_codelet_png_read_png_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngread_codelet_png_read_png_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngtrans/pngtrans_codelet_png_do_bgr_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngtrans_codelet_png_do_bgr_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_decode_partial_1_parallel_32.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_decode_partial_1_parallel_32.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_and_deinterleave_h_one_row_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_and_deinterleave_h_one_row_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngtrans/pngtrans_codelet_png_do_bgr_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngtrans_codelet_png_do_bgr_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngtrans/pngtrans_codelet_png_do_invert_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngtrans_codelet_png_do_invert_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngtrans/pngtrans_codelet_png_do_swap_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngtrans_codelet_png_do_swap_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_step2_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_step2_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngtrans/pngtrans_codelet_png_do_invert_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngtrans_codelet_png_do_invert_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_idwt3_v_cas0_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_idwt3_v_cas0_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngtrans/pngtrans_codelet_png_do_invert_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngtrans_codelet_png_do_invert_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_decode_tile_97_35.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_decode_tile_97_35.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_idwt53_v_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_idwt53_v_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_and_deinterleave_v_19.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_and_deinterleave_v_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_and_deinterleave_v_20.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_and_deinterleave_v_20.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_and_deinterleave_v_23.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_and_deinterleave_v_23.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_decode_partial_1_parallel_28.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_decode_partial_1_parallel_28.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_and_deinterleave_h_one_row_15.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_and_deinterleave_h_one_row_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_and_deinterleave_v_18.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_and_deinterleave_v_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_and_deinterleave_v_21.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_and_deinterleave_v_21.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_decode_partial_1_27.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_decode_partial_1_27.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_and_deinterleave_h_one_row_14.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_and_deinterleave_h_one_row_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_step2_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_step2_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_deinterleave_h_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_deinterleave_h_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_idwt3_v_cas1_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_idwt3_v_cas1_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jas_seq/jas_seq_codelet_jas_matrix_asl_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jas_seq_codelet_jas_matrix_asl_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_v8dwt_interleave_h_34.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_v8dwt_interleave_h_34.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_and_deinterleave_v_17.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_and_deinterleave_v_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/invert/invert_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_invert_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/invert/invert_codelet_opj_lupDecompose_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_invert_codelet_opj_lupDecompose_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/filters/filters_codelet_GradientUnfilter_C_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_filters_codelet_GradientUnfilter_C_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_and_deinterleave_h_one_row_13.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_and_deinterleave_h_one_row_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_decode_partial_1_parallel_31.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_decode_partial_1_parallel_31.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_step1_combined_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_step1_combined_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/filters/filters_codelet_HorizontalUnfilter_C_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_filters_codelet_HorizontalUnfilter_C_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_rgb_gray_convert_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_rgb_gray_convert_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_decode_partial_1_parallel_30.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_decode_partial_1_parallel_30.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/png/png_codelet_png_build_8bit_table_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_png_codelet_png_build_8bit_table_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/invert/invert_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_invert_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_encode_and_deinterleave_v_22.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_encode_and_deinterleave_v_22.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_idwt53_v_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_idwt53_v_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/cidx_manager/cidx_manager_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_cidx_manager_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/invert/invert_codelet_opj_lupSolve_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_invert_codelet_opj_lupSolve_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/cidx_manager/cidx_manager_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_cidx_manager_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/png/png_codelet_png_build_grayscale_palette_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_png_codelet_png_build_grayscale_palette_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/invert/invert_codelet_opj_lupSolve_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_invert_codelet_opj_lupSolve_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/anim_encode/anim_encode_codelet_ClearRectangle_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_anim_encode_codelet_ClearRectangle_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_t1_allocate_buffers_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_t1_allocate_buffers_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jdcolor/jdcolor_codelet_ycc_rgb_convert_internal_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jdcolor_codelet_ycc_rgb_convert_internal_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_idwt3_v_cas1_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_idwt3_v_cas1_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_deinterleave_h_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_deinterleave_h_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_decode_partial_1_26.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_decode_partial_1_26.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_t1_cblk_encode_processor_10.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_t1_cblk_encode_processor_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_t1_cblk_encode_processor_11.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_t1_cblk_encode_processor_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_t1_clbl_decode_processor_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_t1_clbl_decode_processor_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_decode_partial_1_25.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_decode_partial_1_25.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_t1_decode_cblk_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_t1_decode_cblk_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_t1_clbl_decode_processor_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_t1_clbl_decode_processor_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_enc/jpc_enc_codelet_cp_create_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_enc_codelet_cp_create_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_t1_allocate_buffers_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_t1_allocate_buffers_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/dwt/dwt_codelet_opj_dwt_decode_partial_1_parallel_29.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_dwt_codelet_opj_dwt_decode_partial_1_parallel_29.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_enc/jpc_enc_codelet_jpc_enc_encodemainhdr_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_enc_codelet_jpc_enc_encodemainhdr_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_enc/jpc_enc_codelet_jpc_quantize_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_enc_codelet_jpc_quantize_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_t1_encode_cblk_12.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_t1_encode_cblk_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_rgb_to_gray_41.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_rgb_to_gray_41.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_gray_to_rgb_37.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_gray_to_rgb_37.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_unshift_19.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_unshift_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_set_quantize_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_set_quantize_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_swap_alpha_20.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_swap_alpha_20.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_t1_allocate_buffers_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_t1_allocate_buffers_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_t1_clbl_decode_processor_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_t1_clbl_decode_processor_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_rgb_to_gray_43.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_rgb_to_gray_43.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_filler_33.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_filler_33.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/sharpyuv_dsp/sharpyuv_dsp_codelet_SharpYuvUpdateRGB_C_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_sharpyuv_dsp_codelet_SharpYuvUpdateRGB_C_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_expand_87.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_expand_87.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_encode_alpha_76.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_encode_alpha_76.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_filler_28.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_filler_28.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_set_quantize_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_set_quantize_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_swap_alpha_22.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_swap_alpha_22.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_expand_85.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_expand_85.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_expand_86.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_expand_86.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_gray_to_rgb_36.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_gray_to_rgb_36.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant1/jquant1_codelet_select_ncolors_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant1_codelet_select_ncolors_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/histogram_enc/histogram_enc_codelet_HistogramAnalyzeEntropyBin_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_histogram_enc_codelet_HistogramAnalyzeEntropyBin_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_expand_83.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_expand_83.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant1/jquant1_codelet_color_quantize3_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant1_codelet_color_quantize3_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/crc32/crc32_codelet_crc32_z_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_crc32_codelet_crc32_z_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/crc32_braid_comb/crc32_braid_comb_codelet_multmodp_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_crc32_braid_comb_codelet_multmodp_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/crc32/crc32_codelet_crc_word_big_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_crc32_codelet_crc_word_big_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant1/jquant1_codelet_make_odither_array_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant1_codelet_make_odither_array_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_encode_alpha_75.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_encode_alpha_75.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/demux/demux_codelet_GetFrame_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_demux_codelet_GetFrame_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_invert_alpha_26.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_invert_alpha_26.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_filler_31.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_filler_31.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_unpack_18.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_unpack_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jquant1/jquant1_codelet_color_quantize_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jquant1_codelet_color_quantize_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_expand_88.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_expand_88.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_filler_29.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_filler_29.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_handle_PLTE_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_handle_PLTE_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/spng/spng_codelet_defilter_up_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_spng_codelet_defilter_up_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_expand_84.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_expand_84.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/spng/spng_codelet_expand_row_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_spng_codelet_expand_row_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_handle_pCAL_4.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_handle_pCAL_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_filler_34.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_filler_34.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_handle_sPLT_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_handle_sPLT_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_filler_30.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_filler_30.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_handle_iTXt_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_handle_iTXt_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_handle_zTXt_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_handle_zTXt_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/spng/spng_codelet_expand_row_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_spng_codelet_expand_row_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_handle_tEXt_5.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_handle_tEXt_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_filler_35.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_filler_35.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_handle_iTXt_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_handle_iTXt_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_gray_to_rgb_39.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_gray_to_rgb_39.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_do_read_interlace_15.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_do_read_interlace_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctint/jidctint_codelet_jpeg_idct_11x11_14.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctint_codelet_jpeg_idct_11x11_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_do_read_interlace_14.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_do_read_interlace_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_handle_pCAL_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_handle_pCAL_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_handle_iTXt_9.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_handle_iTXt_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_swap_alpha_21.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_swap_alpha_21.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/t1/t1_codelet_opj_t1_clbl_decode_processor_6.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_t1_codelet_opj_t1_clbl_decode_processor_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_do_read_interlace_13.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_do_read_interlace_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwutil/pngwutil_codelet_png_do_write_interlace_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwutil_codelet_png_do_write_interlace_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwutil/pngwutil_codelet_png_do_write_interlace_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwutil_codelet_png_do_write_interlace_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_read_filter_row_sub_16.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_read_filter_row_sub_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwutil/pngwutil_codelet_png_image_size_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwutil_codelet_png_image_size_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/picture_psnr_enc/picture_psnr_enc_codelet_WebPPlaneDistortion_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_picture_psnr_enc_codelet_WebPPlaneDistortion_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/opj_malloc/opj_malloc_codelet_opj_int_floorlog2_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_opj_malloc_codelet_opj_int_floorlog2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_unpack_17.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_unpack_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jcomapi/jcomapi_codelet_jpeg_std_huff_table_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jcomapi_codelet_jpeg_std_huff_table_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/opj_malloc/opj_malloc_codelet_opj_uint_floorlog2_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_opj_malloc_codelet_opj_uint_floorlog2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwutil/pngwutil_codelet_png_do_write_interlace_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwutil_codelet_png_do_write_interlace_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_t1cod/jpc_t1cod_codelet_jpc_initctxs_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_t1cod_codelet_jpc_initctxs_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/quant_levels_dec_utils/quant_levels_dec_utils_codelet_VFilter_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_quant_levels_dec_utils_codelet_VFilter_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_invert_alpha_24.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_invert_alpha_24.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrutil/pngrutil_codelet_png_handle_sPLT_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrutil_codelet_png_handle_sPLT_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_unpack_16.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_unpack_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctfst/jidctfst_codelet_jpeg_idct_ifast_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctfst_codelet_jpeg_idct_ifast_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngwutil/pngwutil_codelet_png_write_find_filter_18.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngwutil_codelet_png_write_find_filter_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctflt/jfdctflt_codelet_jpeg_fdct_float_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctflt_codelet_jpeg_fdct_float_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/lossless/lossless_codelet_PredictorAdd1_C_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_lossless_codelet_PredictorAdd1_C_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/backward_references_enc/backward_references_enc_codelet_BackwardReferencesLz77Box_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_backward_references_enc_codelet_BackwardReferencesLz77Box_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_invert_alpha_27.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_invert_alpha_27.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/backward_references_enc/backward_references_enc_codelet_CalculateBestCacheSize_8.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_backward_references_enc_codelet_CalculateBestCacheSize_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/spng/spng_codelet_gamma_correct_row_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_spng_codelet_gamma_correct_row_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_color/tif_color_codelet_TIFFYCbCrToRGBInit_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_color_codelet_TIFFYCbCrToRGBInit_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/backward_references_enc/backward_references_enc_codelet_CalculateBestCacheSize_7.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_backward_references_enc_codelet_CalculateBestCacheSize_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jidctfst/jidctfst_codelet_jpeg_idct_ifast_1.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jidctfst_codelet_jpeg_idct_ifast_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/tif_color/tif_color_codelet_TIFFYCbCrToRGBInit_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_tif_color_codelet_TIFFYCbCrToRGBInit_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_filler_32.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_filler_32.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_swap_alpha_23.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_swap_alpha_23.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/backward_references_enc/backward_references_enc_codelet_BackwardReferencesLz77Box_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_backward_references_enc_codelet_BackwardReferencesLz77Box_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_gray_to_rgb_38.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_gray_to_rgb_38.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/spng/spng_codelet_gamma_correct_row_3.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_spng_codelet_gamma_correct_row_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jfdctflt/jfdctflt_codelet_jpeg_fdct_float_0.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jfdctflt_codelet_jpeg_fdct_float_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/jpc_util/jpc_util_codelet_jpc_seq_conv_2.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_jpc_util_codelet_jpc_seq_conv_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_read_invert_alpha_25.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_read_invert_alpha_25.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_expand_palette_78.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_expand_palette_78.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_expand_82.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_expand_82.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_expand_palette_77.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_expand_palette_77.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/pngrtran/pngrtran_codelet_png_do_expand_palette_79.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_pngrtran_codelet_png_do_expand_palette_79.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/opencv/j2k/j2k_codelet_opj_j2k_setup_mct_encoding_19.c",
+        "input": "basic_loop_corpus/loop_input/opencv/input_j2k_codelet_opj_j2k_setup_mct_encoding_19.c"
+    }
+]

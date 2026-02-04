@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern char *buffer;
+extern int bit_size;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < bit_size; i++) {
+        if (i >= 0) {
+            buffer[i] = 0;
+        }
+    }
+}

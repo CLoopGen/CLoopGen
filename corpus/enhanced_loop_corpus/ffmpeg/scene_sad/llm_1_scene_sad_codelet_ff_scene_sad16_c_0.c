@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern ptrdiff_t stride1;
+extern ptrdiff_t stride2;
+extern ptrdiff_t width;
+extern ptrdiff_t height;
+extern uint64_t sad;
+extern  uint16_t *src1w;
+extern  uint16_t *src2w;
+extern int x;
+extern int y;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (y = 0; y < height; y++) {
+    for (x = 0; x < width; x++) {
+        int temp_y = 0;
+        for (; temp_y < 1; temp_y++) {
+            sad += ((src1w[x] - src2w[x]) >= 0 ? (src1w[x] - src2w[x]) : (-(src1w[x] - src2w[x])));
+        }
+    }
+    src1w += stride1;
+    src2w += stride2;
+}
+}

@@ -1,0 +1,98 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef enum {
+    FRAME,
+    TOP_FIELD,
+    BOTTOM_FIELD
+} PictureStructure;
+
+typedef int64_t int64;
+
+typedef unsigned char byte;
+
+typedef struct storable_picture {
+    PictureStructure structure;
+    int poc;
+    int top_poc;
+    int bottom_poc;
+    int frame_poc;
+    int order_num;
+    int64 ref_pic_num[6][33];
+    int64 frm_ref_pic_num[6][33];
+    int64 top_ref_pic_num[6][33];
+    int64 bottom_ref_pic_num[6][33];
+    unsigned int frame_num;
+    int pic_num;
+    int long_term_pic_num;
+    int long_term_frame_idx;
+    int is_long_term;
+    int used_for_reference;
+    int is_output;
+    int non_existing;
+    int size_x;
+    int size_y;
+    int size_x_cr;
+    int size_y_cr;
+    int chroma_vector_adjustment;
+    int coded_frame;
+    int MbaffFrameFlag;
+    unsigned short **imgY;
+    unsigned short *imgY_11;
+    unsigned short *imgY_11_w;
+    unsigned short **imgY_ups;
+    unsigned short **imgY_ups_w;
+    unsigned short ***imgUV;
+    byte *mb_field;
+    short ***ref_idx;
+    int64 ***ref_pic_id;
+    int64 ***ref_id;
+    short ****mv;
+    byte **moving_block;
+    byte **field_frame;
+    struct storable_picture *top_field;
+    struct storable_picture *bottom_field;
+    struct storable_picture *frame;
+    int chroma_format_idc;
+    int frame_mbs_only_flag;
+    int frame_cropping_flag;
+    int frame_cropping_rect_left_offset;
+    int frame_cropping_rect_right_offset;
+    int frame_cropping_rect_top_offset;
+    int frame_cropping_rect_bottom_offset;
+} StorablePicture;
+
+extern StorablePicture **listX[6];
+extern int listXsize[6];
+extern StorablePicture *enc_picture;
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop() {
+    // Variant 1: Strided Memory Access Pattern
+    // Instead of iterating j from 2 to 5 and then i from 0 to listXsize[j]-1,
+    // we reverse the loop order and access elements with a fixed outer stride.
+    // This changes the memory access pattern to favor spatial locality across lists.
+
+    for (i = 0; i < 33; i++) {  // Assume maximum list size is 33 as per ref_pic_num dimension
+        for (j = 2; j < 6; j++) {
+            if (i < listXsize[j]) {
+                StorablePicture *pic = listX[j][i];
+                int poc_val = pic->poc * 2 + ((pic->structure == BOTTOM_FIELD) ? 1 : 0);
+                int frm_poc_val = pic->frame_poc * 2;
+                int top_poc_val = pic->top_poc * 2;
+                int bottom_poc_val = pic->bottom_poc * 2 + 1;
+
+                enc_picture->ref_pic_num[j][i] = poc_val;
+                enc_picture->frm_ref_pic_num[j][i] = frm_poc_val;
+                enc_picture->top_ref_pic_num[j][i] = top_poc_val;
+                enc_picture->bottom_ref_pic_num[j][i] = bottom_poc_val;
+            }
+        }
+    }
+}

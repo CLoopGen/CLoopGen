@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern double qcoeff[101];
+extern int i;
+extern int k;
+extern int n;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (k = 2; k <= n; k++) {
+    qcoeff[k] = -qcoeff[k - 1];
+    for (i = k - 1; i >= 2; i--) {
+        if (i % 2 == 1) {
+            qcoeff[i] = i * qcoeff[i] - (k - (i - 1)) * qcoeff[i - 1];
+        } else {
+            qcoeff[i] = (i + 1) * qcoeff[i] - (k - i) * qcoeff[i - 1];
+        }
+    }
+}
+}

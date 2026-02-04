@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef int int32;
+
+typedef float float32;
+
+typedef struct {
+    int32 n_comp;
+    float32 **mean;
+    float32 **var;
+    float32 *lrd;
+    int32 *mixw;
+} mgau_t;
+
+typedef double float64;
+
+typedef struct {
+    int32 n_mgau;
+    int32 max_comp;
+    int32 veclen;
+    mgau_t *mgau;
+    float64 distfloor;
+    int32 frm_sen_eval;
+    int32 frm_gau_eval;
+    int32 gau_type;
+} mgau_model_t;
+
+extern mgau_model_t *g;
+extern float32 *x;
+extern int32 *score;
+extern mgau_t *mgau;
+extern int32 veclen;
+extern float32 *m;
+extern float32 *v;
+extern float64 dval;
+extern float64 diff;
+extern float64 f;
+extern int32 bs;
+extern int32 i;
+extern int32 c;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    if (mgau->n_comp <= 0 || veclen <= 0) return;
+    c = 0;
+    m = mgau->mean[c];
+    v = mgau->var[c];
+    dval = mgau->lrd[c];
+    i = 0;
+    while (1) {
+        diff = x[i] - m[i];
+        dval -= diff * diff * v[i];
+        i++;
+        if (i >= veclen) {
+            if (dval < g->distfloor)
+                dval = g->distfloor;
+            score[c] = (int32)(f * dval);
+            if (score[c] > bs)
+                bs = score[c];
+            c++;
+            if (c >= mgau->n_comp) break;
+            m = mgau->mean[c];
+            v = mgau->var[c];
+            dval = mgau->lrd[c];
+            i = 0;
+        }
+    }
+}

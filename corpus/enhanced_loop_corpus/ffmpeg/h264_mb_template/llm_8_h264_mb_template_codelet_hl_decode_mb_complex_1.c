@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *dest_cb;
+extern uint8_t *dest_cr;
+extern int uvlinesize;
+extern int i;
+extern  int block_h;
+extern  int bit_depth;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < block_h; i++) {
+    uint16_t *tmp_cb = (uint16_t *)(dest_cb + i * uvlinesize);
+    uint16_t *tmp_cr = (uint16_t *)(dest_cr + i * uvlinesize);
+    int limit = 8 * (bit_depth > 8 ? 2 : 1);
+    for (j = 0; j < limit; j++) {
+        uint16_t val = (1 << (bit_depth - 1)) + ((j * i) & 0x3);
+        tmp_cb[j] = val;
+        tmp_cr[j] = val;
+    }
+}
+}

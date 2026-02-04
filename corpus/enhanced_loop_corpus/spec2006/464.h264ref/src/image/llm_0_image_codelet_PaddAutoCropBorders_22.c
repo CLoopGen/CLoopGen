@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern unsigned short **imgY_org_frm;
+extern int org_size_y;
+extern int img_size_x;
+extern int img_size_y;
+extern int x;
+extern int y;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (y = org_size_y; y < img_size_y; y++) {
+    x = 0;
+    for (; x < img_size_x; x++)
+        imgY_org_frm[y][x] = imgY_org_frm[y - 1][x];
+}
+}

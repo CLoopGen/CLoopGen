@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern double *gamma;
+extern ssize_t x;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Reverse consecutive memory access
+    for (x = 255; x >= 0; x--)
+        gamma[x] = 0.;
+}

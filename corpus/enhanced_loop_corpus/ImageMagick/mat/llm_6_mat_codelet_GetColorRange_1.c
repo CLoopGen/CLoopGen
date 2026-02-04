@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern char start_color[4096];
+extern char *p;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    char *temp = start_color;
+    char prev = '\0';
+    for (p = start_color; (*p != '-') && (*p != '\x00'); p++) {
+        if (*p == '(') {
+            prev = *p;
+            for (p++; (*p != ')') && (*p != '\x00'); p++) {
+                temp = p;
+            }
+            if (*p == '\x00') {
+                p = temp;
+                break;
+            }
+        } else {
+            prev = *p;
+        }
+    }
+    if (prev == '\0' && temp == start_color) p = start_color;
+}

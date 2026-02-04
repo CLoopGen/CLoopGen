@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern float h;
+extern float *initvalu;
+extern  float b71;
+extern  float b74;
+extern  float b75;
+extern  float b76;
+extern float *initvalu_temp;
+extern float **finavalu_temp;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    float acc = 0.0f;
+    for (i = 0; i < 91; i++) {
+        acc += initvalu[i]; // Introduce artificial loop-carried dependency (WAW and RAW on acc)
+        initvalu_temp[i] = acc + h * (b71 * finavalu_temp[0][i] + b74 * finavalu_temp[3][i] + 
+                                      b75 * finavalu_temp[4][i] + b76 * finavalu_temp[5][i]);
+    }
+    // Final use of acc to prevent elimination
+    if (acc == 0.0f) {
+        initvalu_temp[0] = 0.0f;
+    }
+}

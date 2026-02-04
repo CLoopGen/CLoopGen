@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int i;
+extern int offset[8];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 3; i < 8; i++)
+        offset[i] = offset[i-2] + 1;
+}

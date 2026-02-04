@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+struct fftw_iodim64_do_not_use_me {
+    ptrdiff_t n;
+    ptrdiff_t is;
+    ptrdiff_t os;
+};
+
+
+typedef struct fftw_iodim64_do_not_use_me fftw_iodim64;
+
+typedef ptrdiff_t INT;
+
+typedef struct {
+    INT n;
+    INT is;
+    INT os;
+} iodim;
+
+typedef struct {
+    int rnk;
+    iodim dims[1];
+} tensor;
+
+extern int rank;
+extern  fftw_iodim64 *dims;
+extern int is;
+extern int os;
+extern int i;
+extern tensor *x;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    if (rank > 0) {
+        x->dims[0].n = dims[0].n;
+        x->dims[0].is = dims[0].is * is;
+        x->dims[0].os = dims[0].os * os;
+    }
+    for (i = 1; i < rank; ++i) {
+        x->dims[i].n = dims[i].n;
+        x->dims[i].is = dims[i].is * is;
+        x->dims[i].os = dims[i].os * os;
+    }
+}

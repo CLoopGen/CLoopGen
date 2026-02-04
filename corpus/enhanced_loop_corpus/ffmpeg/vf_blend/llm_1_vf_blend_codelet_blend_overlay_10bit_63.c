@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern ptrdiff_t top_linesize;
+extern ptrdiff_t bottom_linesize;
+extern ptrdiff_t dst_linesize;
+extern ptrdiff_t width;
+extern ptrdiff_t height;
+extern  uint16_t *top;
+extern  uint16_t *bottom;
+extern uint16_t *dst;
+extern double opacity;
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < height; i++) {
+    for (j = 0; j < width; j += 2) {
+        // Process two elements per iteration to simulate deeper operation density
+        int j1 = j;
+        int j2 = j + 1;
+        if (j1 < width) {
+            dst[j1] = top[j1] + (((top[j1] < 512) ? ((2) * (((top[j1]) * (bottom[j1])) / 1023)) : (1023 - (2) * ((1023 - (top[j1])) * (1023 - (bottom[j1])) / 1023))) - top[j1]) * opacity;
+        }
+        if (j2 < width) {
+            dst[j2] = top[j2] + (((top[j2] < 512) ? ((2) * (((top[j2]) * (bottom[j2])) / 1023)) : (1023 - (2) * ((1023 - (top[j2])) * (1023 - (bottom[j2])) / 1023))) - top[j2]) * opacity;
+        }
+    }
+    dst += dst_linesize;
+    top += top_linesize;
+    bottom += bottom_linesize;
+}
+}

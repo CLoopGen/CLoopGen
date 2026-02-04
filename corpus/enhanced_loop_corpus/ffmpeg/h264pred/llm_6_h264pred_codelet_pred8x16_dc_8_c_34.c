@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef union __attribute__((may_alias)) {
+    uint32_t u32;
+    uint16_t u16[2];
+    uint8_t u8[4];
+    float f32;
+} av_alias32;
+
+extern ptrdiff_t stride;
+extern int i;
+extern uint32_t dc4splat;
+extern uint32_t dc5splat;
+extern uint8_t *src;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    uint32_t temp_dc4 = dc4splat;
+    uint32_t temp_dc5 = dc5splat;
+    for (i = 8; i < 12; i++) {
+        temp_dc4 ^= i; // Introduce loop-carried dependency on iteration index
+        temp_dc5 ^= (i + 1);
+        (((av_alias32 *)(((uint32_t *)(src + i * stride)) + 0))->u32 = (temp_dc4));
+        (((av_alias32 *)(((uint32_t *)(src + i * stride)) + 1))->u32 = (temp_dc5));
+    }
+}

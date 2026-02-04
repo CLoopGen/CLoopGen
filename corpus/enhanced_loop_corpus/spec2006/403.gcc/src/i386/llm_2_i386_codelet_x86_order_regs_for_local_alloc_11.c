@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern char call_used_regs[53];
+extern int reg_alloc_order[53];
+extern int pos;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided memory access with stride of 2, forward traversal
+    for (i = 0; i < 53; i += 2) {
+        if (((i) < 8 || ((i) >= (((((20 + 1) + 7) + 1) + 7) + 1) && (i) <= ((((((20 + 1) + 7) + 1) + 7) + 1) + 7))) && call_used_regs[i])
+            reg_alloc_order[pos++] = i;
+    }
+    // Handle remaining odd index if needed, but keep single loop structure
+    for (i = 1; i < 53; i += 2) {
+        if (((i) < 8 || ((i) >= (((((20 + 1) + 7) + 1) + 7) + 1) && (i) <= ((((((20 + 1) + 7) + 1) + 7) + 1) + 7))) && call_used_regs[i])
+            reg_alloc_order[pos++] = i;
+    }
+}

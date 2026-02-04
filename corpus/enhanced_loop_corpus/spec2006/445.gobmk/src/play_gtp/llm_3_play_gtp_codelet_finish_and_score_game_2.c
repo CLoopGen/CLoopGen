@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned char Intersection;
+
+extern int board_size;
+extern Intersection board[421];
+extern int final_status[19][19];
+extern int i;
+extern int j;
+extern int saved_board[19][19];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Strided Memory Access with Transposed Loop Order (j-major instead of i-major)
+    // This changes access pattern to stride through rows first, altering cache behavior
+    for (j = 0; j < board_size; j++)
+        for (i = 0; i < board_size; i++) {
+            // Maintain same logical indexing but reverse loop nesting for strided effect
+            if (board[(19 + 2) + i * (19 + 1) + j] == saved_board[i][j])
+                continue;
+
+            if (board[(19 + 2) + i * (19 + 1) + j] == 0) {
+                if (final_status[i][j] == 1 || final_status[i][j] == 7)
+                    final_status[i][j] = 15;
+                else if (final_status[i][j] == 0) {
+                    if (saved_board[i][j] == 2)
+                        final_status[i][j] = 14;
+                    else
+                        final_status[i][j] = 13;
+                }
+            } else if (board[(19 + 2) + i * (19 + 1) + j] == 2) {
+                if (final_status[i][j] == 14)
+                    final_status[i][j] = 0;
+                else if (final_status[i][j] == 15)
+                    final_status[i][j] = 7;
+                else if (final_status[i][j] == 13)
+                    final_status[i][j] = 1;
+                else
+                    final_status[i][j] = 0;
+            } else if (board[(19 + 2) + i * (19 + 1) + j] == 1) {
+                if (final_status[i][j] == 13)
+                    final_status[i][j] = 0;
+                else if (final_status[i][j] == 15)
+                    final_status[i][j] = 7;
+                else if (final_status[i][j] == 14)
+                    final_status[i][j] = 1;
+                else
+                    final_status[i][j] = 0;
+            }
+        }
+}

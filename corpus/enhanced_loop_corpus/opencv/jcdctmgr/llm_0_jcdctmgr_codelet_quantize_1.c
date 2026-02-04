@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef long JLONG;
+
+typedef JLONG DCTELEM;
+
+typedef short JCOEF;
+
+typedef JCOEF *JCOEFPTR;
+
+extern DCTELEM *divisors;
+extern DCTELEM *workspace;
+extern int i;
+extern DCTELEM temp;
+extern JCOEFPTR output_ptr;
+extern DCTELEM qval;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 8; i++) {
+        for (int j = 0; j < 8; j++) {
+            int idx = i * 8 + j;
+            qval = divisors[idx];
+            temp = workspace[idx];
+            if (temp < 0) {
+                temp = -temp;
+                temp += qval >> 1;
+                if (temp >= qval)
+                    temp /= qval;
+                else
+                    temp = 0;
+                temp = -temp;
+            } else {
+                temp += qval >> 1;
+                if (temp >= qval)
+                    temp /= qval;
+                else
+                    temp = 0;
+            }
+            output_ptr[idx] = (JCOEF)temp;
+        }
+    }
+}

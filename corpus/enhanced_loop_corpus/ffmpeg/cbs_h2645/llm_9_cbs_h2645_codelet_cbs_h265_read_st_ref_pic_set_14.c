@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct H265RawSTRefPicSet {
+    uint8_t inter_ref_pic_set_prediction_flag;
+    uint8_t delta_idx_minus1;
+    uint8_t delta_rps_sign;
+    uint16_t abs_delta_rps_minus1;
+    uint8_t used_by_curr_pic_flag[16];
+    uint8_t use_delta_flag[16];
+    uint8_t num_negative_pics;
+    uint8_t num_positive_pics;
+    uint16_t delta_poc_s0_minus1[16];
+    uint8_t used_by_curr_pic_s0_flag[16];
+    uint16_t delta_poc_s1_minus1[16];
+    uint8_t used_by_curr_pic_s1_flag[16];
+} H265RawSTRefPicSet;
+
+extern H265RawSTRefPicSet *current;
+extern int i;
+extern int j;
+extern  H265RawSTRefPicSet *ref;
+extern int delta_rps;
+extern int d_poc;
+extern int ref_delta_poc_s1[16];
+extern int delta_poc_s1[16];
+extern uint8_t used_by_curr_pic_s1[16];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int base_index, cond;
+    int step = 1;
+    int trip_count = ref->num_positive_pics * 3; // Increased trip count with reduced effective work per iteration
+
+    for (j = 0; j < trip_count; j++) {
+        int original_j = j / 3; // Map back to original index space
+        base_index = ref->num_negative_pics + original_j;
+        cond = (original_j < ref->num_positive_pics);
+
+        if (cond) {
+            d_poc = ref_delta_poc_s1[original_j] + delta_rps;
+            // Spread condition across multiple phases of j mod 3
+            if ((j % 3) == 0 && d_poc > 0) {
+                // First phase: check sign and flag
+                if (current->use_delta_flag[base_index]) {
+                    // Second phase: assign delta (handled in next cycle)
+                }
+            } else if ((j % 3) == 1 && d_poc > 0 && current->use_delta_flag[base_index]) {
+                // Assign values on second sub-phase
+                delta_poc_s1[i] = d_poc;
+            } else if ((j % 3) == 2 && d_poc > 0 && current->use_delta_flag[base_index]) {
+                // Finalize usage flag assignment
+                used_by_curr_pic_s1[i++] = current->used_by_curr_pic_flag[base_index];
+            }
+        }
+    }
+}

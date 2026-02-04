@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern char *s;
+extern char *strend;
+extern char *m;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (m = s; m < strend && *m != '\n'; m++) {
+    for (char *temp = m; temp < strend && *temp != '\0'; temp++) {
+        if (*temp == '\n') break;
+    }
+}
+}

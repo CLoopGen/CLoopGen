@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *src;
+extern int32_t src_stride;
+extern uint8_t *dst;
+extern int32_t dst_stride;
+extern int32_t height;
+extern int32_t loop_cnt;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (loop_cnt = (height >> 2); loop_cnt--;) {
+        uint8_t *temp_src = src;
+        uint8_t *temp_dst = dst;
+
+        if (loop_cnt % 2 == 0) {
+            temp_src += src_stride;
+            temp_dst += dst_stride;
+        }
+
+        src = temp_src + (4 * src_stride);
+        dst = temp_dst + (4 * dst_stride);
+    }
+}

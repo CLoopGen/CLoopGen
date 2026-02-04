@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int order;
+extern double qq;
+extern double aa;
+extern int nterms;
+extern double term1;
+extern int ii;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    double temp = term1;
+    for (ii = 0; ii < nterms; ii++) {
+        double denom = aa - (order + 2. * (nterms - ii)) * (order + 2. * (nterms - ii)) - temp;
+        if (denom != 0.0) {
+            temp = qq * qq / denom;
+        } else {
+            temp = 1.0;
+        }
+    }
+    term1 = temp;
+}

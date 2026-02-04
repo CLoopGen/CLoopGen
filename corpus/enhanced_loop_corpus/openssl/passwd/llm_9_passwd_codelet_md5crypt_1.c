@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern  unsigned char cov_2char[64];
+extern unsigned int i;
+extern unsigned char buf_perm[16];
+extern char *output;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 12; i += 4) {
+        *output++ = cov_2char[buf_perm[i + 2] & 63];
+        *output++ = cov_2char[((buf_perm[i + 1] & 15) << 2) | (buf_perm[i + 2] >> 6)];
+        *output++ = cov_2char[((buf_perm[i] & 3) << 4) | (buf_perm[i + 1] >> 4)];
+        *output++ = cov_2char[buf_perm[i] >> 2];
+        
+        *output++ = cov_2char[buf_perm[i + 3] & 63];
+        *output++ = cov_2char[((buf_perm[i + 2] & 15) << 2) | (buf_perm[i + 3] >> 6)];
+        *output++ = cov_2char[((buf_perm[i + 1] & 3) << 4) | (buf_perm[i + 2] >> 4)];
+        *output++ = cov_2char[buf_perm[i + 1] >> 2];
+    }
+}

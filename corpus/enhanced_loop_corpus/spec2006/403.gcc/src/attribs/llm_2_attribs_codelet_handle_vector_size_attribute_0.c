@@ -1,0 +1,116 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+enum mode_class {
+    MODE_RANDOM,
+    MODE_INT,
+    MODE_FLOAT,
+    MODE_PARTIAL_INT,
+    MODE_CC,
+    MODE_COMPLEX_INT,
+    MODE_COMPLEX_FLOAT,
+    MODE_VECTOR_INT,
+    MODE_VECTOR_FLOAT,
+    MAX_MODE_CLASS
+};
+
+
+enum machine_mode {
+    VOIDmode,
+    BImode,
+    QImode,
+    HImode,
+    SImode,
+    DImode,
+    TImode,
+    OImode,
+    PQImode,
+    PHImode,
+    PSImode,
+    PDImode,
+    QFmode,
+    HFmode,
+    TQFmode,
+    SFmode,
+    DFmode,
+    XFmode,
+    TFmode,
+    QCmode,
+    HCmode,
+    SCmode,
+    DCmode,
+    XCmode,
+    TCmode,
+    CQImode,
+    CHImode,
+    CSImode,
+    CDImode,
+    CTImode,
+    COImode,
+    V2QImode,
+    V2HImode,
+    V2SImode,
+    V2DImode,
+    V4QImode,
+    V4HImode,
+    V4SImode,
+    V4DImode,
+    V8QImode,
+    V8HImode,
+    V8SImode,
+    V8DImode,
+    V16QImode,
+    V2SFmode,
+    V2DFmode,
+    V4SFmode,
+    V4DFmode,
+    V8SFmode,
+    V8DFmode,
+    V16SFmode,
+    BLKmode,
+    CCmode,
+    CCGCmode,
+    CCGOCmode,
+    CCNOmode,
+    CCZmode,
+    CCFPmode,
+    CCFPUmode,
+    MAX_MACHINE_MODE
+};
+
+
+extern const enum mode_class mode_class[59];
+extern const unsigned char mode_size[59];
+extern const unsigned char mode_unit_size[59];
+extern const unsigned char mode_wider_mode[59];
+extern const enum machine_mode class_narrowest_mode[9];
+extern unsigned long vecsize;
+extern unsigned long nunits;
+extern enum machine_mode mode;
+extern enum machine_mode orig_mode;
+extern enum machine_mode new_mode;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Consecutive memory access pattern using pointer arithmetic
+    const enum mode_class *p_mode_class = mode_class;
+    const unsigned char *p_mode_size = mode_size;
+    const unsigned char *p_mode_unit_size = mode_unit_size;
+    const unsigned char *p_mode_wider = mode_wider_mode;
+    
+    enum machine_mode narrowest = class_narrowest_mode[(int)((p_mode_class[(int)(orig_mode)]) == MODE_INT ? MODE_VECTOR_INT : MODE_VECTOR_FLOAT)];
+    enum machine_mode current = narrowest;
+    
+    for (mode = current; mode != VOIDmode; mode = ((enum machine_mode)p_mode_wider[(int)(mode)])) {
+        unsigned long unit_size_val = p_mode_unit_size[(int)(mode)];
+        unsigned long total_size = p_mode_size[(int)(mode)];
+        if (vecsize == total_size && nunits == (unsigned long)((unit_size_val == 0) ? 0 : (total_size / unit_size_val))) {
+            new_mode = mode;
+            break;
+        }
+    }
+}

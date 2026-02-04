@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef struct {
+    int l[22];
+    int s[13][3];
+} III_scalefac_t;
+
+extern III_scalefac_t *scalefac;
+extern int sfb;
+extern int max_slen1;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Consecutive reverse-order traversal (backward iteration)
+    for (sfb = 10; sfb >= 0; sfb--) {
+        if (scalefac->l[sfb] > max_slen1)
+            max_slen1 = scalefac->l[sfb];
+    }
+}

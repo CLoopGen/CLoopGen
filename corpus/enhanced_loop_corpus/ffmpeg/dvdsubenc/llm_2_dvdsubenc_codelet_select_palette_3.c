@@ -1,0 +1,132 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+enum AVOptionType {
+    AV_OPT_TYPE_FLAGS,
+    AV_OPT_TYPE_INT,
+    AV_OPT_TYPE_INT64,
+    AV_OPT_TYPE_DOUBLE,
+    AV_OPT_TYPE_FLOAT,
+    AV_OPT_TYPE_STRING,
+    AV_OPT_TYPE_RATIONAL,
+    AV_OPT_TYPE_BINARY,
+    AV_OPT_TYPE_DICT,
+    AV_OPT_TYPE_UINT64,
+    AV_OPT_TYPE_CONST,
+    AV_OPT_TYPE_IMAGE_SIZE,
+    AV_OPT_TYPE_PIXEL_FMT,
+    AV_OPT_TYPE_SAMPLE_FMT,
+    AV_OPT_TYPE_VIDEO_RATE,
+    AV_OPT_TYPE_DURATION,
+    AV_OPT_TYPE_COLOR,
+    AV_OPT_TYPE_CHANNEL_LAYOUT,
+    AV_OPT_TYPE_BOOL
+};
+
+
+typedef struct AVRational {
+    int num;
+    int den;
+} AVRational;
+
+union {
+    int64_t i64;
+    double dbl;
+    const char *str;
+    AVRational q;
+};
+
+
+struct AVOption {
+    const char *name;
+    const char *help;
+    int offset;
+    enum AVOptionType type;
+    union {
+        int64_t i64;
+        double dbl;
+        const char *str;
+        AVRational q;
+    } default_val;
+    double min;
+    double max;
+    int flags;
+    const char *unit;
+};
+
+
+typedef enum {
+    AV_CLASS_CATEGORY_NA = 0,
+    AV_CLASS_CATEGORY_INPUT,
+    AV_CLASS_CATEGORY_OUTPUT,
+    AV_CLASS_CATEGORY_MUXER,
+    AV_CLASS_CATEGORY_DEMUXER,
+    AV_CLASS_CATEGORY_ENCODER,
+    AV_CLASS_CATEGORY_DECODER,
+    AV_CLASS_CATEGORY_FILTER,
+    AV_CLASS_CATEGORY_BITSTREAM_FILTER,
+    AV_CLASS_CATEGORY_SWSCALER,
+    AV_CLASS_CATEGORY_SWRESAMPLER,
+    AV_CLASS_CATEGORY_DEVICE_VIDEO_OUTPUT = 40,
+    AV_CLASS_CATEGORY_DEVICE_VIDEO_INPUT,
+    AV_CLASS_CATEGORY_DEVICE_AUDIO_OUTPUT,
+    AV_CLASS_CATEGORY_DEVICE_AUDIO_INPUT,
+    AV_CLASS_CATEGORY_DEVICE_OUTPUT,
+    AV_CLASS_CATEGORY_DEVICE_INPUT,
+    AV_CLASS_CATEGORY_NB
+} AVClassCategory;
+
+typedef struct AVClass {
+    const char *class_name;
+    const char *(*item_name)(void *);
+    const struct AVOption *option;
+    int version;
+    int log_level_offset_offset;
+    int parent_log_context_offset;
+    void *(*child_next)(void *, void *);
+    const struct AVClass *(*child_class_next)(const struct AVClass *);
+    AVClassCategory category;
+    AVClassCategory (*get_category)(void *);
+    int (*query_ranges)(struct AVOptionRanges **, void *, const char *, int);
+} AVClass;
+
+typedef struct {
+    AVClass *class;
+    uint32_t global_palette[16];
+    char *palette_str;
+    int even_rows_fix;
+} DVDSubtitleContext;
+
+extern unsigned int hits[33];
+extern DVDSubtitleContext *dvdc;
+extern int i;
+extern int j;
+extern int bright;
+extern int mult;
+extern uint32_t color;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Consecutive memory access with array base offset
+    uint32_t *palette = dvdc->global_palette;
+    unsigned int *hit_base1 = &hits[1];
+    unsigned int *hit_base17 = &hits[17];
+    
+    for (i = 0; i < 16; i++) {
+        if (!(hit_base1[i] + hit_base17[i]))
+            continue;
+        color = palette[i];
+        bright = 0;
+        for (j = 0; j < 3; j++, color >>= 8)
+            bright += (color & 255) < 64 || (color & 255) >= 192;
+        mult = 2 + ((bright > 2) ? 2 : bright);
+        hit_base1[i] *= mult;
+        hit_base17[i] *= mult;
+    }
+}

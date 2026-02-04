@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern char *s;
+extern char *strend;
+extern char *m;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided memory access (access every 2nd character)
+    for (m = s; m < strend && (m + 1) < strend && *m != '\n'; m += 2)
+        ;
+}

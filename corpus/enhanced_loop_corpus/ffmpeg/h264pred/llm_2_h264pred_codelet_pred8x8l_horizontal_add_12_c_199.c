@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern ptrdiff_t stride;
+extern int i;
+extern uint16_t *pix;
+extern  int32_t *block;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < 8; i++) {
+    uint16_t v = pix[-1];
+    ptrdiff_t idx = 0;
+    v += block[idx];
+    pix[idx++] = v;
+    v += block[idx];
+    pix[idx++] = v;
+    v += block[idx];
+    pix[idx++] = v;
+    v += block[idx];
+    pix[idx++] = v;
+    v += block[idx];
+    pix[idx++] = v;
+    v += block[idx];
+    pix[idx++] = v;
+    v += block[idx];
+    pix[idx++] = v;
+    v += block[idx];
+    pix[idx] = v;
+    pix += stride;
+    block += 8;
+}
+}

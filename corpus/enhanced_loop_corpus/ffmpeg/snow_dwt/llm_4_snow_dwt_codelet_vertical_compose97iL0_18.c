@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef short IDWTELEM;
+
+extern IDWTELEM *b0;
+extern IDWTELEM *b1;
+extern IDWTELEM *b2;
+extern int width;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    if (width <= 0) return;
+    for (i = 0; i < width; i++) {
+        IDWTELEM temp = b0[i] + b2[i];
+        b1[i] += (temp + (temp << 2) + 8) >> 4;
+    }
+}

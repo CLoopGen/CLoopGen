@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef union __attribute__((may_alias)) {
+    uint32_t u32;
+    uint16_t u16[2];
+    uint8_t u8[4];
+    float f32;
+} av_alias32;
+
+extern int i;
+extern uint8_t *src;
+extern int stride;
+extern  uint32_t a;
+extern  uint32_t b;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    uint32_t temp_a = a;
+    uint32_t temp_b = b;
+    for (i = 0; i < 16; i++) {
+        (((av_alias32 *)(((uint32_t *)(src + i * stride)) + 0))->u32 = temp_a);
+        temp_a = temp_b; // Introduce RAW dependency: current iteration depends on previous temp_b
+        (((av_alias32 *)(((uint32_t *)(src + i * stride)) + 1))->u32 = temp_b);
+        temp_b = temp_a ^ 0x12345678; // Create WAW and WAR hazard chain via temp_b update
+    }
+}

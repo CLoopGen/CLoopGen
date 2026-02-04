@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int i;
+extern int N;
+extern int *aindex;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 1; i < N * 2; i++) {
+        aindex[i % N] = (i - 1) * 2 + 3;
+    }
+}

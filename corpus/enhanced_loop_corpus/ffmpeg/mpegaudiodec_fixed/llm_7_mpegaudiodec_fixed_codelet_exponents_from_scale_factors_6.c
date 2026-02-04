@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct GranuleDef {
+    uint8_t scfsi;
+    int part2_3_length;
+    int big_values;
+    int global_gain;
+    int scalefac_compress;
+    uint8_t block_type;
+    uint8_t switch_point;
+    int table_select[3];
+    int subblock_gain[3];
+    uint8_t scalefac_scale;
+    uint8_t count1table_select;
+    int region_size[3];
+    int preflag;
+    int short_start;
+    int long_end;
+    uint8_t scale_factors[40];
+    int sb_hybrid[576] __attribute__((aligned(16)));
+} GranuleDef;
+
+extern GranuleDef *g;
+extern  uint8_t *bstab;
+extern int len;
+extern int i;
+extern int j;
+extern int k;
+extern int l;
+extern int v0;
+extern int shift;
+extern int gains[3];
+extern int16_t *exp_ptr;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int local_k = k;
+    for (i = g->short_start; i < 13; i++) {
+        len = bstab[i];
+        for (l = 0; l < 3; l++) {
+            int scaled_sf = g->scale_factors[local_k++] << shift;
+            v0 = gains[l] - scaled_sf + 400;
+            // Remove immediate data dependency of exp_ptr update on prior writes
+            int16_t* local_exp_ptr = exp_ptr;
+            for (j = len; j > 0; j--) {
+                *local_exp_ptr++ = v0;
+            }
+            exp_ptr = local_exp_ptr; // Update only once per inner loop
+        }
+    }
+    k = local_k; // Single write to k at end (eliminates loop-carried WAW on k)
+}

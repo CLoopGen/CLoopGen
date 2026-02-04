@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef enum {
+    FALSE,
+    TRUE
+} Boolean;
+
+extern Boolean PictureRejected[21];
+extern double PictureMAD[21];
+extern double ReferenceMAD[21];
+extern int n_windowSize;
+extern int i;
+extern double a00;
+extern double a01;
+extern double a10;
+extern double a11;
+extern double b0;
+extern double b1;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided memory access with stride of 2
+    for (i = 0; i < n_windowSize; i += 2) {
+        if (!PictureRejected[i]) {
+            a00 = a00 + 1.;
+            a01 += ReferenceMAD[i];
+            a10 = a01;
+            a11 += ReferenceMAD[i] * ReferenceMAD[i];
+            b0 += PictureMAD[i];
+            b1 += PictureMAD[i] * ReferenceMAD[i];
+        }
+        // Handle next element in bounds
+        if (i + 1 < n_windowSize && !PictureRejected[i + 1]) {
+            a00 = a00 + 1.;
+            a01 += ReferenceMAD[i + 1];
+            a10 = a01;
+            a11 += ReferenceMAD[i + 1] * ReferenceMAD[i + 1];
+            b0 += PictureMAD[i + 1];
+            b1 += PictureMAD[i + 1] * ReferenceMAD[i + 1];
+        }
+    }
+}

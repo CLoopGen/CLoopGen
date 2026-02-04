@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef unsigned char UINT8;
+
+extern  UINT8 *bits;
+extern int nsymbols;
+extern int len;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (int depth = 1; depth <= 16; depth++) {
+        for (len = 1; len <= depth; len++)
+            nsymbols += bits[len];
+    }
+}

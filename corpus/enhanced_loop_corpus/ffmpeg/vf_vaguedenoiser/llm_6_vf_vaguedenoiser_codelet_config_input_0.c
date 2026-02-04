@@ -1,0 +1,155 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+enum AVOptionType {
+    AV_OPT_TYPE_FLAGS,
+    AV_OPT_TYPE_INT,
+    AV_OPT_TYPE_INT64,
+    AV_OPT_TYPE_DOUBLE,
+    AV_OPT_TYPE_FLOAT,
+    AV_OPT_TYPE_STRING,
+    AV_OPT_TYPE_RATIONAL,
+    AV_OPT_TYPE_BINARY,
+    AV_OPT_TYPE_DICT,
+    AV_OPT_TYPE_UINT64,
+    AV_OPT_TYPE_CONST,
+    AV_OPT_TYPE_IMAGE_SIZE,
+    AV_OPT_TYPE_PIXEL_FMT,
+    AV_OPT_TYPE_SAMPLE_FMT,
+    AV_OPT_TYPE_VIDEO_RATE,
+    AV_OPT_TYPE_DURATION,
+    AV_OPT_TYPE_COLOR,
+    AV_OPT_TYPE_CHANNEL_LAYOUT,
+    AV_OPT_TYPE_BOOL
+};
+
+
+typedef struct AVRational {
+    int num;
+    int den;
+} AVRational;
+
+union {
+    int64_t i64;
+    double dbl;
+    const char *str;
+    AVRational q;
+};
+
+
+struct AVOption {
+    const char *name;
+    const char *help;
+    int offset;
+    enum AVOptionType type;
+    union {
+        int64_t i64;
+        double dbl;
+        const char *str;
+        AVRational q;
+    } default_val;
+    double min;
+    double max;
+    int flags;
+    const char *unit;
+};
+
+
+typedef enum {
+    AV_CLASS_CATEGORY_NA = 0,
+    AV_CLASS_CATEGORY_INPUT,
+    AV_CLASS_CATEGORY_OUTPUT,
+    AV_CLASS_CATEGORY_MUXER,
+    AV_CLASS_CATEGORY_DEMUXER,
+    AV_CLASS_CATEGORY_ENCODER,
+    AV_CLASS_CATEGORY_DECODER,
+    AV_CLASS_CATEGORY_FILTER,
+    AV_CLASS_CATEGORY_BITSTREAM_FILTER,
+    AV_CLASS_CATEGORY_SWSCALER,
+    AV_CLASS_CATEGORY_SWRESAMPLER,
+    AV_CLASS_CATEGORY_DEVICE_VIDEO_OUTPUT = 40,
+    AV_CLASS_CATEGORY_DEVICE_VIDEO_INPUT,
+    AV_CLASS_CATEGORY_DEVICE_AUDIO_OUTPUT,
+    AV_CLASS_CATEGORY_DEVICE_AUDIO_INPUT,
+    AV_CLASS_CATEGORY_DEVICE_OUTPUT,
+    AV_CLASS_CATEGORY_DEVICE_INPUT,
+    AV_CLASS_CATEGORY_NB
+} AVClassCategory;
+
+typedef struct AVClass {
+    const char *class_name;
+    const char *(*item_name)(void *);
+    const struct AVOption *option;
+    int version;
+    int log_level_offset_offset;
+    int parent_log_context_offset;
+    void *(*child_next)(void *, void *);
+    const struct AVClass *(*child_class_next)(const struct AVClass *);
+    AVClassCategory category;
+    AVClassCategory (*get_category)(void *);
+    int (*query_ranges)(struct AVOptionRanges **, void *, const char *, int);
+} AVClass;
+
+typedef struct VagueDenoiserContext {
+    const AVClass *class;
+    float threshold;
+    float percent;
+    int method;
+    int type;
+    int nsteps;
+    int planes;
+    int depth;
+    int bpc;
+    int peak;
+    int nb_planes;
+    int planeheight[4];
+    int planewidth[4];
+    float *block;
+    float *in;
+    float *out;
+    float *tmp;
+    int hlowsize[4][32];
+    int hhighsize[4][32];
+    int vlowsize[4][32];
+    int vhighsize[4][32];
+    void (*thresholding)(float *, const int, const int, const int, const float, const float);
+} VagueDenoiserContext;
+
+extern VagueDenoiserContext *s;
+extern int p;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (p = 0; p < 4; p++) {
+    int hlow_prev, hhigh_prev, vlow_prev, vhigh_prev;
+    s->hlowsize[p][0] = (s->planewidth[p] + 1) >> 1;
+    s->hhighsize[p][0] = s->planewidth[p] >> 1;
+    s->vlowsize[p][0] = (s->planeheight[p] + 1) >> 1;
+    s->vhighsize[p][0] = s->planeheight[p] >> 1;
+    hlow_prev = s->hlowsize[p][0];
+    hhigh_prev = s->hhighsize[p][0];
+    vlow_prev = s->vlowsize[p][0];
+    vhigh_prev = s->vhighsize[p][0];
+    for (i = 1; i < s->nsteps; i++) {
+        int new_hlow = (hlow_prev + 1) >> 1;
+        int new_hhigh = hlow_prev >> 1;
+        int new_vlow = (vlow_prev + 1) >> 1;
+        int new_vhigh = vlow_prev >> 1;
+        s->hlowsize[p][i] = new_hlow;
+        s->hhighsize[p][i] = new_hhigh;
+        s->vlowsize[p][i] = new_vlow;
+        s->vhighsize[p][i] = new_vhigh;
+        hlow_prev = new_hlow;
+        hhigh_prev = new_hhigh;
+        vlow_prev = new_vlow;
+        vhigh_prev = new_vhigh;
+    }
+}
+}

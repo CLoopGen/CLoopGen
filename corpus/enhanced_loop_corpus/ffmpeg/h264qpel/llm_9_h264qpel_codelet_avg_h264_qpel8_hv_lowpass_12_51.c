@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int32_t *tmp;
+extern int tmpStride;
+extern int srcStride;
+extern  int h;
+extern  int pad;
+extern int i;
+extern  uint16_t *src;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < h + 7; i++) {
+    tmp[0] = (src[0] + src[1]) * 25 - (src[-1] + src[2]) * 8 + (src[-2] + src[3]) * 2 + pad;
+    tmp[1] = (src[1] + src[2]) * 25 - (src[0] + src[3]) * 8 + (src[-1] + src[4]) * 2 + pad;
+    tmp[2] = (src[2] + src[3]) * 25 - (src[1] + src[4]) * 8 + (src[0] + src[5]) * 2 + pad;
+    tmp[3] = (src[3] + src[4]) * 25 - (src[2] + src[5]) * 8 + (src[1] + src[6]) * 2 + pad;
+    tmp[4] = (src[4] + src[5]) * 25 - (src[3] + src[6]) * 8 + (src[2] + src[7]) * 2 + pad;
+    tmp[5] = (src[5] + src[6]) * 25 - (src[4] + src[7]) * 8 + (src[3] + src[8]) * 2 + pad;
+    tmp[6] = (src[6] + src[7]) * 25 - (src[5] + src[8]) * 8 + (src[4] + src[9]) * 2 + pad;
+    tmp[7] = (src[7] + src[8]) * 25 - (src[6] + src[9]) * 8 + (src[5] + src[10]) * 2 + pad;
+    tmp[8] = (src[8] + src[9]) * 25 - (src[7] + src[10]) * 8 + (src[6] + src[11]) * 2 + pad;
+    tmp[9] = (src[9] + src[10]) * 25 - (src[8] + src[11]) * 8 + (src[7] + src[12]) * 2 + pad;
+    tmp += tmpStride;
+    src += srcStride;
+}
+}

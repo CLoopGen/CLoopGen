@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct GXFStreamContext {
+    int64_t pkt_cnt;
+    uint32_t track_type;
+    uint32_t sample_size;
+    uint32_t sample_rate;
+    uint16_t media_type;
+    uint16_t media_info;
+    int frame_rate_index;
+    int lines_index;
+    int fields;
+    int iframes;
+    int pframes;
+    int bframes;
+    int p_per_gop;
+    int b_per_i_or_p;
+    int first_gop_closed;
+    unsigned int order;
+} GXFStreamContext;
+
+extern GXFStreamContext *sc;
+extern  uint8_t *buf;
+extern int size;
+extern uint32_t c;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop() {
+    // Variant 1: Strided memory access (stride of 2) with bounds adjustment
+    uint32_t local_c = c;
+    int local_size = size - 4;
+    for (i = 0; i < local_size && local_c != 256; i += 2) {
+        // Process two bytes in a strided manner, simulate staggered accumulation
+        if (i + 1 < local_size) {
+            local_c = (local_c << 16) | (buf[i] << 8) | buf[i + 1];
+        } else {
+            local_c = (local_c << 8) | buf[i];
+        }
+        // Check for pattern match at adjusted position due to stride
+        if (i + 4 < size && local_c == 440 && sc->first_gop_closed == -1)
+            sc->first_gop_closed = (buf[i + 4] >> 6) & 1;
+    }
+    c = local_c;
+}

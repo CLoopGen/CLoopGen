@@ -1,0 +1,89 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef long INT32;
+
+typedef short JCOEF;
+
+typedef JCOEF *JCOEFPTR;
+
+typedef int ISLOW_MULT_TYPE;
+
+extern INT32 tmp10;
+extern INT32 tmp11;
+extern INT32 tmp12;
+extern INT32 tmp13;
+extern INT32 tmp14;
+extern INT32 tmp20;
+extern INT32 tmp21;
+extern INT32 tmp22;
+extern INT32 tmp23;
+extern INT32 tmp24;
+extern INT32 z1;
+extern INT32 z2;
+extern INT32 z3;
+extern INT32 z4;
+extern INT32 z5;
+extern JCOEFPTR inptr;
+extern ISLOW_MULT_TYPE *quantptr;
+extern int *wsptr;
+extern int ctr;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (ctr = 0; ctr < 1; ctr++) {
+    for (int inner = 0; inner < 5; inner++) {
+        z3 = (((ISLOW_MULT_TYPE)(inptr[inner + 8 * 0])) * (quantptr[inner + 8 * 0]));
+        z3 <<= 13;
+        z3 += ((INT32)1) << (13 - 2 - 1);
+        z4 = (((ISLOW_MULT_TYPE)(inptr[inner + 8 * 4])) * (quantptr[inner + 8 * 4]));
+        z1 = ((z4) * (((INT32)((1.1441228059999999) * (((INT32)1) << 13) + 0.5))));
+        z2 = ((z4) * (((INT32)((0.437016024) * (((INT32)1) << 13) + 0.5))));
+        tmp10 = z3 + z1;
+        tmp11 = z3 - z2;
+        tmp22 = ((z3 - ((z1 - z2) << 1)) >> (13 - 2));
+        z2 = (((ISLOW_MULT_TYPE)(inptr[inner + 8 * 2])) * (quantptr[inner + 8 * 2]));
+        z3 = (((ISLOW_MULT_TYPE)(inptr[inner + 8 * 6])) * (quantptr[inner + 8 * 6]));
+        z1 = ((z2 + z3) * (((INT32)((0.831253876) * (((INT32)1) << 13) + 0.5))));
+        tmp12 = z1 + ((z2) * (((INT32)((0.51374314799999998) * (((INT32)1) << 13) + 0.5))));
+        tmp13 = z1 - ((z3) * (((INT32)((2.1762508989999998) * (((INT32)1) << 13) + 0.5))));
+        tmp20 = tmp10 + tmp12;
+        tmp24 = tmp10 - tmp12;
+        tmp21 = tmp11 + tmp13;
+        tmp23 = tmp11 - tmp13;
+        z1 = (((ISLOW_MULT_TYPE)(inptr[inner + 8 * 1])) * (quantptr[inner + 8 * 1]));
+        z2 = (((ISLOW_MULT_TYPE)(inptr[inner + 8 * 3])) * (quantptr[inner + 8 * 3]));
+        z3 = (((ISLOW_MULT_TYPE)(inptr[inner + 8 * 5])) * (quantptr[inner + 8 * 5]));
+        z4 = (((ISLOW_MULT_TYPE)(inptr[inner + 8 * 7])) * (quantptr[inner + 8 * 7]));
+        tmp11 = z2 + z4;
+        tmp13 = z2 - z4;
+        tmp12 = ((tmp13) * (((INT32)((0.30901699399999999) * (((INT32)1) << 13) + 0.5))));
+        z5 = z3 << 13;
+        z2 = ((tmp11) * (((INT32)((0.95105651599999996) * (((INT32)1) << 13) + 0.5))));
+        z4 = z5 + tmp12;
+        tmp10 = ((z1) * (((INT32)((1.3968022470000001) * (((INT32)1) << 13) + 0.5)))) + z2 + z4;
+        tmp14 = ((z1) * (((INT32)((0.22123174200000001) * (((INT32)1) << 13) + 0.5)))) - z2 + z4;
+        z2 = ((tmp11) * (((INT32)((0.58778525199999998) * (((INT32)1) << 13) + 0.5))));
+        z4 = z5 - tmp12 - (tmp13 << (13 - 1));
+        tmp12 = (z1 - tmp13 - z3) << 2;
+        tmp11 = ((z1) * (((INT32)((1.2600735110000001) * (((INT32)1) << 13) + 0.5)))) - z2 - z4;
+        tmp13 = ((z1) * (((INT32)((0.64203952200000003) * (((INT32)1) << 13) + 0.5)))) - z2 + z4;
+        wsptr[5 * 0 + inner] = (int)((tmp20 + tmp10) >> (13 - 2));
+        wsptr[5 * 9 - inner] = (int)((tmp20 - tmp10) >> (13 - 2));
+        wsptr[5 * 1 + inner] = (int)((tmp21 + tmp11) >> (13 - 2));
+        wsptr[5 * 8 - inner] = (int)((tmp21 - tmp11) >> (13 - 2));
+        wsptr[5 * 2 + inner] = (int)(tmp22 + tmp12);
+        wsptr[5 * 7 - inner] = (int)(tmp22 - tmp12);
+        wsptr[5 * 3 + inner] = (int)((tmp23 + tmp13) >> (13 - 2));
+        wsptr[5 * 6 - inner] = (int)((tmp23 - tmp13) >> (13 - 2));
+        wsptr[5 * 4 + inner] = (int)((tmp24 + tmp14) >> (13 - 2));
+        wsptr[5 * 5 - inner] = (int)((tmp24 - tmp14) >> (13 - 2));
+    }
+}
+}

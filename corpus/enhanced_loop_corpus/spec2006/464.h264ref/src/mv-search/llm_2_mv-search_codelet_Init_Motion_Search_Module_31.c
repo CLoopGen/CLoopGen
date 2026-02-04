@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int *mvbits;
+extern int bits;
+extern int i;
+extern int imin;
+extern int imax;
+extern int max_mv_bits;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int *base = mvbits;
+    for (bits = 3; bits <= max_mv_bits; bits += 2) {
+        imax = 1 << (bits >> 1);
+        imin = imax >> 1;
+        int stride = 2;
+        for (i = imin; i < imax; i += stride) {
+            if (i + 1 < imax) {
+                base[-(i+1)] = bits;
+                base[i+1] = bits;
+            }
+            base[-i] = bits;
+            base[i] = bits;
+        }
+    }
+}

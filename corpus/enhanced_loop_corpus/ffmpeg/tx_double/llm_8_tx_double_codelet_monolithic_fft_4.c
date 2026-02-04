@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct AVComplexDouble {
+    double re;
+    double im;
+} AVComplexDouble;
+
+typedef AVComplexDouble FFTComplex;
+
+struct AVTXContext {
+    int n;
+    int m;
+    int inv;
+    int type;
+    FFTComplex *exptab;
+    FFTComplex *tmp;
+    int *pfatab;
+    int *revtab;
+};
+
+
+typedef struct AVTXContext AVTXContext;
+
+extern AVTXContext *s;
+extern FFTComplex *in;
+extern FFTComplex *out;
+extern int m;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int n = s->n;
+    for (int i = 0; i < m; i += 2) {
+        if (i + 1 < m) {
+            out[s->revtab[i]]     = in[i];
+            out[s->revtab[i + 1]] = in[i + 1];
+        } else {
+            out[s->revtab[i]] = in[i];
+        }
+    }
+}

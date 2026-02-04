@@ -1,0 +1,71 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+struct Decorr {
+    int delta;
+    int value;
+    int weightA;
+    int weightB;
+    int samplesA[8];
+    int samplesB[8];
+    int sumA;
+    int sumB;
+};
+
+
+extern int32_t *in_left;
+extern int32_t *in_right;
+extern int32_t *out_left;
+extern int32_t *out_right;
+extern int nb_samples;
+extern struct Decorr *dpp;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Deeply nested loop structure with partitioning of work
+    int chunk_size = 4;
+    for (int outer = 0; outer < (nb_samples + chunk_size - 1) / chunk_size; outer++) {
+        for (int inner = 0; inner < chunk_size; inner++) {
+            i = outer * chunk_size + inner;
+            if (i >= nb_samples) break;
+            int32_t sam_A, sam_B, tmp;
+            sam_A = dpp->samplesA[0];
+            sam_B = dpp->samplesB[0];
+            dpp->samplesA[0] = tmp = in_right[i];
+            out_right[i] = tmp -= (((dpp->weightB) * (sam_B) + 512) >> 10);
+            if ((sam_B) && (tmp)) {
+                if (((sam_B) ^ (tmp)) < 0) {
+                    (dpp->weightB) -= (dpp->delta);
+                    if ((dpp->weightB) < -1024)
+                        (dpp->weightB) = -1024;
+                } else {
+                    (dpp->weightB) += (dpp->delta);
+                    if ((dpp->weightB) > 1024)
+                        (dpp->weightB) = 1024;
+                }
+            }
+            ;
+            dpp->samplesB[0] = tmp = in_left[i];
+            out_left[i] = tmp -= (((dpp->weightA) * (sam_A) + 512) >> 10);
+            if ((sam_A) && (tmp)) {
+                if (((sam_A) ^ (tmp)) < 0) {
+                    (dpp->weightA) -= (dpp->delta);
+                    if ((dpp->weightA) < -1024)
+                        (dpp->weightA) = -1024;
+                } else {
+                    (dpp->weightA) += (dpp->delta);
+                    if ((dpp->weightA) > 1024)
+                        (dpp->weightA) = 1024;
+                }
+            }
+            ;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+struct Decorr {
+    int delta;
+    int value;
+    int weightA;
+    int weightB;
+    int samplesA[8];
+    int samplesB[8];
+    int sumA;
+    int sumB;
+};
+
+
+extern struct Decorr *dpp;
+extern int32_t *samples_l;
+extern int32_t *samples_r;
+extern int nb_samples;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < nb_samples; i += 2) {
+        int32_t sam, tmp;
+        // Strided access: process every second element in samples_l and samples_r
+        if (i + 1 < nb_samples) {
+            // Process even index first
+            sam = dpp->samplesA[0] + ((dpp->samplesA[0] - dpp->samplesA[1]) >> 1);
+            dpp->samplesA[1] = dpp->samplesA[0];
+            samples_l[i] = tmp = (dpp->samplesA[0] = samples_l[i]) - (((dpp->weightA) * (sam) + 512) >> 10);
+            if (sam && tmp)
+                dpp->weightA -= (((sam ^ tmp) >> 29) & 4) - 2;
+
+            // Update prediction history for next iteration (for i+1)
+            int32_t sam_next = dpp->samplesA[0] + ((dpp->samplesA[0] - dpp->samplesA[1]) >> 1);
+            dpp->samplesA[1] = dpp->samplesA[0];
+            samples_l[i+1] = tmp = (dpp->samplesA[0] = samples_l[i+1]) - (((dpp->weightA) * (sam_next) + 512) >> 10);
+            if (sam_next && tmp)
+                dpp->weightA -= (((sam_next ^ tmp) >> 29) & 4) - 2;
+
+            // Same for right channel
+            sam = dpp->samplesB[0] + ((dpp->samplesB[0] - dpp->samplesB[1]) >> 1);
+            dpp->samplesB[1] = dpp->samplesB[0];
+            samples_r[i] = tmp = (dpp->samplesB[0] = samples_r[i]) - (((dpp->weightB) * (sam) + 512) >> 10);
+            if (sam && tmp)
+                dpp->weightB -= (((sam ^ tmp) >> 29) & 4) - 2;
+
+            sam_next = dpp->samplesB[0] + ((dpp->samplesB[0] - dpp->samplesB[1]) >> 1);
+            dpp->samplesB[1] = dpp->samplesB[0];
+            samples_r[i+1] = tmp = (dpp->samplesB[0] = samples_r[i+1]) - (((dpp->weightB) * (sam_next) + 512) >> 10);
+            if (sam_next && tmp)
+                dpp->weightB -= (((sam_next ^ tmp) >> 29) & 4) - 2;
+        } else {
+            // Handle last odd element if exists
+            sam = dpp->samplesA[0] + ((dpp->samplesA[0] - dpp->samplesA[1]) >> 1);
+            dpp->samplesA[1] = dpp->samplesA[0];
+            samples_l[i] = tmp = (dpp->samplesA[0] = samples_l[i]) - (((dpp->weightA) * (sam) + 512) >> 10);
+            if (sam && tmp)
+                dpp->weightA -= (((sam ^ tmp) >> 29) & 4) - 2;
+
+            sam = dpp->samplesB[0] + ((dpp->samplesB[0] - dpp->samplesB[1]) >> 1);
+            dpp->samplesB[1] = dpp->samplesB[0];
+            samples_r[i] = tmp = (dpp->samplesB[0] = samples_r[i]) - (((dpp->weightB) * (sam) + 512) >> 10);
+            if (sam && tmp)
+                dpp->weightB -= (((sam ^ tmp) >> 29) & 4) - 2;
+        }
+    }
+}

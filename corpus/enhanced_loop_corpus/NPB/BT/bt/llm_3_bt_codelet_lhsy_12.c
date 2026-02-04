@@ -1,0 +1,119 @@
+#include <stdio.h>
+
+extern  int grid_points[3];
+extern  double ty1;
+extern  double ty2;
+extern  double dy1;
+extern  double dy2;
+extern  double dy3;
+extern  double dy4;
+extern  double dy5;
+extern  double dt;
+extern  double lhs[65][65][65][3][5][5];
+extern  double fjac[65][65][64][5][5];
+extern  double njac[65][65][64][5][5];
+extern  double tmp1;
+extern  double tmp2;
+extern int i;
+extern int j;
+extern int k;
+
+
+
+void loop(){
+    // Variant 2: Strided Memory Access with Blocked (Tiled) Loop Structure
+    // Introduces blocking to improve cache reuse and changes access pattern to be more predictable
+    // Block size chosen as 8 for balance between reuse and overhead
+    const int BLOCK_SIZE = 8;
+    int i, j, k, ii, jj, kk;
+
+    for (ii = 1; ii < grid_points[0] - 1; ii += BLOCK_SIZE) {
+        for (jj = 1; jj < grid_points[1] - 1; jj += BLOCK_SIZE) {
+            for (kk = 1; kk < grid_points[2] - 1; kk += BLOCK_SIZE) {
+                for (i = ii; i < ((ii + BLOCK_SIZE) < (grid_points[0] - 1) ? (ii + BLOCK_SIZE) : (grid_points[0] - 1)); i++) {
+                    for (j = jj; j < ((jj + BLOCK_SIZE) < (grid_points[1] - 1) ? (jj + BLOCK_SIZE) : (grid_points[1] - 1)); j++) {
+                        for (k = kk; k < ((kk + BLOCK_SIZE) < (grid_points[2] - 1) ? (kk + BLOCK_SIZE) : (grid_points[2] - 1)); k++) {
+                            tmp1 = dt * ty1;
+                            tmp2 = dt * ty2;
+                            lhs[i][j][k][0][0][0] = -tmp2 * fjac[i][j - 1][k][0][0] - tmp1 * njac[i][j - 1][k][0][0] - tmp1 * dy1;
+                            lhs[i][j][k][0][0][1] = -tmp2 * fjac[i][j - 1][k][0][1] - tmp1 * njac[i][j - 1][k][0][1];
+                            lhs[i][j][k][0][0][2] = -tmp2 * fjac[i][j - 1][k][0][2] - tmp1 * njac[i][j - 1][k][0][2];
+                            lhs[i][j][k][0][0][3] = -tmp2 * fjac[i][j - 1][k][0][3] - tmp1 * njac[i][j - 1][k][0][3];
+                            lhs[i][j][k][0][0][4] = -tmp2 * fjac[i][j - 1][k][0][4] - tmp1 * njac[i][j - 1][k][0][4];
+                            lhs[i][j][k][0][1][0] = -tmp2 * fjac[i][j - 1][k][1][0] - tmp1 * njac[i][j - 1][k][1][0];
+                            lhs[i][j][k][0][1][1] = -tmp2 * fjac[i][j - 1][k][1][1] - tmp1 * njac[i][j - 1][k][1][1] - tmp1 * dy2;
+                            lhs[i][j][k][0][1][2] = -tmp2 * fjac[i][j - 1][k][1][2] - tmp1 * njac[i][j - 1][k][1][2];
+                            lhs[i][j][k][0][1][3] = -tmp2 * fjac[i][j - 1][k][1][3] - tmp1 * njac[i][j - 1][k][1][3];
+                            lhs[i][j][k][0][1][4] = -tmp2 * fjac[i][j - 1][k][1][4] - tmp1 * njac[i][j - 1][k][1][4];
+                            lhs[i][j][k][0][2][0] = -tmp2 * fjac[i][j - 1][k][2][0] - tmp1 * njac[i][j - 1][k][2][0];
+                            lhs[i][j][k][0][2][1] = -tmp2 * fjac[i][j - 1][k][2][1] - tmp1 * njac[i][j - 1][k][2][1];
+                            lhs[i][j][k][0][2][2] = -tmp2 * fjac[i][j - 1][k][2][2] - tmp1 * njac[i][j - 1][k][2][2] - tmp1 * dy3;
+                            lhs[i][j][k][0][2][3] = -tmp2 * fjac[i][j - 1][k][2][3] - tmp1 * njac[i][j - 1][k][2][3];
+                            lhs[i][j][k][0][2][4] = -tmp2 * fjac[i][j - 1][k][2][4] - tmp1 * njac[i][j - 1][k][2][4];
+                            lhs[i][j][k][0][3][0] = -tmp2 * fjac[i][j - 1][k][3][0] - tmp1 * njac[i][j - 1][k][3][0];
+                            lhs[i][j][k][0][3][1] = -tmp2 * fjac[i][j - 1][k][3][1] - tmp1 * njac[i][j - 1][k][3][1];
+                            lhs[i][j][k][0][3][2] = -tmp2 * fjac[i][j - 1][k][3][2] - tmp1 * njac[i][j - 1][k][3][2];
+                            lhs[i][j][k][0][3][3] = -tmp2 * fjac[i][j - 1][k][3][3] - tmp1 * njac[i][j - 1][k][3][3] - tmp1 * dy4;
+                            lhs[i][j][k][0][3][4] = -tmp2 * fjac[i][j - 1][k][3][4] - tmp1 * njac[i][j - 1][k][3][4];
+                            lhs[i][j][k][0][4][0] = -tmp2 * fjac[i][j - 1][k][4][0] - tmp1 * njac[i][j - 1][k][4][0];
+                            lhs[i][j][k][0][4][1] = -tmp2 * fjac[i][j - 1][k][4][1] - tmp1 * njac[i][j - 1][k][4][1];
+                            lhs[i][j][k][0][4][2] = -tmp2 * fjac[i][j - 1][k][4][2] - tmp1 * njac[i][j - 1][k][4][2];
+                            lhs[i][j][k][0][4][3] = -tmp2 * fjac[i][j - 1][k][4][3] - tmp1 * njac[i][j - 1][k][4][3];
+                            lhs[i][j][k][0][4][4] = -tmp2 * fjac[i][j - 1][k][4][4] - tmp1 * njac[i][j - 1][k][4][4] - tmp1 * dy5;
+                            lhs[i][j][k][1][0][0] = 1. + tmp1 * 2. * njac[i][j][k][0][0] + tmp1 * 2. * dy1;
+                            lhs[i][j][k][1][0][1] = tmp1 * 2. * njac[i][j][k][0][1];
+                            lhs[i][j][k][1][0][2] = tmp1 * 2. * njac[i][j][k][0][2];
+                            lhs[i][j][k][1][0][3] = tmp1 * 2. * njac[i][j][k][0][3];
+                            lhs[i][j][k][1][0][4] = tmp1 * 2. * njac[i][j][k][0][4];
+                            lhs[i][j][k][1][1][0] = tmp1 * 2. * njac[i][j][k][1][0];
+                            lhs[i][j][k][1][1][1] = 1. + tmp1 * 2. * njac[i][j][k][1][1] + tmp1 * 2. * dy2;
+                            lhs[i][j][k][1][1][2] = tmp1 * 2. * njac[i][j][k][1][2];
+                            lhs[i][j][k][1][1][3] = tmp1 * 2. * njac[i][j][k][1][3];
+                            lhs[i][j][k][1][1][4] = tmp1 * 2. * njac[i][j][k][1][4];
+                            lhs[i][j][k][1][2][0] = tmp1 * 2. * njac[i][j][k][2][0];
+                            lhs[i][j][k][1][2][1] = tmp1 * 2. * njac[i][j][k][2][1];
+                            lhs[i][j][k][1][2][2] = 1. + tmp1 * 2. * njac[i][j][k][2][2] + tmp1 * 2. * dy3;
+                            lhs[i][j][k][1][2][3] = tmp1 * 2. * njac[i][j][k][2][3];
+                            lhs[i][j][k][1][2][4] = tmp1 * 2. * njac[i][j][k][2][4];
+                            lhs[i][j][k][1][3][0] = tmp1 * 2. * njac[i][j][k][3][0];
+                            lhs[i][j][k][1][3][1] = tmp1 * 2. * njac[i][j][k][3][1];
+                            lhs[i][j][k][1][3][2] = tmp1 * 2. * njac[i][j][k][3][2];
+                            lhs[i][j][k][1][3][3] = 1. + tmp1 * 2. * njac[i][j][k][3][3] + tmp1 * 2. * dy4;
+                            lhs[i][j][k][1][3][4] = tmp1 * 2. * njac[i][j][k][3][4];
+                            lhs[i][j][k][1][4][0] = tmp1 * 2. * njac[i][j][k][4][0];
+                            lhs[i][j][k][1][4][1] = tmp1 * 2. * njac[i][j][k][4][1];
+                            lhs[i][j][k][1][4][2] = tmp1 * 2. * njac[i][j][k][4][2];
+                            lhs[i][j][k][1][4][3] = tmp1 * 2. * njac[i][j][k][4][3];
+                            lhs[i][j][k][1][4][4] = 1. + tmp1 * 2. * njac[i][j][k][4][4] + tmp1 * 2. * dy5;
+                            lhs[i][j][k][2][0][0] = tmp2 * fjac[i][j + 1][k][0][0] - tmp1 * njac[i][j + 1][k][0][0] - tmp1 * dy1;
+                            lhs[i][j][k][2][0][1] = tmp2 * fjac[i][j + 1][k][0][1] - tmp1 * njac[i][j + 1][k][0][1];
+                            lhs[i][j][k][2][0][2] = tmp2 * fjac[i][j + 1][k][0][2] - tmp1 * njac[i][j + 1][k][0][2];
+                            lhs[i][j][k][2][0][3] = tmp2 * fjac[i][j + 1][k][0][3] - tmp1 * njac[i][j + 1][k][0][3];
+                            lhs[i][j][k][2][0][4] = tmp2 * fjac[i][j + 1][k][0][4] - tmp1 * njac[i][j + 1][k][0][4];
+                            lhs[i][j][k][2][1][0] = tmp2 * fjac[i][j + 1][k][1][0] - tmp1 * njac[i][j + 1][k][1][0];
+                            lhs[i][j][k][2][1][1] = tmp2 * fjac[i][j + 1][k][1][1] - tmp1 * njac[i][j + 1][k][1][1] - tmp1 * dy2;
+                            lhs[i][j][k][2][1][2] = tmp2 * fjac[i][j + 1][k][1][2] - tmp1 * njac[i][j + 1][k][1][2];
+                            lhs[i][j][k][2][1][3] = tmp2 * fjac[i][j + 1][k][1][3] - tmp1 * njac[i][j + 1][k][1][3];
+                            lhs[i][j][k][2][1][4] = tmp2 * fjac[i][j + 1][k][1][4] - tmp1 * njac[i][j + 1][k][1][4];
+                            lhs[i][j][k][2][2][0] = tmp2 * fjac[i][j + 1][k][2][0] - tmp1 * njac[i][j + 1][k][2][0];
+                            lhs[i][j][k][2][2][1] = tmp2 * fjac[i][j + 1][k][2][1] - tmp1 * njac[i][j + 1][k][2][1];
+                            lhs[i][j][k][2][2][2] = tmp2 * fjac[i][j + 1][k][2][2] - tmp1 * njac[i][j + 1][k][2][2] - tmp1 * dy3;
+                            lhs[i][j][k][2][2][3] = tmp2 * fjac[i][j + 1][k][2][3] - tmp1 * njac[i][j + 1][k][2][3];
+                            lhs[i][j][k][2][2][4] = tmp2 * fjac[i][j + 1][k][2][4] - tmp1 * njac[i][j + 1][k][2][4];
+                            lhs[i][j][k][2][3][0] = tmp2 * fjac[i][j + 1][k][3][0] - tmp1 * njac[i][j + 1][k][3][0];
+                            lhs[i][j][k][2][3][1] = tmp2 * fjac[i][j + 1][k][3][1] - tmp1 * njac[i][j + 1][k][3][1];
+                            lhs[i][j][k][2][3][2] = tmp2 * fjac[i][j + 1][k][3][2] - tmp1 * njac[i][j + 1][k][3][2];
+                            lhs[i][j][k][2][3][3] = tmp2 * fjac[i][j + 1][k][3][3] - tmp1 * njac[i][j + 1][k][3][3] - tmp1 * dy4;
+                            lhs[i][j][k][2][3][4] = tmp2 * fjac[i][j + 1][k][3][4] - tmp1 * njac[i][j + 1][k][3][4];
+                            lhs[i][j][k][2][4][0] = tmp2 * fjac[i][j + 1][k][4][0] - tmp1 * njac[i][j + 1][k][4][0];
+                            lhs[i][j][k][2][4][1] = tmp2 * fjac[i][j + 1][k][4][1] - tmp1 * njac[i][j + 1][k][4][1];
+                            lhs[i][j][k][2][4][2] = tmp2 * fjac[i][j + 1][k][4][2] - tmp1 * njac[i][j + 1][k][4][2];
+                            lhs[i][j][k][2][4][3] = tmp2 * fjac[i][j + 1][k][4][3] - tmp1 * njac[i][j + 1][k][4][3];
+                            lhs[i][j][k][2][4][4] = tmp2 * fjac[i][j + 1][k][4][4] - tmp1 * njac[i][j + 1][k][4][4] - tmp1 * dy5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

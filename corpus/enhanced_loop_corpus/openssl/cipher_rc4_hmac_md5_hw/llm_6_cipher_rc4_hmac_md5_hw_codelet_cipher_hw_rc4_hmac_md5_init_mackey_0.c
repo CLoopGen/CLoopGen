@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern unsigned int i;
+extern unsigned char hmac_key[64];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    unsigned int j;
+    unsigned char temp[64];
+    for (j = 0; j < sizeof(hmac_key); j++) {
+        temp[j] = hmac_key[j] ^ 54;
+    }
+    for (j = 0; j < sizeof(hmac_key); j++) {
+        hmac_key[j] = temp[j];
+    }
+}

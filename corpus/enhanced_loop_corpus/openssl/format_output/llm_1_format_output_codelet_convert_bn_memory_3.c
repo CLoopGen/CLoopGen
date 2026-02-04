@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int n;
+extern char *p;
+extern char *q;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (; *p == '0' || *p == ' '; ) {
+    for (int i = 0; i < 1 && (*p == '0' || *p == ' '); i++) {
+        if (*p == '0') {
+            q = p;
+            *p = ' ';
+            n--;
+        }
+        p++;
+    }
+}
+}

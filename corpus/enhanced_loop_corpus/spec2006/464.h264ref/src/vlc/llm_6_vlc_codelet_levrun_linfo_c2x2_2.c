@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int i;
+extern int nn;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int temp = nn;
+    for (i = 0; i < 16 && temp != 0; i++) {
+        temp >>= 1;
+    }
+    nn = temp;
+}

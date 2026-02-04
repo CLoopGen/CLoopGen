@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern unsigned int N;
+extern int *bindex;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < N * 2; i++) {
+        bindex[i % N] = (i % N) * (i % N) + i;
+    }
+}

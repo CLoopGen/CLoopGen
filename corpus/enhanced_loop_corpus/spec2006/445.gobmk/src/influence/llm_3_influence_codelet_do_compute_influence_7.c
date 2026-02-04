@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+struct intrusion_data {
+    int source_pos;
+    int strength_pos;
+    float strength;
+    float attenuation;
+};
+
+
+struct influence_data {
+    char safe[400];
+    float white_influence[400];
+    float black_influence[400];
+    float white_strength[400];
+    float black_strength[400];
+    float white_attenuation[400];
+    float black_attenuation[400];
+    float white_permeability[400];
+    float black_permeability[400];
+    int territory_segmentation[400];
+    int moyo_segmentation[400];
+    int area_segmentation[400];
+    int region_type[1084];
+    int region_size[1084];
+    float region_territorial_value[1084];
+    int number_of_regions;
+    int is_territorial_influence;
+    float territory_value[400];
+    int non_territory[400];
+    int captured;
+    int color_to_move;
+    int queue[361];
+    int intrusion_counter;
+    struct intrusion_data intrusions[722];
+};
+
+
+extern struct influence_data *q;
+extern int ii;
+extern int int_white_permeabilities[400];
+extern int int_black_permeabilities[400];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Strided memory access pattern (reverse traversal with stride of 2)
+    int start = (19 + 2);
+    int end = (19 + 1) * (19 + 1);
+    int i;
+
+    // Process even indices in reverse first
+    for (i = (end - 1) - ((end - start) % 2); i >= start; i -= 2) {
+        int_white_permeabilities[i] = ((int)((q->white_permeability[i]) * (1 << 12)) + 0.5);
+        int_black_permeabilities[i] = ((int)((q->black_permeability[i]) * (1 << 12)) + 0.5);
+    }
+
+    // Then process odd indices in reverse
+    for (i = (end - 1) - ((end - start + 1) % 2); i >= start; i -= 2) {
+        if (i < start) continue;
+        int_white_permeabilities[i] = ((int)((q->white_permeability[i]) * (1 << 12)) + 0.5);
+        int_black_permeabilities[i] = ((int)((q->black_permeability[i]) * (1 << 12)) + 0.5);
+    }
+}

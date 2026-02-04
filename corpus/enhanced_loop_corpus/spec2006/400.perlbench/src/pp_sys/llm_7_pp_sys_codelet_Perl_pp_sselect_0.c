@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned int U32;
+
+struct sv {
+    void *sv_any;
+    U32 sv_refcnt;
+    U32 sv_flags;
+};
+
+
+typedef struct sv SV;
+
+typedef int I32;
+
+typedef size_t STRLEN;
+
+struct xpv {
+    char *xpv_pv;
+    STRLEN xpv_cur;
+    STRLEN xpv_len;
+};
+
+
+typedef struct xpv XPV;
+
+extern SV **sp;
+extern I32 i;
+extern I32 j;
+extern I32 maxlen;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    I32 local_j;
+    for (i = 1; i <= 3; i++) {
+        if (!((sp[i])->sv_flags & 262144)) {
+            local_j = 0;
+        } else {
+            local_j = ((XPV *)(sp[i])->sv_any)->xpv_cur;
+            if (maxlen < local_j) {
+                maxlen = local_j;
+            }
+        }
+        j = local_j; // Introduce artificial WAW dependency on j, updated every iteration
+    }
+}

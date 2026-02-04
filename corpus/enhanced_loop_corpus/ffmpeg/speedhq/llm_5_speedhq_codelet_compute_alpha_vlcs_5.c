@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint16_t level_code[266];
+extern uint8_t level_bits[266];
+extern int16_t level_symbols[266];
+extern int entry;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < 256; ++i) {
+    if (i >= 32 && i < 224) {
+        level_code[entry] = i << 2;
+        level_bits[entry] = 10;
+        level_symbols[entry] = i;
+        ++entry;
+    } else {
+        continue;
+    }
+}
+}

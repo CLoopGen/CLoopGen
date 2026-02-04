@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef uint16_t OPJ_UINT16;
+
+typedef unsigned char OPJ_BYTE;
+
+typedef struct opj_jp2_cmap_comp {
+    OPJ_UINT16 cmp;
+    OPJ_BYTE mtyp;
+    OPJ_BYTE pcol;
+} opj_jp2_cmap_comp_t;
+
+extern OPJ_UINT16 i;
+extern OPJ_UINT16 nr_channels;
+extern opj_jp2_cmap_comp_t *cmap;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    if (nr_channels > 0) {
+        i = 0;
+        for (;;) {
+            cmap[i].mtyp = 1U;
+            cmap[i].pcol = (OPJ_BYTE)i;
+            i++;
+            if (i >= nr_channels) break;
+        }
+    }
+}

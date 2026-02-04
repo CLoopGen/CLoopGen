@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned int uint32;
+
+typedef unsigned short uint16;
+
+extern uint32 *cp;
+extern uint32 x;
+extern uint32 w;
+extern uint16 *wr;
+extern uint16 *wg;
+extern uint16 *wb;
+extern uint16 *wa;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (x = 0; x < w; x += 2) {
+        if (x + 1 < w) {
+            // Strided access by 2: process two elements per iteration
+            uint32 val1 = ((uint32)((wr[x] >> 8) & 255) |
+                          ((uint32)((wg[x] >> 8) & 255) << 8) |
+                          ((uint32)((wb[x] >> 8) & 255) << 16) |
+                          ((uint32)((wa[x] >> 8) & 255) << 24));
+            uint32 val2 = ((uint32)((wr[x+1] >> 8) & 255) |
+                          ((uint32)((wg[x+1] >> 8) & 255) << 8) |
+                          ((uint32)((wb[x+1] >> 8) & 255) << 16) |
+                          ((uint32)((wa[x+1] >> 8) & 255) << 24));
+            *cp++ = val1;
+            *cp++ = val2;
+        } else {
+            // Handle odd-sized w
+            *cp++ = ((uint32)(((*wr++) >> 8) & 255) |
+                     ((uint32)(((*wg++) >> 8) & 255) << 8) |
+                     ((uint32)(((*wb++) >> 8) & 255) << 16) |
+                     ((uint32)(((*wa++) >> 8) & 255) << 24));
+        }
+    }
+}

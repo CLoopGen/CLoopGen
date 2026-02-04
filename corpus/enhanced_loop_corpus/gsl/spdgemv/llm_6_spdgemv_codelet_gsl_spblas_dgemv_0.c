@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern size_t j;
+extern size_t incY;
+extern size_t lenY;
+extern double *Y;
+extern size_t jy;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    size_t temp_jy = jy;
+    for (j = 0; j < lenY; ++j) {
+        Y[temp_jy] = 0.;
+        temp_jy += incY;
+    }
+}

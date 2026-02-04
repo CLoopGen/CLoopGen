@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *src;
+extern uint8_t *dst;
+extern ptrdiff_t stride;
+extern int width;
+extern int height;
+extern int left;
+extern int top;
+extern int lefttop;
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (j = 1; j < height; j++) {
+    top = src[-stride];
+    left = src[0] - top;
+    dst[0] = left;
+    for (i = 1; i < width; i++) {
+        if ((src[i - stride] - src[i - 1]) > 0) {
+            top = src[i - stride];
+            lefttop = src[i - (stride + 1)];
+            left = src[i - 1];
+            dst[i] = (src[i] - top) - left + lefttop;
+        } else {
+            dst[i] = src[i];
+        }
+    }
+    dst += width;
+    src += stride;
+}
+}

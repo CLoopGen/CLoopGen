@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef double doublereal;
+
+typedef int integer;
+
+extern doublereal *dx;
+extern doublereal *dy;
+extern integer i__1;
+extern integer i__;
+extern integer mp1;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i__ = mp1; i__ <= i__1; i__ += 7) {
+        dy[i__] = dx[i__];
+        dy[i__ + 1] = dx[i__ + 1];
+        dy[i__ + 2] = dx[i__ + 2];
+        dy[i__ + 3] = dx[i__ + 3];
+        // Introduce a temporary dependency chain to create WAW and WAR hazards within the iteration
+        doublereal temp1 = dx[i__ + 4];
+        doublereal temp2 = temp1 + dy[i__ + 3]; // RAW: depends on prior dy write
+        dy[i__ + 4] = temp2;
+        doublereal temp3 = dx[i__ + 5];
+        dy[i__ + 5] = temp3 + dy[i__ + 4]; // RAW on dy[i__+4], no loop-carried dep
+        dy[i__ + 6] = dx[i__ + 6];
+    }
+}

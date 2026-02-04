@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  float qu[2];
+extern  float mean_lsf_16k[16];
+extern float *lsf_history;
+extern float *isp_new;
+extern int ma_pred;
+extern int i;
+extern float isp_q[16];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 32; i++) {
+        int idx = i % 16;
+        float temp = (1.0f - qu[ma_pred]) * isp_q[idx];
+        temp += qu[ma_pred] * lsf_history[idx];
+        temp += mean_lsf_16k[idx];
+        isp_new[idx] = temp; // Overwrite repeatedly to increase computation per element
+    }
+}

@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern double *lsps;
+extern int num;
+extern int n;
+extern int m;
+extern int l;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (n = 1; n < num; n++) {
+    if (lsps[n] < lsps[n - 1]) {
+        for (m = 1; m < num; m++) {
+            double tmp = lsps[m];
+            int insert_pos = 0;
+            for (l = m - 1; l >= 0; l--) {
+                if (lsps[l] <= tmp) {
+                    insert_pos = l + 1;
+                    break;
+                }
+            }
+            // Eliminate WAW dependency by reducing redundant writes
+            if (insert_pos != m) {
+                for (int shift = m; shift > insert_pos; shift--) {
+                    lsps[shift] = lsps[shift - 1];
+                }
+                lsps[insert_pos] = tmp;
+            }
+        }
+        break;
+    }
+}
+}

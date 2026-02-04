@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+extern int a[256] __attribute__((aligned(16)));
+extern int b[256] __attribute__((aligned(16)));
+extern int i;
+extern const int MAX;
+
+void loop(){
+for (i = 0; i < 256; i++) {
+    int j = a[i];
+    b[i] = (j > MAX ? MAX : 0);
+}
+
+}

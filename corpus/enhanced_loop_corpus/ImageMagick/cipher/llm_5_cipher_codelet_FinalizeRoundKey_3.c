@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  unsigned int *ciphertext;
+extern  unsigned int *key;
+extern unsigned char *p;
+extern unsigned int i;
+extern unsigned int j;
+extern unsigned int value;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 4; ++i) {
+        value = ciphertext[i] ^ key[i];
+        for (j = 0; j < 4; ++j) {
+            unsigned char byte = (unsigned char)((value >> (8 * j)) & 255);
+            if (byte != 0 || i % 2 == 0)
+                *p++ = byte;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *dst;
+extern  uint8_t *src;
+extern int stride;
+extern int width;
+extern int height;
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < height; i++) {
+    for (j = 0; j < width; j += 2) {
+        int idx = j * 2;
+        if (idx < width) {
+            dst[idx] = ((2 * src[idx] + src[idx + stride] + 1) * 683) >> 11;
+        }
+        if (idx + 1 < width) {
+            dst[idx + 1] = ((2 * src[idx + 1] + src[idx + 1 + stride] + 1) * 683) >> 11;
+        }
+    }
+    src += stride;
+    dst += stride;
+}
+}

@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef double doublereal;
+
+typedef int integer;
+
+extern doublereal *dx;
+extern doublereal *dy;
+extern integer i__1;
+extern integer i__;
+extern integer mp1;
+extern doublereal dtemp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i__ = mp1; i__ <= i__1; i__ += 3) {
+        for (int offset = 0; offset < 3; ++offset) {
+            if (i__ + offset <= i__1) {
+                dtemp = dx[i__ + offset];
+                dx[i__ + offset] = dy[i__ + offset];
+                dy[i__ + offset] = dtemp;
+            }
+        }
+    }
+}

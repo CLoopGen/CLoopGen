@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int32_t **samples;
+extern int len;
+extern int i;
+extern int64_t v0;
+extern int64_t v1;
+extern int16_t front_mix;
+extern int16_t center_mix;
+extern int16_t surround_mix;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < len; i++) {
+        // Introduce control dependency based on input data
+        if (samples[0][i] != 0 || samples[1][i] != 0 || samples[2][i] != 0) {
+            v0 = (int64_t)samples[0][i] * front_mix + (int64_t)samples[1][i] * center_mix + (int64_t)samples[3][i] * surround_mix;
+            v1 = (int64_t)samples[1][i] * center_mix + (int64_t)samples[2][i] * front_mix + (int64_t)samples[4][i] * surround_mix;
+            samples[0][i] = (v0 + 2048) >> 12;
+            samples[1][i] = (v1 + 2048) >> 12;
+        } else {
+            // Zero inputs: set outputs directly without computation
+            samples[0][i] = 0;
+            samples[1][i] = 0;
+        }
+    }
+}

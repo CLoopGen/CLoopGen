@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t (*mask)[8][4];
+extern int row_and_7;
+extern int h;
+extern int y;
+extern int m_col;
+extern int step1d;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int y1;
+    for (y1 = row_and_7; y1 < h + row_and_7 - 1; y1 += step1d) {
+        y = y1;
+        mask[1][y][0] |= m_col;
+    }
+}

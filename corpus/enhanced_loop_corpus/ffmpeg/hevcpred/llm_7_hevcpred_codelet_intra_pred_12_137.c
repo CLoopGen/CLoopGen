@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+union __attribute__((packed)) __attribute__((may_alias)) unaligned_64 {
+    uint64_t l;
+};
+
+
+extern int i;
+extern int size;
+extern uint16_t *left;
+extern int bottom_left_size;
+extern uint64_t pix;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    uint64_t local_pix[2] = {pix, pix ^ 0xFFFFFFFFFFFFFFFFULL};
+    int stride = 8;
+    for (i = 0; i < (size - bottom_left_size); i += 8) {
+        if (i + 4 < (size - bottom_left_size)) {
+            (((union unaligned_64 *)(left + size + bottom_left_size + i))->l) = local_pix[0];
+            (((union unaligned_64 *)(left + size + bottom_left_size + i + 4))->l) = local_pix[1];
+        } else if (i < (size - bottom_left_size)) {
+            (((union unaligned_64 *)(left + size + bottom_left_size + i))->l) = local_pix[0];
+        }
+    }
+}

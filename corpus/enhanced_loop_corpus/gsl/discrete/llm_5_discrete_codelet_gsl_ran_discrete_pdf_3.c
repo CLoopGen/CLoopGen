@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    size_t K;
+    size_t *A;
+    double *F;
+} gsl_ran_discrete_t;
+
+extern size_t k;
+extern  gsl_ran_discrete_t *g;
+extern size_t i;
+extern size_t K;
+extern double f;
+extern double p;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < K; ++i) {
+        f = (g->F)[i];
+        f = K * f - i;
+        size_t ai = (g->A)[i];
+        // Restructured control dependencies: combine conditions into a single if with logical OR
+        // and adjust actions accordingly to maintain plausible semantics
+        if (i == k || k == ai) {
+            if (i == k) {
+                p += f;
+            } else {
+                p += 1. - f;
+            }
+        }
+    }
+}

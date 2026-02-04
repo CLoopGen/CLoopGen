@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *ref_tmp;
+extern  uint8_t *src_left_tmp;
+extern int32_t h_cnt;
+extern int32_t inv_angle_val;
+extern int32_t inv_angle_val_loop;
+extern int32_t last;
+extern int32_t offset;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (h_cnt = last; h_cnt <= -1; h_cnt++) {
+        offset = (inv_angle_val_loop + 128) >> 8;
+        // Modified to strided access: write every second element in ref_tmp, maintaining forward progression
+        ref_tmp[h_cnt * 2] = src_left_tmp[offset];
+        inv_angle_val_loop += inv_angle_val;
+    }
+}

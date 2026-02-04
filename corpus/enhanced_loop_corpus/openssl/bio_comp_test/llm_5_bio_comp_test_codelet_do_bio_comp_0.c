@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern unsigned char *original;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 32 * 1024; i++) {
+        int val = i & 255;
+        if (val < 128) {
+            original[i] = val;
+        } else {
+            original[i] = 128 + (val - 128);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint32_t d;
+extern uint32_t e;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (d = 0; e <= 512; d += 2) {
+        e <<= 2;
+        if (d % 4 == 0)
+            e += 10;
+    }
+}

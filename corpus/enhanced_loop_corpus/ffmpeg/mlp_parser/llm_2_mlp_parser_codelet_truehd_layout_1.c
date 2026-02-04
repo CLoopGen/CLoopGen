@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  uint64_t thd_layout[13];
+extern int chanmap;
+extern int i;
+extern uint64_t layout;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided memory access with reverse traversal (stride of 1, but backward)
+    for (i = 12; i >= 0; i--)
+        layout |= thd_layout[i] * ((chanmap >> i) & 1);
+}

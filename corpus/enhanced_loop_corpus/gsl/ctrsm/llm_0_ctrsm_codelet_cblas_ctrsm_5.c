@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern void *B;
+extern  int ldb;
+extern int i;
+extern int j;
+extern int n1;
+extern int n2;
+extern  float alpha_real;
+extern  float alpha_imag;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < n1; i++) {
+    const int base_i = 2 * ldb * i;
+    for (j = 0; j < n2; j++) {
+        const int idx = base_i + 2 * j;
+        const float Bij_real = ((float *)B)[idx];
+        const float Bij_imag = ((float *)B)[idx + 1];
+        ((float *)B)[idx]     = alpha_real * Bij_real - alpha_imag * Bij_imag;
+        ((float *)B)[idx + 1] = alpha_real * Bij_imag + alpha_imag * Bij_real;
+    }
+}
+}

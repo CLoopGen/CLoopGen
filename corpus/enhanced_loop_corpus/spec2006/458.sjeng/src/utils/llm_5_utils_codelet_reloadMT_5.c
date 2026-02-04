@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern unsigned int state[625];
+extern unsigned int *p0;
+extern unsigned int *p2;
+extern unsigned int *pM;
+extern unsigned int s0;
+extern unsigned int s1;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (pM = state, j = (397); --j; s0 = s1, s1 = *p2++) {
+        if (!(s1 & 1U)) {
+            *p0++ = *pM++ ^ ((((s0) & 2147483648U) | ((s1) & 2147483647U)) >> 1);
+            continue;
+        }
+        *p0++ = *pM++ ^ ((((s0) & 2147483648U) | ((s1) & 2147483647U)) >> 1) ^ 2567483615U;
+    }
+}

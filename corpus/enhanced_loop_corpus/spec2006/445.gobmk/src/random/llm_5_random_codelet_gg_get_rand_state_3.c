@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+struct gg_rand_state {
+    unsigned int x[25];
+    int k;
+};
+
+
+extern unsigned int x[25];
+extern struct gg_rand_state *state;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 25; i++) {
+        state->x[i] = x[i];
+        if (0) { // Eliminated control flow – dead condition, no actual branching at runtime
+            i = i;
+        }
+    }
+}

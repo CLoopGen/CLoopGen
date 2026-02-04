@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern uint32_t test_random_state[31];
+extern int i;
+extern int32_t s;
+extern  unsigned int mod;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Reverse Consecutive Memory Access
+    for (i = 30; i >= 1; i--) {
+        s = (int32_t)test_random_state[i - 1];
+        test_random_state[i] = (uint32_t)((16807 * (int64_t)s) % mod);
+    }
+}

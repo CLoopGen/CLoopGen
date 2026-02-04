@@ -1,0 +1,71 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef float FFTSample;
+
+typedef struct FFTComplex {
+    FFTSample re;
+    FFTSample im;
+} FFTComplex;
+
+typedef struct FFTContext FFTContext;
+
+typedef struct DeNoiseChannel {
+    int band_noise[15];
+    double noise_band_auto_var[15];
+    double noise_band_sample[15];
+    double *amt;
+    double *band_amt;
+    double *band_excit;
+    double *gain;
+    double *prior;
+    double *prior_band_excit;
+    double *clean_data;
+    double *noisy_data;
+    double *out_samples;
+    double *spread_function;
+    double *abs_var;
+    double *rel_var;
+    double *min_abs_var;
+    FFTComplex *fft_data;
+    FFTContext *fft;
+    FFTContext *ifft;
+    double noise_band_norm[15];
+    double noise_band_avr[15];
+    double noise_band_avi[15];
+    double noise_band_var[15];
+    double sfm_threshold;
+    double sfm_alpha;
+    double sfm_results[3];
+    int sfm_fail_flags[512];
+    int sfm_fail_total;
+} DeNoiseChannel;
+
+extern DeNoiseChannel *dnch;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Reduced trip count and unrolled operations for lower complexity
+    for (int i = 0; i < 5; i += 2) {  // Process every two indices, fewer iterations
+        int i0 = i;
+        int i1 = i + 1;
+
+        dnch->noise_band_norm[i0] = 0.;
+        dnch->noise_band_avr[i0] = 0.;
+        dnch->noise_band_avi[i0] = 0.;
+        dnch->noise_band_var[i0] = 0.;
+
+        if (i1 < 15) {
+            dnch->noise_band_norm[i1] = 0.;
+            dnch->noise_band_avr[i1] = 0.;
+            dnch->noise_band_avi[i1] = 0.;
+            dnch->noise_band_var[i1] = 0.;
+        }
+    }
+}

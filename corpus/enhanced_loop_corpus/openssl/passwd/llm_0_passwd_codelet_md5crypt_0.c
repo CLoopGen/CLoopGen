@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern unsigned char buf[16];
+extern unsigned char buf_perm[16];
+extern int dest;
+extern int source;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (dest = 0; dest < 14; dest++) {
+        for (source = 0; source <= dest; source = (source + 6) % 17) {
+            if ((source * 6) % 17 == buf[source]) {
+                buf_perm[dest] = buf[source];
+                break;
+            }
+        }
+    }
+}

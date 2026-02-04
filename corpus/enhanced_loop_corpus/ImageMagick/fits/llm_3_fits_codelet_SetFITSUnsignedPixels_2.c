@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  size_t length;
+extern  size_t bits_per_pixel;
+extern unsigned char *pixels;
+extern ssize_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    unsigned char *ptr = pixels;
+    size_t step = bits_per_pixel >> 3;
+    for (i = 0; i < (ssize_t)length; i++, ptr += step) {
+        *(ptr) ^= 128;
+    }
+}

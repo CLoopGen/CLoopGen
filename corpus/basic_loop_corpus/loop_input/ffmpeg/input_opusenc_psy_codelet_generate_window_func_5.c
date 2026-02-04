@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <stdlib.h>
+#include <stddef.h>
+#include <string.h>
+#include <math.h>
+
+float *lut;
+int N;
+int n;
+double b;
+double sum;
+double t;
+double c;
+double norm;
+int j;
+
+void init_vars() {
+    N = 1 << 20;
+    if (N < 2) N = 2;
+
+    lut = (float*)aligned_alloc(32, N * sizeof(float));
+    if (!lut) exit(1);
+
+    for (int i = 0; i < N; ++i)
+        lut[i] = 0.0f;
+
+    b = sqrt(N / 4.0);
+    if (fabs(b) < 1e-9) b = 1.0;
+
+    sum = 0.0;
+    t = 0.0;
+    c = 0.0;
+    norm = 0.0;
+    j = 0;
+}

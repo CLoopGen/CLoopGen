@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+typedef long BLASLONG;
+
+extern BLASLONG lda;
+extern float *b;
+extern BLASLONG i;
+extern BLASLONG ii;
+extern float *ao1;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (ii = 0; ii < i * 2; ii++) {
+    b[0] = *(ao1 + 0) + *(ao1 + 1);
+    b[1] = *(ao1 + 1) - *(ao1 + 0);
+    b[2] = *(ao1 + 2) + *(ao1 + 3);
+    b[3] = *(ao1 + 3) - *(ao1 + 2);
+    ao1 += lda;
+    b += 4;
+}
+}

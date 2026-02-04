@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  uint8_t *src;
+extern uint8_t *dst;
+extern int srcWidth;
+extern int x;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Consecutive memory access with pointer arithmetic
+    uint8_t *s = src;
+    uint8_t *d = dst + 1;
+    int width = srcWidth - 1;
+    for (x = 0; x < width; x++) {
+        uint8_t s0 = *s++;
+        uint8_t s1 = *s;
+        *d = (3 * s0 + s1) >> 2;
+        d++;
+        *d = (s0 + 3 * s1) >> 2;
+        d++;
+    }
+}

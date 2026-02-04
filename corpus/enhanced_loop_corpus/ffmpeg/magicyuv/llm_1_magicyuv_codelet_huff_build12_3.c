@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct HuffEntry {
+    uint16_t sym;
+    uint8_t len;
+    uint32_t code;
+} HuffEntry;
+
+extern HuffEntry he[4096];
+extern uint32_t codes[4096];
+extern uint8_t bits[4096];
+extern uint16_t syms[4096];
+extern uint32_t code;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (int stride = 1; stride <= 4096; stride *= 2) {
+    for (i = 4096 - stride; i >= 0; i -= stride) {
+        codes[i] = code >> (32 - he[i].len);
+        bits[i] = he[i].len;
+        syms[i] = he[i].sym;
+        code += 2147483648U >> (he[i].len - 1);
+    }
+}
+}

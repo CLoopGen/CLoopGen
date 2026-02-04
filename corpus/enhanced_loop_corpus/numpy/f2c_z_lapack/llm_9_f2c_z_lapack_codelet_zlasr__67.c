@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef int integer;
+
+typedef double doublereal;
+
+typedef struct {
+    doublereal r;
+    doublereal i;
+} doublecomplex;
+
+extern integer *m;
+extern integer *n;
+extern doublereal *c__;
+extern doublereal *s;
+extern doublecomplex *a;
+extern integer a_dim1;
+extern integer i__1;
+extern integer i__2;
+extern integer i__3;
+extern doublecomplex z__1;
+extern doublecomplex z__2;
+extern doublecomplex z__3;
+extern integer i__;
+extern integer j;
+extern doublecomplex temp;
+extern doublereal ctemp;
+extern doublereal stemp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (j = *n - 1; j >= 1; --j) {
+    ctemp = c__[j];
+    stemp = s[j];
+    if (ctemp == 1. && stemp == 0.) continue;
+    i__1 = *m;
+    for (i__ = 1; i__ <= i__1; ++i__) {
+        i__2 = i__ + (j + 1) * a_dim1;
+        i__3 = i__ + j * a_dim1;
+        doublereal a_j_real = a[i__3].r;
+        doublereal a_j_imag = a[i__3].i;
+        doublereal a_jp1_real = a[i__2].r;
+        doublereal a_jp1_imag = a[i__2].i;
+
+        a[i__2].r = ctemp * a_jp1_real - stemp * a_j_real;
+        a[i__2].i = ctemp * a_jp1_imag - stemp * a_j_imag;
+
+        a[i__3].r = stemp * a_jp1_real + ctemp * a_j_real;
+        a[i__3].i = stemp * a_jp1_imag + ctemp * a_j_imag;
+    }
+}
+}

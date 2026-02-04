@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+struct gsl_cheb_series_struct {
+    double *c;
+    size_t order;
+    double a;
+    double b;
+    size_t order_sp;
+    double *f;
+};
+
+
+typedef struct gsl_cheb_series_struct gsl_cheb_series;
+
+extern  gsl_cheb_series *cs;
+extern size_t i;
+extern double d1;
+extern double d2;
+extern double y2;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+if (cs->order >= 1) {
+    for (i = cs->order; i >= 1; i--) {
+        double temp = d1;
+        d1 = y2 * d1 - d2 + cs->c[i];
+        d2 = temp;
+    }
+} else {
+    // Degenerate case: zero iterations handled explicitly via empty block
+    // Maintains loop structure logic without actual looping
+}
+}

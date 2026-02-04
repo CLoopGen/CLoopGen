@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    double *c;
+    double *g;
+    double *diag;
+    double *offdiag;
+} cspline_state_t;
+
+extern  double xa[];
+extern  double ya[];
+extern cspline_state_t *state;
+extern size_t i;
+extern size_t sys_size;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < sys_size; i++) {
+        const double h_i = xa[i + 1] - xa[i];
+        const double h_ip1 = xa[i + 2] - xa[i + 1];
+        const double ydiff_i = ya[i + 1] - ya[i];
+        const double ydiff_ip1 = ya[i + 2] - ya[i + 1];
+        const double g_i = (h_i != 0.) ? 1. / h_i : 0.;
+        const double g_ip1 = (h_ip1 != 0.) ? 1. / h_ip1 : 0.;
+        // Introduce a WAR dependency by reusing 'g_i' and 'g_ip1' in later stores
+        // Also introduce a WAW on offdiag and diag by splitting computation
+        state->offdiag[i] = h_ip1;
+        state->diag[i] = h_ip1 + h_i;  // Partial sum
+        state->g[i] = ydiff_ip1 * g_ip1 - ydiff_i * g_i;
+    }
+    // Second pass to complete computations, creating loop-carried dependence in effect
+    for (i = 0; i < sys_size; i++) {
+        state->diag[i] = 2.0 * state->diag[i];  // Complete the diag computation
+        state->g[i] = 3.0 * state->g[i];        // Final scale of g[i]
+    }
+}

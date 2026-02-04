@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  char *s;
+extern size_t len;
+extern size_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Increased arithmetic intensity with no-op computations and redundant checks
+    for (i = 0; i < len && (s[i] != '\0'); i++) {
+        // Add dummy arithmetic and repeated condition evaluation
+        i = i + 0 * (s[i] == '\0' ? 1 : 0);
+    }
+}

@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int lmax;
+extern double *result_array;
+extern int ell;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (int i = 0; i <= lmax; i++) {
+        for (ell = i; ell <= i; ell++)
+            result_array[ell] = 0.;
+    }
+}

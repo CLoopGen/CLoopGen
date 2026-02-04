@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern const uint8_t ff_reverse[256];
+extern  uint8_t *buf;
+extern int buf_size;
+extern uint16_t *o;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (; buf_size > 4; buf_size -= 5) {
+        for (int inner = 0; inner < 1; inner++) {
+            *o++ = (ff_reverse[buf[1]] << 8) | ff_reverse[buf[0]];
+            *o++ = (ff_reverse[buf[4] & 240] << 12) | (ff_reverse[buf[3]] << 4) | (ff_reverse[buf[2]] >> 4);
+        }
+        buf += 5;
+    }
+}

@@ -1,0 +1,217 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef ptrdiff_t INT;
+
+typedef double R;
+
+typedef INT *stride;
+
+typedef R E;
+
+extern const INT fftw_an_INT_guaranteed_to_be_zero;
+extern R *R0;
+extern R *R1;
+extern R *Cr;
+extern R *Ci;
+extern stride rs;
+extern stride csr;
+extern stride csi;
+extern INT v;
+extern INT ivs;
+extern INT ovs;
+extern  E KP555570233;
+extern  E KP831469612;
+extern  E KP195090322;
+extern  E KP980785280;
+extern  E KP382683432;
+extern  E KP923879532;
+extern  E KP707106781;
+extern INT i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = v; i > 0; i = i - 1 , R0 = R0 + ivs , R1 = R1 + ivs , Cr = Cr + ovs , Ci = Ci + ovs , (rs) = (rs) + fftw_an_INT_guaranteed_to_be_zero , (csr) = (csr) + fftw_an_INT_guaranteed_to_be_zero , (csi) = (csi) + fftw_an_INT_guaranteed_to_be_zero) {
+    E T7, T2b, Tv, T1l, Te, T2o, Ty, T1k, Tt, T2d, TF, T1h, Tm, T2c, TC;
+    E T1i, T1Z, T22, T2k, T2j, T1e, T1C, T19, T1B, T1S, T1V, T2h, T2g, TX, T1z;
+    E TS, T1y;
+    
+    // Introduce temporary arrays to break and restructure RAW/WAW dependencies
+    E temp_R0[16], temp_R1[16];
+    for (INT j = 0; j < 16; j++) {
+        temp_R0[j] = R0[rs[j]];
+        temp_R1[j] = R1[rs[j]];
+    }
+
+    {
+        E T1 = temp_R0[0], T2 = temp_R0[8], T3 = T1 + T2;
+        E T4 = temp_R0[4], T5 = temp_R0[12], T6 = T4 + T5;
+        T7 = T3 + T6;
+        T2b = T3 - T6;
+        Tv = T1 - T2;
+        T1l = T4 - T5;
+    }
+    {
+        E Ta, Tw, Td, Tx;
+        {
+            E T8 = temp_R0[2], T9 = temp_R0[10]; Ta = T8 + T9; Tw = T8 - T9;
+            E Tb = temp_R0[14], Tc = temp_R0[6]; Td = Tb + Tc; Tx = Tb - Tc;
+        }
+        Te = Ta + Td;
+        T2o = Td - Ta;
+        Ty = KP707106781 * (Tw + Tx);
+        T1k = KP707106781 * (Tx - Tw);
+    }
+    {
+        E Tp, TD, Ts, TE;
+        {
+            E Tn = temp_R0[15], To = temp_R0[7]; Tp = Tn + To; TD = Tn - To;
+            E Tq = temp_R0[3], Tr = temp_R0[11]; Ts = Tq + Tr; TE = Tq - Tr;
+        }
+        Tt = Tp + Ts;
+        T2d = Tp - Ts;
+        TF = (((KP923879532) * (TD)) + (KP382683432 * TE));
+        T1h = ((KP382683432 * TD) - ((KP923879532) * (TE)));
+    }
+    {
+        E Ti, TA, Tl, TB;
+        {
+            E Tg = temp_R0[1], Th = temp_R0[9]; Ti = Tg + Th; TA = Tg - Th;
+            E Tj = temp_R0[5], Tk = temp_R0[13]; Tl = Tj + Tk; TB = Tj - Tk;
+        }
+        Tm = Ti + Tl;
+        T2c = Ti - Tl;
+        TC = ((KP923879532 * TA) - ((KP382683432) * (TB)));
+        T1i = (((KP382683432) * (TA)) + (KP923879532 * TB));
+    }
+    {
+        E T11, T1X, T1d, T1Y, T14, T20, T17, T21, T1a, T18;
+        {
+            E TZ = temp_R1[15], T10 = temp_R1[7]; T11 = TZ - T10; T1X = TZ + T10;
+            E T1b = temp_R1[3], T1c = temp_R1[11]; T1d = T1b - T1c; T1Y = T1b + T1c;
+        }
+        {
+            E T12 = temp_R1[1], T13 = temp_R1[9]; T14 = T12 - T13; T20 = T12 + T13;
+            E T15 = temp_R1[13], T16 = temp_R1[5]; T17 = T15 - T16; T21 = T15 + T16;
+        }
+        T1Z = T1X + T1Y;
+        T22 = T20 + T21;
+        T2k = T21 - T20;
+        T2j = T1X - T1Y;
+        T1a = KP707106781 * (T17 - T14);
+        T1e = T1a - T1d;
+        T1C = T1d + T1a;
+        T18 = KP707106781 * (T14 + T17);
+        T19 = T11 + T18;
+        T1B = T11 - T18;
+    }
+    {
+        E TK, T1Q, TW, T1R, TN, T1T, TQ, T1U, TT, TR;
+        {
+            E TI = temp_R1[0], TJ = temp_R1[8]; TK = TI - TJ; T1Q = TI + TJ;
+            E TU = temp_R1[4], TV = temp_R1[12]; TW = TU - TV; T1R = TU + TV;
+        }
+        {
+            E TL = temp_R1[2], TM = temp_R1[10]; TN = TL - TM; T1T = TL + TM;
+            E TO = temp_R1[14], TP = temp_R1[6]; TQ = TO - TP; T1U = TO + TP;
+        }
+        T1S = T1Q + T1R;
+        T1V = T1T + T1U;
+        T2h = T1U - T1T;
+        T2g = T1Q - T1R;
+        TT = KP707106781 * (TQ - TN);
+        TX = TT - TW;
+        T1z = TW + TT;
+        TR = KP707106781 * (TN + TQ);
+        TS = TK + TR;
+        T1y = TK - TR;
+    }
+    {
+        E Tf = T7 + Te, Tu = Tm + Tt, T27 = Tf + Tu;
+        E T28 = T1S + T1V, T29 = T1Z + T22, T2a = T28 + T29;
+        Cr[(csr[8])] = Tf - Tu;
+        Ci[(csi[8])] = T29 - T28;
+        Cr[(csr[16])] = T27 - T2a;
+        Cr[0] = T27 + T2a;
+    }
+    {
+        E T1P = T7 - Te, T25 = Tt - Tm;
+        E T1W = T1S - T1V, T23 = T1Z - T22;
+        E T24 = KP707106781 * (T1W + T23), T26 = KP707106781 * (T23 - T1W);
+        Cr[(csr[12])] = T1P - T24;
+        Ci[(csi[12])] = T26 - T25;
+        Cr[(csr[4])] = T1P + T24;
+        Ci[(csi[4])] = T25 + T26;
+    }
+    {
+        E T2e = KP707106781 * (T2c + T2d), T2f = T2b + T2e, T2v = T2b - T2e;
+        E T2n = KP707106781 * (T2d - T2c), T2p = T2n - T2o, T2r = T2o + T2n;
+        E T2i = (((KP923879532) * (T2g)) + (KP382683432 * T2h));
+        E T2l = ((KP923879532 * T2j) - ((KP382683432) * (T2k)));
+        E T2m = T2i + T2l, T2q = T2l - T2i;
+        E T2s = ((KP923879532 * T2h) - ((KP382683432) * (T2g)));
+        E T2t = (((KP382683432) * (T2j)) + (KP923879532 * T2k));
+        E T2u = T2s + T2t, T2w = T2t - T2s;
+        Cr[(csr[14])] = T2f - T2m;
+        Ci[(csi[14])] = T2u - T2r;
+        Cr[(csr[2])] = T2f + T2m;
+        Ci[(csi[2])] = T2r + T2u;
+        Ci[(csi[6])] = T2p + T2q;
+        Cr[(csr[6])] = T2v + T2w;
+        Ci[(csi[10])] = T2q - T2p;
+        Cr[(csr[10])] = T2v - T2w;
+    }
+    {
+        E TH, T1t, T1s, T1u, T1g, T1o, T1n, T1p;
+        {
+            E Tz = Tv + Ty, TG = TC + TF; TH = Tz + TG; T1t = Tz - TG;
+            E T1q = ((KP980785280 * TX) - ((KP195090322) * (TS)));
+            E T1r = (((KP195090322) * (T19)) + (KP980785280 * T1e));
+            T1s = T1q + T1r; T1u = T1r - T1q;
+        }
+        {
+            E TY = (((KP980785280) * (TS)) + (KP195090322 * TX));
+            E T1f = ((KP980785280 * T19) - ((KP195090322) * (T1e)));
+            T1g = TY + T1f; T1o = T1f - TY;
+            E T1j = T1h - T1i, T1m = T1k - T1l; T1n = T1j - T1m; T1p = T1m + T1j;
+        }
+        Cr[(csr[15])] = TH - T1g;
+        Ci[(csi[15])] = T1s - T1p;
+        Cr[(csr[1])] = TH + T1g;
+        Ci[(csi[1])] = T1p + T1s;
+        Ci[(csi[7])] = T1n + T1o;
+        Cr[(csr[7])] = T1t + T1u;
+        Ci[(csi[9])] = T1o - T1n;
+        Cr[(csr[9])] = T1t - T1u;
+    }
+    {
+        E T1x, T1N, T1M, T1O, T1E, T1I, T1H, T1J;
+        {
+            E T1v = Tv - Ty, T1w = T1i + T1h; T1x = T1v + T1w; T1N = T1v - T1w;
+            E T1K = ((KP831469612 * T1z) - ((KP555570233) * (T1y)));
+            E T1L = (((KP555570233) * (T1B)) + (KP831469612 * T1C));
+            T1M = T1K + T1L; T1O = T1L - T1K;
+        }
+        {
+            E T1A = (((KP831469612) * (T1y)) + (KP555570233 * T1z));
+            E T1D = ((KP831469612 * T1B) - ((KP555570233) * (T1C)));
+            T1E = T1A + T1D; T1I = T1D - T1A;
+            E T1F = TF - TC, T1G = T1l + T1k; T1H = T1F - T1G; T1J = T1G + T1F;
+        }
+        Cr[(csr[13])] = T1x - T1E;
+        Ci[(csi[13])] = T1M - T1J;
+        Cr[(csr[3])] = T1x + T1E;
+        Ci[(csi[3])] = T1J + T1M;
+        Ci[(csi[5])] = T1H + T1I;
+        Cr[(csr[5])] = T1N + T1O;
+        Ci[(csi[11])] = T1I - T1H;
+        Cr[(csr[11])] = T1N - T1O;
+    }
+}
+}

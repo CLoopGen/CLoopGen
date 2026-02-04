@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int size;
+extern int buckets[4][256];
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (j = 0; j < 2; j++) {
+    int offset = size;
+    for (i = (1 << 7) - 1; i >= 0; i--) {
+        buckets[j][i] = offset -= buckets[j][i] + 1;
+    }
+    offset = size;
+    for (i = (1 << 7) - 1; i >= 0; i--) {
+        buckets[j + 2][i] = offset -= buckets[j + 2][i] - 1;
+    }
+}
+}

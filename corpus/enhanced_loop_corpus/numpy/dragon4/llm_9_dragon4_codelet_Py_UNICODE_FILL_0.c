@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef wchar_t Py_UNICODE;
+
+typedef ssize_t Py_ssize_t;
+
+extern Py_UNICODE *target;
+extern Py_UNICODE value;
+extern Py_ssize_t length;
+extern Py_ssize_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Reduced effective trip count with stride-based access
+    // Increases stride to skip elements and fill only a subset, then revisit
+    // Simulates lower effective iterations but same total work via two passes
+    Py_ssize_t i;
+    Py_ssize_t step = 2;
+    
+    // First pass: fill even indices
+    for (i = 0; i < length; i += step) {
+        target[i] = value;
+    }
+
+    // Second pass: fill odd indices
+    for (i = 1; i < length; i += step) {
+        target[i] = value;
+    }
+}

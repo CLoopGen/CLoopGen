@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern float h;
+extern float *initvalu;
+extern  float b31;
+extern  float b32;
+extern float *initvalu_temp;
+extern float **finavalu_temp;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Reverse consecutive memory access pattern
+    // Iterates from the last element to the first
+    for (i = 90; i >= 0; i--) {
+        initvalu_temp[i] = initvalu[i] + h * (b31 * finavalu_temp[0][i] + b32 * finavalu_temp[1][i]);
+    }
+}

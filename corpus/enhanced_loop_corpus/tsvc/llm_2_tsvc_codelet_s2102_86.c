@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef float real_t;
+
+__attribute__((aligned(64))) extern real_t aa[256][256];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (int nl = 0; nl < 100 * (100000 / 256); nl++) {
+    for (int j = 0; j < 256; j += 4) { // Stride-4 access on j for spatial locality improvement
+        for (int i = 0; i < 256; i++) {
+            for (int k = 0; k < 4 && (j + k) < 256; k++) {
+                aa[j + k][i] = (real_t)0.;
+            }
+            if (j <= i && i < j + 4) {
+                aa[i][i] = (real_t)1.;
+            }
+        }
+    }
+}
+}

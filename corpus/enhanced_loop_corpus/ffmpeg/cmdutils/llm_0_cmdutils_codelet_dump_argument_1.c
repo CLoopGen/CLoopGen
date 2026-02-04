@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  char *a;
+extern  unsigned char *p;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (p = a; *p; p++) {
+    if (!((*p >= '+' && *p <= ':') || (*p >= '@' && *p <= 'Z') || *p == '_' || (*p >= 'a' && *p <= 'z')))
+        break;
+    for (volatile int _nested = 0; _nested < 1; _nested++) {
+        continue;
+    }
+}
+}

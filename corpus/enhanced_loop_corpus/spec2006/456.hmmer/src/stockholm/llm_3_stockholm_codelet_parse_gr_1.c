@@ -1,0 +1,90 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+struct gki_elem {
+    char *key;
+    int idx;
+    struct gki_elem *nxt;
+};
+
+
+typedef struct {
+    struct gki_elem **table;
+    int primelevel;
+    int nhash;
+    int nkeys;
+} GKI;
+
+typedef struct msa_struct {
+    char **aseq;
+    char **sqname;
+    float *wgt;
+    int alen;
+    int nseq;
+    int flags;
+    int type;
+    char *name;
+    char *desc;
+    char *acc;
+    char *au;
+    char *ss_cons;
+    char *sa_cons;
+    char *rf;
+    char **sqacc;
+    char **sqdesc;
+    char **ss;
+    char **sa;
+    float cutoff[6];
+    int cutoff_is_set[6];
+    char **comment;
+    int ncomment;
+    int alloc_ncomment;
+    char **gf_tag;
+    char **gf;
+    int ngf;
+    int alloc_ngf;
+    char **gs_tag;
+    char ***gs;
+    GKI *gs_idx;
+    int ngs;
+    char **gc_tag;
+    char **gc;
+    GKI *gc_idx;
+    int ngc;
+    char **gr_tag;
+    char ***gr;
+    GKI *gr_idx;
+    int ngr;
+    GKI *index;
+    int nseqalloc;
+    int nseqlump;
+    int *sqlen;
+    int *sslen;
+    int *salen;
+    int lastidx;
+} MSA;
+
+extern MSA *msa;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Strided memory access (stride of 2, then handle odd count if needed)
+    int nseqalloc = msa->nseqalloc;
+    
+    // Process even indices first with stride 2
+    for (j = 0; j < nseqalloc; j += 2) {
+        msa->sa[j] = ((void *)0);
+        msa->salen[j] = 0;
+    }
+    
+    // Handle odd-sized array by processing last element if nseqalloc is odd
+    if (nseqalloc > 0 && (nseqalloc % 2) == 1) {
+        msa->sa[nseqalloc - 1] = ((void *)0);
+        msa->salen[nseqalloc - 1] = 0;
+    }
+}

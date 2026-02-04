@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef float real_t;
+
+__attribute__((aligned(64))) extern real_t a[32000];
+__attribute__((aligned(64))) extern real_t b[32000];
+extern int M;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (int nl = 0; nl < 10 * 100000; nl++) {
+    for (int nj = 0; nj < M / 16; nj++) {
+        for (int i = nj * 16; i < (nj + 1) * 16 && i < M; i++) {
+            a[i + M] = a[i] + b[i];
+        }
+    }
+}
+}

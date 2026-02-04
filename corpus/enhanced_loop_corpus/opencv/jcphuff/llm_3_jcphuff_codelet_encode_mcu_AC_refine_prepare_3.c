@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef short JCOEF;
+
+typedef unsigned short UJCOEF;
+
+extern  JCOEF *block;
+extern  int *jpeg_natural_order_start;
+extern int Sl;
+extern int Al;
+extern UJCOEF *absvalues;
+extern int k;
+extern int temp;
+extern int temp2;
+extern int EOB;
+extern size_t zerobits;
+extern size_t signbits;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Strided memory access pattern
+    // Access block with a fixed stride (e.g., every 2nd element), simulating non-unit stride access
+    // This changes the access pattern to strided, which may affect cache behavior
+    const int stride = 2;
+    const int offset = 1;  // Start from an offset to vary pattern
+    for (k = 0; k < Sl; k++) {
+        int index = offset + k * stride;  // Strided index calculation
+        temp = block[index];  // Strided access instead of indirect
+        temp2 = temp >> (8 * sizeof(int) - 1);
+        temp ^= temp2;
+        temp -= temp2;
+        temp >>= Al;
+        if (temp != 0) {
+            zerobits |= ((size_t)1U) << k;
+            signbits |= ((size_t)(temp2 + 1)) << k;
+        }
+        absvalues[k] = (UJCOEF)temp;
+        if (temp == 1)
+            EOB = k + 32;
+    }
+}

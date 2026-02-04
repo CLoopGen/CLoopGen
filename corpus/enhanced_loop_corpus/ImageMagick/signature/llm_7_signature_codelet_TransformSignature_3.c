@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern ssize_t i;
+extern unsigned int W[64];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+unsigned int temp[48]; // Local buffer to break direct WAW and WAR dependencies
+for (i = 16; i < 64; i++) {
+    ssize_t idx = i - 16;
+    unsigned int s0 = ((W[i - 15] >> 7) | (W[i - 15] << (32 - 7))) & 4294967295U;
+    unsigned int s1 = ((W[i - 15] >> 18) | (W[i - 15] << (32 - 18))) & 4294967295U;
+    unsigned int s2 = (W[i - 15] >> 3) & 4294967295U;
+    unsigned int t0 = ((W[i - 2] >> 17) | (W[i - 2] << (32 - 17))) & 4294967295U;
+    unsigned int t1 = ((W[i - 2] >> 19) | (W[i - 2] << (32 - 19))) & 4294967295U;
+    unsigned int t2 = (W[i - 2] >> 10) & 4294967295U;
+    temp[idx] = ((t0 ^ t1 ^ t2) + W[i - 7] + (s0 ^ s1 ^ s2) + W[i - 16]) & 4294967295U;
+}
+// Break loop-carried dependency by decoupling write from computation
+for (i = 16; i < 64; i++) {
+    W[i] = temp[i - 16];
+}
+}

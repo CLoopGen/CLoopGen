@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef float real;
+
+typedef int integer;
+
+extern real *d__;
+extern real *z__;
+extern integer i__;
+extern real dscale[3];
+extern real sclfac;
+extern real zscale[3];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i__ = 1; i__ <= 3; ++i__) {
+        real temp_d = d__[i__];
+        if (temp_d != 0.0) {
+            dscale[i__ - 1] = temp_d * sclfac;
+            zscale[i__ - 1] = z__[i__] * sclfac;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    size_t nx;
+    size_t ny;
+    double *xrange;
+    double *yrange;
+    double *bin;
+} gsl_histogram2d;
+
+extern gsl_histogram2d *h;
+extern  double yrange[];
+extern size_t i;
+extern  size_t ny;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    if (ny > 0) {
+        for (i = 0; i <= ny; i += 2) {
+            h->yrange[i] = yrange[i];
+            if (i + 1 <= ny) {
+                h->yrange[i + 1] = yrange[i + 1];
+            }
+        }
+    } else {
+        h->yrange[0] = yrange[0];
+    }
+}

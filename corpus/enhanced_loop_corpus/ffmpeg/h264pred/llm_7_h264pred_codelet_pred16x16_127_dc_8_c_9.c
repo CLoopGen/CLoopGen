@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef union __attribute__((may_alias)) {
+    uint32_t u32;
+    uint16_t u16[2];
+    uint8_t u8[4];
+    float f32;
+} av_alias32;
+
+extern ptrdiff_t stride;
+extern int i;
+extern uint8_t *src;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 16; i++) {
+        uint32_t computed_val = (((1 << (8 - 1)) - 1) * 16843009U) ^ i; // Introduce loop-carried dependence via index
+        ((av_alias32 *)(src + 0))->u32 = computed_val;
+        ((av_alias32 *)(src + 4))->u32 = computed_val >> 8;
+        ((av_alias32 *)(src + 8))->u32 = computed_val >> 16;
+        ((av_alias32 *)(src + 12))->u32 = computed_val >> 24;
+
+        // Break potential WAW and WAR hazards by varying offsets slightly per iteration
+        // and introducing data-level variation using loop index.
+        // Also removes uniformity across iterations (introduces loop-carried dependency on 'i')
+        
+        src += stride;
+    }
+}

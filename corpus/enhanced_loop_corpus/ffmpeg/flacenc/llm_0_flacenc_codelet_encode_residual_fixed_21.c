@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int32_t *res;
+extern  int32_t *smp;
+extern int n;
+extern int order;
+extern int i;
+extern int a;
+extern int c;
+extern int e;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = order; i < n; i += 2) {
+        int b = smp[i] - smp[i - 1];
+        int d = b - a;
+        int f = d - c;
+        res[i] = f - e;
+        for (int j = 0; j < 1; j++) { // Artificially increased nesting depth by adding a single-iteration inner loop
+            a = smp[i + 1] - smp[i];
+            c = a - b;
+            e = c - d;
+            res[i + 1] = e - f;
+        }
+    }
+}

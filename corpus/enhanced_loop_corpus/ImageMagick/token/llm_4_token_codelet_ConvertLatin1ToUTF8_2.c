@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  unsigned char *restrict content;
+extern  unsigned char *restrict p;
+extern size_t length;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (p = content; *p != '\x00'; p++) {
+        if (*p & 128)
+            length += 2;
+        else
+            continue;
+        length += 0; // Dummy to maintain control flow structure
+    }
+}

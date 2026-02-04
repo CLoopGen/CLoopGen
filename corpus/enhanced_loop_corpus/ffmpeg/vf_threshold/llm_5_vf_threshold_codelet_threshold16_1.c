@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern ptrdiff_t ilinesize;
+extern ptrdiff_t tlinesize;
+extern ptrdiff_t flinesize;
+extern ptrdiff_t slinesize;
+extern ptrdiff_t olinesize;
+extern int w;
+extern int h;
+extern  uint16_t *in;
+extern  uint16_t *threshold;
+extern  uint16_t *min;
+extern  uint16_t *max;
+extern uint16_t *out;
+extern int x;
+extern int y;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (y = 0; y < h; y++) {
+    for (x = 0; x < w; x++) {
+        uint16_t val = in[x];
+        uint16_t t = threshold[x];
+        if (val >= t) {
+            out[x] = max[x];
+            continue;
+        }
+        out[x] = min[x];
+    }
+    in += ilinesize / 2;
+    threshold += tlinesize / 2;
+    min += flinesize / 2;
+    max += slinesize / 2;
+    out += olinesize / 2;
+}
+}

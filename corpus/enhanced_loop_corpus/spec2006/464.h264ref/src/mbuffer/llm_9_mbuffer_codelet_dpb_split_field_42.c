@@ -1,0 +1,146 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef enum {
+    FRAME,
+    TOP_FIELD,
+    BOTTOM_FIELD
+} PictureStructure;
+
+typedef int64_t int64;
+
+typedef unsigned char byte;
+
+typedef struct storable_picture {
+    PictureStructure structure;
+    int poc;
+    int top_poc;
+    int bottom_poc;
+    int frame_poc;
+    int order_num;
+    int64 ref_pic_num[6][33];
+    int64 frm_ref_pic_num[6][33];
+    int64 top_ref_pic_num[6][33];
+    int64 bottom_ref_pic_num[6][33];
+    unsigned int frame_num;
+    int pic_num;
+    int long_term_pic_num;
+    int long_term_frame_idx;
+    int is_long_term;
+    int used_for_reference;
+    int is_output;
+    int non_existing;
+    int size_x;
+    int size_y;
+    int size_x_cr;
+    int size_y_cr;
+    int chroma_vector_adjustment;
+    int coded_frame;
+    int MbaffFrameFlag;
+    unsigned short **imgY;
+    unsigned short *imgY_11;
+    unsigned short *imgY_11_w;
+    unsigned short **imgY_ups;
+    unsigned short **imgY_ups_w;
+    unsigned short ***imgUV;
+    byte *mb_field;
+    short ***ref_idx;
+    int64 ***ref_pic_id;
+    int64 ***ref_id;
+    short ****mv;
+    byte **moving_block;
+    byte **field_frame;
+    struct storable_picture *top_field;
+    struct storable_picture *bottom_field;
+    struct storable_picture *frame;
+    int chroma_format_idc;
+    int frame_mbs_only_flag;
+    int frame_cropping_flag;
+    int frame_cropping_rect_left_offset;
+    int frame_cropping_rect_right_offset;
+    int frame_cropping_rect_top_offset;
+    int frame_cropping_rect_bottom_offset;
+} StorablePicture;
+
+typedef struct frame_store {
+    int is_used;
+    int is_reference;
+    int is_long_term;
+    int is_orig_reference;
+    int is_non_existent;
+    unsigned int frame_num;
+    int frame_num_wrap;
+    int long_term_frame_idx;
+    int is_output;
+    int poc;
+    StorablePicture *frame;
+    StorablePicture *top_field;
+    StorablePicture *bottom_field;
+} FrameStore;
+
+extern FrameStore *fs;
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop() {
+    // Variant 2: Reduced computational intensity with simplified indexing and fewer memory accesses
+    const int width_limit = fs->frame->size_x / 4;
+    const int height_limit = fs->frame->size_y / 8;
+    const int mb_width = fs->frame->size_x / 16;
+    const int mv_offset_scale = 8;
+    const int mod_mask = 3; // Equivalent to % 4
+
+    for (i = 0; i < width_limit; ++i) {
+        const int idiv4 = i >> 2;  // i / 4
+        for (j = 0; j < height_limit; ++j) {
+            const int j_quarter = j >> 2; // j / 4
+            const int j_mod = j & mod_mask; // j % 4
+            const int base_offset = j_quarter * mv_offset_scale + j_mod;
+            const int top_offset = base_offset;
+            const int bottom_offset = base_offset + 4;
+            const int jdiv4 = j >> 1; // j / 2
+            const int currentmb = (mb_width * (jdiv4 >> 1) << 1) + (idiv4 << 1) + (jdiv4 & 1);
+
+            if (fs->frame->MbaffFrameFlag && fs->frame->mb_field[currentmb]) {
+                // Update field markers with direct assignment
+                byte* top_ff_row = fs->top_field->field_frame[i];
+                byte* bottom_ff_row = fs->bottom_field->field_frame[i];
+                byte* frame_ff_row = fs->frame->field_frame[i];
+                top_ff_row[j] = 1;
+                bottom_ff_row[j] = 1;
+                frame_ff_row[2 * j] = 1;
+                frame_ff_row[2 * j + 1] = 1;
+
+                // Reuse computed offsets for MV and reference data
+                short**** fm = fs->frame->mv;
+                short*** fri = fs->frame->ref_idx;
+                int64*** frid = fs->frame->ref_id;
+
+                // Simplified propagation for bottom field
+                fs->bottom_field->mv[0][i][j][0] = fm[0][i][bottom_offset][0];
+                fs->bottom_field->mv[0][i][j][1] = fm[0][i][bottom_offset][1];
+                fs->bottom_field->mv[1][i][j][0] = fm[1][i][bottom_offset][0];
+                fs->bottom_field->mv[1][i][j][1] = fm[1][i][bottom_offset][1];
+                fs->bottom_field->ref_idx[0][i][j] = fri[0][i][bottom_offset];
+                fs->bottom_field->ref_idx[1][i][j] = fri[1][i][bottom_offset];
+                fs->bottom_field->ref_id[0][i][j] = frid[4][i][bottom_offset];
+                fs->bottom_field->ref_id[1][i][j] = frid[5][i][bottom_offset];
+
+                // Simplified propagation for top field
+                fs->top_field->mv[0][i][j][0] = fm[0][i][top_offset][0];
+                fs->top_field->mv[0][i][j][1] = fm[0][i][top_offset][1];
+                fs->top_field->mv[1][i][j][0] = fm[1][i][top_offset][0];
+                fs->top_field->mv[1][i][j][1] = fm[1][i][top_offset][1];
+                fs->top_field->ref_idx[0][i][j] = fri[0][i][top_offset];
+                fs->top_field->ref_idx[1][i][j] = fri[1][i][top_offset];
+                fs->top_field->ref_id[0][i][j] = frid[2][i][top_offset];
+                fs->top_field->ref_id[1][i][j] = frid[3][i][top_offset];
+            }
+        }
+    }
+}

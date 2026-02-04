@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern unsigned short equot[9];
+extern unsigned short b[];
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < (6 + 3); i++) {
+        if (i % 2 == 0) {
+            b[i] = equot[i];
+        } else {
+            continue;
+        }
+    }
+}

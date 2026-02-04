@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int i;
+extern  int cache_bits_max;
+extern int key;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int temp = cache_bits_max;
+    for (i = cache_bits_max; i >= 1; --i) {
+        temp = temp + (key & 1);
+        key >>= 1;
+    }
+    key = temp & 0xFF;
+}

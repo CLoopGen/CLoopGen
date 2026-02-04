@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *dst;
+extern  uint8_t *src1;
+extern  uint8_t *src2;
+extern intptr_t w;
+extern long i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i + 7 < w; i += 8) {
+        for (int j = 0; j < 8; j++) {
+            dst[i + j] = src1[i + j] - src2[i + j];
+        }
+    }
+}

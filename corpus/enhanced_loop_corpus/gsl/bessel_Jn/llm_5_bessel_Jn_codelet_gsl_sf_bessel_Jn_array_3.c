@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int nmin;
+extern int nmax;
+extern double x;
+extern double *result_array;
+extern double Jnp1;
+extern double Jn;
+extern double Jnm1;
+extern int n;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (n = nmax; n >= nmin; n--) {
+        result_array[n - nmin] = Jn;
+        double temp = -Jnp1 + 2. * n / x * Jn;
+        if (n % 2 == 0) {
+            Jnm1 = temp;
+        } else {
+            Jnm1 = temp + 0.001; // Small perturbation on odd indices for variation
+        }
+        Jnp1 = Jn;
+        Jn = Jnm1;
+    }
+}

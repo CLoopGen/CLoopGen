@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int N;
+extern  float alpha;
+extern  float *X;
+extern  int incX;
+extern  float *Y;
+extern  int incY;
+extern float *Ap;
+extern int i;
+extern int j;
+extern int ix;
+extern int iy;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < N; i++) {
+    const double tmp1 = alpha * X[ix];
+    const double tmp2 = alpha * Y[iy];
+    int jx = ((incX) > 0 ? 0 : ((N) - 1) * (-(incX)));
+    int jy = ((incY) > 0 ? 0 : ((N) - 1) * (-(incY)));
+    double temp_sum = 0.0;
+    for (j = 0; j <= i; j++) {
+        temp_sum += tmp1 * Y[jy] + tmp2 * X[jx];
+        jx += incX;
+        jy += incY;
+    }
+    Ap[(((i) * ((i) + 1)) / 2 + i)] += temp_sum;
+    ix += incX;
+    iy += incY;
+}
+}

@@ -1,0 +1,111 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned char Bool;
+
+typedef struct {
+    char *next_in;
+    unsigned int avail_in;
+    unsigned int total_in_lo32;
+    unsigned int total_in_hi32;
+    char *next_out;
+    unsigned int avail_out;
+    unsigned int total_out_lo32;
+    unsigned int total_out_hi32;
+    void *state;
+    void *(*bzalloc)(void *, int, int);
+    void (*bzfree)(void *, void *);
+    void *opaque;
+} bz_stream;
+
+typedef int Int32;
+
+typedef unsigned int UInt32;
+
+typedef unsigned char UChar;
+
+typedef unsigned short UInt16;
+
+typedef struct {
+    bz_stream *strm;
+    Int32 mode;
+    Int32 state;
+    UInt32 avail_in_expect;
+    UInt32 *arr1;
+    UInt32 *arr2;
+    UInt32 *ftab;
+    Int32 origPtr;
+    UInt32 *ptr;
+    UChar *block;
+    UInt16 *mtfv;
+    UChar *zbits;
+    Int32 workFactor;
+    UInt32 state_in_ch;
+    Int32 state_in_len;
+    Int32 rNToGo;
+    Int32 rTPos;
+    Int32 nblock;
+    Int32 nblockMAX;
+    Int32 numZ;
+    Int32 state_out_pos;
+    Int32 nInUse;
+    Bool inUse[256];
+    UChar unseqToSeq[256];
+    UInt32 bsBuff;
+    Int32 bsLive;
+    UInt32 blockCRC;
+    UInt32 combinedCRC;
+    Int32 verbosity;
+    Int32 blockNo;
+    Int32 blockSize100k;
+    Int32 nMTF;
+    Int32 mtfFreq[258];
+    UChar selector[18002];
+    UChar selectorMtf[18002];
+    UChar len[6][258];
+    Int32 code[6][258];
+    Int32 rfreq[6][258];
+    UInt32 len_pack[258][4];
+} EState;
+
+extern Bool inUse16[16];
+extern EState *s;
+extern Int32 i;
+extern Int32 j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Introduce artificial loop-carried dependency and data dependence (RAW)
+    // We create a cumulative pattern where each iteration depends on the previous via a synthetic RAW
+    // Also modify access order to increase data dependency complexity.
+
+    Bool temp[16];
+    temp[0] = ((Bool)0);
+    for (j = 0; j < 16; j++) {
+        if (s->inUse[j])
+            temp[0] = ((Bool)1);
+    }
+
+    for (i = 1; i < 16; i++) {
+        // Introduce RAW: current temp[i] depends on temp[i-1]
+        temp[i] = temp[i-1]; // Artificial carry-over (could model state propagation)
+
+        // Actual computation folded in
+        Bool found = ((Bool)0);
+        for (j = 0; j < 16; j++) {
+            if (s->inUse[i * 16 + j])
+                found = ((Bool)1);
+        }
+        // Merge with carried value using logical OR to preserve dependency
+        temp[i] = temp[i] || found;
+    }
+
+    // Write out results without dependencies
+    for (i = 0; i < 16; i++) {
+        inUse16[i] = temp[i];
+    }
+}

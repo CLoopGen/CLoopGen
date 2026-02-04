@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    double re;
+    double im;
+} complex;
+
+typedef struct {
+    u_int m;
+    u_int n;
+    u_int max_m;
+    u_int max_n;
+    u_int max_size;
+    complex *base;
+    complex **me;
+} ZMAT;
+
+typedef struct {
+    u_int dim;
+    u_int max_dim;
+    complex *ve;
+} ZVEC;
+
+extern int col;
+extern ZMAT *mat;
+extern ZVEC *vec;
+extern u_int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    if (mat->m > 0) {
+        i = 0;
+        for (u_int iter = 0; iter < mat->m; iter++) {
+            vec->ve[i] = mat->me[i][col];
+            i++;
+        }
+    }
+}

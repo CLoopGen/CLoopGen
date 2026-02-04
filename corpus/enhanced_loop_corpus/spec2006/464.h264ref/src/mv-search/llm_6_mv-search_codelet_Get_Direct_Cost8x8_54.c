@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int i;
+extern int j;
+extern int k;
+extern int curr_diff[8][8];
+extern int diff8x8[64];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int temp[64];
+    for (j = 0; j < 8; j++)
+        for (i = 0; i < 8; i++) {
+            k = j * 8 + i;
+            temp[k] = curr_diff[j][i];
+        }
+    for (k = 0; k < 64; k++)
+        diff8x8[k] = temp[k];
+}

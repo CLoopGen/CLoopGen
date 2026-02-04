@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  char *pattern;
+extern int patternLen;
+extern int backslashCount;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    backslashCount = 0;
+    for (int i = patternLen - 2; i >= 0; i--) {
+        backslashCount += (pattern[i] == '\\');
+        if (pattern[i] != '\\') goto end_loop;
+    }
+end_loop:;
+}

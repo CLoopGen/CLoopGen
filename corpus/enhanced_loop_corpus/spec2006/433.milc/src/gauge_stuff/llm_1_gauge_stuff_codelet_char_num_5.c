@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int length;
+extern int j;
+extern int bdig[6];
+extern int old;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (j = length - 2; j >= 0; j--) {
+        for (int inner = 0; inner < 1; inner++) {
+            old = old * 10 + bdig[j];
+        }
+    }
+}

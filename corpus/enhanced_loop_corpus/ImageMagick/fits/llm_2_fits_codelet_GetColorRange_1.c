@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern char start_color[4096];
+extern char *p;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop() {
+    // Variant 1: Strided memory access with step size of 2
+    // This modifies the access pattern to skip every other byte, simulating a strided traversal.
+    char *temp = start_color;
+    while (1) {
+        if ((*temp != '-') && (*temp != '\x00')) {
+            if (*temp == '(') {
+                temp++;
+                while ((*temp != ')') && (*temp != '\x00')) {
+                    temp += 2;  // Stride of 2 inside inner logic
+                    if (*temp == '\x00' || *(temp - 1) == '\x00') break;
+                }
+                if (*temp == '\x00') break;
+            }
+            temp += 2;  // Strided outer loop increment
+        } else {
+            break;
+        }
+    }
+}

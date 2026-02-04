@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  size_t length;
+extern size_t extent;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    size_t i;
+    for (extent = 256; extent < length; extent *= 2) {
+        for (i = 0; i < extent % 17; ++i) {
+            extent += (i & 1) ? 1 : 0;
+        }
+    }
+}

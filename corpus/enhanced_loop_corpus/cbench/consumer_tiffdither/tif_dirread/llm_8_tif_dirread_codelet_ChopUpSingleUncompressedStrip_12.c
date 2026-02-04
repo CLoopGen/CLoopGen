@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned int uint32;
+
+typedef int int32;
+
+typedef int32 tsize_t;
+
+typedef uint32 tstrip_t;
+
+extern uint32 bytecount;
+extern uint32 offset;
+extern tsize_t stripbytes;
+extern tstrip_t strip;
+extern tstrip_t nstrips;
+extern uint32 *newcounts;
+extern uint32 *newoffsets;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    tstrip_t i;
+    for (strip = 0; strip < nstrips; strip += 2) {
+        if (stripbytes > (tsize_t)bytecount)
+            stripbytes = bytecount;
+
+        newcounts[strip] = stripbytes;
+        newoffsets[strip] = offset;
+        offset += stripbytes;
+        bytecount -= stripbytes;
+
+        if ((i = strip + 1) < nstrips) {
+            newcounts[i] = stripbytes;
+            newoffsets[i] = offset;
+            offset += stripbytes;
+            bytecount -= stripbytes;
+        }
+    }
+}

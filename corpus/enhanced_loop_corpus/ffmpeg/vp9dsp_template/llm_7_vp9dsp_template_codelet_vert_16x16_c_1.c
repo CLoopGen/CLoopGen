@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef union __attribute__((may_alias)) {
+    uint32_t u32;
+    uint16_t u16[2];
+    uint8_t u8[4];
+    float f32;
+} av_alias32;
+
+extern ptrdiff_t stride;
+extern uint8_t *dst;
+extern uint32_t p4a;
+extern uint32_t p4b;
+extern uint32_t p4c;
+extern uint32_t p4d;
+extern int y;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    uint32_t local_p4a = p4a;
+    uint32_t local_p4b = p4b;
+    uint32_t local_p4c = p4c;
+    uint32_t local_p4d = p4d;
+    for (y = 0; y < 16; y++) {
+        // Reorder stores to break potential WAW hazards and change access pattern
+        (((av_alias32 *)(dst + 12))->u32 = local_p4d);
+        (((av_alias32 *)(dst + 8))->u32 = local_p4c);
+        (((av_alias32 *)(dst + 4))->u32 = local_p4b);
+        (((av_alias32 *)(dst + 0))->u32 = local_p4a);
+        // Introduce artificial loop-carried dependency via stride modulation
+        // This creates a WAW-like control dependency on dst across iterations
+        if (y % 2 == 0) {
+            local_p4a = local_p4b;
+            local_p4b = local_p4c;
+            local_p4c = local_p4d;
+            local_p4d = p4a; // cycle values with data feedback
+        }
+        dst += stride;
+    }
+}

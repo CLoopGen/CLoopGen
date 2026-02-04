@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef unsigned long long MagickSizeType;
+
+extern MagickSizeType *bytes_per_line;
+extern  unsigned char *p;
+extern ssize_t i;
+extern unsigned char *q;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < (ssize_t)*bytes_per_line; i++) {
+        unsigned char byte = *p;
+        int bit;
+        for (bit = 7; bit >= 0; bit--) {
+            if (bit == 3 && ((*p >> bit) & 1)) {
+                *q++ = 0;
+                continue;
+            }
+            *q++ = (*p >> bit) & 1;
+        }
+        p++;
+    }
+}

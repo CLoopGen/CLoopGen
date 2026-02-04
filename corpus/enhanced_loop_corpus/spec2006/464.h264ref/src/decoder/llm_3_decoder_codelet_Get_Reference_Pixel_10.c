@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int y;
+extern int result;
+extern int tmp_res[6];
+extern  int COEF[6];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Strided memory access (process every second element in two passes)
+    // First pass: even indices (y = -2, 0, 2)
+    for (y = -2; y < 4; y += 2) {
+        result += tmp_res[y + 2] * COEF[y + 2];
+    }
+    // Second pass: odd indices (y = -1, 1, 3)
+    for (y = -1; y < 4; y += 2) {
+        result += tmp_res[y + 2] * COEF[y + 2];
+    }
+}

@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *pix1;
+extern uint8_t *pix2;
+extern ptrdiff_t stride;
+extern int h;
+extern int s;
+extern int i;
+extern  uint32_t *sq;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+void loop(){
+for (i = 0; i < h; i++) {
+    s += sq[pix1[0] - pix2[0]];
+    s += sq[pix1[1] - pix2[1]];
+    s += sq[pix1[2] - pix2[2]];
+    s += sq[pix1[3] - pix2[3]];
+    pix1 += stride;
+    pix2 += stride;
+}
+
+}

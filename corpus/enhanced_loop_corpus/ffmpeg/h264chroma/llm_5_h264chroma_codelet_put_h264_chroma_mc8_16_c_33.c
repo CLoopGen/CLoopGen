@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern ptrdiff_t stride;
+extern int h;
+extern uint16_t *dst;
+extern uint16_t *src;
+extern  int A;
+extern  int B;
+extern  int C;
+extern  int D;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < h; i++) {
+    int j = 0;
+    if (i < h / 2) {
+        dst[j++] = ((((A * src[0] + B * src[1] + C * src[stride + 0] + D * src[stride + 1])) + 32) >> 6);
+        dst[j++] = ((((A * src[1] + B * src[2] + C * src[stride + 1] + D * src[stride + 2])) + 32) >> 6);
+        dst[j++] = ((((A * src[2] + B * src[3] + C * src[stride + 2] + D * src[stride + 3])) + 32) >> 6);
+        dst[j++] = ((((A * src[3] + B * src[4] + C * src[stride + 3] + D * src[stride + 4])) + 32) >> 6);
+        dst[j++] = ((((A * src[4] + B * src[5] + C * src[stride + 4] + D * src[stride + 5])) + 32) >> 6);
+        dst[j++] = ((((A * src[5] + B * src[6] + C * src[stride + 5] + D * src[stride + 6])) + 32) >> 6);
+        dst[j++] = ((((A * src[6] + B * src[7] + C * src[stride + 6] + D * src[stride + 7])) + 32) >> 6);
+        dst[j]   = ((((A * src[7] + B * src[8] + C * src[stride + 7] + D * src[stride + 8])) + 32) >> 6);
+    } else {
+        for (j = 0; j < 8; j++) {
+            dst[j] = ((((A * src[j] + B * src[j+1] + C * src[stride + j] + D * src[stride + j + 1])) + 32) >> 6);
+        }
+    }
+    dst += stride;
+    src += stride;
+}
+}

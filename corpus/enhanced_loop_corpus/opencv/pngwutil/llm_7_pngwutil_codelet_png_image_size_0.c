@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef unsigned int png_uint_32;
+
+typedef size_t png_alloc_size_t;
+
+extern png_uint_32 h;
+extern png_uint_32 w;
+extern unsigned int pd;
+extern png_alloc_size_t cb_base;
+extern int pass;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+png_alloc_size_t local_cb = 0;
+int local_pass;
+for (local_pass = 0; local_pass <= 6; ++local_pass) {
+    png_uint_32 pw = (((w) + (((1 << (local_pass > 1 ? (7 - local_pass) >> 1 : 3)) - 1) - (((1 & local_pass) << (3 - ((local_pass + 1) >> 1))) & 7))) >> (local_pass > 1 ? (7 - local_pass) >> 1 : 3));
+    if (pw > 0) {
+        png_uint_32 ph = (((h) + (((1 << (local_pass > 2 ? (8 - local_pass) >> 1 : 3)) - 1) - (((1 & ~local_pass) << (3 - (local_pass >> 1))) & 7))) >> (local_pass > 2 ? (8 - local_pass) >> 1 : 3));
+        size_t row_size = (pd >= 8) ? (size_t)(pw) * ((size_t)(pd) >> 3) : (((size_t)(pw) * (size_t)(pd)) + 7) >> 3;
+        local_cb += (row_size + 1) * ph;
+    }
+}
+cb_base = local_cb;
+pass = local_pass;
+}

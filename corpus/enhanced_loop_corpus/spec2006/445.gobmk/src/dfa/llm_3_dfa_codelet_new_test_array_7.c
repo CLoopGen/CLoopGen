@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef struct entry {
+    int l;
+    int r;
+    int val;
+    struct entry *pnext;
+} entry_t;
+
+typedef struct test_array {
+    entry_t *hash[4096];
+} test_array_t;
+
+extern test_array_t *pta;
+extern int h;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Reverse consecutive memory access - traverse the array from last to first element
+    for (h = 4095; h >= 0; h--)
+        pta->hash[h] = ((void *)0);
+}

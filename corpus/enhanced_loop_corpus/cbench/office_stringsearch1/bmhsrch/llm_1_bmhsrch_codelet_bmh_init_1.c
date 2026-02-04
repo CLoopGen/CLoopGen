@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned char uchar;
+
+extern int patlen;
+extern int skip[256];
+extern uchar *pat;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+if (patlen > 0) {
+    for (i = 0; i < patlen; ++i)
+        skip[pat[i]] = patlen - i - 1;
+}
+}

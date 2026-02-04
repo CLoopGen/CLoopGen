@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef int integer;
+
+extern integer *idxp;
+extern integer *idxc;
+extern integer *coltyp;
+extern integer i__1;
+extern integer j;
+extern integer ct;
+extern integer jp;
+extern integer psm[4];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (j = 2; j <= i__1; j += 2) {
+    if (j + 1 <= i__1) {
+        jp = idxp[j];
+        ct = coltyp[jp];
+        idxc[psm[ct - 1]] = j;
+        ++psm[ct - 1];
+
+        jp = idxp[j + 1];
+        ct = coltyp[jp];
+        idxc[psm[ct - 1]] = j + 1;
+        ++psm[ct - 1];
+    } else {
+        jp = idxp[j];
+        ct = coltyp[jp];
+        idxc[psm[ct - 1]] = j;
+        ++psm[ct - 1];
+    }
+}
+}

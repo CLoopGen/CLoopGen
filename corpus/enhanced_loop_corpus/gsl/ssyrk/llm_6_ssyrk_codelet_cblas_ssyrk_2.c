@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int N;
+extern  float beta;
+extern float *C;
+extern  int ldc;
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    float *c_ptr = C + ldc * i;
+    for (i = 0; i < N; i++) {
+        for (j = i; j < N; j++) {
+            c_ptr[j] *= beta;
+        }
+        c_ptr += ldc;
+    }
+}

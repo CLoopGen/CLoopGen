@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *dst;
+extern ptrdiff_t dst_stride;
+extern uint32_t row;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (row = 4; row--;) {
+        for (uint32_t mid = 0; mid < 2; ++mid) {
+            for (uint32_t inner = 0; inner < 2; ++inner) {
+                dst += dst_stride;
+            }
+            for (uint32_t inner = 0; inner < 2; ++inner) {
+                dst += dst_stride;
+            }
+        }
+    }
+}

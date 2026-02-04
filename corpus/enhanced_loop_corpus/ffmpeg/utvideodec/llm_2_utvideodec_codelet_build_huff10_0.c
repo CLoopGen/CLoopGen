@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct HuffEntry {
+    uint16_t sym;
+    uint8_t len;
+    uint32_t code;
+} HuffEntry;
+
+extern  uint8_t *src;
+extern int i;
+extern HuffEntry he[1024];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided memory access with stride of 2, processing even indices first, then odd
+    int n = 1024;
+    for (i = 0; i < n; i += 2) {
+        he[i].sym = i;
+        he[i].len = *src++;
+    }
+    for (i = 1; i < n; i += 2) {
+        he[i].sym = i;
+        he[i].len = *src++;
+    }
+}

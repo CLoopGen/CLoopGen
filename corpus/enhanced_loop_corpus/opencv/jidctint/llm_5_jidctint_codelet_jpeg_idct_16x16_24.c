@@ -1,0 +1,145 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef long JLONG;
+
+typedef short JCOEF;
+
+typedef JCOEF *JCOEFPTR;
+
+typedef int ISLOW_MULT_TYPE;
+
+extern JLONG tmp0;
+extern JLONG tmp1;
+extern JLONG tmp2;
+extern JLONG tmp3;
+extern JLONG tmp10;
+extern JLONG tmp11;
+extern JLONG tmp12;
+extern JLONG tmp13;
+extern JLONG tmp20;
+extern JLONG tmp21;
+extern JLONG tmp22;
+extern JLONG tmp23;
+extern JLONG tmp24;
+extern JLONG tmp25;
+extern JLONG tmp26;
+extern JLONG tmp27;
+extern JLONG z1;
+extern JLONG z2;
+extern JLONG z3;
+extern JLONG z4;
+extern JCOEFPTR inptr;
+extern ISLOW_MULT_TYPE *quantptr;
+extern int *wsptr;
+extern int ctr;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (ctr = 0; ctr < 8; ctr++ , inptr++ , quantptr++ , wsptr++) {
+    tmp0 = (((ISLOW_MULT_TYPE)(inptr[8 * 0])) * (quantptr[8 * 0]));
+    tmp0 = ((JLONG)((unsigned long)(tmp0) << (13)));
+    tmp0 += ((JLONG)1) << (13 - 1 - 1);
+
+    z1 = (((ISLOW_MULT_TYPE)(inptr[8 * 4])) * (quantptr[8 * 4]));
+    tmp1 = ((z1) * (((JLONG)((1.3065629649999999) * (((JLONG)1) << 13) + 0.5))));
+    tmp2 = ((z1) * (((JLONG)4433)));
+
+    tmp10 = tmp0 + tmp1;
+    tmp11 = tmp0 - tmp1;
+    tmp12 = tmp0 + tmp2;
+    tmp13 = tmp0 - tmp2;
+
+    z1 = (((ISLOW_MULT_TYPE)(inptr[8 * 2])) * (quantptr[8 * 2]));
+    z2 = (((ISLOW_MULT_TYPE)(inptr[8 * 6])) * (quantptr[8 * 6]));
+    z3 = z1 - z2;
+
+    if (z3 > 0) {
+        z4 = ((z3) * (((JLONG)((0.275899379) * (((JLONG)1) << 13) + 0.5))));
+        z3 = ((z3) * (((JLONG)((1.3870398450000001) * (((JLONG)1) << 13) + 0.5))));
+    } else {
+        z4 = ((-z3) * (((JLONG)((0.275899379) * (((JLONG)1) << 13) + 0.5))));
+        z3 = ((-z3) * (((JLONG)((1.3870398450000001) * (((JLONG)1) << 13) + 0.5))));
+    }
+
+    tmp0 = z3 + ((z2) * (((JLONG)20995)));
+    tmp1 = z4 + ((z1) * (((JLONG)7373)));
+    tmp2 = z3 - ((z1) * (((JLONG)((0.60134488699999999) * (((JLONG)1) << 13) + 0.5))));
+    tmp3 = z4 - ((z2) * (((JLONG)((0.50979557900000005) * (((JLONG)1) << 13) + 0.5))));
+
+    tmp20 = tmp10 + tmp0;
+    tmp27 = tmp10 - tmp0;
+    tmp21 = tmp12 + tmp1;
+    tmp26 = tmp12 - tmp1;
+    tmp22 = tmp13 + tmp2;
+    tmp25 = tmp13 - tmp2;
+    tmp23 = tmp11 + tmp3;
+    tmp24 = tmp11 - tmp3;
+
+    z1 = (((ISLOW_MULT_TYPE)(inptr[8 * 1])) * (quantptr[8 * 1]));
+    z2 = (((ISLOW_MULT_TYPE)(inptr[8 * 3])) * (quantptr[8 * 3]));
+    z3 = (((ISLOW_MULT_TYPE)(inptr[8 * 5])) * (quantptr[8 * 5]));
+    z4 = (((ISLOW_MULT_TYPE)(inptr[8 * 7])) * (quantptr[8 * 7]));
+
+    tmp11 = z1 + z3;
+    tmp1 = ((z1 + z2) * (((JLONG)((1.3533180010000001) * (((JLONG)1) << 13) + 0.5))));
+    tmp2 = ((tmp11) * (((JLONG)((1.247225013) * (((JLONG)1) << 13) + 0.5))));
+    tmp3 = ((z1 + z4) * (((JLONG)((1.0932018670000001) * (((JLONG)1) << 13) + 0.5))));
+    tmp10 = ((z1 - z4) * (((JLONG)((0.89716758600000002) * (((JLONG)1) << 13) + 0.5))));
+    tmp11 = ((tmp11) * (((JLONG)((0.66665565800000004) * (((JLONG)1) << 13) + 0.5))));
+    tmp12 = ((z1 - z2) * (((JLONG)((0.410524528) * (((JLONG)1) << 13) + 0.5))));
+
+    tmp0 = tmp1 + tmp2 + tmp3 - ((z1) * (((JLONG)((2.2863411440000001) * (((JLONG)1) << 13) + 0.5))));
+    tmp13 = tmp10 + tmp11 + tmp12 - ((z1) * (((JLONG)((1.835730603) * (((JLONG)1) << 13) + 0.5))));
+
+    if (tmp0 >= 0) {
+        z1 = ((z2 + z3) * (((JLONG)((0.13861716900000001) * (((JLONG)1) << 13) + 0.5))));
+        tmp1 += z1 + ((z2) * (((JLONG)((0.071888073999999996) * (((JLONG)1) << 13) + 0.5))));
+        tmp2 += z1 - ((z3) * (((JLONG)((1.125726048) * (((JLONG)1) << 13) + 0.5))));
+    } else {
+        z1 = ((z3 - z2) * (((JLONG)((1.407403738) * (((JLONG)1) << 13) + 0.5))));
+        tmp11 += z1 - ((z3) * (((JLONG)((0.76636728200000004) * (((JLONG)1) << 13) + 0.5))));
+        tmp12 += z1 + ((z2) * (((JLONG)((1.971951411) * (((JLONG)1) << 13) + 0.5))));
+    }
+
+    z2 += z4;
+    z1 = ((z2) * (-((JLONG)((0.66665565800000004) * (((JLONG)1) << 13) + 0.5))));
+    tmp1 += z1;
+    tmp3 += z1 + ((z4) * (((JLONG)((1.0653889620000001) * (((JLONG)1) << 13) + 0.5))));
+    z2 = ((z2) * (-((JLONG)((1.247225013) * (((JLONG)1) << 13) + 0.5))));
+    tmp10 += z2 + ((z4) * (((JLONG)((3.141271809) * (((JLONG)1) << 13) + 0.5))));
+    tmp12 += z2;
+
+    if (z3 != 0) {
+        z2 = ((z3 + z4) * (-((JLONG)((1.3533180010000001) * (((JLONG)1) << 13) + 0.5))));
+        tmp2 += z2;
+        tmp3 += z2;
+        z2 = ((z4 - z3) * (((JLONG)((0.410524528) * (((JLONG)1) << 13) + 0.5))));
+        tmp10 += z2;
+        tmp11 += z2;
+    }
+
+    wsptr[8 * 0] = (int)((tmp20 + tmp0) >> (13 - 1));
+    wsptr[8 * 15] = (int)((tmp20 - tmp0) >> (13 - 1));
+    wsptr[8 * 1] = (int)((tmp21 + tmp1) >> (13 - 1));
+    wsptr[8 * 14] = (int)((tmp21 - tmp1) >> (13 - 1));
+    wsptr[8 * 2] = (int)((tmp22 + tmp2) >> (13 - 1));
+    wsptr[8 * 13] = (int)((tmp22 - tmp2) >> (13 - 1));
+    wsptr[8 * 3] = (int)((tmp23 + tmp3) >> (13 - 1));
+    wsptr[8 * 12] = (int)((tmp23 - tmp3) >> (13 - 1));
+    wsptr[8 * 4] = (int)((tmp24 + tmp10) >> (13 - 1));
+    wsptr[8 * 11] = (int)((tmp24 - tmp10) >> (13 - 1));
+    wsptr[8 * 5] = (int)((tmp25 + tmp11) >> (13 - 1));
+    wsptr[8 * 10] = (int)((tmp25 - tmp11) >> (13 - 1));
+    wsptr[8 * 6] = (int)((tmp26 + tmp12) >> (13 - 1));
+    wsptr[8 * 9] = (int)((tmp26 - tmp12) >> (13 - 1));
+    wsptr[8 * 7] = (int)((tmp27 + tmp13) >> (13 - 1));
+    wsptr[8 * 8] = (int)((tmp27 - tmp13) >> (13 - 1));
+}
+}

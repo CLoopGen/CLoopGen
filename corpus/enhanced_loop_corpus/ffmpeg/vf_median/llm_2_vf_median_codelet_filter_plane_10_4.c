@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int src_linesize;
+extern int width;
+extern int jobnr;
+extern uint16_t *ccoarse;
+extern uint16_t *cfine;
+extern  int radiusV;
+extern  uint16_t *srcp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (int i = 0; i < radiusV + (jobnr != 0) * (1 + radiusV); i++) {
+    for (int j = 0; j < width; j += 2) {
+        if (j + 1 < width) {
+            // Access two elements consecutively to improve spatial locality
+            int idx1_fine = ((1 << ((10 + 1) / 2)) * ((width) * ((srcp[j]) >> ((10 + 1) / 2)) + j) + ((srcp[j]) & ((1 << ((10 + 1) / 2)) - 1)));
+            int idx2_fine = ((1 << ((10 + 1) / 2)) * ((width) * ((srcp[j+1]) >> ((10 + 1) / 2)) + (j+1)) + ((srcp[j+1]) & ((1 << ((10 + 1) / 2)) - 1)));
+            cfine[idx1_fine]++;
+            cfine[idx2_fine]++;
+
+            int idx1_coarse = ((1 << ((10 + 1) / 2)) * j + ((srcp[j]) >> ((10 + 1) / 2)));
+            int idx2_coarse = ((1 << ((10 + 1) / 2)) * (j+1) + ((srcp[j+1]) >> ((10 + 1) / 2)));
+            ccoarse[idx1_coarse]++;
+            ccoarse[idx2_coarse]++;
+        } else {
+            // Handle last odd element
+            int idx_fine = ((1 << ((10 + 1) / 2)) * ((width) * ((srcp[j]) >> ((10 + 1) / 2)) + j) + ((srcp[j]) & ((1 << ((10 + 1) / 2)) - 1)));
+            cfine[idx_fine]++;
+            int idx_coarse = ((1 << ((10 + 1) / 2)) * j + ((srcp[j]) >> ((10 + 1) / 2)));
+            ccoarse[idx_coarse]++;
+        }
+    }
+    srcp += src_linesize;
+}
+}

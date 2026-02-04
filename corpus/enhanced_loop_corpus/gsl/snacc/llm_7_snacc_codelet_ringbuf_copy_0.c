@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef double snacc_type_t;
+
+typedef snacc_type_t ringbuf_type_t;
+
+typedef struct {
+    ringbuf_type_t *array;
+    int head;
+    int tail;
+    int size;
+} ringbuf;
+
+extern double *dest;
+extern  ringbuf *b;
+extern  int n;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    snacc_type_t *dest_local = dest;
+    ringbuf_type_t *array_local = b->array;
+    int head_local = b->head;
+    int size_local = b->size;
+    snacc_type_t prev = 0.0;
+    for (i = 0; i < n; ++i) {
+        int idx = (head_local + i) % size_local;
+        snacc_type_t curr = array_local[idx];
+        dest_local[i] = curr + prev;
+        prev = curr;
+    }
+}

@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+extern  int grid_points[3];
+extern  double rhs[5][65][65][65];
+extern  double lhs[15][65][65][65];
+extern int i;
+extern int j;
+extern int k;
+extern int n;
+extern int k1;
+extern int m;
+extern double fac1;
+extern double fac2;
+
+
+
+void loop(){
+for (i = 1; i <= grid_points[0] - 2; i++) {
+    for (j = 1; j <= grid_points[1] - 2; j++) {
+        fac1 = 1. / lhs[n + 2][i][j][k];
+        lhs[n + 3][i][j][k] *= fac1;
+        lhs[n + 4][i][j][k] *= fac1;
+        rhs[0][i][j][k] *= fac1;
+        rhs[1][i][j][k] *= fac1;
+        rhs[2][i][j][k] *= fac1;
+
+        double temp_n1 = lhs[n + 1][i][j][k1];
+        lhs[n + 2][i][j][k1] -= temp_n1 * lhs[n + 3][i][j][k];
+        
+        if (lhs[n + 2][i][j][k1] > 1e-15 || lhs[n + 2][i][j][k1] < -1e-15) {
+            lhs[n + 3][i][j][k1] -= temp_n1 * lhs[n + 4][i][j][k];
+            rhs[0][i][j][k1] -= temp_n1 * rhs[0][i][j][k];
+            rhs[1][i][j][k1] -= temp_n1 * rhs[1][i][j][k];
+            rhs[2][i][j][k1] -= temp_n1 * rhs[2][i][j][k];
+            fac2 = 1. / lhs[n + 2][i][j][k1];
+            rhs[0][i][j][k1] *= fac2;
+            rhs[1][i][j][k1] *= fac2;
+            rhs[2][i][j][k1] *= fac2;
+        } else {
+            rhs[0][i][j][k1] = 0.0;
+            rhs[1][i][j][k1] = 0.0;
+            rhs[2][i][j][k1] = 0.0;
+        }
+    }
+}
+}

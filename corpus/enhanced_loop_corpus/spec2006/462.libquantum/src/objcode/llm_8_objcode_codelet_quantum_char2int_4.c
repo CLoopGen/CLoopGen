@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern unsigned char *buf;
+extern int i;
+extern int size;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = size - 1; i >= 0; i -= 2) {
+        if (i == 0) {
+            j += buf[i] * (1 << (8 * (size - i - 1)));
+        } else {
+            j += buf[i] * (1 << (8 * (size - i - 1))) + buf[i-1] * (1 << (8 * (size - i)));
+        }
+    }
+}

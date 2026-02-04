@@ -1,0 +1,78 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef int integer;
+
+typedef float real;
+
+typedef struct {
+    real r;
+    real i;
+} singlecomplex;
+
+typedef int logical;
+
+extern integer *m;
+extern singlecomplex *alpha;
+extern singlecomplex *a;
+extern singlecomplex *b;
+extern integer a_dim1;
+extern integer b_dim1;
+extern integer i__1;
+extern integer i__2;
+extern integer i__3;
+extern integer i__4;
+extern integer i__5;
+extern singlecomplex q__1;
+extern singlecomplex q__2;
+extern integer i__;
+extern integer j;
+extern integer k;
+extern singlecomplex temp;
+extern logical nounit;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (j = 1; j <= i__1; ++j) {
+    singlecomplex temp_cache[1024]; // Local cache to remove WAW and WAR hazards via privatization
+    integer k_cache[1024];
+    integer count = 0;
+    for (k = *m; k >= 1; --k) {
+        i__2 = k + j * b_dim1;
+        if (b[i__2].r != 0.F || b[i__2].i != 0.F) {
+            i__2 = k + j * b_dim1;
+            q__1.r = alpha->r * b[i__2].r - alpha->i * b[i__2].i , q__1.i = alpha->r * b[i__2].i + alpha->i * b[i__2].r;
+            temp_cache[count].r = q__1.r; temp_cache[count].i = q__1.i;
+            k_cache[count] = k;
+            ++count;
+        }
+    }
+    for (integer idx = 0; idx < count; ++idx) {
+        k = k_cache[idx];
+        i__2 = k + j * b_dim1;
+        b[i__2].r = temp_cache[idx].r; b[i__2].i = temp_cache[idx].i;
+        if (nounit) {
+            i__3 = k + j * b_dim1;
+            i__4 = k + k * a_dim1;
+            q__1.r = b[i__3].r * a[i__4].r - b[i__3].i * a[i__4].i , q__1.i = b[i__3].r * a[i__4].i + b[i__3].i * a[i__4].r;
+            b[i__3].r = q__1.r; b[i__3].i = q__1.i;
+        }
+        i__2 = *m;
+        for (i__ = k + 1; i__ <= i__2; ++i__) {
+            i__3 = i__ + j * b_dim1;
+            i__4 = i__ + j * b_dim1;
+            i__5 = i__ + k * a_dim1;
+            q__2.r = temp_cache[idx].r * a[i__5].r - temp_cache[idx].i * a[i__5].i , 
+            q__2.i = temp_cache[idx].r * a[i__5].i + temp_cache[idx].i * a[i__5].r;
+            q__1.r = b[i__4].r + q__2.r; q__1.i = b[i__4].i + q__2.i;
+            b[i__3].r = q__1.r; b[i__3].i = q__1.i;
+        }
+    }
+}
+}

@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef float real_t;
+
+__attribute__((aligned(64))) extern real_t a[32000];
+__attribute__((aligned(64))) extern real_t b[32000];
+extern int n1;
+extern int n3;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (int nl = 0; nl < 100000; nl++) {
+    for (int i = n1 - 1; i < 32000; i += n3 * 4) {
+        a[i] += b[i];
+        if (i + n3 < 32000) a[i + n3] += b[i + n3];
+        if (i + 2*n3 < 32000) a[i + 2*n3] += b[i + 2*n3];
+        if (i + 3*n3 < 32000) a[i + 3*n3] += b[i + 3*n3];
+    }
+}
+}

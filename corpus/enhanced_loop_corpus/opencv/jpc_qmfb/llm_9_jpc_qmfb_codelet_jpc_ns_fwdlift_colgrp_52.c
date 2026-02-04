@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef int_fast32_t jpc_fix_t;
+
+typedef int_fast64_t jpc_fix_big_t;
+
+extern jpc_fix_t *lptr2;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 8; ++i) {
+        jpc_fix_big_t scaled_val = ((jpc_fix_big_t)(lptr2[0])) * ((jpc_fix_big_t)(((jpc_fix_t)((1.0 / 1.23017410558578) * (1 << 13)))));
+        lptr2[0] = (jpc_fix_t)(scaled_val >> 13);
+        lptr2[1] = (jpc_fix_t)(scaled_val >> 13);
+        lptr2 += 2; // Process two elements per iteration, reduced trip count but same coverage with increased per-iteration work
+    }
+}

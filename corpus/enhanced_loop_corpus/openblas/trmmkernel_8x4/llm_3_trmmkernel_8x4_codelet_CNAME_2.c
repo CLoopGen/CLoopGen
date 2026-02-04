@@ -1,0 +1,147 @@
+#include <stdio.h>
+
+typedef long BLASLONG;
+
+extern BLASLONG bm;
+extern BLASLONG bn;
+extern BLASLONG bk;
+extern float alpha;
+extern float *ba;
+extern float *bb;
+extern float *C;
+extern BLASLONG ldc;
+extern BLASLONG i;
+extern BLASLONG j;
+extern BLASLONG k;
+extern float *C0;
+extern float *ptrba;
+extern float *ptrbb;
+extern float res0_0;
+extern float res0_1;
+extern float res0_2;
+extern float res0_3;
+extern float res0_4;
+extern float res0_5;
+extern float res0_6;
+extern float res0_7;
+extern float a0;
+extern float a1;
+extern float b0;
+extern BLASLONG off;
+extern BLASLONG temp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (j = 0; j < (bn & 1); j += 1) {
+    C0 = C;
+    ptrba = ba;
+    for (i = 0; i < bm / 8; i += 1) {
+        ptrbb = bb;
+        res0_0 = 0;
+        res0_1 = 0;
+        res0_2 = 0;
+        res0_3 = 0;
+        res0_4 = 0;
+        res0_5 = 0;
+        res0_6 = 0;
+        res0_7 = 0;
+        temp = off + 1;
+        // Consecutive memory layout simulation: unroll and access in batches
+        for (k = 0; k < temp; k++) {
+            float *base_b = ptrbb + k;
+            float *base_a = ptrba + k * 8;
+            b0 = base_b[0];
+            res0_0 += base_a[0] * b0;
+            res0_1 += base_a[1] * b0;
+            res0_2 += base_a[2] * b0;
+            res0_3 += base_a[3] * b0;
+            res0_4 += base_a[4] * b0;
+            res0_5 += base_a[5] * b0;
+            res0_6 += base_a[6] * b0;
+            res0_7 += base_a[7] * b0;
+        }
+        res0_0 *= alpha;
+        res0_1 *= alpha;
+        res0_2 *= alpha;
+        res0_3 *= alpha;
+        res0_4 *= alpha;
+        res0_5 *= alpha;
+        res0_6 *= alpha;
+        res0_7 *= alpha;
+        float *dst = C0;
+        dst[0] = res0_0; dst[1] = res0_1; dst[2] = res0_2; dst[3] = res0_3;
+        dst[4] = res0_4; dst[5] = res0_5; dst[6] = res0_6; dst[7] = res0_7;
+        temp = bk - off;
+        temp -= 1;
+        ptrba += temp * 8;
+        ptrbb += temp;
+        C0 = C0 + 8;
+    }
+    if (bm & 4) {
+        ptrbb = bb;
+        res0_0 = 0; res0_1 = 0; res0_2 = 0; res0_3 = 0;
+        temp = off + 1;
+        for (k = 0; k < temp; k++) {
+            float *base_b = ptrbb + k;
+            float *base_a = ptrba + k * 4;
+            b0 = base_b[0];
+            res0_0 += base_a[0] * b0;
+            res0_1 += base_a[1] * b0;
+            res0_2 += base_a[2] * b0;
+            res0_3 += base_a[3] * b0;
+        }
+        res0_0 *= alpha; res0_1 *= alpha; res0_2 *= alpha; res0_3 *= alpha;
+        float *dst = C0;
+        dst[0] = res0_0; dst[1] = res0_1; dst[2] = res0_2; dst[3] = res0_3;
+        temp = bk - off;
+        temp -= 1;
+        ptrba += temp * 4;
+        ptrbb += temp;
+        C0 = C0 + 4;
+    }
+    if (bm & 2) {
+        ptrbb = bb;
+        res0_0 = 0; res0_1 = 0;
+        temp = off + 1;
+        for (k = 0; k < temp; k++) {
+            float *base_b = ptrbb + k;
+            float *base_a = ptrba + k * 2;
+            b0 = base_b[0];
+            res0_0 += base_a[0] * b0;
+            res0_1 += base_a[1] * b0;
+        }
+        res0_0 *= alpha; res0_1 *= alpha;
+        float *dst = C0;
+        dst[0] = res0_0; dst[1] = res0_1;
+        temp = bk - off;
+        temp -= 1;
+        ptrba += temp * 2;
+        ptrbb += temp;
+        C0 = C0 + 2;
+    }
+    if (bm & 1) {
+        ptrbb = bb;
+        res0_0 = 0;
+        temp = off + 1;
+        for (k = 0; k < temp; k++) {
+            float *base_b = ptrbb + k;
+            float *base_a = ptrba + k;
+            b0 = base_b[0];
+            res0_0 += base_a[0] * b0;
+        }
+        res0_0 *= alpha;
+        C0[0] = res0_0;
+        temp = bk - off;
+        temp -= 1;
+        ptrba += temp;
+        ptrbb += temp;
+        C0 = C0 + 1;
+    }
+    k = (bk << 0);
+    bb = bb + k;
+    C = C + ldc;
+}
+}

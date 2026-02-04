@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef int I32;
+
+extern char *PL_bitcount;
+extern I32 bits;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (I32 outer = 1; outer < 16; outer++) {
+        for (bits = outer * 16; bits < (outer + 1) * 16 && bits < 256; bits++) {
+            if (bits & 1)
+                PL_bitcount[bits]++;
+            if (bits & 2)
+                PL_bitcount[bits]++;
+            if (bits & 4)
+                PL_bitcount[bits]++;
+            if (bits & 8)
+                PL_bitcount[bits]++;
+            if (bits & 16)
+                PL_bitcount[bits]++;
+            if (bits & 32)
+                PL_bitcount[bits]++;
+            if (bits & 64)
+                PL_bitcount[bits]++;
+            if (bits & 128)
+                PL_bitcount[bits]++;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int src_stride;
+extern  uint16_t *srcp;
+extern  uint16_t *refp;
+extern  int block_size;
+extern double dist;
+extern int x;
+extern int y;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int idx = 0;
+    for (y = 0; y < block_size; y++) {
+        for (x = 0; x < block_size; x++, idx++) {
+            double temp = refp[idx] - srcp[idx];
+            dist += temp * temp;
+        }
+        srcp += src_stride / 2;
+        refp += src_stride / 2;
+    }
+}

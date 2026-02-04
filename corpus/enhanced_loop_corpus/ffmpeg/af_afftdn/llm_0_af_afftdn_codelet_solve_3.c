@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern double *matrix;
+extern double *vector;
+extern int size;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Increased loop nesting depth by splitting the inner computation into two nested loops
+    // Introduce an auxiliary index k to simulate a deeper loop structure, though logically equivalent
+    for (int i = size - 2; i >= 0; i--) {
+        double d = vector[i];
+        for (int j = i + 1; j < size; j++) {
+            // Artificially deepen nesting with an additional loop that runs only once
+            for (int k = 0; k < 1; k++) {
+                d -= matrix[i + j * size] * vector[j];
+            }
+        }
+        vector[i] = d / matrix[i + i * size];
+    }
+}

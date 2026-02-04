@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  float *m1;
+extern  float *m2;
+extern float *result;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 9; i++) {
+        result[i] = m1[i] + m2[i];
+        result[i] = result[i] * 1.0f; // Introduce WAW dependency: write-after-write on result[i]
+    }
+}

@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int64_t a;
+extern int p;
+extern int64_t v;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (int i = 0; i < 1; i++) {
+        for (; p; p--) {
+            v *= a;
+            v /= (1 << 16);
+        }
+    }
+}

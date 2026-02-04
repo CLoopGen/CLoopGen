@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+struct asn1_string_st {
+    int length;
+    int type;
+    unsigned char *data;
+    long flags;
+};
+
+
+typedef struct asn1_string_st ASN1_UNIVERSALSTRING;
+
+extern ASN1_UNIVERSALSTRING *s;
+extern int i;
+extern unsigned char *p;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    unsigned char (*chunk)[4] = (unsigned char (*)[4])p;
+    for (i = 0; i < s->length; i += 4) {
+        if ((chunk[i/4][0] != '\x00') || (chunk[i/4][1] != '\x00') || (chunk[i/4][2] != '\x00'))
+            break;
+        else
+            p += 4;
+    }
+}

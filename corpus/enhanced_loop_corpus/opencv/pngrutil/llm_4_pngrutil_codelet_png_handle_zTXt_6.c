@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef unsigned int png_uint_32;
+
+typedef unsigned char png_byte;
+
+typedef png_byte *png_bytep;
+
+extern png_uint_32 length;
+extern png_bytep buffer;
+extern png_uint_32 keyword_length;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    keyword_length = 0;
+    if (length == 0) return;
+    for (; buffer[keyword_length] != 0; ++keyword_length) {
+        if (keyword_length + 1 >= length) break;
+    }
+}

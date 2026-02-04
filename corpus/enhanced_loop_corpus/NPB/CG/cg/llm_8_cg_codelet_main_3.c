@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+extern  int firstcol;
+extern  int lastcol;
+extern  double z[14003];
+extern  double p[14003];
+extern  double q[14003];
+extern  double r[14003];
+extern int j;
+
+
+
+void loop(){
+    for (j = 1; j <= lastcol - firstcol + 1; j += 2) {
+        q[j] = 0.;
+        z[j] = 0.;
+        r[j] = 0.;
+        p[j] = 0.;
+        if (j + 1 <= lastcol - firstcol + 1) {
+            q[j+1] = 0.;
+            z[j+1] = 0.;
+            r[j+1] = 0.;
+            p[j+1] = 0.;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <stdlib.h>
+#include <stddef.h>
+#include <time.h>
+#include <math.h>
+
+size_t ilow = 0;
+size_t ihigh = 10000000; // Adjusted for ~0.01 sec runtime
+double mean = 0.0;
+double k = 1.0;
+size_t i = 0;
+
+void init_vars() {
+    mean = 0.0;
+    k = 1.0;
+    ilow = 0;
+    ihigh = 10000000;
+    i = 0;
+}

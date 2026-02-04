@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef ssize_t Py_ssize_t;
+
+typedef Py_ssize_t npy_intp;
+
+extern int idim;
+extern int broadcast_ndim;
+extern npy_intp iter_shape[32];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (idim = 0; idim < broadcast_ndim && broadcast_ndim > 0; ++idim) {
+        iter_shape[idim] = -1;
+        if (idim == 16) {
+            break;
+        }
+    }
+}

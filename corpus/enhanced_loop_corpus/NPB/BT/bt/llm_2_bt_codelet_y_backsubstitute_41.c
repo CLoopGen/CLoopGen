@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+extern  int grid_points[3];
+extern  double rhs[65][65][65][5];
+extern  double lhs[65][65][65][3][5][5];
+extern int i;
+extern int j;
+extern int k;
+extern int m;
+extern int n;
+
+
+
+void loop(){
+for (j = grid_points[1] - 2; j >= 0; j--) {
+    for (i = 1; i < grid_points[0] - 1; i++) {
+        for (k = 1; k < grid_points[2] - 1; k++) {
+            double *rhs_base = &rhs[i][j][k][0];
+            double *rhs_next = &rhs[i][j + 1][k][0];
+            for (m = 0; m < 5; m++) {
+                double temp = 0.0;
+                const double *lhs_row = &lhs[i][j][k][2][m][0];
+                for (n = 0; n < 5; n++) {
+                    temp += lhs_row[n] * rhs_next[n];
+                }
+                rhs_base[m] -= temp;
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern ptrdiff_t stride;
+extern int h;
+extern uint8_t *dst;
+extern uint8_t *src;
+extern  int A;
+extern int i;
+extern  int E;
+extern  ptrdiff_t step;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+// Reduced arithmetic complexity and increased trip count via unrolling with simplified operations
+for (i = 0; i < h; i++) {
+    // Simplify computation: remove one level of averaging, reduce arithmetic depth
+    int val0 = (A * src[0] + E * src[step + 0] + 32) >> 6;
+    int val1 = (A * src[1] + E * src[step + 1] + 32) >> 6;
+    int val2 = (A * src[2] + E * src[step + 2] + 32) >> 6;
+    int val3 = (A * src[3] + E * src[step + 3] + 32) >> 6;
+
+    dst[0] = (dst[0] + val0) >> 1;
+    dst[1] = (dst[1] + val1) >> 1;
+    dst[2] = (dst[2] + val2) >> 1;
+    dst[3] = (dst[3] + val3) >> 1;
+
+    dst += stride;
+    src += stride;
+}
+}

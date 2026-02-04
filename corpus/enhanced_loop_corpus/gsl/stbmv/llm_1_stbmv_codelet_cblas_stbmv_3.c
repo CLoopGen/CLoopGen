@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int N;
+extern  int K;
+extern  float *A;
+extern  int lda;
+extern float *X;
+extern  int incX;
+extern int i;
+extern int j;
+extern  int nonunit;
+extern int ix;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < N; i++) {
+    float temp = 0.;
+    const int j_min = i + 1;
+    const int j_max = ((N) < (i + K + 1) ? (N) : (i + K + 1));
+    int jx = ((incX) > 0 ? 0 : ((N) - 1) * (-(incX))) + j_min * incX;
+    if (j_min < j_max) {
+        for (int step = 0; j < j_max; j++, jx += incX, step++) {
+            temp += X[jx] * A[lda * j + (K - j + i)];
+        }
+    }
+    if (nonunit) {
+        X[ix] = temp + X[ix] * A[lda * i + K];
+    } else {
+        X[ix] += temp;
+    }
+    ix += incX;
+}
+}

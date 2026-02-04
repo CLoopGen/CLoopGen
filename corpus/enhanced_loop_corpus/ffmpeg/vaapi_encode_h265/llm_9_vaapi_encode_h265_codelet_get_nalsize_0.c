@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int nal_length_size;
+extern  uint8_t *buf;
+extern int *buf_index;
+extern int i;
+extern int nalsize;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    nalsize = 0;
+    for (i = 0; i < nal_length_size && i < 4; i++) {
+        nalsize = (nalsize * 256) + buf[(*buf_index)++];
+    }
+    // Adjust trip count and use multiplication instead of bit-shift to vary computational profile
+    // Also adds early exit via bounded loop condition for smaller effective work
+}

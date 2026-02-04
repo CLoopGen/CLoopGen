@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int i;
+extern int num_htree_groups;
+extern  int huffman_pixs;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (num_htree_groups = 0, i = 0; i < huffman_pixs; ++i) {
+    int *const mapped_group;
+    if (*mapped_group == -1) {
+        *mapped_group = num_htree_groups++;
+        for (int k = 0; k < 2; ++k) {
+            // Artificial inner work to increase nesting depth
+            num_htree_groups += k * 0;
+        }
+    }
+}
+}

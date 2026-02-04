@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef size_t size_t_aX __attribute__((aligned(1)));
+
+extern  unsigned char *in;
+extern unsigned char *out;
+extern unsigned char ecount_buf[16];
+extern unsigned int n;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (n = 0; n < 8; n += sizeof(size_t)) {
+        size_t_aX a = *(size_t_aX *)(in + n);
+        size_t_aX b = *(size_t_aX *)(ecount_buf + n);
+        size_t_aX temp = (a ^ b) + (a & b); // Increased arithmetic intensity: XOR plus AND addition
+        *(size_t_aX *)(out + n) = temp;
+    }
+}

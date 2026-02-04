@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <stdlib.h>
+#include <stddef.h>
+#include <math.h>
+
+ptrdiff_t top_linesize;
+ptrdiff_t bottom_linesize;
+ptrdiff_t dst_linesize;
+ptrdiff_t width;
+ptrdiff_t height;
+float *top;
+float *bottom;
+float *dst;
+double opacity;
+int i;
+int j;
+
+void init_vars() {
+    width = 2048;
+    height = 128;
+    
+    top_linesize = width;
+    bottom_linesize = width;
+    dst_linesize = width;
+    
+    opacity = 0.75;
+    
+    size_t total_size = width * height * sizeof(float);
+    
+    top = (float*)aligned_alloc(32, total_size);
+    bottom = (float*)aligned_alloc(32, total_size);
+    dst = (float*)aligned_alloc(32, total_size);
+    
+    for (size_t idx = 0; idx < width * height; idx++) {
+        top[idx] = (float)rand() / RAND_MAX;
+        bottom[idx] = (float)rand() / RAND_MAX;
+        dst[idx] = 0.0f;
+    }
+}

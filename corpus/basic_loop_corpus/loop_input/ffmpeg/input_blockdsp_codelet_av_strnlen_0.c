@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <stdlib.h>
+#include <stddef.h>
+#include <string.h>
+#include <time.h>
+
+char *s;
+size_t len;
+size_t i;
+
+static char *buffer;
+
+void init_vars() {
+    size_t data_size = 64 << 20; // 64 MB to target ~0.01 sec on modern CPU
+    buffer = (char *)malloc(data_size);
+    if (!buffer) {
+        exit(1);
+    }
+    memset(buffer, 'x', data_size - 1);
+    buffer[data_size - 1] = '\0'; // Ensure null-termination
+
+    s = buffer;
+    len = data_size;
+}

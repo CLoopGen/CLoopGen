@@ -1,0 +1,98 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef enum {
+    FRAME,
+    TOP_FIELD,
+    BOTTOM_FIELD
+} PictureStructure;
+
+typedef int64_t int64;
+
+typedef unsigned char byte;
+
+typedef struct storable_picture {
+    PictureStructure structure;
+    int poc;
+    int top_poc;
+    int bottom_poc;
+    int frame_poc;
+    int order_num;
+    int64 ref_pic_num[6][33];
+    int64 frm_ref_pic_num[6][33];
+    int64 top_ref_pic_num[6][33];
+    int64 bottom_ref_pic_num[6][33];
+    unsigned int frame_num;
+    int pic_num;
+    int long_term_pic_num;
+    int long_term_frame_idx;
+    int is_long_term;
+    int used_for_reference;
+    int is_output;
+    int non_existing;
+    int size_x;
+    int size_y;
+    int size_x_cr;
+    int size_y_cr;
+    int chroma_vector_adjustment;
+    int coded_frame;
+    int MbaffFrameFlag;
+    unsigned short **imgY;
+    unsigned short *imgY_11;
+    unsigned short *imgY_11_w;
+    unsigned short **imgY_ups;
+    unsigned short **imgY_ups_w;
+    unsigned short ***imgUV;
+    byte *mb_field;
+    short ***ref_idx;
+    int64 ***ref_pic_id;
+    int64 ***ref_id;
+    short ****mv;
+    byte **moving_block;
+    byte **field_frame;
+    struct storable_picture *top_field;
+    struct storable_picture *bottom_field;
+    struct storable_picture *frame;
+    int chroma_format_idc;
+    int frame_mbs_only_flag;
+    int frame_cropping_flag;
+    int frame_cropping_rect_left_offset;
+    int frame_cropping_rect_right_offset;
+    int frame_cropping_rect_top_offset;
+    int frame_cropping_rect_bottom_offset;
+} StorablePicture;
+
+extern int **img4Y_tmp;
+extern  int ONE_FOURTH_TAP[3][2];
+extern StorablePicture *s;
+extern int is;
+extern int i;
+extern int j;
+extern int jj;
+extern unsigned short **imgY;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop() {
+    // Variant 1: Increased loop nesting depth by splitting the inner logic into a third nested loop
+    // The horizontal processing is now split into two phases: boundary-clamped coordinate calculation and filtering.
+    for (j = -4; j < s->size_y + 4; j++) {
+        for (i = -4; i < s->size_x + 4; i++) {
+            jj = ((0 > ((s->size_y - 1) < j ? s->size_y - 1 : j)) ? 0 : ((s->size_y - 1) < j ? s->size_y - 1 : j));
+            int clipped_i[7];
+            // Precompute clipped indices for taps from i-2 to i+3
+            for (int k = 0; k < 7; k++) {
+                int idx = i + k - 2;
+                clipped_i[k] = ((0 > ((s->size_x - 1) < idx ? s->size_x - 1 : idx)) ? 0 : ((s->size_x - 1) < idx ? s->size_x - 1 : idx));
+            }
+            is = ONE_FOURTH_TAP[0][0] * (imgY[jj][clipped_i[2]] + imgY[jj][clipped_i[3]]) +
+                 ONE_FOURTH_TAP[1][0] * (imgY[jj][clipped_i[1]] + imgY[jj][clipped_i[4]]) +
+                 ONE_FOURTH_TAP[2][0] * (imgY[jj][clipped_i[0]] + imgY[jj][clipped_i[5]]);
+            img4Y_tmp[j + 4][(i + 4) * 2] = imgY[jj][clipped_i[2]] * 1024;
+            img4Y_tmp[j + 4][(i + 4) * 2 + 1] = is * 32;
+        }
+    }
+}

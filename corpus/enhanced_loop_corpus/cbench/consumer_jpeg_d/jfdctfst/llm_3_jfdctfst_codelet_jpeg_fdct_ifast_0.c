@@ -1,0 +1,76 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef int DCTELEM;
+
+typedef long INT32;
+
+extern DCTELEM tmp0;
+extern DCTELEM tmp1;
+extern DCTELEM tmp2;
+extern DCTELEM tmp3;
+extern DCTELEM tmp4;
+extern DCTELEM tmp5;
+extern DCTELEM tmp6;
+extern DCTELEM tmp7;
+extern DCTELEM tmp10;
+extern DCTELEM tmp11;
+extern DCTELEM tmp12;
+extern DCTELEM tmp13;
+extern DCTELEM z1;
+extern DCTELEM z2;
+extern DCTELEM z3;
+extern DCTELEM z4;
+extern DCTELEM z5;
+extern DCTELEM z11;
+extern DCTELEM z13;
+extern DCTELEM *dataptr;
+extern int ctr;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (ctr = 8 - 1; ctr >= 0; ctr--) {
+    DCTELEM data_copy[8];
+    for (int i = 0; i < 8; i++) {
+        data_copy[i] = dataptr[i];
+    }
+    tmp0 = data_copy[0] + data_copy[7];
+    tmp7 = data_copy[0] - data_copy[7];
+    tmp1 = data_copy[1] + data_copy[6];
+    tmp6 = data_copy[1] - data_copy[6];
+    tmp2 = data_copy[2] + data_copy[5];
+    tmp5 = data_copy[2] - data_copy[5];
+    tmp3 = data_copy[3] + data_copy[4];
+    tmp4 = data_copy[3] - data_copy[4];
+    tmp10 = tmp0 + tmp3;
+    tmp13 = tmp0 - tmp3;
+    tmp11 = tmp1 + tmp2;
+    tmp12 = tmp1 - tmp2;
+    data_copy[0] = tmp10 + tmp11;
+    data_copy[4] = tmp10 - tmp11;
+    z1 = ((DCTELEM)(((tmp12 + tmp13) * (((INT32)181))) >> (8)));
+    data_copy[2] = tmp13 + z1;
+    data_copy[6] = tmp13 - z1;
+    tmp10 = tmp4 + tmp5;
+    tmp11 = tmp5 + tmp6;
+    tmp12 = tmp6 + tmp7;
+    z5 = ((DCTELEM)(((tmp10 - tmp12) * (((INT32)98))) >> (8)));
+    z2 = ((DCTELEM)(((tmp10) * (((INT32)139))) >> (8))) + z5;
+    z4 = ((DCTELEM)(((tmp12) * (((INT32)334))) >> (8))) + z5;
+    z3 = ((DCTELEM)(((tmp11) * (((INT32)181))) >> (8)));
+    z11 = tmp7 + z3;
+    z13 = tmp7 - z3;
+    data_copy[5] = z13 + z2;
+    data_copy[3] = z13 - z2;
+    data_copy[1] = z11 + z4;
+    data_copy[7] = z11 - z4;
+    for (int i = 0; i < 8; i++) {
+        dataptr[i] = data_copy[i];
+    }
+    dataptr += 8;
+}
+}

@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int *code_lengths;
+extern int alphabet_size;
+extern int len;
+extern int sym;
+extern int code;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (int outer = 0; outer < 1; outer++) {
+        for (sym = 0; sym < alphabet_size; sym++) {
+            if (code_lengths[sym] > 0) {
+                len++;
+                code = sym;
+                if (len > 1)
+                    break;
+            }
+        }
+    }
+}

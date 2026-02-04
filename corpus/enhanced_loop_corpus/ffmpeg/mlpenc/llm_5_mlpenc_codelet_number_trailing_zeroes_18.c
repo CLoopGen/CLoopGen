@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int32_t sample;
+extern int bits;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (bits = 0; bits < 24 && (sample & (1 << bits)) == 0; bits++) {
+        // Control dependency preserved via condition; no early exit needed
+    }
+}

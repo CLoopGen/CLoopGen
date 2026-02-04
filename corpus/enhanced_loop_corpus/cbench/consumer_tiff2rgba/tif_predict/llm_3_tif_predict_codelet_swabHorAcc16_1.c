@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef int int32;
+
+typedef int32 tsize_t;
+
+typedef unsigned short uint16;
+
+extern tsize_t stride;
+extern uint16 *wp;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = (stride - 4) * stride; i > 0; i -= stride) {
+        wp[i / stride] += wp[(i % stride) + 0];
+    }
+}

@@ -1,0 +1,188 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+enum AVOptionType {
+    AV_OPT_TYPE_FLAGS,
+    AV_OPT_TYPE_INT,
+    AV_OPT_TYPE_INT64,
+    AV_OPT_TYPE_DOUBLE,
+    AV_OPT_TYPE_FLOAT,
+    AV_OPT_TYPE_STRING,
+    AV_OPT_TYPE_RATIONAL,
+    AV_OPT_TYPE_BINARY,
+    AV_OPT_TYPE_DICT,
+    AV_OPT_TYPE_UINT64,
+    AV_OPT_TYPE_CONST,
+    AV_OPT_TYPE_IMAGE_SIZE,
+    AV_OPT_TYPE_PIXEL_FMT,
+    AV_OPT_TYPE_SAMPLE_FMT,
+    AV_OPT_TYPE_VIDEO_RATE,
+    AV_OPT_TYPE_DURATION,
+    AV_OPT_TYPE_COLOR,
+    AV_OPT_TYPE_CHANNEL_LAYOUT,
+    AV_OPT_TYPE_BOOL
+};
+
+
+typedef struct AVRational {
+    int num;
+    int den;
+} AVRational;
+
+union {
+    int64_t i64;
+    double dbl;
+    const char *str;
+    AVRational q;
+};
+
+
+struct AVOption {
+    const char *name;
+    const char *help;
+    int offset;
+    enum AVOptionType type;
+    union {
+        int64_t i64;
+        double dbl;
+        const char *str;
+        AVRational q;
+    } default_val;
+    double min;
+    double max;
+    int flags;
+    const char *unit;
+};
+
+
+typedef enum {
+    AV_CLASS_CATEGORY_NA = 0,
+    AV_CLASS_CATEGORY_INPUT,
+    AV_CLASS_CATEGORY_OUTPUT,
+    AV_CLASS_CATEGORY_MUXER,
+    AV_CLASS_CATEGORY_DEMUXER,
+    AV_CLASS_CATEGORY_ENCODER,
+    AV_CLASS_CATEGORY_DECODER,
+    AV_CLASS_CATEGORY_FILTER,
+    AV_CLASS_CATEGORY_BITSTREAM_FILTER,
+    AV_CLASS_CATEGORY_SWSCALER,
+    AV_CLASS_CATEGORY_SWRESAMPLER,
+    AV_CLASS_CATEGORY_DEVICE_VIDEO_OUTPUT = 40,
+    AV_CLASS_CATEGORY_DEVICE_VIDEO_INPUT,
+    AV_CLASS_CATEGORY_DEVICE_AUDIO_OUTPUT,
+    AV_CLASS_CATEGORY_DEVICE_AUDIO_INPUT,
+    AV_CLASS_CATEGORY_DEVICE_OUTPUT,
+    AV_CLASS_CATEGORY_DEVICE_INPUT,
+    AV_CLASS_CATEGORY_NB
+} AVClassCategory;
+
+typedef struct AVClass {
+    const char *class_name;
+    const char *(*item_name)(void *);
+    const struct AVOption *option;
+    int version;
+    int log_level_offset_offset;
+    int parent_log_context_offset;
+    void *(*child_next)(void *, void *);
+    const struct AVClass *(*child_class_next)(const struct AVClass *);
+    AVClassCategory category;
+    AVClassCategory (*get_category)(void *);
+    int (*query_ranges)(struct AVOptionRanges **, void *, const char *, int);
+} AVClass;
+
+typedef struct RDFTContext RDFTContext;
+
+typedef struct FFTContext FFTContext;
+
+typedef struct OverlapIndex {
+    int buf_idx;
+    int overlap_idx;
+} OverlapIndex;
+
+typedef struct GainEntry {
+    double freq;
+    double gain;
+} GainEntry;
+
+typedef struct FIREqualizerContext {
+    const AVClass *class;
+    RDFTContext *analysis_rdft;
+    RDFTContext *analysis_irdft;
+    RDFTContext *rdft;
+    RDFTContext *irdft;
+    FFTContext *fft_ctx;
+    RDFTContext *cepstrum_rdft;
+    RDFTContext *cepstrum_irdft;
+    int analysis_rdft_len;
+    int rdft_len;
+    int cepstrum_len;
+    float *analysis_buf;
+    float *dump_buf;
+    float *kernel_tmp_buf;
+    float *kernel_buf;
+    float *cepstrum_buf;
+    float *conv_buf;
+    OverlapIndex *conv_idx;
+    int fir_len;
+    int nsamples_max;
+    int64_t next_pts;
+    int frame_nsamples_max;
+    int remaining;
+    char *gain_cmd;
+    char *gain_entry_cmd;
+    const char *gain;
+    const char *gain_entry;
+    double delay;
+    double accuracy;
+    int wfunc;
+    int fixed;
+    int multi;
+    int zero_phase;
+    int scale;
+    char *dumpfile;
+    int dumpscale;
+    int fft2;
+    int min_phase;
+    int nb_gain_entry;
+    int gain_entry_err;
+    GainEntry gain_entry_tbl[4096];
+} FIREqualizerContext;
+
+typedef float FFTSample;
+
+typedef struct FFTComplex {
+    FFTSample re;
+    FFTSample im;
+} FFTComplex;
+
+extern FIREqualizerContext *restrict s;
+extern  float *restrict kernel_buf;
+extern FFTComplex *buf;
+extern int k;
+extern float tmp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int outer = (s->rdft_len / 2 + 3) / 4; // Divide the original loop range into 4 chunks
+    for (int chunk = 0; chunk < 4; chunk++) {
+        int start = chunk * outer + 1;
+        int end = (chunk + 1) * outer;
+        if (start >= s->rdft_len / 2) break;
+        if (end > s->rdft_len / 2) end = s->rdft_len / 2;
+        for (int k_inner = start; k_inner < end; k_inner++) {
+            int m = s->rdft_len - k_inner;
+            tmp = buf[k_inner].re;
+            buf[k_inner].re = 0.5F * kernel_buf[k_inner] * buf[k_inner].im;
+            buf[k_inner].im = 0.5F * kernel_buf[k_inner] * tmp;
+            tmp = buf[m].re;
+            buf[m].re = 0.5F * kernel_buf[k_inner] * buf[m].im;
+            buf[m].im = 0.5F * kernel_buf[k_inner] * tmp;
+        }
+    }
+}

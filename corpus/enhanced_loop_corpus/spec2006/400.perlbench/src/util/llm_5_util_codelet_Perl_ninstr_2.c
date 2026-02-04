@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern  char *big;
+extern  char *little;
+extern  char *s;
+extern  char *x;
+extern  char *littleend;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (x = big, s = little; s < littleend; ) {
+        if (*s++ != *x++) continue;
+        if (s >= littleend || *(s-1) == '\0') break;
+    }
+    if (s > little) s--;
+}

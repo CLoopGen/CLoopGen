@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct AC3BitAllocParameters {
+    int sr_code;
+    int sr_shift;
+    int slow_gain;
+    int slow_decay;
+    int fast_decay;
+    int db_per_bit;
+    int floor;
+    int cpl_fast_leak;
+    int cpl_slow_leak;
+} AC3BitAllocParameters;
+
+extern const uint16_t ff_ac3_hearing_threshold_tab[50][3];
+extern AC3BitAllocParameters *s;
+extern int16_t *band_psd;
+extern int16_t *mask;
+extern int16_t excite[50];
+extern int band;
+extern int band_start;
+extern int band_end;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (band = band_start; band < band_end; band++) {
+        int tmp = s->db_per_bit - band_psd[band];
+        if (tmp > 0) {
+            excite[band] += (tmp >> 2) + (tmp >> 4); // Increased arithmetic intensity: extra shift and add
+        }
+        int shifted_band = band >> s->sr_shift;
+        int threshold = ff_ac3_hearing_threshold_tab[shifted_band][s->sr_code];
+        excite[band] += (excite[band] < 32) ? 1 : 0; // Additional light computation: small boost if excitation is low
+        mask[band] = (threshold > excite[band]) ? threshold : excite[band];
+    }
+}

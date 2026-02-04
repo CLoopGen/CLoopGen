@@ -1,0 +1,1434 @@
+[
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft2_16/hc2cfdft2_16_codelet_hc2cfdft2_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft2_16_codelet_hc2cfdft2_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/speed/speed_codelet_speed_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_speed_codelet_speed_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/transpose/transpose_codelet_dotile_5.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_transpose_codelet_dotile_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rader/rader_codelet_fftw_rader_tl_delete_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rader_codelet_fftw_rader_tl_delete_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/cpy2d/cpy2d_codelet_fftw_cpy2d_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_cpy2d_codelet_fftw_cpy2d_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_6/n1_6_codelet_n1_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_6_codelet_n1_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/cpy2d/cpy2d_codelet_fftw_cpy2d_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_cpy2d_codelet_fftw_cpy2d_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/speed/speed_codelet_speed_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_speed_codelet_speed_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/problem2/problem2_codelet_recur_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_problem2_codelet_recur_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_10/r2cfII_10_codelet_r2cfII_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_10_codelet_r2cfII_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/transpose/transpose_codelet_fftw_transpose_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_transpose_codelet_fftw_transpose_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_7/hf_7_codelet_hf_7_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_7_codelet_hf_7_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_4/r2cb_4_codelet_r2cb_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_4_codelet_r2cb_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/cpy2d/cpy2d_codelet_fftw_cpy2d_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_cpy2d_codelet_fftw_cpy2d_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/cpy2d/cpy2d_codelet_fftw_cpy2d_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_cpy2d_codelet_fftw_cpy2d_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/transpose/transpose_codelet_dotile_4.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_transpose_codelet_dotile_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_7/r2cf_7_codelet_r2cf_7_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_7_codelet_r2cf_7_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/cpy2d/cpy2d_codelet_fftw_cpy2d_4.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_cpy2d_codelet_fftw_cpy2d_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/bench/bench_codelet_bench_tensor_to_fftw_iodim_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_bench_codelet_bench_tensor_to_fftw_iodim_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/api/api_codelet_fftw_mpi_local_size_guru_6.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_api_codelet_fftw_mpi_local_size_guru_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_2/t1_2_codelet_t1_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_2_codelet_t1_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/api/api_codelet_simple_dims_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_api_codelet_simple_dims_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/tensor7/tensor7_codelet_really_compress_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_tensor7_codelet_really_compress_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/bench/bench_codelet_mkn_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_bench_codelet_mkn_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/tensor7/tensor7_codelet_really_compress_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_tensor7_codelet_really_compress_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/dft-problem/dft-problem_codelet_zero_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_dft-problem_codelet_zero_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/speed/speed_codelet_speed_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_speed_codelet_speed_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_15/n1_15_codelet_n1_15_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_15_codelet_n1_15_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t2_16/t2_16_codelet_t2_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t2_16_codelet_t2_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/map-r2r-kind/map-r2r-kind_codelet_fftw_map_r2r_kind_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_map-r2r-kind_codelet_fftw_map_r2r_kind_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_6/t1_6_codelet_t1_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_6_codelet_t1_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_3/r2cbIII_3_codelet_r2cbIII_3_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_3_codelet_r2cbIII_3_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_7/hb_7_codelet_hb_7_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_7_codelet_hb_7_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/transpose/transpose_codelet_dotile_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_transpose_codelet_dotile_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/generic/generic_codelet_cdot_hc2r_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_generic_codelet_cdot_hc2r_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/api/api_codelet_prod_5.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_api_codelet_prod_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_20/t1_20_codelet_t1_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_20_codelet_t1_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/transpose/transpose_codelet_fftw_transpose_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_transpose_codelet_fftw_transpose_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/aset/aset_codelet_aset_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_aset_codelet_aset_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/caset/caset_codelet_caset_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_caset_codelet_caset_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rader/rader_codelet_apply_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rader_codelet_apply_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t2_64/t2_64_codelet_t2_64_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t2_64_codelet_t2_64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_8/t1_8_codelet_t1_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_8_codelet_t1_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf2_5/hf2_5_codelet_hf2_5_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf2_5_codelet_hf2_5_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_5/t1_5_codelet_t1_5_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_5_codelet_t1_5_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_16/t1_16_codelet_t1_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_16_codelet_t1_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cbdft_6/hc2cbdft_6_codelet_hc2cbdft_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cbdft_6_codelet_hc2cbdft_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_2/hf_2_codelet_hf_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_2_codelet_hf_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/generic/generic_codelet_cdot_r2hc_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_generic_codelet_cdot_r2hc_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cb_4/hc2cb_4_codelet_hc2cb_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cb_4_codelet_hc2cb_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_12/t1_12_codelet_t1_12_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_12_codelet_t1_12_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_6/r2cf_6_codelet_r2cf_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_6_codelet_r2cf_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/generic/generic_codelet_cdot_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_generic_codelet_cdot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/generic/generic_codelet_hartley_r2hc_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_generic_codelet_hartley_r2hc_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/api/api_codelet_fftw_mpi_local_size_guru_7.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_api_codelet_fftw_mpi_local_size_guru_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_20/r2cf_20_codelet_r2cf_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_20_codelet_r2cf_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/generic/generic_codelet_hartley_hc2r_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_generic_codelet_hartley_hc2r_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/api/api_codelet_default_sz_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_api_codelet_default_sz_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_25/hf_25_codelet_hf_25_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_25_codelet_hf_25_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/generic/generic_codelet_hartley_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_generic_codelet_hartley_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/api/api_codelet_local_size_4.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_api_codelet_local_size_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rank0-rdft2/rank0-rdft2_codelet_apply_r2hc_inplace_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rank0-rdft2_codelet_apply_r2hc_inplace_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_15/t1_15_codelet_t1_15_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_15_codelet_t1_15_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_5/r2cbIII_5_codelet_r2cbIII_5_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_5_codelet_r2cbIII_5_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft_8/hc2cfdft_8_codelet_hc2cfdft_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft_8_codelet_hc2cfdft_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/transpose-pairwise/transpose-pairwise_codelet_sort1_comm_sched_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_transpose-pairwise_codelet_sort1_comm_sched_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rank0-rdft2/rank0-rdft2_codelet_apply_r2hc_inplace_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rank0-rdft2_codelet_apply_r2hc_inplace_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/transpose-pairwise/transpose-pairwise_codelet_sort1_comm_sched_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_transpose-pairwise_codelet_sort1_comm_sched_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/transpose-pairwise/transpose-pairwise_codelet_fill1_comm_sched_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_transpose-pairwise_codelet_fill1_comm_sched_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/planner/planner_codelet_rehash_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_planner_codelet_rehash_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/planner/planner_codelet_imprt_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_planner_codelet_imprt_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/transpose-pairwise/transpose-pairwise_codelet_sort1_comm_sched_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_transpose-pairwise_codelet_sort1_comm_sched_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft_16/hc2cfdft_16_codelet_hc2cfdft_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft_16_codelet_hc2cfdft_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/mktensor-iodims/mktensor-iodims_codelet_fftw_mktensor_iodims_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_mktensor-iodims_codelet_fftw_mktensor_iodims_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/tensor5/tensor5_codelet_fftw_tensor_copy_inplace_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_tensor5_codelet_fftw_tensor_copy_inplace_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rank0-rdft2/rank0-rdft2_codelet_apply_r2hc_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rank0-rdft2_codelet_apply_r2hc_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/tensor5/tensor5_codelet_fftw_tensor_copy_inplace_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_tensor5_codelet_fftw_tensor_copy_inplace_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/openmp/openmp_codelet_fftw_spawn_loop_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_openmp_codelet_fftw_spawn_loop_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/tensor5/tensor5_codelet_dimcpy_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_tensor5_codelet_dimcpy_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_8/n1_8_codelet_n1_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_8_codelet_n1_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cf2_4/hc2cf2_4_codelet_hc2cf2_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cf2_4_codelet_hc2cf2_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_4/hf_4_codelet_hf_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_4_codelet_hf_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/e10_8/e10_8_codelet_e10_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_e10_8_codelet_e10_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_6/r2cfII_6_codelet_r2cfII_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_6_codelet_r2cfII_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_3/r2cb_3_codelet_r2cb_3_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_3_codelet_r2cb_3_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_32/r2cfII_32_codelet_r2cfII_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_32_codelet_r2cfII_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_15/r2cfII_15_codelet_r2cfII_15_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_15_codelet_r2cfII_15_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_16/r2cbIII_16_codelet_r2cbIII_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_16_codelet_r2cbIII_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_12/r2cbIII_12_codelet_r2cbIII_12_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_12_codelet_r2cbIII_12_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cf_2/hc2cf_2_codelet_hc2cf_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cf_2_codelet_hc2cf_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_64/r2cbIII_64_codelet_r2cbIII_64_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_64_codelet_r2cbIII_64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_9/hf_9_codelet_hf_9_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_9_codelet_hf_9_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_15/hf_15_codelet_hf_15_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_15_codelet_hf_15_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb2_25/hb2_25_codelet_hb2_25_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb2_25_codelet_hb2_25_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb2_20/hb2_20_codelet_hb2_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb2_20_codelet_hb2_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_10/hf_10_codelet_hf_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_10_codelet_hf_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rank0-rdft2/rank0-rdft2_codelet_apply_r2hc_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rank0-rdft2_codelet_apply_r2hc_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/dtensor/dtensor_codelet_fftw_mpi_dtensor_copy_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_dtensor_codelet_fftw_mpi_dtensor_copy_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_25/n1_25_codelet_n1_25_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_25_codelet_n1_25_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_6/hb_6_codelet_hb_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_6_codelet_hb_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t2_5/t2_5_codelet_t2_5_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t2_5_codelet_t2_5_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_32/hb_32_codelet_hb_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_32_codelet_hb_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/q1_3/q1_3_codelet_q1_3_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_q1_3_codelet_q1_3_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cf2_20/hc2cf2_20_codelet_hc2cf2_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cf2_20_codelet_hc2cf2_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cbdft_32/hc2cbdft_32_codelet_hc2cbdft_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cbdft_32_codelet_hc2cbdft_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_check_schedule_deadlock_9.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_check_schedule_deadlock_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/zero/zero_codelet_recur_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_zero_codelet_recur_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_sort1_comm_sched_4.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_sort1_comm_sched_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_empty_comm_schedule_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_empty_comm_schedule_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_5/r2cf_5_codelet_r2cf_5_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_5_codelet_r2cf_5_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf2_4/hf2_4_codelet_hf2_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf2_4_codelet_hf2_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_128/r2cf_128_codelet_r2cf_128_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_128_codelet_r2cf_128_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_check_schedule_deadlock_8.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_check_schedule_deadlock_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_sort_comm_schedule_11.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_sort_comm_schedule_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_13/r2cf_13_codelet_r2cf_13_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_13_codelet_r2cf_13_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_sort1_comm_sched_5.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_sort1_comm_sched_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_sort1_comm_sched_6.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_sort1_comm_sched_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_invert_comm_schedule_10.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_invert_comm_schedule_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_make_comm_schedule_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_make_comm_schedule_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_check_schedule_deadlock_7.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_check_schedule_deadlock_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_10/r2cb_10_codelet_r2cb_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_10_codelet_r2cb_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_fill1_comm_sched_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_fill1_comm_sched_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_add_dest_to_comm_schedule_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_add_dest_to_comm_schedule_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/testsched/testsched_codelet_main_12.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_testsched_codelet_main_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_9/n1_9_codelet_n1_9_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_9_codelet_n1_9_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_20/r2cbIII_20_codelet_r2cbIII_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_20_codelet_r2cbIII_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/md5/md5_codelet_doblock_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_md5_codelet_doblock_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft2_32/hc2cfdft2_32_codelet_hc2cfdft2_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft2_32_codelet_hc2cfdft2_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_12/n1_12_codelet_n1_12_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_12_codelet_n1_12_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_20/r2cfII_20_codelet_r2cfII_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_20_codelet_r2cfII_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cf_12/hc2cf_12_codelet_hc2cf_12_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cf_12_codelet_hc2cf_12_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_16/n1_16_codelet_n1_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_16_codelet_n1_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cf2_8/hc2cf2_8_codelet_hc2cf2_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cf2_8_codelet_hc2cf2_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/md5/md5_codelet_doblock_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_md5_codelet_doblock_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/bluestein/bluestein_codelet_apply_4.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_bluestein_codelet_apply_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/bluestein/bluestein_codelet_apply_5.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_bluestein_codelet_apply_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/tensor/tensor_codelet_tensor_sz_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_tensor_codelet_tensor_sz_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/dft-r2hc/dft-r2hc_codelet_mkplan_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_dft-r2hc_codelet_mkplan_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_8/r2cbIII_8_codelet_r2cbIII_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_8_codelet_r2cbIII_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/tensor/tensor_codelet_dimcpy_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_tensor_codelet_dimcpy_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft_10/hc2cfdft_10_codelet_hc2cfdft_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft_10_codelet_hc2cfdft_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb2_8/hb2_8_codelet_hb2_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb2_8_codelet_hb2_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/dftw-generic/dftw-generic_codelet_bytwiddle_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_dftw-generic_codelet_bytwiddle_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/tensor/tensor_codelet_tensor_compress_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_tensor_codelet_tensor_compress_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_16/r2cf_16_codelet_r2cf_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_16_codelet_r2cf_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft_20/hc2cfdft_20_codelet_hc2cfdft_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft_20_codelet_hc2cfdft_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/tensor/tensor_codelet_fftw_tensor_sz_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_tensor_codelet_fftw_tensor_sz_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cf2_16/hc2cf2_16_codelet_hc2cf2_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cf2_16_codelet_hc2cf2_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cf_4/hc2cf_4_codelet_hc2cf_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cf_4_codelet_hc2cf_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/tensor/tensor_codelet_tensor_copy_swapio_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_tensor_codelet_tensor_copy_swapio_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_7/r2cb_7_codelet_r2cb_7_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_7_codelet_r2cb_7_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_9/t1_9_codelet_t1_9_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_9_codelet_t1_9_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/mktensor-iodims64/mktensor-iodims64_codelet_fftw_mktensor_iodims64_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_mktensor-iodims64_codelet_fftw_mktensor_iodims64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb2_32/hb2_32_codelet_hb2_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb2_32_codelet_hb2_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/dht-rader/dht-rader_codelet_mkomega_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_dht-rader_codelet_mkomega_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_7/n1_7_codelet_n1_7_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_7_codelet_n1_7_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/dht-rader/dht-rader_codelet_apply_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_dht-rader_codelet_apply_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_64/r2cb_64_codelet_r2cb_64_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_64_codelet_r2cb_64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_64/t1_64_codelet_t1_64_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_64_codelet_t1_64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_4/r2cbIII_4_codelet_r2cbIII_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_4_codelet_r2cbIII_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/bluestein/bluestein_codelet_mktwiddle_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_bluestein_codelet_mktwiddle_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_25/t1_25_codelet_t1_25_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_25_codelet_t1_25_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/dht-rader/dht-rader_codelet_mkomega_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_dht-rader_codelet_mkomega_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/transpose/transpose_codelet_fftw_transpose_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_transpose_codelet_fftw_transpose_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/dht-rader/dht-rader_codelet_apply_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_dht-rader_codelet_apply_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_11/n1_11_codelet_n1_11_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_11_codelet_n1_11_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cf_20/hc2cf_20_codelet_hc2cf_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cf_20_codelet_hc2cf_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb2_16/hb2_16_codelet_hb2_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb2_16_codelet_hb2_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_2/hb_2_codelet_hb_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_2_codelet_hb_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/dht-r2hc/dht-r2hc_codelet_apply_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_dht-r2hc_codelet_apply_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_3/r2cfII_3_codelet_r2cfII_3_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_3_codelet_r2cfII_3_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_15/hb_15_codelet_hb_15_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_15_codelet_hb_15_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_2/r2cb_2_codelet_r2cb_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_2_codelet_r2cb_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_3/n1_3_codelet_n1_3_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_3_codelet_n1_3_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cb2_8/hc2cb2_8_codelet_hc2cb2_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cb2_8_codelet_hc2cb2_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_6/hf_6_codelet_hf_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_6_codelet_hf_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/mktensor-rowmajor/mktensor-rowmajor_codelet_fftw_mktensor_rowmajor_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_mktensor-rowmajor_codelet_fftw_mktensor_rowmajor_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cb2_4/hc2cb2_4_codelet_hc2cb2_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cb2_4_codelet_hc2cb2_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_9/r2cf_9_codelet_r2cf_9_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_9_codelet_r2cf_9_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_25/r2cf_25_codelet_r2cf_25_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_25_codelet_r2cf_25_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_25/r2cfII_25_codelet_r2cfII_25_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_25_codelet_r2cfII_25_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_32/r2cf_32_codelet_r2cf_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_32_codelet_r2cf_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cb2_16/hc2cb2_16_codelet_hc2cb2_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cb2_16_codelet_hc2cb2_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/q1_8/q1_8_codelet_q1_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_q1_8_codelet_q1_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_2/r2cbIII_2_codelet_r2cbIII_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_2_codelet_r2cbIII_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_14/r2cf_14_codelet_r2cf_14_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_14_codelet_r2cf_14_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_4/n1_4_codelet_n1_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_4_codelet_n1_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_25/r2cb_25_codelet_r2cb_25_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_25_codelet_r2cb_25_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_11/r2cf_11_codelet_r2cf_11_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_11_codelet_r2cf_11_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/report/report_codelet_mkstat_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_report_codelet_mkstat_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_9/hb_9_codelet_hb_9_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_9_codelet_hb_9_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_15/r2cf_15_codelet_r2cf_15_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_15_codelet_r2cf_15_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_10/t1_10_codelet_t1_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_10_codelet_t1_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_16/r2cfII_16_codelet_r2cfII_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_16_codelet_r2cfII_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft_12/hc2cfdft_12_codelet_hc2cfdft_12_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft_12_codelet_hc2cfdft_12_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/report/report_codelet_mkstat_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_report_codelet_mkstat_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/bluestein/bluestein_codelet_apply_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_bluestein_codelet_apply_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t2_4/t2_4_codelet_t2_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t2_4_codelet_t2_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_64/r2cfII_64_codelet_r2cfII_64_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_64_codelet_r2cfII_64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_13/r2cb_13_codelet_r2cb_13_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_13_codelet_r2cb_13_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rdft2-rdft/rdft2-rdft_codelet_c2hc_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rdft2-rdft_codelet_c2hc_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t2_20/t2_20_codelet_t2_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t2_20_codelet_t2_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_3/t1_3_codelet_t1_3_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_3_codelet_t1_3_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft_4/hc2cfdft_4_codelet_hc2cfdft_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft_4_codelet_hc2cfdft_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/vrank3-transpose/vrank3-transpose_codelet_transpose_toms513_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_vrank3-transpose_codelet_transpose_toms513_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_13/n1_13_codelet_n1_13_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_13_codelet_n1_13_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_12/hb_12_codelet_hb_12_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_12_codelet_hb_12_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft2_20/hc2cfdft2_20_codelet_hc2cfdft2_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft2_20_codelet_hc2cfdft2_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf2_8/hf2_8_codelet_hf2_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf2_8_codelet_hf2_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_9/r2cbIII_9_codelet_r2cbIII_9_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_9_codelet_r2cbIII_9_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cf_6/hc2cf_6_codelet_hc2cf_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cf_6_codelet_hc2cf_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/q1_4/q1_4_codelet_q1_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_q1_4_codelet_q1_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft_6/hc2cfdft_6_codelet_hc2cfdft_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft_6_codelet_hc2cfdft_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_8/r2cfII_8_codelet_r2cfII_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_8_codelet_r2cfII_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cbdft_4/hc2cbdft_4_codelet_hc2cbdft_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cbdft_4_codelet_hc2cbdft_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_2/n1_2_codelet_n1_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_2_codelet_n1_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cbdft2_16/hc2cbdft2_16_codelet_hc2cbdft2_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cbdft2_16_codelet_hc2cbdft2_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rdft2-problem/rdft2-problem_codelet_zero_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rdft2-problem_codelet_zero_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_4/t1_4_codelet_t1_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_4_codelet_t1_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cbdft_10/hc2cbdft_10_codelet_hc2cbdft_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cbdft_10_codelet_hc2cbdft_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cbdft2_4/hc2cbdft2_4_codelet_hc2cbdft2_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cbdft2_4_codelet_hc2cbdft2_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf2_20/hf2_20_codelet_hf2_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf2_20_codelet_hf2_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/cpy2d-pair/cpy2d-pair_codelet_fftw_cpy2d_pair_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_cpy2d-pair_codelet_fftw_cpy2d_pair_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_5/n1_5_codelet_n1_5_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_5_codelet_n1_5_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cf_8/hc2cf_8_codelet_hc2cf_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cf_8_codelet_hc2cf_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cb_16/hc2cb_16_codelet_hc2cb_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cb_16_codelet_hc2cb_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cbdft_16/hc2cbdft_16_codelet_hc2cbdft_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cbdft_16_codelet_hc2cbdft_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rdft2-rdft/rdft2-rdft_codelet_hc2c_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rdft2-rdft_codelet_hc2c_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_2/r2cf_2_codelet_r2cf_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_2_codelet_r2cf_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rdft-dht/rdft-dht_codelet_apply_r2hc_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rdft-dht_codelet_apply_r2hc_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_32/n1_32_codelet_n1_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_32_codelet_n1_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cb_32/hc2cb_32_codelet_hc2cb_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cb_32_codelet_hc2cb_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/primes/primes_codelet_get_prime_factors_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_primes_codelet_get_prime_factors_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/primes/primes_codelet_fftw_factors_into_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_primes_codelet_fftw_factors_into_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_8/hf_8_codelet_hf_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_8_codelet_hf_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_3/hb_3_codelet_hb_3_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_3_codelet_hb_3_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rdft-dht/rdft-dht_codelet_apply_hc2r_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rdft-dht_codelet_apply_hc2r_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cb_8/hc2cb_8_codelet_hc2cb_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cb_8_codelet_hc2cb_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_64/n1_64_codelet_n1_64_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_64_codelet_n1_64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/addchain/addchain_codelet_optimize_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_addchain_codelet_optimize_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/cpy2d-pair/cpy2d-pair_codelet_fftw_zero1d_pair_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_cpy2d-pair_codelet_fftw_zero1d_pair_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/addchain/addchain_codelet_optimize_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_addchain_codelet_optimize_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/addchain/addchain_codelet_search_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_addchain_codelet_search_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_9/r2cfII_9_codelet_r2cfII_9_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_9_codelet_r2cfII_9_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rdft-dht/rdft-dht_codelet_apply_hc2r_save_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rdft-dht_codelet_apply_hc2r_save_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t2_32/t2_32_codelet_t2_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t2_32_codelet_t2_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-lib/verify-lib_codelet_acopy_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-lib_codelet_acopy_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/threads/threads_codelet_fftw_spawn_loop_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_threads_codelet_fftw_spawn_loop_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-lib/verify-lib_codelet_verify_pack_6.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-lib_codelet_verify_pack_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2hc-generic/hc2hc-generic_codelet_swapri_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2hc-generic_codelet_swapri_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/stride/stride_codelet_fftw_mkstride_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_stride_codelet_fftw_mkstride_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-lib/verify-lib_codelet_accuracy_test_8.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-lib_codelet_accuracy_test_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-lib/verify-lib_codelet_arol_4.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-lib_codelet_arol_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_4/r2cf_4_codelet_r2cf_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_4_codelet_r2cf_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cb2_20/hc2cb2_20_codelet_hc2cb2_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cb2_20_codelet_hc2cb2_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_128/r2cb_128_codelet_r2cb_128_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_128_codelet_r2cb_128_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cf_10/hc2cf_10_codelet_hc2cf_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cf_10_codelet_hc2cf_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-lib/verify-lib_codelet_ascale_5.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-lib_codelet_ascale_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-lib/verify-lib_codelet_asub_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-lib_codelet_asub_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/addchain/addchain_codelet_optimize_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_addchain_codelet_optimize_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/addchain/addchain_codelet_search_4.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_addchain_codelet_search_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_4/r2cfII_4_codelet_r2cfII_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_4_codelet_r2cfII_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_25/r2cbIII_25_codelet_r2cbIII_25_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_25_codelet_r2cbIII_25_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-lib/verify-lib_codelet_mkreal_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-lib_codelet_mkreal_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/q1_5/q1_5_codelet_q1_5_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_q1_5_codelet_q1_5_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf2_32/hf2_32_codelet_hf2_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf2_32_codelet_hf2_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/dft-r2hc/dft-r2hc_codelet_apply_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_dft-r2hc_codelet_apply_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/e01_8/e01_8_codelet_e01_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_e01_8_codelet_e01_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_12/r2cb_12_codelet_r2cb_12_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_12_codelet_r2cb_12_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_10/hb_10_codelet_hb_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_10_codelet_hb_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_20/hf_20_codelet_hf_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_20_codelet_hf_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_15/r2cb_15_codelet_r2cb_15_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_15_codelet_r2cb_15_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_64/hf_64_codelet_hf_64_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_64_codelet_hf_64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf2_16/hf2_16_codelet_hf2_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf2_16_codelet_hf2_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_32/t1_32_codelet_t1_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_32_codelet_t1_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_5/r2cfII_5_codelet_r2cfII_5_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_5_codelet_r2cfII_5_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/problem/problem_codelet_recur_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_problem_codelet_recur_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_12/r2cfII_12_codelet_r2cfII_12_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_12_codelet_r2cfII_12_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cb_20/hc2cb_20_codelet_hc2cb_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cb_20_codelet_hc2cb_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_5/hf_5_codelet_hf_5_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_5_codelet_hf_5_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_16/hb_16_codelet_hb_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_16_codelet_hb_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_12/hf_12_codelet_hf_12_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_12_codelet_hf_12_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft2_4/hc2cfdft2_4_codelet_hc2cfdft2_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft2_4_codelet_hc2cfdft2_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/q1_6/q1_6_codelet_q1_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_q1_6_codelet_q1_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_32/r2cbIII_32_codelet_r2cbIII_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_32_codelet_r2cbIII_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t2_10/t2_10_codelet_t2_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t2_10_codelet_t2_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft_32/hc2cfdft_32_codelet_hc2cfdft_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft_32_codelet_hc2cfdft_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_7/r2cbIII_7_codelet_r2cbIII_7_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_7_codelet_r2cbIII_7_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft_2/hc2cfdft_2_codelet_hc2cfdft_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft_2_codelet_hc2cfdft_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/bluestein/bluestein_codelet_mktwiddle_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_bluestein_codelet_mktwiddle_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t2_8/t2_8_codelet_t2_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t2_8_codelet_t2_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_32/hf_32_codelet_hf_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_32_codelet_hf_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/dft-rank-geq2-transposed/dft-rank-geq2-transposed_codelet_mkplan_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_dft-rank-geq2-transposed_codelet_mkplan_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rdft-rank-geq2-transposed/rdft-rank-geq2-transposed_codelet_mkplan_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rdft-rank-geq2-transposed_codelet_mkplan_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_64/hb_64_codelet_hb_64_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_64_codelet_hb_64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_25/hb_25_codelet_hb_25_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_25_codelet_hb_25_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cf2_32/hc2cf2_32_codelet_hc2cf2_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cf2_32_codelet_hc2cf2_32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_10/r2cbIII_10_codelet_r2cbIII_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_10_codelet_r2cbIII_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cbdft_2/hc2cbdft_2_codelet_hc2cbdft_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cbdft_2_codelet_hc2cbdft_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cb_6/hc2cb_6_codelet_hc2cb_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cb_6_codelet_hc2cb_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf_3/hf_3_codelet_hf_3_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf_3_codelet_hf_3_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_20/hb_20_codelet_hb_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_20_codelet_hb_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t2_25/t2_25_codelet_t2_25_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t2_25_codelet_t2_25_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-r2r/verify-r2r_codelet_mke00_6.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-r2r_codelet_mke00_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-rdft2/verify-rdft2_codelet_icpyhc20_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-rdft2_codelet_icpyhc20_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hf2_25/hf2_25_codelet_hf2_25_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hf2_25_codelet_hf2_25_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_15/r2cbIII_15_codelet_r2cbIII_15_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_15_codelet_r2cbIII_15_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_9/r2cb_9_codelet_r2cb_9_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_9_codelet_r2cb_9_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_14/n1_14_codelet_n1_14_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_14_codelet_n1_14_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-r2r/verify-r2r_codelet_mkoddonly_9.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-r2r_codelet_mkoddonly_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-r2r/verify-r2r_codelet_mkimag_7.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-r2r_codelet_mkimag_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/transpose-problem/transpose-problem_codelet_zero_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_transpose-problem_codelet_zero_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-r2r/verify-r2r_codelet_mko00_8.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-r2r_codelet_mko00_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cb_10/hc2cb_10_codelet_hc2cb_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cb_10_codelet_hc2cb_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/mp/mp_codelet_toreal_12.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_mp_codelet_toreal_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-r2r/verify-r2r_codelet_rascale_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-r2r_codelet_rascale_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/mp/mp_codelet_mul_10.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_mp_codelet_mul_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-r2r/verify-r2r_codelet_cpyr1_5.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-r2r_codelet_cpyr1_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_64/r2cf_64_codelet_r2cf_64_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_64_codelet_r2cf_64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/mp/mp_codelet_pow2_atleast_15.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_mp_codelet_pow2_atleast_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_11/r2cb_11_codelet_r2cb_11_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_11_codelet_r2cb_11_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rdft2-rank-geq2-transposed/rdft2-rank-geq2-transposed_codelet_mkplan_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rdft2-rank-geq2-transposed_codelet_mkplan_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/q1_2/q1_2_codelet_q1_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_q1_2_codelet_q1_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/mp/mp_codelet_pack_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_mp_codelet_pack_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-r2r/verify-r2r_codelet_rarolr_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-r2r_codelet_rarolr_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cfdft2_8/hc2cfdft2_8_codelet_hc2cfdft2_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cfdft2_8_codelet_hc2cfdft2_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/cpy1d/cpy1d_codelet_fftw_cpy1d_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_cpy1d_codelet_fftw_cpy1d_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cbIII_6/r2cbIII_6_codelet_r2cbIII_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cbIII_6_codelet_r2cbIII_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_8/r2cb_8_codelet_r2cb_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_8_codelet_r2cb_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb2_4/hb2_4_codelet_hb2_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb2_4_codelet_hb2_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb_4/hb_4_codelet_hb_4_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb_4_codelet_hb_4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-r2r/verify-r2r_codelet_raadd_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-r2r_codelet_raadd_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/cpy1d/cpy1d_codelet_fftw_cpy1d_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_cpy1d_codelet_fftw_cpy1d_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_16/r2cb_16_codelet_r2cb_16_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_16_codelet_r2cb_16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_12/r2cf_12_codelet_r2cf_12_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_12_codelet_r2cf_12_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/cpy1d/cpy1d_codelet_fftw_cpy1d_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_cpy1d_codelet_fftw_cpy1d_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-r2r/verify-r2r_codelet_rasub_1.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-r2r_codelet_rasub_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_6/r2cb_6_codelet_r2cb_6_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_6_codelet_r2cb_6_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hb2_5/hb2_5_codelet_hb2_5_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hb2_5_codelet_hb2_5_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_20/n1_20_codelet_n1_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_20_codelet_n1_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_20/r2cb_20_codelet_r2cb_20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_20_codelet_r2cb_20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_2/r2cfII_2_codelet_r2cfII_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_2_codelet_r2cfII_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/hc2cb_2/hc2cb_2_codelet_hc2cb_2_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_hc2cb_2_codelet_hc2cb_2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/bluestein/bluestein_codelet_apply_3.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_bluestein_codelet_apply_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_3/r2cf_3_codelet_r2cf_3_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_3_codelet_r2cf_3_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/t1_7/t1_7_codelet_t1_7_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_t1_7_codelet_t1_7_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/cpy1d/cpy1d_codelet_fftw_cpy1d_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_cpy1d_codelet_fftw_cpy1d_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/rdft-problem/rdft-problem_codelet_zero_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_rdft-problem_codelet_zero_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-lib/verify-lib_codelet_aadd_2.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-lib_codelet_aadd_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-r2r/verify-r2r_codelet_rimpulse_4.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-r2r_codelet_rimpulse_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/n1_10/n1_10_codelet_n1_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_n1_10_codelet_n1_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_10/r2cf_10_codelet_r2cf_10_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_10_codelet_r2cf_10_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_5/r2cb_5_codelet_r2cb_5_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_5_codelet_r2cb_5_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cf_8/r2cf_8_codelet_r2cf_8_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cf_8_codelet_r2cf_8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_14/r2cb_14_codelet_r2cb_14_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_14_codelet_r2cb_14_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cfII_7/r2cfII_7_codelet_r2cfII_7_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cfII_7_codelet_r2cfII_7_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/verify-rdft2/verify-rdft2_codelet_cpyhc20_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_verify-rdft2_codelet_cpyhc20_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/fftw/r2cb_32/r2cb_32_codelet_r2cb_32_0.c",
+        "input": "basic_loop_corpus/loop_input/fftw/input_r2cb_32_codelet_r2cb_32_0.c"
+    }
+]

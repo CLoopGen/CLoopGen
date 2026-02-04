@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned char Intersection;
+
+struct worm_data {
+    int color;
+    int size;
+    float effective_size;
+    int origin;
+    int liberties;
+    int liberties2;
+    int liberties3;
+    int liberties4;
+    int lunch;
+    int cutstone;
+    int cutstone2;
+    int genus;
+    int inessential;
+    int invincible;
+    int unconditional_status;
+    int attack_points[10];
+    int attack_codes[10];
+    int defense_points[10];
+    int defense_codes[10];
+    int attack_threat_points[10];
+    int attack_threat_codes[10];
+    int defense_threat_points[10];
+    int defense_threat_codes[10];
+};
+
+
+extern Intersection board[421];
+extern struct worm_data worm[400];
+extern int pos;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int temp_origin[400];
+    // First pass: compute values without modifying original data (eliminate loop-carried dependencies)
+    for (pos = (19 + 2); pos < (19 + 1) * (19 + 1); pos++) {
+        if ((board[pos] != 3)) {
+            temp_origin[pos] = 0;
+        } else {
+            temp_origin[pos] = worm[pos].origin; // Preserve old value to break dependency
+        }
+    }
+    // Second pass: update worm.origin based on temporary storage
+    for (pos = (19 + 2); pos < (19 + 1) * (19 + 1); pos++) {
+        worm[pos].origin = temp_origin[pos]; // Eliminate loop-carried dependency by decoupling reads and writes
+    }
+}

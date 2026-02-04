@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *dst;
+extern uint8_t *src;
+extern ptrdiff_t stride;
+extern int h;
+extern  int A;
+extern  int B;
+extern  int C;
+extern  int D;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < h; i++) {
+    int val0 = A * src[0] + B * src[1] + C * src[stride] + D * src[stride + 1];
+    int val1 = A * src[1] + B * src[2] + C * src[stride + 1] + D * src[stride + 2];
+    int val2 = A * src[2] + B * src[3] + C * src[stride + 2] + D * src[stride + 3];
+    int val3 = A * src[3] + B * src[4] + C * src[stride + 3] + D * src[stride + 4];
+
+    dst[0] = ((dst[0] + ((val0 + 28) >> 6) + 1) >> 1);
+    dst[1] = ((dst[1] + ((val1 + 28) >> 6) + 1) >> 1);
+    dst[2] = ((dst[2] + ((val2 + 28) >> 6) + 1) >> 1);
+    dst[3] = ((dst[3] + ((val3 + 28) >> 6) + 1) >> 1);
+
+    dst += stride;
+    src += stride;
+}
+}

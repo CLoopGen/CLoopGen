@@ -1,0 +1,60 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    uint_fast8_t csty;
+    uint_fast8_t maxrlvls;
+    uint_fast16_t cblkwidthexpn;
+    uint_fast16_t cblkheightexpn;
+    uint_fast8_t cblksty;
+    uint_fast8_t qmfbid;
+    uint_fast16_t prcwidthexpns[33];
+    uint_fast16_t prcheightexpns[33];
+    uint_fast8_t numgbits;
+} jpc_enc_tccp_t;
+
+typedef struct {
+    uint_fast8_t parwidthval;
+    uint_fast8_t parheightval;
+} jpc_coxrlvl_t;
+
+typedef struct {
+    uint_fast8_t csty;
+    uint_fast8_t numdlvls;
+    uint_fast8_t cblkwidthval;
+    uint_fast8_t cblkheightval;
+    uint_fast8_t cblksty;
+    uint_fast8_t qmfbid;
+    int numrlvls;
+    jpc_coxrlvl_t rlvls[33];
+} jpc_coxcp_t;
+
+typedef struct {
+    uint_fast8_t csty;
+    uint_fast8_t prg;
+    uint_fast16_t numlyrs;
+    uint_fast8_t mctrans;
+    jpc_coxcp_t compparms;
+} jpc_cod_t;
+
+extern jpc_enc_tccp_t *tccp;
+extern uint_fast16_t rlvlno;
+extern jpc_cod_t *cod;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (rlvlno = 0; rlvlno < tccp->maxrlvls && rlvlno < 33; ++rlvlno) {
+        uint_fast16_t width_val = tccp->prcwidthexpns[rlvlno];
+        uint_fast16_t height_val = tccp->prcheightexpns[rlvlno];
+        if (width_val <= 16 && height_val <= 16) {
+            cod->compparms.rlvls[rlvlno].parwidthval = (uint_fast8_t)width_val;
+            cod->compparms.rlvls[rlvlno].parheightval = (uint_fast8_t)height_val;
+        }
+    }
+}

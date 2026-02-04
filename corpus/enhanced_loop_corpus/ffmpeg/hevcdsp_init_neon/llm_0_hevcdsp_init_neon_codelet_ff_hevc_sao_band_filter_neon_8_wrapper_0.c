@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int16_t *sao_offset_val;
+extern int sao_left_class;
+extern int16_t offset_table[32];
+extern int k;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (int i = 0; i < 1; i++) {
+    for (k = 0; k < 4; k++) {
+        offset_table[(k + sao_left_class) & 31] = sao_offset_val[k + 1];
+    }
+}
+}

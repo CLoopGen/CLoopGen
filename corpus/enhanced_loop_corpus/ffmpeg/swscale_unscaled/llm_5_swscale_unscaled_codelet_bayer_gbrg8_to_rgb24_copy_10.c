@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  uint8_t *src;
+extern int src_stride;
+extern uint8_t *dst;
+extern int dst_stride;
+extern int width;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < width; i += 2) {
+    unsigned int avg_val = ((unsigned int)(src[(0) * src_stride + 1 * (0)]) + 
+                            (unsigned int)(src[(1) * src_stride + 1 * (1)])) >> 1;
+
+    dst[(0) * dst_stride + (0) * 3 + 0] = dst[(0) * dst_stride + (1) * 3 + 0] = 
+    dst[(1) * dst_stride + (1) * 3 + 0] = dst[(1) * dst_stride + (0) * 3 + 0] = 
+        (src[(1) * src_stride + 1 * (0)]) >> 0;
+
+    dst[(0) * dst_stride + (0) * 3 + 1] = (src[(0) * src_stride + 1 * (0)]) >> 0;
+
+    if (avg_val > 128) {
+        dst[(1) * dst_stride + (1) * 3 + 1] = (src[(1) * src_stride + 1 * (1)]) >> 0;
+    } else {
+        dst[(1) * dst_stride + (1) * 3 + 1] = avg_val;
+    }
+
+    dst[(0) * dst_stride + (1) * 3 + 1] = dst[(1) * dst_stride + (0) * 3 + 1] = avg_val;
+
+    dst[(1) * dst_stride + (1) * 3 + 2] = dst[(0) * dst_stride + (0) * 3 + 2] = 
+    dst[(0) * dst_stride + (1) * 3 + 2] = dst[(1) * dst_stride + (0) * 3 + 2] = 
+        (src[(0) * src_stride + 1 * (1)]) >> 0;
+
+    src += 2 * 1;
+    dst += 6;
+}
+}

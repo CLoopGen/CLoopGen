@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern double *dp1;
+extern double *dp2;
+extern double *out;
+extern int len;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < len; ++i) {
+        double val1 = *dp1++;
+        double val2 = *dp2++;
+        *out++ = (val1 > val2) ? val1 - val2 : 0;
+    }
+}

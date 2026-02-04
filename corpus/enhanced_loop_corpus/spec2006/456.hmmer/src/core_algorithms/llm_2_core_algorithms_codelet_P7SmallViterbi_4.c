@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+struct p7trace_s {
+    int tlen;
+    char *statetype;
+    int *nodeidx;
+    int *pos;
+};
+
+
+extern struct p7trace_s *ctr;
+extern struct p7trace_s *tr;
+extern int pos;
+extern int tpos;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Consecutive memory access with reverse traversal
+    for (pos = ctr->pos[1]; pos >= 1; pos--) {
+        tr->statetype[tpos] = 5;
+        tr->nodeidx[tpos] = 0;
+        tr->pos[tpos] = pos;
+        tpos++;
+    }
+}

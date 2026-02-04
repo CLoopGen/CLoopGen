@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned char JSAMPLE;
+
+typedef JSAMPLE *JSAMPROW;
+
+typedef JSAMPROW *JSAMPARRAY;
+
+typedef unsigned int JDIMENSION;
+
+extern JSAMPARRAY input_buf;
+extern JSAMPARRAY output_buf;
+extern int num_rows;
+extern JSAMPARRAY colorindex;
+extern int pixcode;
+extern int ci;
+extern JSAMPROW ptrin;
+extern JSAMPROW ptrout;
+extern int row;
+extern JDIMENSION col;
+extern JDIMENSION width;
+extern int nc;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (row = 0; row < num_rows; row++) {
+        ptrin = input_buf[row];
+        ptrout = output_buf[row];
+        // Introduce loop-carried dependence by accumulating across columns
+        int running_total = 0;
+        for (col = width; col > 0; col--) {
+            pixcode = 0;
+            // Create WAW dependency: each iteration writes to shared accumulator before store
+            for (ci = 0; ci < nc; ci++) {
+                pixcode += ((int)(colorindex[ci][((int)(*ptrin++))]));
+            }
+            running_total += pixcode; // Loop-carried dependence via running_total
+            *ptrout++ = (JSAMPLE)running_total; // Write dependent value instead of raw pixcode
+        }
+        // Break the per-row dependence chain by not carrying into next row
+    }
+}

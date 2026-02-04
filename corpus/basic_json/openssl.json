@@ -1,0 +1,1794 @@
+[
+    {
+        "codelet": "basic_loop_corpus/openssl/md2_dgst/md2_dgst_codelet_md2_block_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_md2_dgst_codelet_md2_block_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/tls1_prf/tls1_prf_codelet_tls1_prf_alg_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_tls1_prf_codelet_tls1_prf_alg_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsa_gen/rsa_gen_codelet_rsa_multiprime_keygen_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsa_gen_codelet_rsa_multiprime_keygen_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/set_key/set_key_codelet_DES_set_odd_parity_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_set_key_codelet_DES_set_odd_parity_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/krb5kdf/krb5kdf_codelet_n_fold_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_krb5kdf_codelet_n_fold_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/speed/speed_codelet_get_max_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_speed_codelet_get_max_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/set_key/set_key_codelet_DES_set_key_unchecked_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_set_key_codelet_DES_set_key_unchecked_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/e_chacha20_poly1305/e_chacha20_poly1305_codelet_chacha_cipher_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_e_chacha20_poly1305_codelet_chacha_cipher_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/x_long/x_long_codelet_long_i2c_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_x_long_codelet_long_i2c_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/speed/speed_codelet_speed_main_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_speed_codelet_speed_main_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_x86core/aes_x86core_codelet_AES_set_decrypt_key_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_x86core_codelet_AES_set_decrypt_key_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_x86core/aes_x86core_codelet_prefetch256_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_x86core_codelet_prefetch256_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_sstream/quic_sstream_codelet_ossl_quic_sstream_adjust_iov_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_sstream_codelet_ossl_quic_sstream_adjust_iov_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_multistream_test/quic_multistream_test_codelet_script_54_inject_handshake_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_multistream_test_codelet_script_54_inject_handshake_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_x86core/aes_x86core_codelet_AES_decrypt_6.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_x86core_codelet_AES_decrypt_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/e_chacha20_poly1305/e_chacha20_poly1305_codelet_chacha_init_key_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_e_chacha20_poly1305_codelet_chacha_init_key_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/x_long/x_long_codelet_num_bits_ulong_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_x_long_codelet_num_bits_ulong_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/lhash/lhash_codelet_ossl_lh_strcasehash_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_lhash_codelet_ossl_lh_strcasehash_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/hashtable/hashtable_codelet_ossl_ht_strcase_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_hashtable_codelet_ossl_ht_strcase_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_core/aes_core_codelet_AES_set_decrypt_key_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_core_codelet_AES_set_decrypt_key_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/chacha_enc/chacha_enc_codelet_chacha20_core_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_chacha_enc_codelet_chacha20_core_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_x86core/aes_x86core_codelet_AES_decrypt_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_x86core_codelet_AES_decrypt_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/params_dup/params_dup_codelet_OSSL_PARAM_merge_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_params_dup_codelet_OSSL_PARAM_merge_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cbc128/cbc128_codelet_CRYPTO_cbc128_decrypt_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cbc128_codelet_CRYPTO_cbc128_decrypt_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/param_build_test/param_build_test_codelet_builder_limit_test_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_param_build_test_codelet_builder_limit_test_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rc4_enc/rc4_enc_codelet_RC4_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rc4_enc_codelet_RC4_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/speed/speed_codelet_speed_main_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_speed_codelet_speed_main_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_x86core/aes_x86core_codelet_AES_encrypt_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_x86core_codelet_AES_encrypt_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/random/random_codelet_test_random_seed_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_random_codelet_test_random_seed_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_core/aes_core_codelet_AES_decrypt_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_core_codelet_AES_decrypt_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ecx_s390x/ecx_s390x_codelet_s390x_x448_mod_p_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ecx_s390x_codelet_s390x_x448_mod_p_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ecx_s390x/ecx_s390x_codelet_s390x_x448_mod_p_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ecx_s390x_codelet_s390x_x448_mod_p_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/e_chacha20_poly1305/e_chacha20_poly1305_codelet_chacha_init_key_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_e_chacha20_poly1305_codelet_chacha_init_key_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cbc128/cbc128_codelet_CRYPTO_cbc128_encrypt_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cbc128_codelet_CRYPTO_cbc128_encrypt_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/compare/compare_codelet_compare_with_reference_file_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_compare_codelet_compare_with_reference_file_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_core/aes_core_codelet_AES_set_decrypt_key_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_core_codelet_AES_set_decrypt_key_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cbc128/cbc128_codelet_CRYPTO_cbc128_decrypt_9.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cbc128_codelet_CRYPTO_cbc128_decrypt_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rc4_enc/rc4_enc_codelet_RC4_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rc4_enc_codelet_RC4_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/packet/packet_codelet_WPACKET_set_max_size_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_packet_codelet_WPACKET_set_max_size_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cbc128/cbc128_codelet_CRYPTO_cbc128_encrypt_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cbc128_codelet_CRYPTO_cbc128_encrypt_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_core/aes_core_codelet_AES_encrypt_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_core_codelet_AES_encrypt_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/chacha_enc/chacha_enc_codelet_chacha20_core_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_chacha_enc_codelet_chacha20_core_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cbc128/cbc128_codelet_CRYPTO_cbc128_encrypt_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cbc128_codelet_CRYPTO_cbc128_encrypt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_mul/bn_mul_codelet_bn_sub_part_words_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_mul_codelet_bn_sub_part_words_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/params_dup/params_dup_codelet_OSSL_PARAM_free_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_params_dup_codelet_OSSL_PARAM_free_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cbc128/cbc128_codelet_CRYPTO_cbc128_encrypt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cbc128_codelet_CRYPTO_cbc128_encrypt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/err_save/err_save_codelet_OSSL_ERR_STATE_save_to_mark_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_err_save_codelet_OSSL_ERR_STATE_save_to_mark_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/t1_lib/t1_lib_codelet_tls12_check_peer_sigalg_19.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_t1_lib_codelet_tls12_check_peer_sigalg_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/params_dup/params_dup_codelet_OSSL_PARAM_merge_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_params_dup_codelet_OSSL_PARAM_merge_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/x_long/x_long_codelet_long_c2i_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_x_long_codelet_long_c2i_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/chacha_enc/chacha_enc_codelet_chacha20_core_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_chacha_enc_codelet_chacha20_core_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/lhash/lhash_codelet_expand_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_lhash_codelet_expand_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_div/bn_div_codelet_bn_left_align_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_div_codelet_bn_left_align_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_mul/bn_mul_codelet_bn_sub_part_words_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_mul_codelet_bn_sub_part_words_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ts/ts_codelet_create_nonce_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ts_codelet_create_nonce_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_x86core/aes_x86core_codelet_AES_set_decrypt_key_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_x86core_codelet_AES_set_decrypt_key_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/param_build_test/param_build_test_codelet_template_private_test_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_param_build_test_codelet_template_private_test_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ctr128/ctr128_codelet_CRYPTO_ctr128_encrypt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ctr128_codelet_CRYPTO_ctr128_encrypt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/param_build_test/param_build_test_codelet_template_private_test_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_param_build_test_codelet_template_private_test_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ssl_lib/ssl_lib_codelet_dane_mtype_set_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ssl_lib_codelet_dane_mtype_set_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_x86core/aes_x86core_codelet_AES_encrypt_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_x86core_codelet_AES_encrypt_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cbc128/cbc128_codelet_CRYPTO_cbc128_decrypt_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cbc128_codelet_CRYPTO_cbc128_decrypt_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/packet/packet_codelet_put_value_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_packet_codelet_put_value_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ecx_s390x/ecx_s390x_codelet_s390x_x25519_mod_p_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ecx_s390x_codelet_s390x_x25519_mod_p_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cipher_rc4_hmac_md5_hw/cipher_rc4_hmac_md5_hw_codelet_cipher_hw_rc4_hmac_md5_init_mackey_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cipher_rc4_hmac_md5_hw_codelet_cipher_hw_rc4_hmac_md5_init_mackey_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/dtlsv1listentest/dtlsv1listentest_codelet_cookie_gen_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_dtlsv1listentest_codelet_cookie_gen_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/pkcs12kdf/pkcs12kdf_codelet_pkcs12kdf_derive_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_pkcs12kdf_codelet_pkcs12kdf_derive_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cipher_rc4_hmac_md5_hw/cipher_rc4_hmac_md5_hw_codelet_cipher_hw_rc4_hmac_md5_init_mackey_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cipher_rc4_hmac_md5_hw_codelet_cipher_hw_rc4_hmac_md5_init_mackey_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/param_build_test/param_build_test_codelet_builder_limit_test_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_param_build_test_codelet_builder_limit_test_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/pkcs12kdf/pkcs12kdf_codelet_pkcs12kdf_derive_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_pkcs12kdf_codelet_pkcs12kdf_derive_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/pkcs12kdf/pkcs12kdf_codelet_pkcs12kdf_derive_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_pkcs12kdf_codelet_pkcs12kdf_derive_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/params_api_test/params_api_test_codelet_swap_copy_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_params_api_test_codelet_swap_copy_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/statem_srvr/statem_srvr_codelet_tls_early_post_process_client_hello_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_statem_srvr_codelet_tls_early_post_process_client_hello_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/statem_srvr/statem_srvr_codelet_tls_construct_new_session_ticket_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_statem_srvr_codelet_tls_construct_new_session_ticket_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_stream_test/quic_stream_test_codelet_compare_iov_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_stream_test_codelet_compare_iov_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cts128/cts128_codelet_CRYPTO_cts128_encrypt_block_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cts128_codelet_CRYPTO_cts128_encrypt_block_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sparse_array/sparse_array_codelet_ossl_sa_get_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sparse_array_codelet_ossl_sa_get_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cts128/cts128_codelet_CRYPTO_nistcts128_encrypt_block_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cts128_codelet_CRYPTO_nistcts128_encrypt_block_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sparse_array/sparse_array_codelet_ossl_sa_set_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sparse_array_codelet_ossl_sa_set_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_shift/bn_shift_codelet_bn_rshift_fixed_top_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_shift_codelet_bn_rshift_fixed_top_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/blake2b_prov/blake2b_prov_codelet_store64_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_blake2b_prov_codelet_store64_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_shift/bn_shift_codelet_BN_lshift1_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_shift_codelet_BN_lshift1_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/hashfunc/hashfunc_codelet_ossl_fnv1a_hash_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_hashfunc_codelet_ossl_fnv1a_hash_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/mem_sec/mem_sec_codelet_sh_malloc_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_mem_sec_codelet_sh_malloc_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/blake2s_prov/blake2s_prov_codelet_store32_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_blake2s_prov_codelet_store32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/blake2b_prov/blake2b_prov_codelet_blake2b_compress_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_blake2b_prov_codelet_blake2b_compress_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/blake2b_prov/blake2b_prov_codelet_blake2b_init0_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_blake2b_prov_codelet_blake2b_init0_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_mod/bn_mod_codelet_bn_mod_sub_fixed_top_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_mod_codelet_bn_mod_sub_fixed_top_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cfb64ede/cfb64ede_codelet_DES_ede3_cfb_encrypt_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cfb64ede_codelet_DES_ede3_cfb_encrypt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/mem_sec/mem_sec_codelet_sh_malloc_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_mem_sec_codelet_sh_malloc_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cfb64ede/cfb64ede_codelet_DES_ede3_cfb_encrypt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cfb64ede_codelet_DES_ede3_cfb_encrypt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/http_client/http_client_codelet_OSSL_HTTP_REQ_CTX_nbio_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_http_client_codelet_OSSL_HTTP_REQ_CTX_nbio_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsaz_exp_x2/rsaz_exp_x2_codelet_get_digit_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsaz_exp_x2_codelet_get_digit_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sm3/sm3_codelet_ossl_sm3_block_data_order_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sm3_codelet_ossl_sm3_block_data_order_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/blake2s_prov/blake2s_prov_codelet_blake2s_compress_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_blake2s_prov_codelet_blake2s_compress_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/blake2s_prov/blake2s_prov_codelet_blake2s_compress_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_blake2s_prov_codelet_blake2s_compress_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/blake2s_prov/blake2s_prov_codelet_blake2s_init0_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_blake2s_prov_codelet_blake2s_init0_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/mem_sec/mem_sec_codelet_sh_init_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_mem_sec_codelet_sh_init_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_matrix/ml_dsa_matrix_codelet_vector_count_ones_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_matrix_codelet_vector_count_ones_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_shift/bn_shift_codelet_bn_lshift_fixed_top_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_shift_codelet_bn_lshift_fixed_top_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/fcrypt/fcrypt_codelet_DES_fcrypt_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_fcrypt_codelet_DES_fcrypt_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsaz_exp_x2/rsaz_exp_x2_codelet_put_digit_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsaz_exp_x2_codelet_put_digit_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/blake2s_prov/blake2s_prov_codelet_store64_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_blake2s_prov_codelet_store64_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_mod/bn_mod_codelet_bn_mod_sub_fixed_top_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_mod_codelet_bn_mod_sub_fixed_top_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/obj_dat/obj_dat_codelet_added_obj_hash_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_obj_dat_codelet_added_obj_hash_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_matrix/ml_dsa_matrix_codelet_poly_scale_power2_round_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_matrix_codelet_poly_scale_power2_round_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_mod/bn_mod_codelet_bn_mod_sub_fixed_top_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_mod_codelet_bn_mod_sub_fixed_top_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/kmac_prov/kmac_prov_codelet_right_encode_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_kmac_prov_codelet_right_encode_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/hpke_util/hpke_util_codelet_ossl_hpke_str2suite_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_hpke_util_codelet_ossl_hpke_str2suite_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/tls1_meth/tls1_meth_codelet_tls1_cipher_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_tls1_meth_codelet_tls1_cipher_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/blake2b_prov/blake2b_prov_codelet_store32_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_blake2b_prov_codelet_store32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/buffer/buffer_codelet_BUF_reverse_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_buffer_codelet_BUF_reverse_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sslapitest/sslapitest_codelet_secret_cb_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sslapitest_codelet_secret_cb_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/blake2b_prov/blake2b_prov_codelet_blake2b_compress_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_blake2b_prov_codelet_blake2b_compress_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sslapitest/sslapitest_codelet_execute_cleanse_plaintext_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sslapitest_codelet_execute_cleanse_plaintext_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/slh_fors/slh_fors_codelet_slh_base_2b_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_slh_fors_codelet_slh_base_2b_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sslapitest/sslapitest_codelet_test_data_retry_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sslapitest_codelet_test_data_retry_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/fcrypt/fcrypt_codelet_DES_fcrypt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_fcrypt_codelet_DES_fcrypt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/fcrypt/fcrypt_codelet_DES_fcrypt_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_fcrypt_codelet_DES_fcrypt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/tls1_meth/tls1_meth_codelet_tls1_cipher_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_tls1_meth_codelet_tls1_cipher_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_asm/bn_asm_codelet_bn_div_words_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_asm_codelet_bn_div_words_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bf_buff/bf_buff_codelet_buffer_ctrl_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bf_buff_codelet_buffer_ctrl_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/kmac_prov/kmac_prov_codelet_encode_string_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_kmac_prov_codelet_encode_string_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsaz_exp_x2/rsaz_exp_x2_codelet_from_words52_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsaz_exp_x2_codelet_from_words52_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_mod/bn_mod_codelet_bn_mod_add_fixed_top_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_mod_codelet_bn_mod_add_fixed_top_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsa_lib/rsa_lib_codelet_icbrt64_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsa_lib_codelet_icbrt64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_mod/bn_mod_codelet_bn_mod_add_fixed_top_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_mod_codelet_bn_mod_add_fixed_top_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/buffer/buffer_codelet_BUF_reverse_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_buffer_codelet_BUF_reverse_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/pkeyutl/pkeyutl_codelet_pkeyutl_main_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_pkeyutl_codelet_pkeyutl_main_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/provider/provider_codelet_read_octet_string_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_provider_codelet_read_octet_string_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/statem_lib/statem_lib_codelet_ssl_x509err2alert_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_statem_lib_codelet_ssl_x509err2alert_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_blind/bn_blind_codelet_BN_BLINDING_invert_ex_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_blind_codelet_BN_BLINDING_invert_ex_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/extensions_clnt/extensions_clnt_codelet_tls_parse_stoc_key_share_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_extensions_clnt_codelet_tls_parse_stoc_key_share_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/provider/provider_codelet_fuzz_params_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_provider_codelet_fuzz_params_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ssl3_cbc/ssl3_cbc_codelet_ssl3_cbc_digest_record_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ssl3_cbc_codelet_ssl3_cbc_digest_record_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_ntt/ml_dsa_ntt_codelet_poly_scale_power2_round_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_ntt_codelet_poly_scale_power2_round_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rc2_cbc/rc2_cbc_codelet_RC2_encrypt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rc2_cbc_codelet_RC2_encrypt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ssl3_cbc/ssl3_cbc_codelet_tls1_sha256_final_raw_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ssl3_cbc_codelet_tls1_sha256_final_raw_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rc2_cbc/rc2_cbc_codelet_RC2_decrypt_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rc2_cbc_codelet_RC2_decrypt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ssl3_cbc/ssl3_cbc_codelet_tls1_sha512_final_raw_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ssl3_cbc_codelet_tls1_sha512_final_raw_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ssl3_cbc/ssl3_cbc_codelet_ssl3_cbc_digest_record_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ssl3_cbc_codelet_ssl3_cbc_digest_record_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cmac/cmac_codelet_CMAC_Final_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cmac_codelet_CMAC_Final_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cmac/cmac_codelet_make_kn_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cmac_codelet_make_kn_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/siphash/siphash_codelet_SipHash_Update_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_siphash_codelet_SipHash_Update_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/siphash/siphash_codelet_SipHash_Final_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_siphash_codelet_SipHash_Final_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cmac/cmac_codelet_CMAC_Final_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cmac_codelet_CMAC_Final_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/siphash/siphash_codelet_SipHash_Final_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_siphash_codelet_SipHash_Final_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/str2key/str2key_codelet_DES_string_to_2keys_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_str2key_codelet_DES_string_to_2keys_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sha256/sha256_codelet_SHA256_Final_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sha256_codelet_SHA256_Final_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/v3_ncons/v3_ncons_codelet_ia5memrchr_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_v3_ncons_codelet_ia5memrchr_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sha256/sha256_codelet_SHA256_Final_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sha256_codelet_SHA256_Final_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/str2key/str2key_codelet_DES_string_to_key_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_str2key_codelet_DES_string_to_key_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/siphash/siphash_codelet_SipHash_Update_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_siphash_codelet_SipHash_Update_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/siphash/siphash_codelet_SipHash_Final_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_siphash_codelet_SipHash_Final_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/property_parse/property_parse_codelet_put_num_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_property_parse_codelet_put_num_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsa_pss/rsa_pss_codelet_ossl_rsa_verify_PKCS1_PSS_mgf1_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsa_pss_codelet_ossl_rsa_verify_PKCS1_PSS_mgf1_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sha256/sha256_codelet_SHA256_Final_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sha256_codelet_SHA256_Final_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsa_pss/rsa_pss_codelet_ossl_rsa_verify_PKCS1_PSS_mgf1_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsa_pss_codelet_ossl_rsa_verify_PKCS1_PSS_mgf1_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sha256/sha256_codelet_SHA256_Final_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sha256_codelet_SHA256_Final_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsa_pss/rsa_pss_codelet_ossl_rsa_padding_add_PKCS1_PSS_mgf1_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsa_pss_codelet_ossl_rsa_padding_add_PKCS1_PSS_mgf1_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ecp_nistp256/ecp_nistp256_codelet_select_point_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ecp_nistp256_codelet_select_point_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/siphash_internal_test/siphash_internal_test_codelet_test_siphash_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_siphash_internal_test_codelet_test_siphash_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/dh_key/dh_key_codelet_DH_compute_key_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_dh_key_codelet_DH_compute_key_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/e_rc4_hmac_md5/e_rc4_hmac_md5_codelet_rc4_hmac_md5_ctrl_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_e_rc4_hmac_md5_codelet_rc4_hmac_md5_ctrl_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/v3_ncons/v3_ncons_codelet_cn2dnsid_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_v3_ncons_codelet_cn2dnsid_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ofb128/ofb128_codelet_CRYPTO_ofb128_encrypt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ofb128_codelet_CRYPTO_ofb128_encrypt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/e_rc4_hmac_md5/e_rc4_hmac_md5_codelet_rc4_hmac_md5_ctrl_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_e_rc4_hmac_md5_codelet_rc4_hmac_md5_ctrl_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_exp/bn_exp_codelet_bn_mod_exp_mont_fixed_top_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_exp_codelet_bn_mod_exp_mont_fixed_top_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/siphash_internal_test/siphash_internal_test_codelet_test_siphash_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_siphash_internal_test_codelet_test_siphash_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/priority_queue/priority_queue_codelet_pqueue_add_freelist_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_priority_queue_codelet_pqueue_add_freelist_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/srp/srp_codelet_update_index_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_srp_codelet_update_index_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_exp/bn_exp_codelet_MOD_EXP_CTIME_COPY_TO_PREBUF_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_exp_codelet_MOD_EXP_CTIME_COPY_TO_PREBUF_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_exp/bn_exp_codelet_bn_mod_exp_mont_fixed_top_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_exp_codelet_bn_mod_exp_mont_fixed_top_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rehash/rehash_codelet_add_entry_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rehash_codelet_add_entry_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsa_sig/rsa_sig_codelet_rsa_get_ctx_params_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsa_sig_codelet_rsa_get_ctx_params_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/drbg_hash/drbg_hash_codelet_add_bytes_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_drbg_hash_codelet_add_bytes_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_exp/bn_exp_codelet_bn_mod_exp_mont_fixed_top_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_exp_codelet_bn_mod_exp_mont_fixed_top_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ocb128/ocb128_codelet_ocb_block_lshift_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ocb128_codelet_ocb_block_lshift_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_cfq/quic_cfq_codelet_ossl_quic_cfq_get_priority_head_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_cfq_codelet_ossl_quic_cfq_get_priority_head_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_exp/bn_exp_codelet_BN_mod_exp_mont_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_exp_codelet_BN_mod_exp_mont_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ecp_nistz256/ecp_nistz256_codelet_ecp_nistz256_points_mul_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ecp_nistz256_codelet_ecp_nistz256_points_mul_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/i_skey/i_skey_codelet_IDEA_set_encrypt_key_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_i_skey_codelet_IDEA_set_encrypt_key_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_key/ml_dsa_key_codelet_poly_scale_power2_round_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_key_codelet_poly_scale_power2_round_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_cfq/quic_cfq_codelet_ossl_quic_cfq_item_get_priority_next_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_cfq_codelet_ossl_quic_cfq_item_get_priority_next_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ocb128/ocb128_codelet_ocb_block_xor_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ocb128_codelet_ocb_block_xor_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_exp/bn_exp_codelet_bn_mod_exp_mont_fixed_top_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_exp_codelet_bn_mod_exp_mont_fixed_top_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/destest/destest_codelet_pt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_destest_codelet_pt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bf_skey/bf_skey_codelet_BF_set_key_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bf_skey_codelet_BF_set_key_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/punycode_test/punycode_test_codelet_test_punycode_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_punycode_test_codelet_test_punycode_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_txp/quic_txp_codelet_determine_len_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_txp_codelet_determine_len_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_key/ml_dsa_key_codelet_vector_count_ones_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_key_codelet_vector_count_ones_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ccm128/ccm128_codelet_CRYPTO_ccm128_decrypt_ccm64_12.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ccm128_codelet_CRYPTO_ccm128_decrypt_ccm64_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ccm128/ccm128_codelet_CRYPTO_ccm128_encrypt_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ccm128_codelet_CRYPTO_ccm128_encrypt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cipher_cts/cipher_cts_codelet_do_xor_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cipher_cts_codelet_do_xor_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/lhash_test/lhash_test_codelet_ossl_ht_strcase_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_lhash_test_codelet_ossl_ht_strcase_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_record_rx/quic_record_rx_codelet_qrx_decrypt_pkt_body_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_record_rx_codelet_qrx_decrypt_pkt_body_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ccm128/ccm128_codelet_CRYPTO_ccm128_encrypt_ccm64_10.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ccm128_codelet_CRYPTO_ccm128_encrypt_ccm64_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ccm128/ccm128_codelet_CRYPTO_ccm128_encrypt_ccm64_9.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ccm128_codelet_CRYPTO_ccm128_encrypt_ccm64_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ccm128/ccm128_codelet_CRYPTO_ccm128_aad_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ccm128_codelet_CRYPTO_ccm128_aad_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ccm128/ccm128_codelet_CRYPTO_ccm128_decrypt_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ccm128_codelet_CRYPTO_ccm128_decrypt_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ccm128/ccm128_codelet_CRYPTO_ccm128_decrypt_6.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ccm128_codelet_CRYPTO_ccm128_decrypt_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ccm128/ccm128_codelet_CRYPTO_ccm128_encrypt_ccm64_8.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ccm128_codelet_CRYPTO_ccm128_encrypt_ccm64_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ccm128/ccm128_codelet_CRYPTO_ccm128_encrypt_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ccm128_codelet_CRYPTO_ccm128_encrypt_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ccm128/ccm128_codelet_CRYPTO_ccm128_encrypt_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ccm128_codelet_CRYPTO_ccm128_encrypt_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ccm128/ccm128_codelet_CRYPTO_ccm128_decrypt_ccm64_13.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ccm128_codelet_CRYPTO_ccm128_decrypt_ccm64_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/priority_queue_test/priority_queue_test_codelet_test_22644_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_priority_queue_test_codelet_test_22644_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/http_lib/http_lib_codelet_OSSL_parse_url_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_http_lib_codelet_OSSL_parse_url_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_kem_codecs/ml_kem_codecs_codelet_ossl_ml_kem_d2i_PKCS8_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_kem_codecs_codelet_ossl_ml_kem_d2i_PKCS8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cipher_aes_gcm_siv_hw/cipher_aes_gcm_siv_hw_codelet_aes_gcm_siv_encrypt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cipher_aes_gcm_siv_hw_codelet_aes_gcm_siv_encrypt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/siv128/siv128_codelet_ossl_siv128_decrypt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_siv128_codelet_ossl_siv128_decrypt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/md4_dgst/md4_dgst_codelet_md4_block_data_order_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_md4_dgst_codelet_md4_block_data_order_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/asn1_gen/asn1_gen_codelet_asn1_cb_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_asn1_gen_codelet_asn1_cb_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/drbg_ctr/drbg_ctr_codelet_ctr_BCC_block_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_drbg_ctr_codelet_ctr_BCC_block_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cfb128/cfb128_codelet_cfbr_encrypt_block_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cfb128_codelet_cfbr_encrypt_block_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/tls13_meth/tls13_meth_codelet_tls13_post_process_record_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_tls13_meth_codelet_tls13_post_process_record_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cfb128/cfb128_codelet_CRYPTO_cfb128_encrypt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cfb128_codelet_CRYPTO_cfb128_encrypt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/json_enc/json_enc_codelet_json_u64_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_json_enc_codelet_json_u64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cipher_aes_gcm_siv_hw/cipher_aes_gcm_siv_hw_codelet_aes_gcm_siv_decrypt_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cipher_aes_gcm_siv_hw_codelet_aes_gcm_siv_decrypt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cfb128/cfb128_codelet_cfbr_encrypt_block_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cfb128_codelet_cfbr_encrypt_block_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/a_int/a_int_codelet_c2i_ibuf_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_a_int_codelet_c2i_ibuf_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/qlog/qlog_codelet_lex_extract_to_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_qlog_codelet_lex_extract_to_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/a_int/a_int_codelet_i2c_ibuf_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_a_int_codelet_i2c_ibuf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cfb128/cfb128_codelet_CRYPTO_cfb128_encrypt_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cfb128_codelet_CRYPTO_cfb128_encrypt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/passwd/passwd_codelet_md5crypt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_passwd_codelet_md5crypt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/qud_cksm/qud_cksm_codelet_DES_quad_cksum_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_qud_cksm_codelet_DES_quad_cksum_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/a_int/a_int_codelet_asn1_get_uint64_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_a_int_codelet_asn1_get_uint64_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/provfetchtest/provfetchtest_codelet_dummy_rand_generate_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_provfetchtest_codelet_dummy_rand_generate_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/passwd/passwd_codelet_do_passwd_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_passwd_codelet_do_passwd_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_common_codecs/ml_common_codecs_codelet_ossl_ml_common_pkcs8_fmt_order_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_common_codecs_codelet_ossl_ml_common_pkcs8_fmt_order_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/params_from_text/params_from_text_codelet_construct_from_text_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_params_from_text_codelet_construct_from_text_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ocsp/ocsp_codelet_lookup_serial_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ocsp_codelet_lookup_serial_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/passwd/passwd_codelet_md5crypt_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_passwd_codelet_md5crypt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/packettest/packettest_codelet_test_PACKET_as_length_prefixed_2_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_packettest_codelet_test_PACKET_as_length_prefixed_2_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rmd_dgst/rmd_dgst_codelet_ripemd160_block_data_order_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rmd_dgst_codelet_ripemd160_block_data_order_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/core_namemap/core_namemap_codelet_ossl_ht_strcase_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_core_namemap_codelet_ossl_ht_strcase_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_sign/ml_dsa_sign_codelet_poly_scale_power2_round_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_sign_codelet_poly_scale_power2_round_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/packettest/packettest_codelet_test_PACKET_get_length_prefixed_3_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_packettest_codelet_test_PACKET_get_length_prefixed_3_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/packettest/packettest_codelet_test_PACKET_as_length_prefixed_1_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_packettest_codelet_test_PACKET_as_length_prefixed_1_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/pem_lib/pem_lib_codelet_load_iv_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_pem_lib_codelet_load_iv_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/packettest/packettest_codelet_setup_tests_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_packettest_codelet_setup_tests_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/format_output/format_output_codelet_test_fail_memory_common_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_format_output_codelet_test_fail_memory_common_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bio_b64/bio_b64_codelet_b64_read_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bio_b64_codelet_b64_read_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/packettest/packettest_codelet_test_PACKET_get_length_prefixed_1_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_packettest_codelet_test_PACKET_get_length_prefixed_1_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/packettest/packettest_codelet_test_PACKET_get_length_prefixed_2_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_packettest_codelet_test_PACKET_get_length_prefixed_2_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ecp_sm2p256/ecp_sm2p256_codelet_ecp_sm2p256_point_double_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ecp_sm2p256_codelet_ecp_sm2p256_point_double_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_sign/ml_dsa_sign_codelet_vector_count_ones_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_sign_codelet_vector_count_ones_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/format_output/format_output_codelet_convert_bn_memory_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_format_output_codelet_convert_bn_memory_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/evp_pkey_provided_test/evp_pkey_provided_test_codelet_stripcr_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_evp_pkey_provided_test_codelet_stripcr_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/format_output/format_output_codelet_test_fail_string_common_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_format_output_codelet_test_fail_string_common_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/format_output/format_output_codelet_hex_convert_memory_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_format_output_codelet_hex_convert_memory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/format_output/format_output_codelet_convert_bn_memory_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_format_output_codelet_convert_bn_memory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ecp_sm2p256/ecp_sm2p256_codelet_ecp_sm2p256_point_add_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ecp_sm2p256_codelet_ecp_sm2p256_point_add_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/format_output/format_output_codelet_test_fail_bignum_common_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_format_output_codelet_test_fail_bignum_common_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ecp_sm2p256/ecp_sm2p256_codelet_ecp_sm2p256_point_add_affine_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ecp_sm2p256_codelet_ecp_sm2p256_point_add_affine_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ecp_sm2p256/ecp_sm2p256_codelet_ecp_sm2p256_point_add_affine_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ecp_sm2p256_codelet_ecp_sm2p256_point_add_affine_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quictestlib/quictestlib_codelet_packet_plain_mutate_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quictestlib_codelet_packet_plain_mutate_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cfb_enc/cfb_enc_codelet_DES_cfb_encrypt_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cfb_enc_codelet_DES_cfb_encrypt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ciphercommon_block/ciphercommon_block_codelet_ossl_cipher_padblock_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ciphercommon_block_codelet_ossl_cipher_padblock_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ecp_sm2p256/ecp_sm2p256_codelet_ecp_sm2p256_point_add_6.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ecp_sm2p256_codelet_ecp_sm2p256_point_add_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/lms_test/lms_test_codelet_lms_key_eq_test_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_lms_test_codelet_lms_key_eq_test_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ecp_sm2p256/ecp_sm2p256_codelet_ecp_sm2p256_point_add_affine_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ecp_sm2p256_codelet_ecp_sm2p256_point_add_affine_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cfb_enc/cfb_enc_codelet_DES_cfb_encrypt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cfb_enc_codelet_DES_cfb_encrypt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/a_bitstr/a_bitstr_codelet_ossl_i2c_ASN1_BIT_STRING_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_a_bitstr_codelet_ossl_i2c_ASN1_BIT_STRING_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ecp_nistp384/ecp_nistp384_codelet_felem_contract_7.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ecp_nistp384_codelet_felem_contract_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_record_tx/quic_record_tx_codelet_iovec_total_bytes_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_record_tx_codelet_iovec_total_bytes_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_record_tx/quic_record_tx_codelet_qtx_encrypt_into_txe_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_record_tx_codelet_qtx_encrypt_into_txe_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/a_bitstr/a_bitstr_codelet_ASN1_BIT_STRING_check_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_a_bitstr_codelet_ASN1_BIT_STRING_check_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/c_skey/c_skey_codelet_CAST_set_key_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_c_skey_codelet_CAST_set_key_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/c_skey/c_skey_codelet_CAST_set_key_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_c_skey_codelet_CAST_set_key_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/c_skey/c_skey_codelet_CAST_set_key_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_c_skey_codelet_CAST_set_key_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/secmemtest/secmemtest_codelet_test_sec_mem_clear_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_secmemtest_codelet_test_sec_mem_clear_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/asn_mime/asn_mime_codelet_strip_eol_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_asn_mime_codelet_strip_eol_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_gf2m/bn_gf2m_codelet_BN_GF2m_mod_inv_vartime_8.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_gf2m_codelet_BN_GF2m_mod_inv_vartime_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sha512/sha512_codelet_SHA512_Final_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sha512_codelet_SHA512_Final_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/asn_mime/asn_mime_codelet_SMIME_write_ASN1_ex_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_asn_mime_codelet_SMIME_write_ASN1_ex_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sha512/sha512_codelet_SHA512_Final_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sha512_codelet_SHA512_Final_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sha512/sha512_codelet_SHA512_Final_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sha512_codelet_SHA512_Final_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sha512/sha512_codelet_SHA512_Final_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sha512_codelet_SHA512_Final_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_gf2m/bn_gf2m_codelet_BN_GF2m_mod_inv_vartime_7.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_gf2m_codelet_BN_GF2m_mod_inv_vartime_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_gf2m/bn_gf2m_codelet_BN_GF2m_mod_mul_arr_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_gf2m_codelet_BN_GF2m_mod_mul_arr_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_gf2m/bn_gf2m_codelet_BN_GF2m_mod_inv_vartime_10.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_gf2m_codelet_BN_GF2m_mod_inv_vartime_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/asn1_lib/asn1_lib_codelet_asn1_put_length_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_asn1_lib_codelet_asn1_put_length_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/asn1_lib/asn1_lib_codelet_ASN1_put_object_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_asn1_lib_codelet_ASN1_put_object_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/dgst/dgst_codelet_newline_escape_filename_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_dgst_codelet_newline_escape_filename_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_gf2m/bn_gf2m_codelet_BN_GF2m_mod_inv_vartime_6.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_gf2m_codelet_BN_GF2m_mod_inv_vartime_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_radix/quic_radix_codelet_ssl_poll_check_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_radix_codelet_ssl_poll_check_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_gf2m/bn_gf2m_codelet_BN_GF2m_add_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_gf2m_codelet_BN_GF2m_add_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_gf2m/bn_gf2m_codelet_BN_GF2m_mod_arr_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_gf2m_codelet_BN_GF2m_mod_arr_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_gf2m/bn_gf2m_codelet_BN_GF2m_mod_arr_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_gf2m_codelet_BN_GF2m_mod_arr_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/apps/apps_codelet_index_serial_cmp_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_apps_codelet_index_serial_cmp_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/apps/apps_codelet_index_serial_cmp_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_apps_codelet_index_serial_cmp_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bntest/bntest_codelet_test_rand_range_single_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bntest_codelet_test_rand_range_single_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_gf2m/bn_gf2m_codelet_BN_GF2m_add_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_gf2m_codelet_BN_GF2m_add_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_gf2m/bn_gf2m_codelet_BN_GF2m_mod_inv_vartime_9.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_gf2m_codelet_BN_GF2m_mod_inv_vartime_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_gf2m/bn_gf2m_codelet_BN_GF2m_mod_sqr_arr_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_gf2m_codelet_BN_GF2m_mod_sqr_arr_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/http_server/http_server_codelet_http_server_get_asn1_req_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_http_server_codelet_http_server_get_asn1_req_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_srtm/quic_srtm_codelet_srtm_find_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_srtm_codelet_srtm_find_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_sample/ml_dsa_sample_codelet_vector_count_ones_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_sample_codelet_vector_count_ones_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_srtm/quic_srtm_codelet_ossl_quic_srtm_lookup_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_srtm_codelet_ossl_quic_srtm_lookup_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ssl_ciph/ssl_ciph_codelet_ssl_cipher_collect_aliases_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ssl_ciph_codelet_ssl_cipher_collect_aliases_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_srtm/quic_srtm_codelet_srtm_remove_from_rev_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_srtm_codelet_srtm_remove_from_rev_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/argon2/argon2_codelet_xor_block_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_argon2_codelet_xor_block_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/s_client/s_client_codelet_ldap_ExtendedResponse_parse_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_s_client_codelet_ldap_ExtendedResponse_parse_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/fcrypt_b/fcrypt_b_codelet_fcrypt_body_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_fcrypt_b_codelet_fcrypt_body_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_sample/ml_dsa_sample_codelet_poly_scale_power2_round_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_sample_codelet_poly_scale_power2_round_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ossl-nghttp3-demo-server/ossl-nghttp3-demo-server_codelet_init_ids_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ossl-nghttp3-demo-server_codelet_init_ids_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsa_kem/rsa_kem_codelet_rsakem_get_ctx_params_decoder_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsa_kem_codelet_rsakem_get_ctx_params_decoder_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rc2_skey/rc2_skey_codelet_RC2_set_key_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rc2_skey_codelet_RC2_set_key_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ssl_ciph/ssl_ciph_codelet_ssl_cipher_collect_ciphers_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ssl_ciph_codelet_ssl_cipher_collect_ciphers_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/e_padlock/e_padlock_codelet_padlock_aes_set_decrypt_key_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_e_padlock_codelet_padlock_aes_set_decrypt_key_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rc2_skey/rc2_skey_codelet_RC2_set_key_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rc2_skey_codelet_RC2_set_key_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rc2_skey/rc2_skey_codelet_RC2_set_key_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rc2_skey_codelet_RC2_set_key_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ca/ca_codelet_old_entry_print_6.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ca_codelet_old_entry_print_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/e_padlock/e_padlock_codelet_padlock_aes_set_decrypt_key_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_e_padlock_codelet_padlock_aes_set_decrypt_key_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/s_client/s_client_codelet_is_dNS_name_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_s_client_codelet_is_dNS_name_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsautl/rsautl_codelet_rsautl_main_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsautl_codelet_rsautl_main_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_wire_pkt/quic_wire_pkt_codelet_ossl_quic_hdr_protector_decrypt_fields_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_wire_pkt_codelet_ossl_quic_hdr_protector_decrypt_fields_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_wire_pkt/quic_wire_pkt_codelet_hdr_generate_mask_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_wire_pkt_codelet_hdr_generate_mask_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/vms_decc_argv/vms_decc_argv_codelet_copy_argv_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_vms_decc_argv_codelet_copy_argv_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ca/ca_codelet_do_revoke_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ca_codelet_do_revoke_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ca/ca_codelet_do_body_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ca_codelet_do_body_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ossl-nghttp3-demo-server/ossl-nghttp3-demo-server_codelet_add_id_status_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ossl-nghttp3-demo-server_codelet_add_id_status_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bio_ok/bio_ok_codelet_longswap_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bio_ok_codelet_longswap_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_intern/bn_intern_codelet_bn_set_all_zero_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_intern_codelet_bn_set_all_zero_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsa_enc/rsa_enc_codelet_rsa_get_ctx_params_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsa_enc_codelet_rsa_get_ctx_params_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/quic_wire_pkt/quic_wire_pkt_codelet_ossl_quic_hdr_protector_encrypt_fields_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_quic_wire_pkt_codelet_ossl_quic_hdr_protector_encrypt_fields_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ca/ca_codelet_do_revoke_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ca_codelet_do_revoke_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ca/ca_codelet_do_revoke_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ca_codelet_do_revoke_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ca/ca_codelet_do_body_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ca_codelet_do_body_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ca/ca_codelet_get_certificate_status_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ca_codelet_get_certificate_status_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/tls-provider/tls-provider_codelet_xor_derive_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_tls-provider_codelet_xor_derive_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/slh_dsa/slh_dsa_codelet_bytes_to_u64_be_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_slh_dsa_codelet_bytes_to_u64_be_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bss_mem/bss_mem_codelet_mem_gets_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bss_mem_codelet_mem_gets_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rand_pool/rand_pool_codelet_ossl_rand_pool_adin_mix_in_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rand_pool_codelet_ossl_rand_pool_adin_mix_in_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/hmac/hmac_codelet_HMAC_Init_ex_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_hmac_codelet_HMAC_Init_ex_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/prime/prime_codelet_check_num_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_prime_codelet_check_num_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rc5_skey/rc5_skey_codelet_RC5_32_set_key_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rc5_skey_codelet_RC5_32_set_key_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rc5_skey/rc5_skey_codelet_RC5_32_set_key_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rc5_skey_codelet_RC5_32_set_key_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/v3_addr/v3_addr_codelet_range_should_be_prefix_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_v3_addr_codelet_range_should_be_prefix_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/prime/prime_codelet_check_num_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_prime_codelet_check_num_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/slh_wots/slh_wots_codelet_slh_bytes_to_nibbles_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_slh_wots_codelet_slh_bytes_to_nibbles_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/v3_addr/v3_addr_codelet_make_addressRange_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_v3_addr_codelet_make_addressRange_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/v3_addr/v3_addr_codelet_i2r_address_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_v3_addr_codelet_i2r_address_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/v3_addr/v3_addr_codelet_make_addressRange_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_v3_addr_codelet_make_addressRange_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/hmac/hmac_codelet_HMAC_Init_ex_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_hmac_codelet_HMAC_Init_ex_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_lib/bn_lib_codelet_bn_correct_top_10.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_lib_codelet_bn_correct_top_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/slh_wots/slh_wots_codelet_compute_checksum_nibbles_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_slh_wots_codelet_compute_checksum_nibbles_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_lib/bn_lib_codelet_bin2bn_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_lib_codelet_bin2bn_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/v3_addr/v3_addr_codelet_range_should_be_prefix_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_v3_addr_codelet_range_should_be_prefix_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_lib/bn_lib_codelet_bin2bn_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_lib_codelet_bin2bn_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_lib/bn_lib_codelet_BN_set_bit_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_lib_codelet_BN_set_bit_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_lib/bn_lib_codelet_bn2binpad_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_lib_codelet_bn2binpad_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_lib/bn_lib_codelet_BN_consttime_swap_9.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_lib_codelet_BN_consttime_swap_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/f_impl64/f_impl64_codelet_ossl_gf_sqr_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_f_impl64_codelet_ossl_gf_sqr_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_word/bn_word_codelet_BN_add_word_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_word_codelet_BN_add_word_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/f_impl64/f_impl64_codelet_ossl_gf_mul_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_f_impl64_codelet_ossl_gf_mul_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/o_str/o_str_codelet_OPENSSL_strlcat_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_o_str_codelet_OPENSSL_strlcat_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sm2_crypt/sm2_crypt_codelet_is_all_zeros_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sm2_crypt_codelet_is_all_zeros_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_ige_encrypt_7.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_ige_encrypt_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sm2_crypt/sm2_crypt_codelet_ossl_sm2_decrypt_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sm2_crypt_codelet_ossl_sm2_decrypt_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/o_str/o_str_codelet_OPENSSL_strlcpy_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_o_str_codelet_OPENSSL_strlcpy_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_word/bn_word_codelet_BN_mod_word_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_word_codelet_BN_mod_word_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/fuzz_rand/fuzz_rand_codelet_fuzz_rand_generate_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_fuzz_rand_codelet_fuzz_rand_generate_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/sm2_crypt/sm2_crypt_codelet_ossl_sm2_encrypt_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_sm2_crypt_codelet_ossl_sm2_encrypt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_word/bn_word_codelet_BN_sub_word_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_word_codelet_BN_sub_word_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_ige_encrypt_6.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_ige_encrypt_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_ige_encrypt_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_ige_encrypt_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_ige_encrypt_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_ige_encrypt_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/o_str/o_str_codelet_OPENSSL_strnlen_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_o_str_codelet_OPENSSL_strnlen_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_ige_encrypt_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_ige_encrypt_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_bi_ige_encrypt_12.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_bi_ige_encrypt_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_bi_ige_encrypt_10.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_bi_ige_encrypt_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_bi_ige_encrypt_13.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_bi_ige_encrypt_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_ige_encrypt_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_ige_encrypt_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_bi_ige_encrypt_14.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_bi_ige_encrypt_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_ige_encrypt_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_ige_encrypt_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_bi_ige_encrypt_8.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_bi_ige_encrypt_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/gcm128/gcm128_codelet_CRYPTO_gcm128_setiv_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_gcm128_codelet_CRYPTO_gcm128_setiv_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_bi_ige_encrypt_11.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_bi_ige_encrypt_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_ige_encrypt_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_ige_encrypt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/check-format-test-positives/check-format-test-positives_codelet_main_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_check-format-test-positives_codelet_main_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/gcm128/gcm128_codelet_CRYPTO_gcm128_setiv_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_gcm128_codelet_CRYPTO_gcm128_setiv_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_bi_ige_encrypt_9.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_bi_ige_encrypt_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/p12_utl/p12_utl_codelet_OPENSSL_asc2uni_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_p12_utl_codelet_OPENSSL_asc2uni_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/gcm128/gcm128_codelet_CRYPTO_gcm128_decrypt_5.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_gcm128_codelet_CRYPTO_gcm128_decrypt_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/gcm128/gcm128_codelet_CRYPTO_gcm128_decrypt_6.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_gcm128_codelet_CRYPTO_gcm128_decrypt_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/aes_ige/aes_ige_codelet_AES_bi_ige_encrypt_15.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_aes_ige_codelet_AES_bi_ige_encrypt_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/gcm128/gcm128_codelet_CRYPTO_gcm128_encrypt_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_gcm128_codelet_CRYPTO_gcm128_encrypt_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/gcm128/gcm128_codelet_CRYPTO_gcm128_aad_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_gcm128_codelet_CRYPTO_gcm128_aad_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_codecs/ml_dsa_codecs_codelet_ossl_ml_dsa_i2d_prvkey_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_codecs_codelet_ossl_ml_dsa_i2d_prvkey_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_codecs/ml_dsa_codecs_codelet_ossl_ml_dsa_d2i_PKCS8_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_codecs_codelet_ossl_ml_dsa_d2i_PKCS8_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bf_readbuff/bf_readbuff_codelet_readbuffer_gets_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bf_readbuff_codelet_readbuffer_gets_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/gcm128/gcm128_codelet_CRYPTO_gcm128_encrypt_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_gcm128_codelet_CRYPTO_gcm128_encrypt_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/p12_utl/p12_utl_codelet_OPENSSL_uni2asc_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_p12_utl_codelet_OPENSSL_uni2asc_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/e_ossltest/e_ossltest_codelet_fill_known_data_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_e_ossltest_codelet_fill_known_data_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/asn1_encode_test/asn1_encode_test_codelet_make_custom_der_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_asn1_encode_test_codelet_make_custom_der_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rand_test/rand_test_codelet_fips_health_tests_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rand_test_codelet_fips_health_tests_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/e_ossltest/e_ossltest_codelet_ossltest_aes128_cbc_hmac_sha1_cipher_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_e_ossltest_codelet_ossltest_aes128_cbc_hmac_sha1_cipher_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bf_lbuf/bf_lbuf_codelet_linebuffer_write_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bf_lbuf_codelet_linebuffer_write_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/driver/driver_codelet_run_tests_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_driver_codelet_run_tests_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rand_test/rand_test_codelet_fips_health_tests_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rand_test_codelet_fips_health_tests_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/a_print/a_print_codelet_ASN1_UNIVERSALSTRING_to_string_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_a_print_codelet_ASN1_UNIVERSALSTRING_to_string_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rand_test/rand_test_codelet_fips_health_tests_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rand_test_codelet_fips_health_tests_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsa_oaep/rsa_oaep_codelet_RSA_padding_check_PKCS1_OAEP_mgf1_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsa_oaep_codelet_RSA_padding_check_PKCS1_OAEP_mgf1_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsa_oaep/rsa_oaep_codelet_RSA_padding_check_PKCS1_OAEP_mgf1_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsa_oaep_codelet_RSA_padding_check_PKCS1_OAEP_mgf1_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/a_print/a_print_codelet_ASN1_UNIVERSALSTRING_to_string_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_a_print_codelet_ASN1_UNIVERSALSTRING_to_string_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rsa_oaep/rsa_oaep_codelet_ossl_rsa_padding_add_PKCS1_OAEP_mgf1_ex_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rsa_oaep_codelet_ossl_rsa_padding_add_PKCS1_OAEP_mgf1_ex_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/scrypt/scrypt_codelet_scryptROMix_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_scrypt_codelet_scryptROMix_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_kem_evp_extra_test/ml_kem_evp_extra_test_codelet_test_ml_kem_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_kem_evp_extra_test_codelet_test_ml_kem_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rc4_skey/rc4_skey_codelet_RC4_set_key_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rc4_skey_codelet_RC4_set_key_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/rc4_skey/rc4_skey_codelet_RC4_set_key_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_rc4_skey_codelet_RC4_set_key_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bf_prefix/bf_prefix_codelet_prefix_write_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bf_prefix_codelet_prefix_write_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/wp_dgst/wp_dgst_codelet_WHIRLPOOL_Final_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_wp_dgst_codelet_WHIRLPOOL_Final_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/encode/encode_codelet_evp_encodeblock_int_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_encode_codelet_evp_encodeblock_int_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/scrypt/scrypt_codelet_salsa208_word_specification_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_scrypt_codelet_salsa208_word_specification_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/scrypt/scrypt_codelet_salsa208_word_specification_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_scrypt_codelet_salsa208_word_specification_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/curve25519/curve25519_codelet_ge_double_scalarmult_vartime_10.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_curve25519_codelet_ge_double_scalarmult_vartime_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/curve25519/curve25519_codelet_slide_8.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_curve25519_codelet_slide_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_gcd/bn_gcd_codelet_BN_gcd_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_gcd_codelet_BN_gcd_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/LPdir_vms/LPdir_vms_codelet_LP_find_file_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_LPdir_vms_codelet_LP_find_file_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/scrypt/scrypt_codelet_scryptROMix_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_scrypt_codelet_scryptROMix_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/curve25519/curve25519_codelet_ge_scalarmult_base_7.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_curve25519_codelet_ge_scalarmult_base_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/curve25519/curve25519_codelet_ge_scalarmult_base_6.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_curve25519_codelet_ge_scalarmult_base_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/igetest/igetest_codelet_test_ige_garble_forwards_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_igetest_codelet_test_ige_garble_forwards_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/fake_cipherprov/fake_cipherprov_codelet_fake_cipher_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_fake_cipherprov_codelet_fake_cipher_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/igetest/igetest_codelet_test_bi_ige_garble1_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_igetest_codelet_test_bi_ige_garble1_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/curve25519/curve25519_codelet_slide_9.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_curve25519_codelet_slide_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bio_comp_test/bio_comp_test_codelet_do_bio_comp_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bio_comp_test_codelet_do_bio_comp_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/igetest/igetest_codelet_test_bi_ige_garble3_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_igetest_codelet_test_bi_ige_garble3_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/igetest/igetest_codelet_test_bi_ige_garble2_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_igetest_codelet_test_bi_ige_garble2_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_mont/bn_mont_codelet_BN_MONT_CTX_set_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_mont_codelet_BN_MONT_CTX_set_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_encoders/ml_dsa_encoders_codelet_vector_count_ones_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_encoders_codelet_vector_count_ones_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_encoders/ml_dsa_encoders_codelet_hint_bits_encode_2.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_encoders_codelet_hint_bits_encode_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/ml_dsa_encoders/ml_dsa_encoders_codelet_poly_scale_power2_round_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_ml_dsa_encoders_codelet_poly_scale_power2_round_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/filterprov/filterprov_codelet_filter_unquery_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_filterprov_codelet_filter_unquery_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_nist/bn_nist_codelet_BN_nist_mod_521_9.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_nist_codelet_BN_nist_mod_521_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/hpke/hpke_codelet_hpke_seqnonce2buf_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_hpke_codelet_hpke_seqnonce2buf_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_mont/bn_mont_codelet_bn_from_montgomery_word_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_mont_codelet_bn_from_montgomery_word_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_mont/bn_mont_codelet_bn_from_montgomery_word_1.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_mont_codelet_bn_from_montgomery_word_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/hpke/hpke_codelet_hpke_seqnonce2buf_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_hpke_codelet_hpke_seqnonce2buf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_nist/bn_nist_codelet_BN_nist_mod_521_11.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_nist_codelet_BN_nist_mod_521_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/asn1_parse/asn1_parse_codelet_asn1_parse2_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_asn1_parse_codelet_asn1_parse2_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/err/err_codelet_err_patch_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_err_codelet_err_patch_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_nist/bn_nist_codelet_BN_nist_mod_521_10.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_nist_codelet_BN_nist_mod_521_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_nist/bn_nist_codelet_BN_nist_mod_224_4.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_nist_codelet_BN_nist_mod_224_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/cipher_aes_gcm_siv_polyval/cipher_aes_gcm_siv_polyval_codelet_byte_reverse16_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_cipher_aes_gcm_siv_polyval_codelet_byte_reverse16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/curve448/curve448_codelet_recode_wnaf_3.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_curve448_codelet_recode_wnaf_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/openssl/bn_nist/bn_nist_codelet_nist_cp_bn_0.c",
+        "input": "basic_loop_corpus/loop_input/openssl/input_bn_nist_codelet_nist_cp_bn_0.c"
+    }
+]

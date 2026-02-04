@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  char *s;
+extern size_t len;
+extern size_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Indirect access via pointer arithmetic with intermediate pointer
+    char *p = s;
+    for (i = 0; i < len && *p; i++, p++) {
+        // Access through pointer instead of array indexing
+        // This changes memory access pattern to use pointer traversal
+    }
+    // Final value of i is same as original loop: number of characters before null or limit
+}

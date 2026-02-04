@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef float real;
+
+typedef struct {
+    real r;
+    real i;
+} singlecomplex;
+
+typedef int integer;
+
+extern singlecomplex *beta;
+extern singlecomplex *a;
+extern integer a_dim1;
+extern integer i__1;
+extern integer i__2;
+extern integer i__;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i__ = i__1; i__ >= 1; --i__) {
+    integer index = i__ + i__ * a_dim1; // Reverse traversal with same indexing
+    a[index].r = beta->r;
+    a[index].i = beta->i;
+}
+}

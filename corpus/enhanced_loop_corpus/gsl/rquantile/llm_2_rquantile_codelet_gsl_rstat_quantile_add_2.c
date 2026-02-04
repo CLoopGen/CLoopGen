@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    double p;
+    double q[5];
+    int npos[5];
+    double np[5];
+    double dnp[5];
+    size_t n;
+} gsl_rstat_quantile_workspace;
+
+extern gsl_rstat_quantile_workspace *w;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided memory access with reverse traversal (stride of 1, but backwards)
+    for (i = 4; i >= 0; --i)
+        w->np[i] += w->dnp[i];
+}

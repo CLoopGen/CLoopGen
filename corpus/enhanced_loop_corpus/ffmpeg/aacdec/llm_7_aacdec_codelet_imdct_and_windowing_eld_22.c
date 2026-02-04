@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef float INTFLOAT;
+
+extern INTFLOAT *out;
+extern INTFLOAT *saved;
+extern INTFLOAT *buf;
+extern int i;
+extern  int n;
+extern  int n2;
+extern  int n4;
+extern  INTFLOAT * window;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    INTFLOAT accum = 0.0f;
+    for (i = 0; i < n4; i++) {
+        accum += buf[i + n2] * window[i + n - n4];
+        out[n2 + n4 + i] = accum;
+    }
+    for (i = 0; i < n4; i++) {
+        out[n2 + n4 + i] += (-saved[n2 - 1 - i]) * window[i + 2 * n - n4];
+    }
+    for (i = 0; i < n4; i++) {
+        out[n2 + n4 + i] += (-saved[n + n2 + i]) * window[i + 3 * n - n4];
+    }
+}

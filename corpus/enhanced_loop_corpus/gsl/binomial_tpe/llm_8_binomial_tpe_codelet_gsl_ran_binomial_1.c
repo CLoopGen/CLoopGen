@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int ix;
+extern double s;
+extern int m;
+extern double g;
+extern double f;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+int j;
+for (i = m + 1; i <= ix; i++) {
+    f *= (g / i - s);
+    for (j = 0; j < 3; j++) {
+        f = (f + g) * (1.0 - s);
+    }
+}
+}

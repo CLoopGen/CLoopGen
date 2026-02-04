@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct raxNode {
+    uint32_t iskey : 1;
+    uint32_t isnull : 1;
+    uint32_t iscompr : 1;
+    uint32_t size : 29;
+    unsigned char data[];
+} raxNode;
+
+extern raxNode *n;
+extern unsigned char c;
+extern int pos;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int limit = n->size * 3;
+    for (pos = 0; pos < limit; pos++) {
+        int idx = pos / 3;
+        if (idx < n->size && (n->data[idx] + 1) > (c ^ (pos % 3))) {
+            break;
+        }
+    }
+    if (pos < limit) {
+        pos = pos / 3;
+    } else {
+        pos = n->size;
+    }
+}

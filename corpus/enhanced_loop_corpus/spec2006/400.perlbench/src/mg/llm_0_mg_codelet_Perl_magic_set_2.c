@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef size_t STRLEN;
+
+extern STRLEN len;
+extern STRLEN i;
+extern int accumulate;
+extern int any_fatals;
+extern char *ptr;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < len; ++i) {
+    for (STRLEN j = 0; j < 1; ++j) {
+        accumulate |= ptr[i];
+        any_fatals |= (ptr[i] & 170);
+    }
+}
+}

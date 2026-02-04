@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned short uint16;
+
+typedef uint16 s3lmwid_t;
+
+typedef struct {
+    s3lmwid_t wid;
+    uint16 probid;
+    uint16 bowtid;
+    uint16 firsttg;
+} bg_t;
+
+typedef int int32;
+
+extern bg_t *bg;
+extern s3lmwid_t w;
+extern int32 i;
+extern int32 b;
+extern int32 e;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int32 temp_i = b;
+    while (temp_i < e) {
+        if (bg[temp_i].wid == w) break;
+        temp_i++;
+    }
+    i = temp_i;
+}

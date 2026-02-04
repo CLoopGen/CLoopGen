@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int N;
+extern  int K;
+extern  double *A;
+extern  int lda;
+extern double *X;
+extern  int incX;
+extern int i;
+extern int j;
+extern  int nonunit;
+extern int ix;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = N; i > 0 && i--;) {
+    double temp = (nonunit ? A[lda * i + K] : 1.) * X[ix];
+    const int j_min = (i > K ? i - K : 0);
+    const int j_max = i;
+    int jx = ((incX) > 0 ? 0 : (N - 1) * (-incX)) + j_min * incX;
+    // Change to consecutive memory access by precomputing base pointer for A row
+    double *A_row_base = &A[lda * i];
+    for (j = j_min; j < j_max; j++) {
+        temp += X[jx] * A_row_base[K - i + j];
+        jx += incX;
+    }
+    X[ix] = temp;
+    ix -= incX;
+}
+}

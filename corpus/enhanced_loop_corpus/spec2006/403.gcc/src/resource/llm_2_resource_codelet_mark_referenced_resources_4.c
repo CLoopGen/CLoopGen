@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned long HARD_REG_ELT_TYPE;
+
+struct resources {
+    char memory;
+    char unch_memory;
+    char volatil;
+    char cc;
+    HARD_REG_ELT_TYPE regs;
+};
+
+
+extern char global_regs[53];
+extern struct resources *res;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided memory access with stride of 2, unrolling by factor 2
+    for (i = 0; i < 53; i += 2) {
+        if (i + 1 < 53) {
+            if (global_regs[i])
+                ((res->regs) |= ((HARD_REG_ELT_TYPE)(1)) << (i));
+            if (global_regs[i + 1])
+                ((res->regs) |= ((HARD_REG_ELT_TYPE)(1)) << (i + 1));
+        } else {
+            if (global_regs[i])
+                ((res->regs) |= ((HARD_REG_ELT_TYPE)(1)) << (i));
+        }
+    }
+}

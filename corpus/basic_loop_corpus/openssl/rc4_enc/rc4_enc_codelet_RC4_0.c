@@ -1,0 +1,80 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern  unsigned char *indata;
+extern unsigned char *outdata;
+extern unsigned int *d;
+extern unsigned int x;
+extern unsigned int y;
+extern unsigned int tx;
+extern unsigned int ty;
+extern size_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+void loop(){
+for (;;) {
+    x = ((x + 1) & 255);
+    tx = d[x];
+    y = (tx + y) & 255;
+    d[x] = ty = d[y];
+    d[y] = tx;
+    (outdata[0]) = d[(tx + ty) & 255] ^ (indata[0]);
+    ;
+    x = ((x + 1) & 255);
+    tx = d[x];
+    y = (tx + y) & 255;
+    d[x] = ty = d[y];
+    d[y] = tx;
+    (outdata[1]) = d[(tx + ty) & 255] ^ (indata[1]);
+    ;
+    x = ((x + 1) & 255);
+    tx = d[x];
+    y = (tx + y) & 255;
+    d[x] = ty = d[y];
+    d[y] = tx;
+    (outdata[2]) = d[(tx + ty) & 255] ^ (indata[2]);
+    ;
+    x = ((x + 1) & 255);
+    tx = d[x];
+    y = (tx + y) & 255;
+    d[x] = ty = d[y];
+    d[y] = tx;
+    (outdata[3]) = d[(tx + ty) & 255] ^ (indata[3]);
+    ;
+    x = ((x + 1) & 255);
+    tx = d[x];
+    y = (tx + y) & 255;
+    d[x] = ty = d[y];
+    d[y] = tx;
+    (outdata[4]) = d[(tx + ty) & 255] ^ (indata[4]);
+    ;
+    x = ((x + 1) & 255);
+    tx = d[x];
+    y = (tx + y) & 255;
+    d[x] = ty = d[y];
+    d[y] = tx;
+    (outdata[5]) = d[(tx + ty) & 255] ^ (indata[5]);
+    ;
+    x = ((x + 1) & 255);
+    tx = d[x];
+    y = (tx + y) & 255;
+    d[x] = ty = d[y];
+    d[y] = tx;
+    (outdata[6]) = d[(tx + ty) & 255] ^ (indata[6]);
+    ;
+    x = ((x + 1) & 255);
+    tx = d[x];
+    y = (tx + y) & 255;
+    d[x] = ty = d[y];
+    d[y] = tx;
+    (outdata[7]) = d[(tx + ty) & 255] ^ (indata[7]);
+    ;
+    indata += 8;
+    outdata += 8;
+    if (--i == 0)
+        break;
+}
+
+}

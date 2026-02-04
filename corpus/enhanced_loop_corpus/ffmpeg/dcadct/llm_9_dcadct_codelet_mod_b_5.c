@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int *input;
+extern int *output;
+extern int i;
+extern int k;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 4, k = 14; i < 32; i += 2, k--)
+    output[i] = input[k] - input[k - 6];
+}

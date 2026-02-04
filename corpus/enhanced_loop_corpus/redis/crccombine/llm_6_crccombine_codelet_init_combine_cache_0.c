@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint64_t combine_cache[64][64];
+extern uint8_t dim;
+extern unsigned int n;
+extern uint64_t row;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    uint64_t temp = row;
+    for (n = 1; n < dim; n++) {
+        combine_cache[1][n] = temp;
+        temp <<= 1;
+    }
+}

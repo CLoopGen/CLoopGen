@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef float real_t;
+
+__attribute__((aligned(64))) extern real_t aa[256][256];
+extern int xindex;
+extern int yindex;
+extern real_t max;
+extern real_t chksum;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (int nl = 0; nl < 100 * (100000 / (256)); nl++) {
+    max = aa[0][0];
+    xindex = 0;
+    yindex = 0;
+    chksum = 0.0;
+    for (int i = 0; i < 256; i++) {
+        real_t row_max = aa[i][0];
+        int row_index = 0;
+        for (int j = 1; j < 256; j++) {
+            if (aa[i][j] > row_max) {
+                row_max = aa[i][j];
+                row_index = j;
+            }
+        }
+        if (row_max > max || (row_max == max && i < xindex)) {
+            max = row_max;
+            xindex = i;
+            yindex = row_index;
+        }
+        chksum += row_max;
+    }
+    chksum += (real_t)xindex + (real_t)yindex;
+}
+}

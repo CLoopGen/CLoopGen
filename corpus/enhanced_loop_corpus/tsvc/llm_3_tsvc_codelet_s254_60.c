@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef float real_t;
+
+__attribute__((aligned(64))) extern real_t a[32000];
+__attribute__((aligned(64))) extern real_t b[32000];
+extern real_t x;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (int nl = 0; nl < 4 * 100000; nl++) {
+    x = b[0];
+    for (int i = 31999; i >= 0; i -= 2) {
+        int j = i - 1;
+        a[i] = (b[i] + x) * (real_t)0.5;
+        x = b[i];
+        if (j >= 0) {
+            a[j] = (b[j] + x) * (real_t)0.5;
+            x = b[j];
+        }
+    }
+}
+}

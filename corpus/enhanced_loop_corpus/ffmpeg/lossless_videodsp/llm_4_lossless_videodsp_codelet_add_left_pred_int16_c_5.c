@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint16_t *dst;
+extern  uint16_t *src;
+extern unsigned int mask;
+extern ptrdiff_t w;
+extern unsigned int acc;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (; i < w; i++) {
+    acc += src[i];
+    if (acc > mask) {
+        acc &= mask;
+    }
+    dst[i] = acc;
+}
+}

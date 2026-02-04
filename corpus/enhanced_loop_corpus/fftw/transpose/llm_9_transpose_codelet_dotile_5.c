@@ -1,0 +1,60 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef ptrdiff_t INT;
+
+typedef double R;
+
+extern INT n0l;
+extern INT n0u;
+extern INT n1l;
+extern INT n1u;
+extern R *I;
+extern INT s0;
+extern INT s1;
+extern INT vl;
+extern INT i0;
+extern INT i1;
+extern INT v;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i1 = n1l; i1 < n1u; i1 += 2) {
+    for (i0 = n0l; i0 < n0u; i0 += 2) {
+        if (i1 + 1 < n1u && i0 + 1 < n0u) {
+            for (v = 0; v < vl; ++v) {
+                R x0 = I[i1 * s0 + i0 * s1 + v];
+                R y0 = I[i1 * s1 + i0 * s0 + v];
+                R x1 = I[(i1+1) * s0 + i0 * s1 + v];
+                R y1 = I[(i1+1) * s1 + i0 * s0 + v];
+                R x2 = I[i1 * s0 + (i0+1) * s1 + v];
+                R y2 = I[i1 * s1 + (i0+1) * s0 + v];
+                R x3 = I[(i1+1) * s0 + (i0+1) * s1 + v];
+                R y3 = I[(i1+1) * s1 + (i0+1) * s0 + v];
+
+                I[i1 * s1 + i0 * s0 + v] = x0;
+                I[i1 * s0 + i0 * s1 + v] = y0;
+                I[(i1+1) * s1 + i0 * s0 + v] = x1;
+                I[(i1+1) * s0 + i0 * s1 + v] = y1;
+                I[i1 * s1 + (i0+1) * s0 + v] = x2;
+                I[i1 * s0 + (i0+1) * s1 + v] = y2;
+                I[(i1+1) * s1 + (i0+1) * s0 + v] = x3;
+                I[(i1+1) * s0 + (i0+1) * s1 + v] = y3;
+            }
+        } else {
+            for (v = 0; v < vl; ++v) {
+                R x0 = I[i1 * s0 + i0 * s1 + v];
+                R y0 = I[i1 * s1 + i0 * s0 + v];
+                I[i1 * s1 + i0 * s0 + v] = x0;
+                I[i1 * s0 + i0 * s1 + v] = y0;
+            }
+        }
+    }
+}
+}

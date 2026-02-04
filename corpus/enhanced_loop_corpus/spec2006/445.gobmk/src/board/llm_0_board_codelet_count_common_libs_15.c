@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned char Intersection;
+
+extern Intersection board[421];
+extern int string_number[400];
+extern int str2;
+extern int *libs1;
+extern int liberties1;
+extern int commonlibs;
+extern int k;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (int i = 0; i < liberties1; i++) {
+        k = i;
+        if ((((board[((libs1[k]) + (19 + 1))] == board[str2]) && string_number[((libs1[k]) + (19 + 1))] == (string_number[str2])) || ((board[((libs1[k]) - 1)] == board[str2]) && string_number[((libs1[k]) - 1)] == (string_number[str2])) || ((board[((libs1[k]) - (19 + 1))] == board[str2]) && string_number[((libs1[k]) - (19 + 1))] == (string_number[str2])) || ((board[((libs1[k]) + 1)] == board[str2]) && string_number[((libs1[k]) + 1)] == (string_number[str2]))))
+            commonlibs++;
+    }
+}

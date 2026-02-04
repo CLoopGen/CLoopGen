@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t requant_tab[8][128];
+extern  int8_t offsets[8];
+extern  int8_t deltas[8];
+extern int i;
+extern int j;
+extern int step;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 8; i++) {
+        step = i + 2;
+        int temp_step = step; // Introduce local dependency: temp_step depends on step which depends on i
+        for (j = 0; j < 128; j++) {
+            int adjusted_j = j + offsets[i]; // RAW dependency: adjusted_j uses offsets[i] defined outside inner loop
+            requant_tab[i][j] = (adjusted_j / temp_step) * temp_step + deltas[i];
+        }
+    }
+}

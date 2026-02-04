@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <stdlib.h>
+#include <stddef.h>
+
+char *s;
+size_t len;
+size_t i;
+
+static char *buffer;
+
+void init_vars() {
+    len = 1 << 20; // Approximately 1MB of data
+    buffer = (char*)malloc(len);
+    if (!buffer) {
+        exit(1);
+    }
+    for (size_t idx = 0; idx < len - 1; ++idx) {
+        buffer[idx] = 'x';
+    }
+    buffer[len - 1] = '\0'; // Ensure loop stops at the end
+    s = buffer;
+    i = 0;
+}
+
+void loop(); // Forward declaration to avoid implicit declaration
+
+// Do not include main(), headers, explanations or comments below this line

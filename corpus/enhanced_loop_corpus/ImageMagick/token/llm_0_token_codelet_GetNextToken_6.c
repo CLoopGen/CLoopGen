@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  char *restrict start;
+extern  size_t extent;
+extern char *restrict token;
+extern char *restrict q;
+extern  char *restrict p;
+extern ssize_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (; (p < q) && (*p != ','); p++) {
+    if (i < (ssize_t)(extent - 1)) {
+        token[i++] = (*p);
+    }
+    for (size_t j = 0; j < 1; j++) { // Artificially increased nesting depth by adding a single-iteration inner loop
+        if ((size_t)(p - start) >= (extent - 1)) {
+            break;
+        }
+    }
+}
+}

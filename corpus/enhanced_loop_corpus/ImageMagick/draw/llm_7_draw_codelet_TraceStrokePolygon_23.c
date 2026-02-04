@@ -1,0 +1,75 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef enum {
+    MagickFalse = 0,
+    MagickTrue = 1
+} MagickBooleanType;
+
+typedef struct _PointInfo {
+    double x;
+    double y;
+} PointInfo;
+
+typedef enum {
+    UndefinedPrimitive,
+    AlphaPrimitive,
+    ArcPrimitive,
+    BezierPrimitive,
+    CirclePrimitive,
+    ColorPrimitive,
+    EllipsePrimitive,
+    ImagePrimitive,
+    LinePrimitive,
+    PathPrimitive,
+    PointPrimitive,
+    PolygonPrimitive,
+    PolylinePrimitive,
+    RectanglePrimitive,
+    RoundRectanglePrimitive,
+    TextPrimitive
+} PrimitiveType;
+
+typedef enum {
+    UndefinedMethod,
+    PointMethod,
+    ReplaceMethod,
+    FloodfillMethod,
+    FillToBorderMethod,
+    ResetMethod
+} PaintMethod;
+
+typedef struct _PrimitiveInfo {
+    PointInfo point;
+    size_t coordinates;
+    PrimitiveType primitive;
+    PaintMethod method;
+    char *text;
+    MagickBooleanType closed_subpath;
+} PrimitiveInfo;
+
+extern MagickBooleanType closed_path;
+extern PointInfo *stroke_q;
+extern PrimitiveInfo *polygon_primitive;
+extern PrimitiveInfo *stroke_polygon;
+extern ssize_t i;
+extern ssize_t p;
+extern ssize_t q;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    ssize_t n = p + q + closed_path;
+    PrimitiveInfo base = polygon_primitive[0];
+    for (i = 0; i < n; i++) {
+        ssize_t read_index = n - i - 1;
+        stroke_polygon[i] = base;
+        stroke_polygon[i].point.x = stroke_q[read_index].x;
+        stroke_polygon[i].point.y = stroke_q[read_index].y;
+    }
+}

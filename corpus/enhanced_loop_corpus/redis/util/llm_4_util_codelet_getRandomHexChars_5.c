@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern char *p;
+extern size_t len;
+extern char *charset;
+extern size_t j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (j = 0; j < len; j++) {
+        if ((p[j] & 15) != 0) {
+            p[j] = charset[p[j] & 15];
+        }
+    }
+}

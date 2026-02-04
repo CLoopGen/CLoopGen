@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int i;
+extern int nn;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int local_nn = nn;
+    for (i = 0; i < 16 && local_nn != 0; i++) {
+        local_nn >>= 1; // Eliminate direct loop-carried dependency on global 'nn'
+    }
+    nn = local_nn; // Single write to global at end, removing loop-carried data dependency (RAW/WAR)
+}

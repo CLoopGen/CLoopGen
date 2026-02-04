@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned int UInt32;
+
+typedef int Int32;
+
+typedef unsigned char UChar;
+
+extern UInt32 *fmap;
+extern Int32 nblock;
+extern Int32 ftab[257];
+extern Int32 i;
+extern Int32 j;
+extern Int32 k;
+extern UChar *eclass8;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    Int32 temp_nblock = nblock;
+    for (i = 0; i < temp_nblock; i++) {
+        j = eclass8[i];
+        fmap[ftab[j] - 1] = i;
+        ftab[j] = ftab[j] - 1;
+    }
+}

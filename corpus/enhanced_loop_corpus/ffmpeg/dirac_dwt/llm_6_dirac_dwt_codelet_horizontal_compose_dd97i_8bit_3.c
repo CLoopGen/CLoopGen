@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int x;
+extern  int w2;
+extern int16_t *b;
+extern int16_t *tmp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (x = 1; x < w2 - 1; x++) {
+        tmp[x] = (b[x] - (unsigned int)((int)(b[x + w2] + (unsigned int)(b[x + w2 + 1]) + 2) >> 2));
+    }
+    if (w2 > 1) {
+        tmp[w2 - 1] = b[w2 - 1];
+    }
+}

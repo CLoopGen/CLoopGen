@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  char *restrict start;
+extern  size_t extent;
+extern char *restrict token;
+extern char *restrict q;
+extern  char *restrict p;
+extern ssize_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (; (p < q) && (*p != ','); p++) {
+        if (i >= (ssize_t)(extent - 1)) continue;
+        token[i++] = (*p);
+        if ((size_t)(p - start) >= (extent - 1)) {
+            p = q; // Force exit by making p reach end
+        }
+    }
+}

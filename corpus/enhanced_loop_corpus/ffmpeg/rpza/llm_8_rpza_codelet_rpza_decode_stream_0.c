@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int row_inc;
+extern uint16_t colorA;
+extern uint16_t *pixels;
+extern int block_ptr;
+extern int pixel_x;
+extern int pixel_y;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Increased computational intensity with additional arithmetic operations and reduced trip count via loop unrolling simulation
+    for (pixel_y = 0; pixel_y < 2; pixel_y++) {
+        for (pixel_x = 0; pixel_x < 8; pixel_x += 2) {
+            pixels[block_ptr] = colorA;
+            pixels[block_ptr + 1] = (uint16_t)(colorA ^ (colorA >> 1)); // Additional computation
+            block_ptr++;
+            block_ptr++; // Increment twice due to dual assignment
+        }
+        block_ptr += row_inc;
+    }
+}

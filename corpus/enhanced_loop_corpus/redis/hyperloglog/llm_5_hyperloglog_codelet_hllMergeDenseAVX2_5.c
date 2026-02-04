@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *reg_raw;
+extern  uint8_t *reg_dense;
+extern uint8_t val;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (int i = (1 << 14) - 24; i < (1 << 14); i++) {
+    uint8_t *_p = (uint8_t *)reg_dense;
+    unsigned long _byte = i * 6 / 8;
+    unsigned long _fb = i * 6 & 7;
+
+    if (_fb == 0) {
+        unsigned long b0 = _p[_byte];
+        val = b0 & ((1 << 6) - 1);
+    } else {
+        unsigned long _fb8 = 8 - _fb;
+        unsigned long b0 = _p[_byte];
+        unsigned long b1 = _p[_byte + 1];
+        val = ((b0 >> _fb) | (b1 << _fb8)) & ((1 << 6) - 1);
+    }
+
+    if (reg_raw[i] < val) {
+        reg_raw[i] = val;
+    }
+}
+}

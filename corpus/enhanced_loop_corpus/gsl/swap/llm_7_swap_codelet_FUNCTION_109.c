@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  size_t nz;
+extern int *Aj;
+extern int *ATp;
+extern size_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    size_t temp_sum = 0;
+    for (i = 0; i < nz; ++i) {
+        temp_sum += ATp[Aj[i]];
+        ATp[Aj[i]] = temp_sum;
+    }
+}

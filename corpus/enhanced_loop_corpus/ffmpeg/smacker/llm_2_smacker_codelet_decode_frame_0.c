@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *out;
+extern int i;
+extern int stride;
+extern int map;
+extern int hi;
+extern int lo;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    uint8_t *local_out = out;
+    int local_map = map;
+    for (i = 0; i < 4; i++) {
+        uint8_t val0 = (local_map & 1) ? hi : lo;
+        uint8_t val1 = (local_map & 2) ? hi : lo;
+        uint8_t val2 = (local_map & 4) ? hi : lo;
+        uint8_t val3 = (local_map & 8) ? hi : lo;
+        
+        // Consecutive memory write to improve spatial locality
+        local_out[0] = val0;
+        local_out[1] = val1;
+        local_out[2] = val2;
+        local_out[3] = val3;
+        
+        local_map >>= 4;
+        local_out += stride;
+    }
+}

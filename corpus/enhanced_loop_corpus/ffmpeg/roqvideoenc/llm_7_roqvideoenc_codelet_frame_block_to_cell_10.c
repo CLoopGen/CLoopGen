@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *block;
+extern uint8_t * *data;
+extern int top;
+extern int left;
+extern  int *stride;
+extern int i;
+extern int j;
+extern int u;
+extern int v;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 2; i++)
+        for (j = 0; j < 2; j++) {
+            int x = (top + i) * stride[0] + left + j;
+            uint8_t val0 = data[0][x];
+            x = (top + i) * stride[1] + left + j;
+            uint8_t val1 = data[1][x];
+            uint8_t val2 = data[2][x];
+            *block++ = val0;
+            u += val1;
+            v += val2;
+        }
+}

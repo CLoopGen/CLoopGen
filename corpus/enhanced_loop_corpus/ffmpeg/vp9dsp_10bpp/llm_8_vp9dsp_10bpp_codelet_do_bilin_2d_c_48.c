@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int x;
+extern int w;
+extern int my;
+extern int avg;
+extern uint16_t *tmp_ptr;
+extern uint16_t *dst;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (x = 0; x < w; x += 2) {
+        if (avg) {
+            dst[x] = (dst[x] + (tmp_ptr[x] + ((my * (tmp_ptr[x + 64] - tmp_ptr[x]) + 8) >> 4)) + 1) >> 1;
+            if (x + 1 < w) {
+                dst[x + 1] = (dst[x + 1] + (tmp_ptr[x + 1] + ((my * (tmp_ptr[x + 65] - tmp_ptr[x + 1]) + 8) >> 4)) + 1) >> 1;
+            }
+        } else {
+            dst[x] = (tmp_ptr[x] + ((my * (tmp_ptr[x + 64] - tmp_ptr[x]) + 8) >> 4));
+            if (x + 1 < w) {
+                dst[x + 1] = (tmp_ptr[x + 1] + ((my * (tmp_ptr[x + 65] - tmp_ptr[x + 1]) + 8) >> 4));
+            }
+        }
+    }
+}

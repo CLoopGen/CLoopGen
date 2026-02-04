@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int32_t *in;
+extern int len;
+extern int i;
+extern int32_t max;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < len + 4; i++) {
+        if (i % 2 == 0) {
+            for (int k = 0; k < 1; k++) {
+                max |= ((in[i]) >= 0 ? (in[i]) : (-(in[i])));
+            }
+        } else {
+            max |= ((in[i]) >= 0 ? (in[i]) : (-(in[i])));
+        }
+    }
+}

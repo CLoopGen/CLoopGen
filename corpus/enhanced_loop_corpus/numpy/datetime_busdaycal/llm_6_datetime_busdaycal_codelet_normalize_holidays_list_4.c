@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef unsigned char npy_bool;
+
+typedef int npy_datetime;
+
+typedef ssize_t Py_ssize_t;
+
+typedef Py_ssize_t npy_intp;
+
+extern npy_bool *weekmask;
+extern npy_datetime *dates;
+extern npy_intp count;
+extern npy_datetime lastdate;
+extern npy_intp trimcount;
+extern npy_intp i;
+extern int day_of_week;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    npy_datetime prev_date = lastdate;
+    for (i = 0; i < count; ++i) {
+        npy_datetime date = dates[i];
+        npy_bool valid = (date != (-(9223372036854775807LL) - (1LL))) && (date != prev_date);
+        if (valid) {
+            day_of_week = (int)((date - 4) % 7);
+            if (day_of_week < 0) {
+                day_of_week += 7;
+            }
+            npy_bool mask_valid = weekmask[day_of_week] == 1;
+            if (mask_valid) {
+                dates[trimcount] = date;
+                trimcount++;
+                prev_date = date;
+            }
+        }
+    }
+    lastdate = prev_date;
+}

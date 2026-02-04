@@ -1,0 +1,526 @@
+[
+    {
+        "codelet": "basic_loop_corpus/redis/redis-cli/redis-cli_codelet_clusterManagerGetCoveredSlots_9.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_redis-cli_codelet_clusterManagerGetCoveredSlots_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/ebuckets/ebuckets_codelet_bucketKey2RaxKey_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_ebuckets_codelet_bucketKey2RaxKey_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/redis-cli/redis-cli_codelet_addSizeDist_16.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_redis-cli_codelet_addSizeDist_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/redis-cli/redis-cli_codelet_compute_something_fast_15.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_redis-cli_codelet_compute_something_fast_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/bitops/bitops_codelet_bitopCommand_5.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_bitops_codelet_bitopCommand_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/redis-cli/redis-cli_codelet_latencyDistMode_12.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_redis-cli_codelet_latencyDistMode_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/acl/acl_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_acl_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/acl/acl_codelet_ACLHashPassword_3.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_acl_codelet_ACLHashPassword_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/bitops/bitops_codelet_getUnsignedBitfield_2.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_bitops_codelet_getUnsignedBitfield_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/redis-cli/redis-cli_codelet_clusterManagerKeyHashSlot_5.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_redis-cli_codelet_clusterManagerKeyHashSlot_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/bitops/bitops_codelet_setUnsignedBitfield_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_bitops_codelet_setUnsignedBitfield_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/util/util_codelet_getRandomBytes_3.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_util_codelet_getRandomBytes_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/ebuckets/ebuckets_codelet_raxKey2BucketKey_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_ebuckets_codelet_raxKey2BucketKey_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/script/script_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_script_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/bitops/bitops_codelet_redisBitpos_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_bitops_codelet_redisBitpos_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/sha1/sha1_codelet_SHA1Final_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_sha1_codelet_SHA1Final_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/lazyfree/lazyfree_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_lazyfree_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/bitops/bitops_codelet_bitopCommand_10.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_bitops_codelet_bitopCommand_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/util/util_codelet_i2string_async_signal_safe_6.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_util_codelet_i2string_async_signal_safe_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/debug/debug_codelet_xorDigest_2.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_debug_codelet_xorDigest_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/sha1/sha1_codelet_SHA1Final_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_sha1_codelet_SHA1Final_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/expire/expire_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_expire_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/siphash/siphash_codelet_siphash_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_siphash_codelet_siphash_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/debug/debug_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_debug_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/bitops/bitops_codelet_bitopCommand_9.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_bitops_codelet_bitopCommand_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/crcspeed/crcspeed_codelet_crcspeed64little_init_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_crcspeed_codelet_crcspeed64little_init_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/acl/acl_codelet_time_independent_strcmp_2.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_acl_codelet_time_independent_strcmp_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/redis-cli/redis-cli_codelet_matchNoTokenArg_3.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_redis-cli_codelet_matchNoTokenArg_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/util/util_codelet_prefixmatch_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_util_codelet_prefixmatch_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/server/server_codelet_getExpansiveClientsInfo_3.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_server_codelet_getExpansiveClientsInfo_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/mstr/mstr_codelet_mstrMetaRef_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_mstr_codelet_mstrMetaRef_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/crcspeed/crcspeed_codelet_crcspeed16little_init_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_crcspeed_codelet_crcspeed16little_init_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/bitops/bitops_codelet_bitopCommand_7.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_bitops_codelet_bitopCommand_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/debug/debug_codelet_debugCommand_3.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_debug_codelet_debugCommand_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/sha256/sha256_codelet_sha256_transform_2.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_sha256_codelet_sha256_transform_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/timeout/timeout_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_timeout_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/sha256/sha256_codelet_sha256_transform_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_sha256_codelet_sha256_transform_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/timeout/timeout_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_timeout_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/t_string/t_string_codelet_lcsCommand_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_t_string_codelet_lcsCommand_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/server/server_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_server_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/sha256/sha256_codelet_sha256_transform_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_sha256_codelet_sha256_transform_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/util/util_codelet_i2string_async_signal_safe_7.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_util_codelet_i2string_async_signal_safe_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/debug/debug_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_debug_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/util/util_codelet_getRandomBytes_4.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_util_codelet_getRandomBytes_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/sha256/sha256_codelet_sha256_final_3.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_sha256_codelet_sha256_final_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/script/script_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_script_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/acl/acl_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_acl_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/server/server_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_server_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/bitops/bitops_codelet_bitopCommand_8.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_bitops_codelet_bitopCommand_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/bitops/bitops_codelet_bitopCommand_4.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_bitops_codelet_bitopCommand_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/sds/sds_codelet_sdsmapchars_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_sds_codelet_sdsmapchars_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/replication/replication_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_replication_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/expire/expire_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_expire_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/bitops/bitops_codelet_bitopCommand_6.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_bitops_codelet_bitopCommand_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/bitops/bitops_codelet_bitopCommand_11.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_bitops_codelet_bitopCommand_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/redis-cli/redis-cli_codelet_clusterManagerKeyHashSlot_6.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_redis-cli_codelet_clusterManagerKeyHashSlot_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/replication/replication_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_replication_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/ae_select/ae_select_codelet_aeApiCreate_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_ae_select_codelet_aeApiCreate_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/ae_select/ae_select_codelet_aeApiCreate_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_ae_select_codelet_aeApiCreate_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/ae_evport/ae_evport_codelet_aeApiCreate_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_ae_evport_codelet_aeApiCreate_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/crccombine/crccombine_codelet_init_combine_cache_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_crccombine_codelet_init_combine_cache_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/networking/networking_codelet_addReplyDouble_2.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_networking_codelet_addReplyDouble_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/networking/networking_codelet_addReplyVerbatim_3.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_networking_codelet_addReplyVerbatim_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/helloworld/helloworld_codelet_HelloLeftPad_RedisCommand_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_helloworld_codelet_HelloLeftPad_RedisCommand_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/networking/networking_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_networking_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/fwtree/fwtree_codelet_fwTreeFindIndex_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_fwtree_codelet_fwTreeFindIndex_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/pubsub/pubsub_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_pubsub_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/db/db_codelet_xreadGetKeys_6.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_db_codelet_xreadGetKeys_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/module/module_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_module_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/mt19937-64/mt19937-64_codelet_init_by_array64_2.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_mt19937-64_codelet_init_by_array64_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/module/module_codelet_moduleConvertKeySpecsFlags_2.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_module_codelet_moduleConvertKeySpecsFlags_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/module/module_codelet_moduleTypeNameByID_5.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_module_codelet_moduleTypeNameByID_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/mt19937-64/mt19937-64_codelet_genrand64_int64_4.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_mt19937-64_codelet_genrand64_int64_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/latency/latency_codelet_analyzeLatencyForEvent_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_latency_codelet_analyzeLatencyForEvent_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/db/db_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_db_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/pubsub/pubsub_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_pubsub_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/eval/eval_codelet_sha1hex_2.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_eval_codelet_sha1hex_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/mt19937-64/mt19937-64_codelet_genrand64_int64_3.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_mt19937-64_codelet_genrand64_int64_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/dict/dict_codelet_dictFingerprint_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_dict_codelet_dictFingerprint_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/redis-benchmark/redis-benchmark_codelet_main_5.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_redis-benchmark_codelet_main_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/networking/networking_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_networking_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/mt19937-64/mt19937-64_codelet_init_genrand64_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_mt19937-64_codelet_init_genrand64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/script_lua/script_lua_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_script_lua_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/dict/dict_codelet_dictCombineStats_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_dict_codelet_dictCombineStats_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/latency/latency_codelet_analyzeLatencyForEvent_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_latency_codelet_analyzeLatencyForEvent_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/config/config_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_config_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/db/db_codelet_genericGetKeys_4.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_db_codelet_genericGetKeys_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/config/config_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_config_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/db/db_codelet_migrateGetKeys_5.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_db_codelet_migrateGetKeys_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/util/util_codelet_getRandomHexChars_5.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_util_codelet_getRandomHexChars_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/mt19937-64/mt19937-64_codelet_init_by_array64_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_mt19937-64_codelet_init_by_array64_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/module/module_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_module_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/cluster_slot_stats/cluster_slot_stats_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_cluster_slot_stats_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/cluster/cluster_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_cluster_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/cluster_legacy/cluster_legacy_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_cluster_legacy_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/crc16/crc16_codelet_crc16_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_crc16_codelet_crc16_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/cluster/cluster_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_cluster_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/eval/eval_codelet_evalCalcFunctionName_3.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_eval_codelet_evalCalcFunctionName_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/rax/rax_codelet_raxAddChild_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_rax_codelet_raxAddChild_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/rax/rax_codelet_raxLowWalk_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_rax_codelet_raxLowWalk_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/db/db_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_db_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/cluster_legacy/cluster_legacy_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_cluster_legacy_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/hyperloglog/hyperloglog_codelet_hllMergeDenseAVX2_5.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_hyperloglog_codelet_hllMergeDenseAVX2_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/sort/sort_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_sort_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/multi/multi_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_multi_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/eval/eval_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_eval_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/script_lua/script_lua_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_script_lua_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/sort/sort_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_sort_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/bitops/bitops_codelet_bitopCommand_3.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_bitops_codelet_bitopCommand_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/rax/rax_codelet_raxLowWalk_2.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_rax_codelet_raxLowWalk_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/cluster_asm/cluster_asm_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_cluster_asm_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/multi/multi_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_multi_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/cluster_slot_stats/cluster_slot_stats_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_cluster_slot_stats_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/hyperloglog/hyperloglog_codelet_hllMergeDense_6.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_hyperloglog_codelet_hllMergeDense_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/hyperloglog/hyperloglog_codelet_hllDenseRegHisto_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_hyperloglog_codelet_hllDenseRegHisto_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/hyperloglog/hyperloglog_codelet_hllRawRegHisto_2.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_hyperloglog_codelet_hllRawRegHisto_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/hyperloglog/hyperloglog_codelet_hllDenseCompress_8.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_hyperloglog_codelet_hllDenseCompress_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/hyperloglog/hyperloglog_codelet_hllCount_3.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_hyperloglog_codelet_hllCount_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/cluster_asm/cluster_asm_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_cluster_asm_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/hyperloglog/hyperloglog_codelet_hllDenseRegHisto_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_hyperloglog_codelet_hllDenseRegHisto_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/hyperloglog/hyperloglog_codelet_hllMergeDenseAVX2_4.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_hyperloglog_codelet_hllMergeDenseAVX2_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/evict/evict_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_evict_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/hyperloglog/hyperloglog_codelet_hllDenseCompressAVX2_7.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_hyperloglog_codelet_hllDenseCompressAVX2_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/evict/evict_codelet_keyHashSlot_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_evict_codelet_keyHashSlot_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/eval/eval_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_eval_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/redis-cli/redis-cli_codelet_clusterManagerCommandCreate_11.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_redis-cli_codelet_clusterManagerCommandCreate_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/lazyfree/lazyfree_codelet_keyHashSlot_1.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_lazyfree_codelet_keyHashSlot_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/util/util_codelet_memmapchars_2.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_util_codelet_memmapchars_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/crc64/crc64_codelet__crc64_0.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_crc64_codelet__crc64_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/redis-cli/redis-cli_codelet_removeUnsupportedArgs_2.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_redis-cli_codelet_removeUnsupportedArgs_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/redis/redis-cli/redis-cli_codelet_clusterManagerNodeArrayReset_10.c",
+        "input": "basic_loop_corpus/loop_input/redis/input_redis-cli_codelet_clusterManagerNodeArrayReset_10.c"
+    }
+]

@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *dst;
+extern  uint8_t *src;
+extern int size;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < size; i += 2) {
+        if (i + 1 < size) {
+            dst[i]     = (((src[i]) << 3) & 192) | (((src[i]) << 3) & 56) | (((src[i]) >> 5) & 7);
+            dst[i + 1] = (((src[i + 1]) << 3) & 192) | (((src[i + 1]) << 3) & 56) | (((src[i + 1]) >> 5) & 7);
+        } else {
+            dst[i] = (((src[i]) << 3) & 192) | (((src[i]) << 3) & 56) | (((src[i]) >> 5) & 7);
+        }
+    }
+}

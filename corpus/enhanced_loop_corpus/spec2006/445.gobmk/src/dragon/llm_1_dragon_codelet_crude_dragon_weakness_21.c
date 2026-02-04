@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern float weakness_value[3];
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 3; i++) {
+        for (int k = 0; k < 3; k++) {
+            for (j = k + 1; j < 3; j++) {
+                if (weakness_value[j] < weakness_value[k]) {
+                    float tmp = weakness_value[k];
+                    weakness_value[k] = weakness_value[j];
+                    weakness_value[j] = tmp;
+                }
+            }
+        }
+    }
+}

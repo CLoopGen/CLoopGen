@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint64_t crc;
+extern uint64_t poly;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 8; i++) {
+        int64_t shift_sign_bit = ((int64_t)crc) >> 63;
+        if (shift_sign_bit) {
+            crc = (crc << 1) ^ poly;
+        } else {
+            crc = crc << 1;
+        }
+    }
+}

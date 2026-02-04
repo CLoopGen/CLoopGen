@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef short word;
+
+typedef long longword;
+
+extern word *dp;
+extern int k;
+extern word Nc;
+extern longword L_power;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (k = 0; k <= 39; k++) {
+        register longword L_temp;
+        for (int j = 0; j < 1; j++) {  // Increased nesting depth with trivial inner loop
+            L_temp = ((dp[k - Nc]) >> (3));
+            L_power += L_temp * L_temp;
+        }
+    }
+}

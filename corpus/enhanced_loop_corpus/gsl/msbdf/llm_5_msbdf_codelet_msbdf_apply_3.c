@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern size_t * ordprev;
+extern size_t * ordprevbackup;
+extern size_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 5; ++i) {
+        if (i % 2 == 0) {
+            ordprev[i] = ordprevbackup[i];
+        } else {
+            continue;
+        }
+    }
+}

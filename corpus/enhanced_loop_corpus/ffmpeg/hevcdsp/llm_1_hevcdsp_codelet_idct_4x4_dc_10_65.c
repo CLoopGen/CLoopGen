@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int16_t *coeffs;
+extern int i;
+extern int j;
+extern int coeff;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Strided memory access with indirect indexing using pointer arithmetic
+    // Access every 4th element in a flattened manner, simulating strided writes
+    int16_t* base = coeffs;
+    for (j = 0; j < 4; j++) {
+        for (i = 0; i < 4; i++) {
+            *(base + i * 4 + j) = coeff;  // Stride of 4 between rows
+        }
+    }
+}

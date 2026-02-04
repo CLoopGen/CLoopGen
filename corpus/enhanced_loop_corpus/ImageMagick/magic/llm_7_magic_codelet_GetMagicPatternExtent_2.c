@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct _ElementInfo {
+    void *value;
+    struct _ElementInfo *next;
+} ElementInfo;
+
+typedef long long MagickOffsetType;
+
+typedef enum {
+    MagickFalse = 0,
+    MagickTrue = 1
+} MagickBooleanType;
+
+struct _MagicInfo {
+    char *name;
+    unsigned char *magic;
+    size_t length;
+    MagickOffsetType offset;
+    MagickBooleanType skip_spaces;
+    size_t signature;
+};
+
+
+typedef struct _MagicInfo MagicInfo;
+
+extern ElementInfo *p;
+extern MagickOffsetType max_offset;
+extern MagickOffsetType offset;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    MagickOffsetType local_offset = 0;
+    ElementInfo *current = p;  // Introduce new variable to remove direct dependence on global p
+    MagickOffsetType temp_max = 0;  // Use local accumulator to isolate data dependencies
+
+    for (max_offset = 0; current != (ElementInfo *)((void *)0);) {
+        const MagicInfo *magic_info = (const MagicInfo *)current->value;
+        local_offset = magic_info->offset + (MagickOffsetType)magic_info->length;
+        if (local_offset > temp_max)
+            temp_max = local_offset;  // Break RAW/WAR by using local storage
+        current = current->next;  // Use local pointer instead of mutating global directly
+    }
+    max_offset = temp_max;  // Final write to global after loop
+}

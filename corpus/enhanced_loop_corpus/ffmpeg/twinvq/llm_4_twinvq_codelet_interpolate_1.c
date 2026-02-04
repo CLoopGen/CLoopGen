@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern float *out;
+extern float v2;
+extern int size;
+extern int i;
+extern float step;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    if (size <= 0) return;
+    for (i = 0; i < size; i++) {
+        v2 += step;
+        out[i] = v2;
+    }
+}

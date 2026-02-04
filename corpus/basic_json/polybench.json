@@ -1,0 +1,402 @@
+[
+    {
+        "codelet": "basic_loop_corpus/polybench/seidel-2d/seidel-2d_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_seidel-2d_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/3mm/3mm_codelet_init_array_3.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_3mm_codelet_init_array_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/jacobi-1d/jacobi-1d_codelet_kernel_jacobi_1d_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_jacobi-1d_codelet_kernel_jacobi_1d_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/mvt/mvt_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_mvt_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/trmm/trmm_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_trmm_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/deriche/deriche_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_deriche_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/lu/lu_codelet_init_array_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_lu_codelet_init_array_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/2mm/2mm_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_2mm_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/lu/lu_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_lu_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/lu/lu_codelet_kernel_lu_4.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_lu_codelet_kernel_lu_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/syr2k/syr2k_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_syr2k_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/3mm/3mm_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_3mm_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/lu/lu_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_lu_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/mvt/mvt_codelet_kernel_mvt_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_mvt_codelet_kernel_mvt_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/2mm/2mm_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_2mm_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/deriche/deriche_codelet_kernel_deriche_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_deriche_codelet_kernel_deriche_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/nussinov/nussinov_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_nussinov_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/jacobi-2d/jacobi-2d_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_jacobi-2d_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/bicg/bicg_codelet_kernel_bicg_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_bicg_codelet_kernel_bicg_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/mvt/mvt_codelet_kernel_mvt_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_mvt_codelet_kernel_mvt_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/trisolv/trisolv_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_trisolv_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/lu/lu_codelet_init_array_3.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_lu_codelet_init_array_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/correlation/correlation_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_correlation_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/bicg/bicg_codelet_kernel_bicg_3.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_bicg_codelet_kernel_bicg_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/cholesky/cholesky_codelet_init_array_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_cholesky_codelet_init_array_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/nussinov/nussinov_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_nussinov_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/3mm/3mm_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_3mm_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/bicg/bicg_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_bicg_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/3mm/3mm_codelet_init_array_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_3mm_codelet_init_array_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/bicg/bicg_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_bicg_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/fdtd-2d/fdtd-2d_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_fdtd-2d_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/fdtd-2d/fdtd-2d_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_fdtd-2d_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/atax/atax_codelet_kernel_atax_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_atax_codelet_kernel_atax_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/2mm/2mm_codelet_init_array_3.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_2mm_codelet_init_array_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gemver/gemver_codelet_kernel_gemver_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gemver_codelet_kernel_gemver_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/trisolv/trisolv_codelet_kernel_trisolv_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_trisolv_codelet_kernel_trisolv_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/syr2k/syr2k_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_syr2k_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gramschmidt/gramschmidt_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gramschmidt_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/cholesky/cholesky_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_cholesky_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gemver/gemver_codelet_kernel_gemver_3.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gemver_codelet_kernel_gemver_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/jacobi-2d/jacobi-2d_codelet_kernel_jacobi_2d_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_jacobi-2d_codelet_kernel_jacobi_2d_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/jacobi-1d/jacobi-1d_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_jacobi-1d_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/2mm/2mm_codelet_init_array_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_2mm_codelet_init_array_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gemver/gemver_codelet_kernel_gemver_4.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gemver_codelet_kernel_gemver_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/cholesky/cholesky_codelet_init_array_3.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_cholesky_codelet_init_array_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/deriche/deriche_codelet_kernel_deriche_5.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_deriche_codelet_kernel_deriche_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gemver/gemver_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gemver_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/correlation/correlation_codelet_kernel_correlation_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_correlation_codelet_kernel_correlation_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/heat-3d/heat-3d_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_heat-3d_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gemver/gemver_codelet_kernel_gemver_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gemver_codelet_kernel_gemver_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gramschmidt/gramschmidt_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gramschmidt_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/cholesky/cholesky_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_cholesky_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/fdtd-2d/fdtd-2d_codelet_kernel_fdtd_2d_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_fdtd-2d_codelet_kernel_fdtd_2d_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/atax/atax_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_atax_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/atax/atax_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_atax_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/covariance/covariance_codelet_kernel_covariance_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_covariance_codelet_kernel_covariance_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/seidel-2d/seidel-2d_codelet_kernel_seidel_2d_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_seidel-2d_codelet_kernel_seidel_2d_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/covariance/covariance_codelet_kernel_covariance_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_covariance_codelet_kernel_covariance_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gemm/gemm_codelet_init_array_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gemm_codelet_init_array_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gesummv/gesummv_codelet_kernel_gesummv_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gesummv_codelet_kernel_gesummv_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gesummv/gesummv_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gesummv_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/ludcmp/ludcmp_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_ludcmp_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/atax/atax_codelet_kernel_atax_3.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_atax_codelet_kernel_atax_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gemm/gemm_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gemm_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/ludcmp/ludcmp_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_ludcmp_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/durbin/durbin_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_durbin_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/adi/adi_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_adi_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gemm/gemm_codelet_kernel_gemm_3.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gemm_codelet_kernel_gemm_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/ludcmp/ludcmp_codelet_init_array_4.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_ludcmp_codelet_init_array_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/3mm/3mm_codelet_kernel_3mm_4.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_3mm_codelet_kernel_3mm_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/covariance/covariance_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_covariance_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/gemm/gemm_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_gemm_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/doitgen/doitgen_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_doitgen_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/ludcmp/ludcmp_codelet_init_array_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_ludcmp_codelet_init_array_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/ludcmp/ludcmp_codelet_kernel_ludcmp_6.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_ludcmp_codelet_kernel_ludcmp_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/syrk/syrk_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_syrk_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/floyd-warshall/floyd-warshall_codelet_kernel_floyd_warshall_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_floyd-warshall_codelet_kernel_floyd_warshall_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/2mm/2mm_codelet_kernel_2mm_5.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_2mm_codelet_kernel_2mm_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/syrk/syrk_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_syrk_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/doitgen/doitgen_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_doitgen_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/2mm/2mm_codelet_kernel_2mm_4.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_2mm_codelet_kernel_2mm_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/ludcmp/ludcmp_codelet_kernel_ludcmp_7.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_ludcmp_codelet_kernel_ludcmp_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/polybench/polybench_codelet_polybench_flush_cache_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_polybench_codelet_polybench_flush_cache_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/floyd-warshall/floyd-warshall_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_floyd-warshall_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/3mm/3mm_codelet_kernel_3mm_5.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_3mm_codelet_kernel_3mm_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/symm/symm_codelet_init_array_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_symm_codelet_init_array_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/symm/symm_codelet_init_array_0.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_symm_codelet_init_array_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/syrk/syrk_codelet_kernel_syrk_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_syrk_codelet_kernel_syrk_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/nussinov/nussinov_codelet_kernel_nussinov_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_nussinov_codelet_kernel_nussinov_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/trmm/trmm_codelet_kernel_trmm_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_trmm_codelet_kernel_trmm_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/ludcmp/ludcmp_codelet_kernel_ludcmp_5.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_ludcmp_codelet_kernel_ludcmp_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/doitgen/doitgen_codelet_kernel_doitgen_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_doitgen_codelet_kernel_doitgen_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/3mm/3mm_codelet_kernel_3mm_6.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_3mm_codelet_kernel_3mm_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/correlation/correlation_codelet_kernel_correlation_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_correlation_codelet_kernel_correlation_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/adi/adi_codelet_kernel_adi_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_adi_codelet_kernel_adi_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/syr2k/syr2k_codelet_kernel_syr2k_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_syr2k_codelet_kernel_syr2k_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/heat-3d/heat-3d_codelet_kernel_heat_3d_1.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_heat-3d_codelet_kernel_heat_3d_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/symm/symm_codelet_kernel_symm_2.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_symm_codelet_kernel_symm_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/ludcmp/ludcmp_codelet_init_array_3.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_ludcmp_codelet_init_array_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/polybench/covariance/covariance_codelet_kernel_covariance_3.c",
+        "input": "basic_loop_corpus/loop_input/polybench/input_covariance_codelet_kernel_covariance_3.c"
+    }
+]

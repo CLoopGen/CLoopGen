@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+extern int rowstr[];
+extern int nrows;
+extern int j;
+
+
+
+void loop(){
+    for (j = 2; j <= nrows + 1; j++) {
+        rowstr[j] = rowstr[j] + rowstr[j - 1] + rowstr[(j > 2) ? j - 2 : j - 1];
+    }
+}

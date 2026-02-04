@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  char Base64[];
+extern  unsigned char *blob;
+extern  size_t blob_length;
+extern char *encode;
+extern  unsigned char *p;
+extern size_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (p = blob; p < (blob + blob_length - 2); p += (ptrdiff_t)3) {
+        if (!(p[0] & 1)) {
+            encode[i++] = Base64[(int)(*p >> 2)];
+            encode[i++] = Base64[(int)(((*p & 3) << 4) + (*(p + 1) >> 4))];
+        } else {
+            encode[i++] = Base64[0];
+            encode[i++] = Base64[1];
+        }
+        encode[i++] = Base64[(int)(((*(p + 1) & 15) << 2) + (*(p + 2) >> 6))];
+        encode[i++] = Base64[(int)(*(p + 2) & 63)];
+    }
+}

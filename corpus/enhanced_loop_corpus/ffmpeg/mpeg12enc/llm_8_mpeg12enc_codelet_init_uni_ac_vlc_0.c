@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct RL_VLC_ELEM {
+    int16_t level;
+    int8_t len;
+    uint8_t run;
+} RL_VLC_ELEM;
+
+typedef struct RLTable {
+    int n;
+    int last;
+    const uint16_t (*table_vlc)[2];
+    const int8_t *table_run;
+    const int8_t *table_level;
+    uint8_t *index_run[2];
+    int8_t *max_level[2];
+    int8_t *max_run[2];
+    RL_VLC_ELEM *rl_vlc[32];
+} RLTable;
+
+extern RLTable *rl;
+extern uint8_t *uni_ac_vlc_len;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < 64; i++) {
+    int level = i - 32;
+    int run;
+    if (!level)
+        continue;
+    for (run = 0; run < 32; run++) {
+        int len, code;
+        int alevel = (level >= 0) ? level : -level;
+        if (alevel > rl->max_level[0][run])
+            code = 111;
+        else
+            code = rl->index_run[0][run] + alevel - 1;
+        if (code < 111) {
+            len = rl->table_vlc[code][1] + 1;
+        } else {
+            len = rl->table_vlc[111][1] + 4;
+            if (alevel < 64)
+                len += 8;
+            else
+                len += 16;
+        }
+        uni_ac_vlc_len[(run * 128 + (i + 64))] = len;
+    }
+}
+}

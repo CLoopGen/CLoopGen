@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef unsigned char png_byte;
+
+typedef png_byte *png_bytep;
+
+extern int shift_start[4];
+extern int shift_dec[4];
+extern png_bytep bp;
+extern size_t i;
+extern unsigned int mask;
+extern size_t row_bytes;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    size_t idx;
+    for (i = 0; i < row_bytes; i++) {
+        int j;
+        unsigned int v, out;
+        idx = i * 2 % row_bytes; // Strided access with modulo to stay in bounds
+        v = bp[idx];
+        out = 0;
+        for (j = shift_start[0]; j > -shift_dec[0]; j -= shift_dec[0]) {
+            if (j > 0)
+                out |= v << j;
+            else
+                out |= (v >> (-j)) & mask;
+        }
+        bp[idx] = (png_byte)(out & 255);
+    }
+}

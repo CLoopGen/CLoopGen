@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t sbox[256];
+extern uint8_t inv_sbox[256];
+extern int i;
+extern int j;
+extern uint8_t log8[256];
+extern uint8_t alog8[512];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Break loop-carried dependencies by splitting computation
+    // First pass: compute j values and store in temporary array
+    uint8_t j_vals[256];
+    for (i = 0; i < 256; i++) {
+        j = i ? alog8[255 - log8[i]] : 0;
+        j ^= (j << 1) ^ (j << 2) ^ (j << 3) ^ (j << 4);
+        j = (j ^ (j >> 8) ^ 99) & 255;
+        j_vals[i] = j;
+    }
+    // Second pass: use precomputed j values, introducing RAW dependency on j_vals
+    for (i = 0; i < 256; i++) {
+        j = j_vals[i];
+        inv_sbox[j] = i;
+        sbox[i] = j;
+    }
+}

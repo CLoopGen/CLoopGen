@@ -1,0 +1,176 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <stdlib.h>
+#include <stddef.h>
+
+enum AVOptionType {
+    AV_OPT_TYPE_FLAGS,
+    AV_OPT_TYPE_INT,
+    AV_OPT_TYPE_INT64,
+    AV_OPT_TYPE_DOUBLE,
+    AV_OPT_TYPE_FLOAT,
+    AV_OPT_TYPE_STRING,
+    AV_OPT_TYPE_RATIONAL,
+    AV_OPT_TYPE_BINARY,
+    AV_OPT_TYPE_DICT,
+    AV_OPT_TYPE_UINT64,
+    AV_OPT_TYPE_CONST,
+    AV_OPT_TYPE_IMAGE_SIZE,
+    AV_OPT_TYPE_PIXEL_FMT,
+    AV_OPT_TYPE_SAMPLE_FMT,
+    AV_OPT_TYPE_VIDEO_RATE,
+    AV_OPT_TYPE_DURATION,
+    AV_OPT_TYPE_COLOR,
+    AV_OPT_TYPE_CHANNEL_LAYOUT,
+    AV_OPT_TYPE_BOOL
+};
+
+typedef struct AVRational {
+    int num;
+    int den;
+} AVRational;
+
+struct AVOption {
+    const char *name;
+    const char *help;
+    int offset;
+    enum AVOptionType type;
+    union {
+        int64_t i64;
+        double dbl;
+        const char *str;
+        AVRational q;
+    } default_val;
+    double min;
+    double max;
+    int flags;
+    const char *unit;
+};
+
+typedef enum {
+    AV_CLASS_CATEGORY_NA = 0,
+    AV_CLASS_CATEGORY_INPUT,
+    AV_CLASS_CATEGORY_OUTPUT,
+    AV_CLASS_CATEGORY_MUXER,
+    AV_CLASS_CATEGORY_DEMUXER,
+    AV_CLASS_CATEGORY_ENCODER,
+    AV_CLASS_CATEGORY_DECODER,
+    AV_CLASS_CATEGORY_FILTER,
+    AV_CLASS_CATEGORY_BITSTREAM_FILTER,
+    AV_CLASS_CATEGORY_SWSCALER,
+    AV_CLASS_CATEGORY_SWRESAMPLER,
+    AV_CLASS_CATEGORY_DEVICE_VIDEO_OUTPUT = 40,
+    AV_CLASS_CATEGORY_DEVICE_VIDEO_INPUT,
+    AV_CLASS_CATEGORY_DEVICE_AUDIO_OUTPUT,
+    AV_CLASS_CATEGORY_DEVICE_AUDIO_INPUT,
+    AV_CLASS_CATEGORY_DEVICE_OUTPUT,
+    AV_CLASS_CATEGORY_DEVICE_INPUT,
+    AV_CLASS_CATEGORY_NB
+} AVClassCategory;
+
+struct AVOptionRanges {
+    int dummy; 
+};
+
+typedef struct AVClass {
+    const char *class_name;
+    const char *(*item_name)(void *);
+    const struct AVOption *option;
+    int version;
+    int log_level_offset_offset;
+    int parent_log_context_offset;
+    void *(*child_next)(void *, void *);
+    const struct AVClass *(*child_class_next)(const struct AVClass *);
+    AVClassCategory category;
+    AVClassCategory (*get_category)(void *);
+    int (*query_ranges)(struct AVOptionRanges **, void *, const char *, int);
+} AVClass;
+
+typedef struct FFTContext {
+    int dummy;
+} FFTContext;
+
+typedef float FFTSample;
+
+typedef struct FFTComplex {
+    FFTSample re;
+    FFTSample im;
+} FFTComplex;
+
+typedef struct AVAudioFifo {
+    int dummy;
+} AVAudioFifo;
+
+typedef struct ShowFreqsContext {
+    const AVClass *class;
+    int w;
+    int h;
+    int mode;
+    int cmode;
+    int fft_size;
+    int fft_bits;
+    int ascale;
+    int fscale;
+    int avg;
+    int win_func;
+    FFTContext *fft;
+    FFTComplex **fft_data;
+    float **avg_data;
+    float *window_func_lut;
+    float overlap;
+    float minamp;
+    int hop_size;
+    int nb_channels;
+    int nb_freq;
+    int win_size;
+    float scale;
+    char *colors;
+    AVAudioFifo *fifo;
+    int64_t pts;
+} ShowFreqsContext;
+
+ShowFreqsContext *s;
+int i;
+
+static const char *dummy_item_name(void *ctx) { return "dummy"; }
+static void *dummy_child_next(void *obj, void *prev) { return NULL; }
+static const AVClass *dummy_child_class_next(const AVClass *prev) { return NULL; }
+static AVClassCategory dummy_get_category(void *ctx) { return AV_CLASS_CATEGORY_NA; }
+static int dummy_query_ranges(struct AVOptionRanges **ranges, void *obj, const char *key, int flag) { return 0; }
+
+static const struct AVOption options[] = {
+    { .name = "win_size", .offset = offsetof(ShowFreqsContext, win_size), .type = AV_OPT_TYPE_INT, .default_val.i64 = 131072 },
+    { NULL }
+};
+
+static const AVClass showfreqs_class = {
+    .class_name         = "showfreqs",
+    .item_name          = dummy_item_name,
+    .option             = options,
+    .version            = 56, // Simulate a valid version without relying on LIBAVUTIL_VERSION_INT
+    .log_level_offset_offset = 0,
+    .parent_log_context_offset = 0,
+    .child_next         = dummy_child_next,
+    .child_class_next   = dummy_child_class_next,
+    .category           = AV_CLASS_CATEGORY_FILTER,
+    .get_category       = dummy_get_category,
+    .query_ranges       = dummy_query_ranges
+};
+
+void init_vars() {
+    s = (ShowFreqsContext *)calloc(1, sizeof(ShowFreqsContext));
+    if (!s) exit(1);
+
+    s->class = &showfreqs_class;
+    s->win_size = 131072; 
+
+    s->window_func_lut = (float *)calloc(s->win_size, sizeof(float));
+    if (!s->window_func_lut) exit(1);
+
+    for (int j = 0; j < s->win_size; j++) {
+        s->window_func_lut[j] = (float)(j % 1000) / 1000.0f;
+    }
+
+    s->scale = 0.0f;
+    i = 0;
+}

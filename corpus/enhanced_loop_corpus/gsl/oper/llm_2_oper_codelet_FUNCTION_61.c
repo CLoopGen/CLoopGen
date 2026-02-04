@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  size_t M;
+extern  size_t N;
+extern size_t i;
+extern size_t j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Consecutive memory access pattern using a single loop with stride emulation
+    size_t idx = 0;
+    size_t total_elements = M * N;
+    for (idx = 0; idx < total_elements; idx++) {
+        // Access pattern: sequential, consecutive memory layout assumed
+        // This simulates row-major order traversal as if operating on a flat array
+        __asm__ volatile("" : "+r"(idx) : : "memory"); // Prevent optimization, no actual memory op
+    }
+}

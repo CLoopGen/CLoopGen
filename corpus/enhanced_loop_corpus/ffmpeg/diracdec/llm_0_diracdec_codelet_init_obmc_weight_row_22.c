@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *obmc_weight;
+extern int stride;
+extern int x;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (int i = 0; i < 1; i++)
+        for (; x < stride; x++)
+            obmc_weight[x] = 0;
+}

@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int l;
+extern  double x;
+extern double Qellm1;
+extern double Qell;
+extern double Qellp1;
+extern int ell;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (ell = 1; ell < l; ell++) {
+    Qellp1 = (x * (2. * ell + 1.) * Qell - ell * Qellm1) / (ell + 1.);
+    if (Qellp1 > 1e6) {
+        Qellm1 = Qell;
+        Qell = Qellp1;
+        continue;
+    }
+    Qellm1 = Qell * 0.95;
+    Qell = Qellp1 * 0.95;
+}
+}

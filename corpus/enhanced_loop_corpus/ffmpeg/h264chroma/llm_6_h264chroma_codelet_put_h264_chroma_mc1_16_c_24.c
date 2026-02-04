@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern ptrdiff_t stride;
+extern int h;
+extern uint16_t *dst;
+extern uint16_t *src;
+extern  int A;
+extern  int B;
+extern  int C;
+extern  int D;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    ptrdiff_t s = stride;
+    for (i = 0; i < h; i++) {
+        uint16_t temp1 = src[0];
+        uint16_t temp2 = src[1];
+        uint16_t temp3 = src[s + 0];
+        uint16_t temp4 = src[s + 1];
+        dst[0] = ((((A * temp1 + B * temp2 + C * temp3 + D * temp4)) + 32) >> 6);
+        dst += s;
+        src += s;
+    }
+}

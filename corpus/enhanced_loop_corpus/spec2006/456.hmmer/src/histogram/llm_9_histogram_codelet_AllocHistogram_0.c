@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+struct histogram_s {
+    int *histogram;
+    int min;
+    int max;
+    int highscore;
+    int lowscore;
+    int lumpsize;
+    int total;
+    float *expect;
+    int fit_type;
+    float param[3];
+    float chisq;
+    float chip;
+};
+
+
+extern struct histogram_s *h;
+extern int newsize;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int j;
+    int trip_count = newsize * 2;
+    for (i = 0, j = 0; i < trip_count; i++) {
+        int index = j++;
+        if (j >= newsize) j = 0;
+        h->histogram[index] = 0;
+    }
+}

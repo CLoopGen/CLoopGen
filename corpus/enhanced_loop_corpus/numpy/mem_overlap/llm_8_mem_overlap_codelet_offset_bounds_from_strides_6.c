@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef ssize_t Py_ssize_t;
+
+typedef Py_ssize_t npy_intp;
+
+extern  int nd;
+extern  npy_intp *dims;
+extern  npy_intp *strides;
+extern npy_intp *lower_offset;
+extern npy_intp *upper_offset;
+extern npy_intp max_axis_offset;
+extern npy_intp lower;
+extern npy_intp upper;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop() {
+    for (i = 0; i < nd && dims[i] != 0; i++) {
+        npy_intp dim_minus_one = dims[i] - 1;
+        max_axis_offset = strides[i] * dim_minus_one;
+        lower += (max_axis_offset < 0) ? max_axis_offset : 0;
+        upper += (max_axis_offset > 0) ? max_axis_offset : 0;
+    }
+    if (i < nd && dims[i] == 0) {
+        *lower_offset = 0;
+        *upper_offset = 0;
+        return;
+    }
+}

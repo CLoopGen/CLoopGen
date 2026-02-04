@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern ptrdiff_t top_linesize;
+extern ptrdiff_t bottom_linesize;
+extern ptrdiff_t dst_linesize;
+extern ptrdiff_t width;
+extern ptrdiff_t height;
+extern  uint16_t *top;
+extern  uint16_t *bottom;
+extern uint16_t *dst;
+extern double opacity;
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Strided memory access: process every 2nd element forward, then backward to cover all
+    for (i = 0; i < height; i++) {
+        // Forward pass: even indices
+        for (j = 0; j < width; j += 2) {
+            dst[j] = top[j] + (((bottom[j] == 65535) ? bottom[j] : 
+                               ((65535) > ((top[j] * top[j] / (65535 - bottom[j]))) ? 
+                                (top[j] * top[j] / (65535 - bottom[j])) : (65535))) - top[j]) * opacity;
+        }
+        // Backward pass: odd indices
+        for (j = width - (width % 2 == 0 ? 1 : 2); j >= 1; j -= 2) {
+            dst[j-1] = top[j-1] + (((bottom[j-1] == 65535) ? bottom[j-1] : 
+                                   ((65535) > ((top[j-1] * top[j-1] / (65535 - bottom[j-1]))) ? 
+                                    (top[j-1] * top[j-1] / (65535 - bottom[j-1])) : (65535))) - top[j-1]) * opacity;
+        }
+        dst += dst_linesize;
+        top += top_linesize;
+        bottom += bottom_linesize;
+    }
+}

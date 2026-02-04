@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int dims_count;
+extern  float *src;
+extern float *dst;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (int i = 0; i < dims_count; ++i) {
+        dst[i] = src[i];
+        if (dst[i] < 0) {
+            dst[i] = -dst[i];
+        }
+    }
+}

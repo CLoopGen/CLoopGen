@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct size_dist_entry {
+    unsigned long long size;
+    unsigned long long count;
+} size_dist_entry;
+
+typedef struct size_dist {
+    unsigned long long total_count;
+    unsigned long long total_size;
+    unsigned long long max_size;
+    size_dist_entry *size_dist;
+} size_dist;
+
+extern size_dist *dist;
+extern unsigned long long size;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int k = 0;
+    for (j = 0; dist->size_dist[k].size && size > dist->size_dist[k].size; j++, k++) {
+        // Introduce a WAW dependency on j via an intermediate index k
+        // Loop-carried dependence on k is now explicit, decoupling index update from condition
+    }
+}

@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  char *s;
+extern size_t len;
+extern size_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided memory access (stride of 2)
+    for (i = 0; i < len && s[i]; i += 2) {
+        // Dummy access to maintain correctness, but primary increment is strided
+        if (i + 1 < len && s[i + 1]) {
+            // Peek next odd index without affecting control flow directly
+        }
+    }
+    // Fix final value of i to match original semantics (first index where s[i] == 0 or i == len)
+    for (; i < len && s[i]; i++)
+        ;
+}

@@ -1,0 +1,118 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    u_int size;
+    u_int max_size;
+    u_int *pe;
+} PERM;
+
+extern PERM *order;
+extern double *x_ve;
+extern double tmp;
+extern double v;
+extern int i;
+extern int j;
+extern int l;
+extern int r;
+extern int tmp_i;
+extern int stack[60];
+extern int sp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (; r > l; ) {
+        v = x_ve[r];
+        i = l;
+        j = r - 1;
+        for (; i <= j; ) {
+            if (x_ve[i] < v) {
+                i++;
+            } else if (x_ve[j] > v) {
+                j--;
+            } else {
+                if (i < j) {
+                    tmp = x_ve[i];
+                    x_ve[i] = x_ve[j];
+                    x_ve[j] = tmp;
+                    if (order != ((PERM *)((void *)0))) {
+                        tmp_i = order->pe[i];
+                        order->pe[i] = order->pe[j];
+                        order->pe[j] = tmp_i;
+                    }
+                }
+                i++;
+                j--;
+            }
+        }
+        tmp = x_ve[i];
+        x_ve[i] = x_ve[r];
+        x_ve[r] = tmp;
+        if (order != ((PERM *)((void *)0))) {
+            tmp_i = order->pe[i];
+            order->pe[i] = order->pe[r];
+            order->pe[r] = tmp_i;
+        }
+        if (i - l > r - i) {
+            stack[sp++] = l;
+            stack[sp++] = i - 1;
+            l = i + 1;
+        } else {
+            stack[sp++] = i + 1;
+            stack[sp++] = r;
+            r = i - 1;
+        }
+    }
+    for (; sp > 0; ) {
+        l = stack[--sp];
+        r = stack[--sp];
+        for (; r > l; ) {
+            v = x_ve[r];
+            i = l;
+            j = r - 1;
+            for (; i <= j; ) {
+                if (x_ve[i] < v) {
+                    i++;
+                } else if (x_ve[j] > v) {
+                    j--;
+                } else {
+                    if (i < j) {
+                        tmp = x_ve[i];
+                        x_ve[i] = x_ve[j];
+                        x_ve[j] = tmp;
+                        if (order != ((PERM *)((void *)0))) {
+                            tmp_i = order->pe[i];
+                            order->pe[i] = order->pe[j];
+                            order->pe[j] = tmp_i;
+                        }
+                    }
+                    i++;
+                    j--;
+                }
+            }
+            tmp = x_ve[i];
+            x_ve[i] = x_ve[r];
+            x_ve[r] = tmp;
+            if (order != ((PERM *)((void *)0))) {
+                tmp_i = order->pe[i];
+                order->pe[i] = order->pe[r];
+                order->pe[r] = tmp_i;
+            }
+            if (i - l > r - i) {
+                stack[sp++] = l;
+                stack[sp++] = i - 1;
+                l = i + 1;
+            } else {
+                stack[sp++] = i + 1;
+                stack[sp++] = r;
+                r = i - 1;
+            }
+        }
+    }
+}

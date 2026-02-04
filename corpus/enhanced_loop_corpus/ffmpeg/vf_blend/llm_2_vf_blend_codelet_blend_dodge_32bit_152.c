@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern ptrdiff_t top_linesize;
+extern ptrdiff_t bottom_linesize;
+extern ptrdiff_t dst_linesize;
+extern ptrdiff_t width;
+extern ptrdiff_t height;
+extern  float *top;
+extern  float *bottom;
+extern float *dst;
+extern double opacity;
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided Memory Access Pattern
+    ptrdiff_t stride = 2;
+    for (i = 0; i < height; i++) {
+        for (j = 0; j < width; j += stride) {
+            // Process elements with a stride of 2, ensuring bounds
+            if (j + 1 < width) {
+                dst[j] = top[j] + (((((top[j]) >= 1.) ? (top[j]) : ((1.) > (((bottom[j]) / (1. - (top[j])))) ? (((bottom[j]) / (1. - (top[j])))) : (1.)))) - top[j]) * opacity;
+                dst[j + 1] = top[j + 1] + (((((top[j + 1]) >= 1.) ? (top[j + 1]) : ((1.) > (((bottom[j + 1]) / (1. - (top[j + 1])))) ? (((bottom[j + 1]) / (1. - (top[j + 1])))) : (1.)))) - top[j + 1]) * opacity;
+            } else {
+                dst[j] = top[j] + (((((top[j]) >= 1.) ? (top[j]) : ((1.) > (((bottom[j]) / (1. - (top[j])))) ? (((bottom[j]) / (1. - (top[j])))) : (1.)))) - top[j]) * opacity;
+            }
+        }
+        dst += dst_linesize;
+        top += top_linesize;
+        bottom += bottom_linesize;
+    }
+}

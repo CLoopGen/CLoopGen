@@ -1,0 +1,113 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef int int32;
+
+typedef int32 s3pid_t;
+
+typedef struct hash_entry_s {
+    const char *key;
+    int32 len;
+    int32 val;
+    struct hash_entry_s *next;
+} hash_entry_t;
+
+typedef unsigned char uint8;
+
+typedef struct {
+    hash_entry_t *table;
+    int32 size;
+    uint8 nocase;
+} hash_table_t;
+
+typedef struct {
+    char *name;
+    int32 filler;
+} ciphone_t;
+
+typedef s3pid_t s3ssid_t;
+
+typedef int32 s3tmatid_t;
+
+typedef char int8;
+
+typedef int8 s3cipid_t;
+
+typedef enum {
+    WORD_POSN_BEGIN = 0,
+    WORD_POSN_END = 1,
+    WORD_POSN_SINGLE = 2,
+    WORD_POSN_INTERNAL = 3,
+    WORD_POSN_UNDEFINED = 4
+} word_posn_t;
+
+typedef struct {
+    s3ssid_t ssid;
+    s3tmatid_t tmat;
+    s3cipid_t ci;
+    s3cipid_t lc;
+    s3cipid_t rc;
+    word_posn_t wpos;
+} phone_t;
+
+typedef short int16;
+
+typedef int16 s3senid_t;
+
+typedef struct ph_rc_s {
+    s3cipid_t rc;
+    s3pid_t pid;
+    struct ph_rc_s *next;
+} ph_rc_t;
+
+typedef struct ph_lc_s {
+    s3cipid_t lc;
+    ph_rc_t *rclist;
+    struct ph_lc_s *next;
+} ph_lc_t;
+
+typedef struct {
+    int32 n_ciphone;
+    int32 n_phone;
+    int32 n_emit_state;
+    int32 n_ci_sen;
+    int32 n_sen;
+    int32 n_tmat;
+    hash_table_t *ciphone_ht;
+    ciphone_t *ciphone;
+    phone_t *phone;
+    s3senid_t **sseq;
+    int32 n_sseq;
+    s3senid_t *cd2cisen;
+    s3cipid_t *sen2cimap;
+    int32 *ciphone2n_cd_sen;
+    s3cipid_t sil;
+    ph_lc_t ***wpos_ci_lclist;
+} mdef_t;
+
+int32 n;
+s3pid_t p;
+mdef_t *m;
+int32 *cdsen_start;
+int32 *cdsen_end;
+
+void init_vars() {
+    const int approx_data_size = 64 * 1024 * 1024; // ~64MB for target runtime
+    m = (mdef_t*)calloc(1, sizeof(mdef_t));
+    if (!m) return;
+
+    m->n_ciphone = approx_data_size / sizeof(int32); // ensures total memory ~64MB
+    m->ciphone2n_cd_sen = (int32*)calloc(m->n_ciphone, sizeof(int32));
+    cdsen_start = (int32*)calloc(m->n_ciphone, sizeof(int32));
+    cdsen_end = (int32*)calloc(m->n_ciphone, sizeof(int32));
+
+    if (!m->ciphone2n_cd_sen || !cdsen_start || !cdsen_end) return;
+
+    for (int i = 0; i < m->n_ciphone; i++) {
+        cdsen_start[i] = (i % 7 == 0) ? 0 : (i * 3 + 10); // some zero, others positive
+        cdsen_end[i] = cdsen_start[i] + (i % 5); // ensure end >= start when start > 0
+    }
+
+    n = 0;
+}

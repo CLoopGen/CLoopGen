@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  size_t rank;
+extern long double **hp_matrix;
+extern ssize_t *columns;
+extern ssize_t i;
+extern ssize_t j;
+extern ssize_t *rows;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (j = (ssize_t)rank - 1; j >= 0; j -= 2) {
+        int need_swap_1 = (j >= 0 && columns[j] != rows[j]);
+        int need_swap_2 = (j - 1 >= 0 && columns[j - 1] != rows[j - 1]);
+
+        if (need_swap_1 || need_swap_2) {
+            for (i = 0; i < (ssize_t)rank; i++) {
+                if (need_swap_1) {
+                    long double temp = hp_matrix[i][columns[j]];
+                    hp_matrix[i][columns[j]] = hp_matrix[i][rows[j]];
+                    hp_matrix[i][rows[j]] = temp;
+                }
+                if (need_swap_2) {
+                    long double temp = hp_matrix[i][columns[j - 1]];
+                    hp_matrix[i][columns[j - 1]] = hp_matrix[i][rows[j - 1]];
+                    hp_matrix[i][rows[j - 1]] = temp;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef short IDWTELEM;
+
+extern IDWTELEM *dst;
+extern uint8_t *dst8;
+extern  uint8_t *obmc;
+extern int b_w;
+extern int b_h;
+extern int dst_stride;
+extern int src_stride;
+extern int obmc_stride;
+extern int add;
+extern uint8_t *block[4];
+extern int x;
+extern int y;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (y = 0; y < b_h; y++) {
+    const uint8_t *obmc1 = obmc + y * obmc_stride;
+    const uint8_t *obmc2 = obmc1 + (obmc_stride >> 1);
+    const uint8_t *obmc3 = obmc1 + obmc_stride * (obmc_stride >> 1);
+    const uint8_t *obmc4 = obmc3 + (obmc_stride >> 1);
+    for (x = 0; x < b_w; x += 2) {
+        int v1 = obmc1[x] * block[3][x + y * src_stride] + obmc2[x] * block[2][x + y * src_stride];
+        int v2 = obmc3[x] * block[1][x + y * src_stride] + obmc4[x] * block[0][x + y * src_stride];
+        int v = v1 + v2;
+        v <<= 8 - 8;
+        if (4 != 8) {
+            v >>= 8 - 4;
+        }
+        if (add) {
+            v += dst[x + y * dst_stride];
+            v = (v + (1 << (4 - 1))) >> 4;
+            if (v & (~255))
+                v = ~(v >> 31);
+            dst8[x + y * src_stride] = v;
+        } else {
+            dst[x + y * dst_stride] -= v;
+        }
+        if (x + 1 < b_w) {
+            int v1_next = obmc1[x+1] * block[3][x+1 + y * src_stride] + obmc2[x+1] * block[2][x+1 + y * src_stride];
+            int v2_next = obmc3[x+1] * block[1][x+1 + y * src_stride] + obmc4[x+1] * block[0][x+1 + y * src_stride];
+            int v_next = v1_next + v2_next;
+            v_next <<= 8 - 8;
+            if (4 != 8) {
+                v_next >>= 8 - 4;
+            }
+            if (add) {
+                v_next += dst[x+1 + y * dst_stride];
+                v_next = (v_next + (1 << (4 - 1))) >> 4;
+                if (v_next & (~255))
+                    v_next = ~(v_next >> 31);
+                dst8[x+1 + y * src_stride] = v_next;
+            } else {
+                dst[x+1 + y * dst_stride] -= v_next;
+            }
+        }
+    }
+}
+}

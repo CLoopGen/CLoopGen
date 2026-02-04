@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+struct move_data {
+    float value;
+    float final_value;
+    float additional_ko_value;
+    float territorial_value;
+    float strategical_value;
+    float maxpos_shape;
+    float maxneg_shape;
+    int numpos_shape;
+    int numneg_shape;
+    float followup_value;
+    float influence_followup_value;
+    float reverse_followup_value;
+    float secondary_value;
+    float min_value;
+    float max_value;
+    float min_territory;
+    float max_territory;
+    float randomness_scaling;
+    int reason[120];
+    int move_safety;
+    int worthwhile_threat;
+    float random_number;
+};
+
+
+struct move_reason {
+    int type;
+    int what;
+    int status;
+};
+
+
+extern struct move_data move[400];
+extern struct move_reason move_reasons[1000];
+extern int pos;
+extern int max_strings;
+extern int strings[];
+extern int k;
+extern int num_strings;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int temp_strings[400];
+    int temp_count = 0;
+    for (k = 0; k < 120; k++) {
+        int r = move[pos].reason[k];
+        if (r < 0)
+            break;
+        if (move_reasons[r].type == (8 | 1)) {
+            temp_strings[temp_count++] = move_reasons[r].what;
+        }
+        if (temp_count == max_strings)
+            break;
+    }
+    // Introduce WAW dependency by writing to shared num_strings after loop
+    for (int i = 0; i < temp_count; i++) {
+        strings[i] = temp_strings[i];
+    }
+    num_strings = temp_count;
+}

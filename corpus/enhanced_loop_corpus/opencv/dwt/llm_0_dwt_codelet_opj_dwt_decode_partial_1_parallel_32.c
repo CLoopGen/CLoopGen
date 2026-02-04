@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef int32_t OPJ_INT32;
+
+typedef uint32_t OPJ_UINT32;
+
+extern OPJ_INT32 *a;
+extern OPJ_INT32 sn;
+extern OPJ_INT32 win_h_x1;
+extern OPJ_INT32 i;
+extern OPJ_UINT32 off;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (; i < win_h_x1; i++) {
+        off = 0;
+        a[(1 + (OPJ_UINT32)(i) * 2) * 4 + off] += (((i) < 0 ? a[(OPJ_UINT32)(0) * 2 * 4 + off] : ((i) >= sn ? a[(OPJ_UINT32)(sn - 1) * 2 * 4 + off] : a[(OPJ_UINT32)(i) * 2 * 4 + off])) + ((i + 1) < 0 ? a[(OPJ_UINT32)(0) * 2 * 4 + off] : ((i + 1) >= sn ? a[(OPJ_UINT32)(sn - 1) * 2 * 4 + off] : a[(OPJ_UINT32)(i + 1) * 2 * 4 + off]))) >> 1;
+        off = 1;
+        a[(1 + (OPJ_UINT32)(i) * 2) * 4 + off] += (((i) < 0 ? a[(OPJ_UINT32)(0) * 2 * 4 + off] : ((i) >= sn ? a[(OPJ_UINT32)(sn - 1) * 2 * 4 + off] : a[(OPJ_UINT32)(i) * 2 * 4 + off])) + ((i + 1) < 0 ? a[(OPJ_UINT32)(0) * 2 * 4 + off] : ((i + 1) >= sn ? a[(OPJ_UINT32)(sn - 1) * 2 * 4 + off] : a[(OPJ_UINT32)(i + 1) * 2 * 4 + off]))) >> 1;
+        off = 2;
+        a[(1 + (OPJ_UINT32)(i) * 2) * 4 + off] += (((i) < 0 ? a[(OPJ_UINT32)(0) * 2 * 4 + off] : ((i) >= sn ? a[(OPJ_UINT32)(sn - 1) * 2 * 4 + off] : a[(OPJ_UINT32)(i) * 2 * 4 + off])) + ((i + 1) < 0 ? a[(OPJ_UINT32)(0) * 2 * 4 + off] : ((i + 1) >= sn ? a[(OPJ_UINT32)(sn - 1) * 2 * 4 + off] : a[(OPJ_UINT32)(i + 1) * 2 * 4 + off]))) >> 1;
+        off = 3;
+        a[(1 + (OPJ_UINT32)(i) * 2) * 4 + off] += (((i) < 0 ? a[(OPJ_UINT32)(0) * 2 * 4 + off] : ((i) >= sn ? a[(OPJ_UINT32)(sn - 1) * 2 * 4 + off] : a[(OPJ_UINT32)(i) * 2 * 4 + off])) + ((i + 1) < 0 ? a[(OPJ_UINT32)(0) * 2 * 4 + off] : ((i + 1) >= sn ? a[(OPJ_UINT32)(sn - 1) * 2 * 4 + off] : a[(OPJ_UINT32)(i + 1) * 2 * 4 + off]))) >> 1;
+    }
+}

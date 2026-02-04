@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef struct {
+    double real;
+    double imag;
+} complex;
+
+typedef struct {
+    complex e[3][3];
+} su3_matrix;
+
+extern su3_matrix *a;
+extern su3_matrix *b;
+extern su3_matrix *c;
+extern int i;
+extern int j;
+extern double t;
+extern double ar;
+extern double ai;
+extern double br;
+extern double bi;
+extern double cr;
+extern double ci;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < 3; i++) {
+    for (j = 0; j < 3; j++) {
+        ar = a->e[i][0].real;
+        ai = a->e[i][0].imag;
+        br = b->e[0][j].real;
+        bi = b->e[0][j].imag;
+        cr = ar * br - ai * bi;
+        ci = ar * bi + ai * br;
+
+        for (int k = 1; k < 3; k++) {
+            ar = a->e[i][k].real;
+            ai = a->e[i][k].imag;
+            br = b->e[k][j].real;
+            bi = b->e[k][j].imag;
+            cr += ar * br - ai * bi;
+            ci += ar * bi + ai * br;
+        }
+
+        c->e[i][j].real = cr;
+        c->e[i][j].imag = ci;
+    }
+}
+}

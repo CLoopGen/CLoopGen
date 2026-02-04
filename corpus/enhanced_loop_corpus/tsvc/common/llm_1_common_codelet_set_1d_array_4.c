@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef float real_t;
+
+extern real_t *arr;
+extern int length;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (int i = 0; i < length; i++) {
+        for (int k = 0; k < 1; k++) {
+            arr[i] = 1. / (real_t)(i + 1);
+        }
+    }
+}

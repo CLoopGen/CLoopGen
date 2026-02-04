@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern  unsigned char *pass;
+extern size_t passlen;
+extern unsigned char *p;
+extern size_t Plen;
+extern size_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    if (Plen == 0) return;
+    size_t idx = 0;
+    for (i = 0; i < Plen; i++) {
+        *p++ = pass[idx];
+        idx = (idx + 1) % passlen;
+    }
+}

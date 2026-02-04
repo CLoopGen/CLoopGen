@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int width;
+extern int i;
+extern int16_t *b0;
+extern int16_t *b1;
+extern int16_t *b2;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < width; i++) {
+    int sum0 = (int)(b0[i] + (unsigned int)b2[i]);
+    int product = 113 * sum0;
+    int adjusted = (product + 64) >> 7;
+    b1[i] = (unsigned int)(b1[i]) - adjusted;
+    b1[i] = (b1[i] > 0) ? b1[i] : 0; // Clamp to non-negative
+}
+}

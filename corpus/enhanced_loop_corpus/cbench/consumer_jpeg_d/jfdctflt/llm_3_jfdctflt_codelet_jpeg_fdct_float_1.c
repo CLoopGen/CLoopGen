@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern float tmp0;
+extern float tmp1;
+extern float tmp2;
+extern float tmp3;
+extern float tmp4;
+extern float tmp5;
+extern float tmp6;
+extern float tmp7;
+extern float tmp10;
+extern float tmp11;
+extern float tmp12;
+extern float tmp13;
+extern float z1;
+extern float z2;
+extern float z3;
+extern float z4;
+extern float z5;
+extern float z11;
+extern float z13;
+extern float *dataptr;
+extern int ctr;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop() {
+    // Consecutive memory access using an index array to simulate indirect access pattern
+    int indices[8] = {0, 8, 16, 24, 32, 40, 48, 56}; // Simulate non-consecutive physical spacing accessed indirectly
+    for (ctr = 8 - 1; ctr >= 0; ctr--) {
+        float *ptr = dataptr + indices[ctr]; // Indirect access via lookup table
+        tmp0 = ptr[0] + ptr[7];
+        tmp7 = ptr[0] - ptr[7];
+        tmp1 = ptr[1] + ptr[6];
+        tmp6 = ptr[1] - ptr[6];
+        tmp2 = ptr[2] + ptr[5];
+        tmp5 = ptr[2] - ptr[5];
+        tmp3 = ptr[3] + ptr[4];
+        tmp4 = ptr[3] - ptr[4];
+        tmp10 = tmp0 + tmp3;
+        tmp13 = tmp0 - tmp3;
+        tmp11 = tmp1 + tmp2;
+        tmp12 = tmp1 - tmp2;
+        ptr[0] = tmp10 + tmp11;
+        ptr[4] = tmp10 - tmp11;
+        z1 = (tmp12 + tmp13) * ((float)0.70710678100000002);
+        ptr[2] = tmp13 + z1;
+        ptr[6] = tmp13 - z1;
+        tmp10 = tmp4 + tmp5;
+        tmp11 = tmp5 + tmp6;
+        tmp12 = tmp6 + tmp7;
+        z5 = (tmp10 - tmp12) * ((float)0.38268343300000002);
+        z2 = ((float)0.54119609999999996) * tmp10 + z5;
+        z4 = ((float)1.3065629649999999) * tmp12 + z5;
+        z3 = tmp11 * ((float)0.70710678100000002);
+        z11 = tmp7 + z3;
+        z13 = tmp7 - z3;
+        ptr[5] = z13 + z2;
+        ptr[3] = z13 - z2;
+        ptr[1] = z11 + z4;
+        ptr[7] = z11 - z4;
+    }
+}

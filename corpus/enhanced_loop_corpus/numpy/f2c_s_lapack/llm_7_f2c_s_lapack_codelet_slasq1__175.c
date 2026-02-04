@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef float real;
+
+typedef int integer;
+
+typedef double doublereal;
+
+extern real *d__;
+extern real *e;
+extern integer i__1;
+extern real r__1;
+extern real r__2;
+extern real r__3;
+extern integer i__;
+extern real sigmx;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i__ = 1; i__ <= i__1; ++i__) {
+    d__[i__] = (r__1 = d__[i__], (doublereal)((r__1) >= 0 ? (r__1) : -(r__1)));
+}
+real temp_sigmx = sigmx;
+for (i__ = 1; i__ <= i__1; ++i__) {
+    r__2 = temp_sigmx;
+    r__3 = (r__1 = e[i__], (doublereal)((r__1) >= 0 ? (r__1) : -(r__1)));
+    temp_sigmx = (doublereal)((r__2) >= (r__3) ? (r__2) : (r__3));
+}
+sigmx = temp_sigmx;
+}

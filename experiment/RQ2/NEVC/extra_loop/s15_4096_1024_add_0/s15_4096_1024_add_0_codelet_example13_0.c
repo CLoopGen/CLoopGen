@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+extern int A[][1024];
+extern int B[][1024];
+extern int *out;
+extern int i;
+extern int j;
+
+void loop(){
+for (i = 0; i < 4096; i++) {
+    int add = 0;
+    for (j = 0; j < 1024; j += 8) {
+        add += (A[i][j] + B[i][j]);
+    }
+    out[i] = add;
+}
+
+}

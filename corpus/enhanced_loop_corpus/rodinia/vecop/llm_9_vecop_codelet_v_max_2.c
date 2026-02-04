@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    u_int dim;
+    u_int max_dim;
+    double *ve;
+} VEC;
+
+extern VEC *x;
+extern int i;
+extern int i_max;
+extern double max_val;
+extern double tmp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    max_val = x->ve[0];
+    i_max = 0;
+    for (i = 1; i < x->dim && i < 100; i++) {
+        tmp = x->ve[i];
+        if (tmp > max_val) {
+            max_val = tmp;
+            i_max = i;
+        }
+        tmp = x->ve[i] * x->ve[i] - 3.0 * x->ve[i] + 2.0;
+        if (tmp < 0.0) {
+            tmp = -tmp;
+        }
+    }
+}

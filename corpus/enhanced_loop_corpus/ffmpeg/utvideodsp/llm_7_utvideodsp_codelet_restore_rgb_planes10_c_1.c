@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint16_t *src_r;
+extern uint16_t *src_g;
+extern uint16_t *src_b;
+extern ptrdiff_t linesize_r;
+extern ptrdiff_t linesize_g;
+extern ptrdiff_t linesize_b;
+extern int width;
+extern int height;
+extern int r;
+extern int g;
+extern int b;
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int j, i;
+    for (j = 0; j < height; j++) {
+        // Create loop-carried dependence by accumulating a running value
+        // that affects subsequent iterations (introduces loop-carried RAW)
+        int acc = 0;
+        for (i = 0; i < width; i++) {
+            r = src_r[i] + acc;  // RAW: current use depends on previous 'acc'
+            g = src_g[i];
+            b = src_b[i];
+            acc = (r + g) & 1023;  // WAW: 'acc' overwritten, carried to next iteration
+            src_r[i] = (r + g - 512) & 1023;
+            src_b[i] = (b + g - 512) & 1023;
+        }
+        src_r += linesize_r;
+        src_g += linesize_g;
+        src_b += linesize_b;
+    }
+}

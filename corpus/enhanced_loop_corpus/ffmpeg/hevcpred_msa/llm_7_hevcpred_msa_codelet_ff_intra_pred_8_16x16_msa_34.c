@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+union __attribute__((packed)) __attribute__((may_alias)) unaligned_32 {
+    uint32_t l;
+};
+
+
+extern int i;
+extern uint8_t *left;
+extern int bottom_left_size;
+extern uint32_t pix;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    uint32_t prev_value = pix;
+    for (i = 0; i < (16 - bottom_left_size); i += 4) {
+        uint8_t *addr = left + 16 + bottom_left_size + i;
+        uint32_t current = prev_value + ((i > 0) ? ((((union unaligned_32 *)(addr - 4))->l)) : 0);
+        ((((union unaligned_32 *)addr)->l) = current);
+        prev_value = current; // Introduce WAW and RAW loop-carried dependency
+    }
+}

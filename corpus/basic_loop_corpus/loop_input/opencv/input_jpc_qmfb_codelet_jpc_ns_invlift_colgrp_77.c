@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <stdlib.h>
+#include <stddef.h>
+#include <time.h>
+
+typedef int_fast32_t jpc_fix_t;
+typedef int_fast64_t jpc_fix_big_t;
+
+int stride;
+jpc_fix_t *lptr2;
+jpc_fix_t *hptr2;
+int i;
+
+static jpc_fix_t *lptr2_data;
+static jpc_fix_t *hptr2_data;
+static size_t data_size;
+
+void init_vars() {
+    const size_t target_bytes = 128 * 1024 * 1024; 
+    const size_t element_size = sizeof(jpc_fix_t);
+    data_size = target_bytes / (2 * element_size); 
+
+    if (data_size < 16) data_size = 16;
+
+    lptr2_data = aligned_alloc(32, data_size * sizeof(jpc_fix_t));
+    hptr2_data = aligned_alloc(32, data_size * sizeof(jpc_fix_t));
+
+    if (!lptr2_data || !hptr2_data) {
+        fprintf(stderr, "Allocation failed\n");
+        exit(1);
+    }
+
+    for (size_t idx = 0; idx < data_size; ++idx) {
+        lptr2_data[idx] = (jpc_fix_t)(idx & 0x7FFF);
+        hptr2_data[idx] = (jpc_fix_t)((idx + 1) * 3);
+    }
+
+    stride = 1;
+    lptr2 = lptr2_data;
+    hptr2 = hptr2_data;
+    i = 0;
+}

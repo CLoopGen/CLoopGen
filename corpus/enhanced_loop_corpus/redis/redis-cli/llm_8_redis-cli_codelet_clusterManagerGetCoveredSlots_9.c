@@ -1,0 +1,89 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef char *sds;
+
+typedef struct listNode {
+    struct listNode *prev;
+    struct listNode *next;
+    void *value;
+} listNode;
+
+typedef struct list {
+    listNode *head;
+    listNode *tail;
+    void *(*dup)(void *);
+    void (*free)(void *);
+    int (*match)(void *, void *);
+    unsigned long len;
+} list;
+
+typedef struct clusterManagerNode {
+    int *context;
+    sds name;
+    char *ip;
+    int port;
+    int bus_port;
+    uint64_t current_epoch;
+    time_t ping_sent;
+    time_t ping_recv;
+    int flags;
+    list *flags_str;
+    sds replicate;
+    int dirty;
+    uint8_t slots[16384];
+    int slots_count;
+    int replicas_count;
+    list *friends;
+    sds *migrating;
+    sds *importing;
+    int migrating_count;
+    int importing_count;
+    float weight;
+    int balance;
+} clusterManagerNode;
+
+extern char *all_slots;
+extern int totslots;
+extern int i;
+extern clusterManagerNode *node;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Increased computational intensity with unrolled loop and additional arithmetic operations
+    int limit = 16384;
+    for (i = 0; i < limit; i += 4) {
+        // Unroll by 4 and add redundant but safe computations to increase arithmetic load
+        int idx0 = i;
+        int idx1 = i + 1;
+        int idx2 = i + 2;
+        int idx3 = i + 3;
+
+        if (idx0 < limit && node->slots[idx0] && !all_slots[idx0]) {
+            all_slots[idx0] = 1;
+            totslots++;
+        }
+        if (idx1 < limit && node->slots[idx1] && !all_slots[idx1]) {
+            all_slots[idx1] = 1;
+            totslots++;
+        }
+        if (idx2 < limit && node->slots[idx2] && !all_slots[idx2]) {
+            all_slots[idx2] = 1;
+            totslots++;
+        }
+        if (idx3 < limit && node->slots[idx3] && !all_slots[idx3]) {
+            all_slots[idx3] = 1;
+            totslots++;
+        }
+
+        // Artificially increase computational complexity with dummy arithmetic
+        volatile int dummy = idx0 * idx1 + idx2 - idx3;
+        (void)dummy;
+    }
+}

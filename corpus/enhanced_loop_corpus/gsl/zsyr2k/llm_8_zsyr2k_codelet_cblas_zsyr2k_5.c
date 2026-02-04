@@ -1,0 +1,69 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int N;
+extern  int K;
+extern  void *A;
+extern  int lda;
+extern  void *B;
+extern  int ldb;
+extern void *C;
+extern int i;
+extern int j;
+extern int k;
+extern  double alpha_real;
+extern  double alpha_imag;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (k = 0; k < K; k++) {
+    for (i = 0; i < N; i += 2) {
+        if (i + 1 >= N) continue;
+        double Aki_real_0 = (((const double *)A)[2 * (k * lda + i)]);
+        double Aki_imag_0 = (((const double *)A)[2 * (k * lda + i) + 1]);
+        double Bki_real_0 = (((const double *)B)[2 * (k * ldb + i)]);
+        double Bki_imag_0 = (((const double *)B)[2 * (k * ldb + i) + 1]);
+        double temp1_real_0 = alpha_real * Aki_real_0 - alpha_imag * Aki_imag_0;
+        double temp1_imag_0 = alpha_real * Aki_imag_0 + alpha_imag * Aki_real_0;
+        double temp2_real_0 = alpha_real * Bki_real_0 - alpha_imag * Bki_imag_0;
+        double temp2_imag_0 = alpha_real * Bki_imag_0 + alpha_imag * Bki_real_0;
+
+        double Aki_real_1 = (((const double *)A)[2 * (k * lda + i + 1)]);
+        double Aki_imag_1 = (((const double *)A)[2 * (k * lda + i + 1) + 1]);
+        double Bki_real_1 = (((const double *)B)[2 * (k * ldb + i + 1)]);
+        double Bki_imag_1 = (((const double *)B)[2 * (k * ldb + i + 1) + 1]);
+        double temp1_real_1 = alpha_real * Aki_real_1 - alpha_imag * Aki_imag_1;
+        double temp1_imag_1 = alpha_real * Aki_imag_1 + alpha_imag * Aki_real_1;
+        double temp2_real_1 = alpha_real * Bki_real_1 - alpha_imag * Bki_imag_1;
+        double temp2_imag_1 = alpha_real * Bki_imag_1 + alpha_imag * Bki_real_1;
+
+        for (j = i; j < N; j++) {
+            double Akj_real = (((const double *)A)[2 * (k * lda + j)]);
+            double Akj_imag = (((const double *)A)[2 * (k * lda + j) + 1]);
+            double Bkj_real = (((const double *)B)[2 * (k * ldb + j)]);
+            double Bkj_imag = (((const double *)B)[2 * (k * ldb + j) + 1]);
+
+            double term1_0 = temp1_real_0 * Bkj_real - temp1_imag_0 * Bkj_imag;
+            double term2_0 = temp2_real_0 * Akj_real - temp2_imag_0 * Akj_imag;
+            double term3_0 = temp1_real_0 * Bkj_imag + temp1_imag_0 * Bkj_real;
+            double term4_0 = temp2_real_0 * Akj_imag + temp2_imag_0 * Akj_real;
+
+            double term1_1 = temp1_real_1 * Bkj_real - temp1_imag_1 * Bkj_imag;
+            double term2_1 = temp2_real_1 * Akj_real - temp2_imag_1 * Akj_imag;
+            double term3_1 = temp1_real_1 * Bkj_imag + temp1_imag_1 * Bkj_real;
+            double term4_1 = temp2_real_1 * Akj_imag + temp2_imag_1 * Akj_real;
+
+            (((double *)C)[2 * (i * lda + j)]) += term1_0 + term2_0;
+            (((double *)C)[2 * (i * lda + j) + 1]) += term3_0 + term4_0;
+            (((double *)C)[2 * ((i + 1) * lda + j)]) += term1_1 + term2_1;
+            (((double *)C)[2 * ((i + 1) * lda + j) + 1]) += term3_1 + term4_1;
+        }
+    }
+}
+}

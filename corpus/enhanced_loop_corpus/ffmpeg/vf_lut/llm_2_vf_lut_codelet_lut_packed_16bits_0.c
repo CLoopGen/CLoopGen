@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int i;
+extern int j;
+extern  int w;
+extern  uint16_t (*tab)[65536];
+extern  int step;
+extern  int slice_start;
+extern  int slice_end;
+extern uint16_t *inrow;
+extern uint16_t *outrow;
+extern uint16_t *inrow0;
+extern uint16_t *outrow0;
+extern  int in_linesize;
+extern  int out_linesize;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = slice_start; i < slice_end; i++) {
+    inrow = inrow0 + i * in_linesize;
+    outrow = outrow0 + i * out_linesize;
+    for (j = 0; j < w; j += 4) {
+        int k;
+        for (k = 0; k < 4 && (j + k) < w; k++) {
+            int idx = j + k;
+            uint16_t val0 = inrow[idx * step];
+            outrow[idx * step] = tab[0][val0];
+            if (step > 1) {
+                uint16_t val1 = inrow[idx * step + 1];
+                outrow[idx * step + 1] = tab[1][val1];
+            }
+            if (step > 2) {
+                uint16_t val2 = inrow[idx * step + 2];
+                outrow[idx * step + 2] = tab[2][val2];
+            }
+            if (step > 3) {
+                uint16_t val3 = inrow[idx * step + 3];
+                outrow[idx * step + 3] = tab[3][val3];
+            }
+        }
+    }
+}
+}

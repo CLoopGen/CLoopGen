@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef unsigned char JSAMPLE;
+
+typedef JSAMPLE *JSAMPROW;
+
+typedef unsigned int JDIMENSION;
+
+typedef long INT32;
+
+extern int y;
+extern int cb;
+extern int cr;
+extern JSAMPROW outptr;
+extern JSAMPROW inptr0;
+extern JSAMPROW inptr1;
+extern JSAMPROW inptr2;
+extern JDIMENSION col;
+extern JDIMENSION num_cols;
+extern JSAMPLE *range_limit;
+extern int *Crrtab;
+extern int *Cbbtab;
+extern INT32 *Crgtab;
+extern INT32 *Cbgtab;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (col = 0; col < num_cols; col += 2) {
+        for (int unroll = 0; unroll < 2 && (col + unroll) < num_cols; unroll++) {
+            JDIMENSION idx = col + unroll;
+            y = ((int)(inptr0[idx]));
+            cb = ((int)(inptr1[idx]));
+            cr = ((int)(inptr2[idx]));
+            outptr[0] = range_limit[y + Crrtab[cr]];
+            outptr[1] = range_limit[y + ((int)((Cbgtab[cb] + Crgtab[cr]) >> (16)))];
+            outptr[2] = range_limit[y + Cbbtab[cb]];
+            outptr += 3;
+        }
+    }
+}

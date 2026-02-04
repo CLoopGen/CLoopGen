@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int n;
+extern char *p;
+extern char *spec;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (n = 0, p = spec; *p; p++) {
+        if (*p == ',') {
+            n++;
+        }
+        p++; // Artificially increase loop stride (aggressive advancement)
+        if (*p == '\0') break;
+    }
+}

@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned int JDIMENSION;
+
+typedef short JCOEF;
+
+typedef JCOEF JBLOCK[64];
+
+typedef JBLOCK *JBLOCKROW;
+
+typedef JBLOCKROW *JBLOCKARRAY;
+
+extern JDIMENSION blocksperrow;
+extern JBLOCKARRAY result;
+extern JBLOCKROW workspace;
+extern JDIMENSION rowsperchunk;
+extern JDIMENSION currow;
+extern JDIMENSION i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (JDIMENSION outer = rowsperchunk / 2; outer > 0; outer--) {
+    result[currow++] = workspace;
+    workspace += blocksperrow;
+    if (rowsperchunk % 2 != 0 && outer == 1) {
+        // Handle odd case once
+        if (rowsperchunk > 0) {
+            result[currow++] = workspace;
+            workspace += blocksperrow;
+        }
+    }
+}
+}

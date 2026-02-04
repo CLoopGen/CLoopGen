@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef int integer;
+
+typedef float real;
+
+extern integer *m;
+extern real *a;
+extern real *b;
+extern integer a_dim1;
+extern integer b_dim1;
+extern integer i__1;
+extern integer i__2;
+extern integer i__;
+extern integer j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (j = 1; j <= i__1; j += 2) {
+    i__2 = *m;
+    for (i__ = j; i__ <= i__2; ++i__) {
+        // Access consecutive elements in 'a' and 'b' when unrolling by j and j+1
+        if (j + 1 <= i__1) {
+            b[i__ + j * b_dim1] = a[i__ + j * a_dim1];
+            b[i__ + (j + 1) * b_dim1] = a[i__ + (j + 1) * a_dim1];
+        } else {
+            b[i__ + j * b_dim1] = a[i__ + j * a_dim1];
+        }
+    }
+}
+}

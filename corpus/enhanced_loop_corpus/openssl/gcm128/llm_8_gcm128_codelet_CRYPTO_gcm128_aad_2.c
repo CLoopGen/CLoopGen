@@ -1,0 +1,81 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned long long u64;
+
+typedef unsigned int u32;
+
+typedef unsigned char u8;
+
+union {
+    u64 u[2];
+    u32 d[4];
+    u8 c[16];
+    size_t t[2];
+};
+
+
+typedef struct {
+    u64 hi;
+    u64 lo;
+} u128;
+
+typedef void (*gcm_init_fn)(u128 *, const u64 *);
+
+typedef void (*gcm_ghash_fn)(u64 *, const u128 *, const u8 *, size_t);
+
+typedef void (*gcm_gmult_fn)(u64 *, const u128 *);
+
+struct gcm_funcs_st {
+    gcm_init_fn ginit;
+    gcm_ghash_fn ghash;
+    gcm_gmult_fn gmult;
+};
+
+
+typedef void (*block128_f)(const unsigned char *, unsigned char *, const void *);
+
+struct gcm128_context {
+    union {
+        u64 u[2];
+        u32 d[4];
+        u8 c[16];
+        size_t t[2];
+    } Yi, EKi, EK0, len, Xi, H;
+    u128 Htable[16];
+    struct gcm_funcs_st funcs;
+    unsigned int mres;
+    unsigned int ares;
+    block128_f block;
+    void *key;
+    unsigned char Xn[48];
+};
+
+
+typedef struct gcm128_context GCM128_CONTEXT;
+
+extern GCM128_CONTEXT *ctx;
+extern  unsigned char *aad;
+extern size_t len;
+extern size_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop() {
+    size_t block_size = sizeof(ctx->Xi.c);
+    size_t full_blocks = len / block_size;
+    size_t remainder = len % block_size;
+
+    for (size_t b = 0; b < full_blocks; ++b) {
+        for (size_t j = 0; j < block_size; ++j) {
+            ctx->Xi.c[b * block_size + j] ^= aad[b * block_size + j];
+        }
+    }
+
+    for (size_t r = 0; r < remainder; ++r) {
+        ctx->Xi.c[full_blocks * block_size + r] ^= aad[full_blocks * block_size + r];
+    }
+}

@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern float h;
+extern float *initvalu;
+extern  float b41;
+extern  float b43;
+extern float *initvalu_temp;
+extern float **finavalu_temp;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < 45; i += 2) {
+    float term1 = finavalu_temp[0][i] * b41;
+    float term2 = finavalu_temp[2][i] * b43;
+    initvalu_temp[i] = initvalu[i] + h * (term1 + term2);
+    if (i + 1 < 45) {
+        float next_term1 = finavalu_temp[0][i+1] * b41;
+        float next_term2 = finavalu_temp[2][i+1] * b43;
+        initvalu_temp[i+1] = initvalu[i+1] + h * (next_term1 + next_term2);
+    }
+}
+}

@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  uint8_t *bitlens;
+extern int zlcount;
+extern int blcounts[32];
+extern int syms[8192];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (int k = 0; k < 256; k += 4) {
+    for (int i = 0; i < 4 && (k + i) < 256; i++) {
+        int idx = k + i;
+        int bitlen = bitlens[idx];
+        int blcount = blcounts[bitlen];
+        zlcount += bitlen < 1;
+        syms[(bitlen << 8) + blcount] = idx;
+        blcounts[bitlen]++;
+    }
+}
+}

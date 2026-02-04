@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    double a;
+    double b;
+    double c[64];
+    double fx[33];
+    double igral;
+    double err;
+    int depth;
+    int rdepth;
+    int ndiv;
+} gsl_integration_cquad_ival;
+
+extern  double Tleft[1089];
+extern  int n[4];
+extern  int idx[4];
+extern int i;
+extern int j;
+extern int d;
+extern gsl_integration_cquad_ival *iv;
+extern gsl_integration_cquad_ival *ivl;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    double temp[64];
+    for (i = 0; i <= n[d]; i++) {
+        temp[i] = 0.0;
+        for (j = i; j <= n[d]; j++) {
+            temp[i] += Tleft[i * 33 + j] * iv->c[idx[d] + j];
+        }
+    }
+    for (i = 0; i <= n[d]; i++) {
+        ivl->c[idx[d] + i] = temp[i];
+    }
+}

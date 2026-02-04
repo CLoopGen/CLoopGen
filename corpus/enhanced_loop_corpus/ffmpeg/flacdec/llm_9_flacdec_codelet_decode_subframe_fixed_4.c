@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int32_t *decoded;
+extern int pred_order;
+extern  int blocksize;
+extern unsigned int a;
+extern unsigned int b;
+extern unsigned int c;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int j;
+    for (i = pred_order; i < blocksize; i++) {
+        decoded[i] = a += b += c += decoded[i] * 2;
+        for (j = 0; j < 3; j++) {
+            a -= j;
+            b += j * 2;
+        }
+    }
+}

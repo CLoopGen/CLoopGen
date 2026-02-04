@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  size_t M;
+extern  size_t N;
+extern size_t i;
+extern size_t j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Consecutive memory access pattern using a single loop with stride emulation
+    // Assuming a 2D array is laid out in row-major order, we traverse all elements consecutively
+    size_t total_elements = M * N;
+    for (i = 0; i < total_elements; i++) {
+        // Simulate j = i % N, i_row = i / N
+        // This ensures consecutive memory accesses if used with an actual array like data[i]
+        // Example: arr[i] instead of arr[i_row][j]
+        j = i % N;
+        i = i / N;  // Reuse i as row index temporarily (note: original i is overwritten)
+        // Access would be linear: e.g., arr[i * N + j] becomes arr[index]
+        i = i * N + j; // Restore linear index for next iteration logic
+    }
+}

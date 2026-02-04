@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  uint8_t lsf_dim_codebook[];
+extern  uint8_t lsf_size_codebook[];
+extern  int16_t lsf_codebook[1088];
+extern int16_t *lsfdeq;
+extern int16_t *_usr_index;
+extern int i;
+extern int j;
+extern int pos;
+extern int cb_pos;
+
+// Variable name mappings to avoid conflicts with system symbols
+#define index _usr_index
+
+
+
+void loop(){
+for (i = 0; i < 6; i += 2) {
+    int block = i / 2;
+    if (block >= 3) break;
+    int dim = lsf_dim_codebook[block];
+    int offset = index[block] * dim;
+    for (j = 0; j < dim; j++) {
+        lsfdeq[pos + j] = lsf_codebook[cb_pos + offset + j] >> 1;
+        lsfdeq[pos + j] += (lsf_codebook[cb_pos + offset + j] & 1);
+    }
+    pos += dim;
+    cb_pos += lsf_size_codebook[block] * dim;
+}
+}

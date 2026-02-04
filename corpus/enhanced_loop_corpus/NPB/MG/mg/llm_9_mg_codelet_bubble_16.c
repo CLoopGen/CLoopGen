@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+extern double ten[1037][2];
+extern int j1[1037][2];
+extern int j2[1037][2];
+extern int j3[1037][2];
+extern int m;
+extern int ind;
+extern double temp;
+extern int i;
+extern int j_temp;
+
+
+
+void loop(){
+for (i = 0; i < m - 1 && i < 50; i++) {
+    double threshold = 1e-6;
+    if (ten[i][ind] > ten[i + 1][ind] + threshold) {
+        temp = ten[i + 1][ind];
+        ten[i + 1][ind] = ten[i][ind];
+        ten[i][ind] = temp;
+        j_temp = j1[i + 1][ind];
+        j1[i + 1][ind] = j1[i][ind];
+        j1[i][ind] = j_temp;
+        j_temp = j2[i + 1][ind];
+        j2[i + 1][ind] = j2[i][ind];
+        j2[i][ind] = j_temp;
+        j_temp = j3[i + 1][ind];
+        j3[i + 1][ind] = j3[i][ind];
+        j3[i][ind] = j_temp;
+    } else if (ten[i][ind] > ten[i + 1][ind]) {
+        double avg = (ten[i][ind] + ten[i + 1][ind]) * 0.5;
+        ten[i][ind] = avg;
+        ten[i + 1][ind] = avg;
+    }
+}
+}

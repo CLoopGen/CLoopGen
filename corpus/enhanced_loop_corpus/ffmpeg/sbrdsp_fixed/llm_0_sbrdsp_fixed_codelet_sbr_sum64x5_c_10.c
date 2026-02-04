@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef int INTFLOAT;
+
+extern INTFLOAT *z;
+extern int k;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (int i = 0; i < 64; i += 16) {
+    for (k = i; k < i + 16 && k < 64; k++) {
+        INTFLOAT f = z[k] + z[k + 64] + z[k + 128] + z[k + 192] + z[k + 256];
+        z[k] = f;
+    }
+}
+}

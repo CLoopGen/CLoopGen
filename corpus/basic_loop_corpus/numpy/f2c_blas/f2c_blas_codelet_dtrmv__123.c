@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef int integer;
+
+typedef double doublereal;
+
+typedef int logical;
+
+extern integer *n;
+extern doublereal *a;
+extern doublereal *x;
+extern integer *incx;
+extern integer a_dim1;
+extern integer i__1;
+extern integer i__;
+extern integer j;
+extern integer ix;
+extern integer jx;
+extern integer kx;
+extern doublereal temp;
+extern logical nounit;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+void loop(){
+for (j = *n; j >= 1; --j) {
+    if (x[jx] != 0.) {
+        temp = x[jx];
+        ix = kx;
+        i__1 = j + 1;
+        for (i__ = *n; i__ >= i__1; --i__) {
+            x[ix] += temp * a[i__ + j * a_dim1];
+            ix -= *incx;
+        }
+        if (nounit) {
+            x[jx] *= a[j + j * a_dim1];
+        }
+    }
+    jx -= *incx;
+}
+
+}

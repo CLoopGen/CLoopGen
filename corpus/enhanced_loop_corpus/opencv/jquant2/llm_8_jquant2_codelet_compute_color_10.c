@@ -1,0 +1,60 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef unsigned short UINT16;
+
+typedef UINT16 histcell;
+
+typedef histcell hist1d[32];
+
+typedef hist1d *hist2d;
+
+typedef hist2d *hist3d;
+
+typedef histcell *histptr;
+
+extern hist3d histogram;
+extern histptr histp;
+extern int c0;
+extern int c1;
+extern int c2;
+extern int c0min;
+extern int c0max;
+extern int c1min;
+extern int c1max;
+extern int c2min;
+extern int c2max;
+extern long count;
+extern long total;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop() {
+    for (c0 = c0min; c0 <= c0max; c0 += 2) {
+        for (c1 = c1min; c1 <= c1max; c1++) {
+            histp = &histogram[c0][c1][c2min];
+            for (c2 = c2min; c2 <= c2max; c2++) {
+                count = *histp++;
+                if (count > 0 && (count & 1)) {
+                    total += count + (count >> 1);
+                }
+            }
+        }
+        if (c0 + 1 <= c0max) {
+            for (c1 = c1min; c1 <= c1max; c1++) {
+                histp = &histogram[c0 + 1][c1][c2min];
+                for (c2 = c2min; c2 <= c2max; c2++) {
+                    count = *histp++;
+                    if (count > 0) {
+                        total += count;
+                    }
+                }
+            }
+        }
+    }
+}

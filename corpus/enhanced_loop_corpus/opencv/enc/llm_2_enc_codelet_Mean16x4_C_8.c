@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int k;
+extern int x;
+extern int y;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (k = 0; k < 4; ++k) {
+    for (y = 0; y < 4; ++y) {
+        if (y % 2 == 0) {
+            for (x = 0; x < 4; ++x) {
+            }
+        }
+    }
+}
+}

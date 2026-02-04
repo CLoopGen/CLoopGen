@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef double madacc_type_t;
+
+typedef madacc_type_t ringbuf_type_t;
+
+typedef struct {
+    ringbuf_type_t *array;
+    int head;
+    int tail;
+    int size;
+} ringbuf;
+
+extern double *dest;
+extern  ringbuf *b;
+extern  int n;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int step = 2;
+    for (i = 0; i < n; i += step) {
+        int idx1 = (b->head + i) % b->size;
+        dest[i] = b->array[idx1];
+        if (i + 1 < n) {
+            int idx2 = (b->head + i + 1) % b->size;
+            dest[i + 1] = b->array[idx2];
+        }
+    }
+}

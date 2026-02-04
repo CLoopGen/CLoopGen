@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern char *type;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (type++; ((*type) == ' ' || (*type) == '\t' || (*type) == '\n' || (*type) == '\r' || (*type) == '\f' || (*type) == '\v' || (*type) == '\b'); type += 1)
+        ;
+}

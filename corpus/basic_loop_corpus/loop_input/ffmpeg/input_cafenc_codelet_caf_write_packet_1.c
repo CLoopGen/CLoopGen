@@ -1,0 +1,98 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <stdlib.h>
+#include <stddef.h>
+
+typedef struct AVBuffer {
+    // Minimal definition to satisfy compilation
+} AVBuffer;
+
+typedef struct AVBufferRef {
+    AVBuffer *buffer;
+    uint8_t *data;
+    int size;
+} AVBufferRef;
+
+enum AVPacketSideDataType {
+    AV_PKT_DATA_PALETTE,
+    AV_PKT_DATA_NEW_EXTRADATA,
+    AV_PKT_DATA_PARAM_CHANGE,
+    AV_PKT_DATA_H263_MB_INFO,
+    AV_PKT_DATA_REPLAYGAIN,
+    AV_PKT_DATA_DISPLAYMATRIX,
+    AV_PKT_DATA_STEREO3D,
+    AV_PKT_DATA_AUDIO_SERVICE_TYPE,
+    AV_PKT_DATA_QUALITY_STATS,
+    AV_PKT_DATA_FALLBACK_TRACK,
+    AV_PKT_DATA_CPB_PROPERTIES,
+    AV_PKT_DATA_SKIP_SAMPLES,
+    AV_PKT_DATA_JP_DUALMONO,
+    AV_PKT_DATA_STRINGS_METADATA,
+    AV_PKT_DATA_SUBTITLE_POSITION,
+    AV_PKT_DATA_MATROSKA_BLOCKADDITIONAL,
+    AV_PKT_DATA_WEBVTT_IDENTIFIER,
+    AV_PKT_DATA_WEBVTT_SETTINGS,
+    AV_PKT_DATA_METADATA_UPDATE,
+    AV_PKT_DATA_MPEGTS_STREAM_ID,
+    AV_PKT_DATA_MASTERING_DISPLAY_METADATA,
+    AV_PKT_DATA_SPHERICAL,
+    AV_PKT_DATA_CONTENT_LIGHT_LEVEL,
+    AV_PKT_DATA_A53_CC,
+    AV_PKT_DATA_ENCRYPTION_INIT_INFO,
+    AV_PKT_DATA_ENCRYPTION_INFO,
+    AV_PKT_DATA_AFD,
+    AV_PKT_DATA_PRFT,
+    AV_PKT_DATA_ICC_PROFILE,
+    AV_PKT_DATA_DOVI_CONF,
+    AV_PKT_DATA_NB
+};
+
+typedef struct AVPacketSideData {
+    uint8_t *data;
+    int size;
+    enum AVPacketSideDataType type;
+} AVPacketSideData;
+
+typedef struct AVPacket {
+    AVBufferRef *buf;
+    int64_t pts;
+    int64_t dts;
+    uint8_t *data;
+    int size;
+    int stream_index;
+    int flags;
+    AVPacketSideData *side_data;
+    int side_data_elems;
+    int64_t duration;
+    int64_t pos;
+    int64_t convergence_duration;
+} AVPacket;
+
+typedef struct {
+    int64_t data;
+    uint8_t *pkt_sizes;
+    int size_buffer_size;
+    int size_entries_used;
+    int packets;
+} CAFContext;
+
+AVPacket *pkt;
+CAFContext *caf;
+int i;
+
+void init_vars() {
+    caf = (CAFContext *)malloc(sizeof(CAFContext));
+    pkt = (AVPacket *)malloc(sizeof(AVPacket));
+
+    caf->size_buffer_size = 1024 * 1024; // 1MB buffer for pkt_sizes
+    caf->pkt_sizes = (uint8_t *)malloc(caf->size_buffer_size * sizeof(uint8_t));
+    caf->size_entries_used = 0;
+    caf->packets = 0;
+    caf->data = 0;
+
+    pkt->size = 1 << 28; // Large size to ensure loop runs meaningfully: 268,435,456
+
+    // Ensure that during the loop, we don't write beyond the array
+    // The loop runs 4 times, so at most 4 entries are written
+    // So we only need to ensure caf->pkt_sizes has at least 4 elements — already satisfied by malloc above
+}

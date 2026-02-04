@@ -1,0 +1,64 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef struct {
+    int piece;
+    int square;
+} see_data;
+
+extern int board[144];
+extern see_data see_attackers[2][16];
+extern int square;
+extern  int rook_o[4];
+extern int a_sq;
+extern int b_sq;
+extern int i;
+extern int numw;
+extern int numb;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < 2; i++) {
+    for (int j = 0; j < 2; j++) {
+        int idx = i * 2 + j;
+        a_sq = square + rook_o[idx];
+        b_sq = board[a_sq];
+        if (b_sq == 5) {
+            see_attackers[0][numw].piece = b_sq;
+            see_attackers[0][numw].square = a_sq;
+            numw++;
+            goto end_loop;
+        } else if (b_sq == 6) {
+            see_attackers[1][numb].piece = b_sq;
+            see_attackers[1][numb].square = a_sq;
+            numb++;
+            goto end_loop;
+        } else {
+            for (int depth = 0; depth < 15; depth++) {
+                if (b_sq == 0) break;
+                if (b_sq == 7 || b_sq == 9) {
+                    see_attackers[0][numw].piece = b_sq;
+                    see_attackers[0][numw].square = a_sq;
+                    numw++;
+                    goto next_direction;
+                } else if (b_sq == 8 || b_sq == 10) {
+                    see_attackers[1][numb].piece = b_sq;
+                    see_attackers[1][numb].square = a_sq;
+                    numb++;
+                    goto next_direction;
+                } else if (b_sq != 13) {
+                    break;
+                }
+                a_sq += rook_o[idx];
+                b_sq = board[a_sq];
+            }
+        }
+        next_direction:;
+    }
+}
+end_loop:;
+}

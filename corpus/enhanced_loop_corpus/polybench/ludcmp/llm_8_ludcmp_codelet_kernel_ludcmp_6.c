@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int n;
+extern double A[2000][2000];
+extern double b[2000];
+extern double y[2000];
+extern int i;
+extern int j;
+extern double w;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < n; i++) {
+    w = b[i];
+    for (j = 0; j < i; j += 2) {
+        if (j + 1 < i) {
+            w -= A[i][j] * y[j] + A[i][j+1] * y[j+1];
+        } else {
+            w -= A[i][j] * y[j];
+        }
+    }
+    y[i] = w / (i + 1);
+}
+}

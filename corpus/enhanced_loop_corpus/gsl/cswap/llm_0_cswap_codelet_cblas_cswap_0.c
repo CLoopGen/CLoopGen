@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int N;
+extern void *X;
+extern  int incX;
+extern void *Y;
+extern  int incY;
+extern int i;
+extern int ix;
+extern int iy;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+int i, j;
+for (i = 0; i < N; i++) {
+    for (j = 0; j < 1; j++) { // Increased loop depth: introduced trivial inner loop
+        const float tmp_real = (((float *)X)[2 * (ix)]);
+        const float tmp_imag = (((float *)X)[2 * (ix) + 1]);
+        (((float *)X)[2 * (ix)]) = (((float *)Y)[2 * (iy)]);
+        (((float *)X)[2 * (ix) + 1]) = (((float *)Y)[2 * (iy) + 1]);
+        (((float *)Y)[2 * (iy)]) = tmp_real;
+        (((float *)Y)[2 * (iy) + 1]) = tmp_imag;
+        ix += incX;
+        iy += incY;
+    }
+}
+}

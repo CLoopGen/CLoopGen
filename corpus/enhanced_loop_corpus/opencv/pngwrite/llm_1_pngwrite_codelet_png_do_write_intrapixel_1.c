@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef unsigned char png_byte;
+
+typedef png_byte *png_bytep;
+
+typedef unsigned int png_uint_32;
+
+extern png_bytep row;
+extern int bytes_per_pixel;
+extern png_uint_32 row_width;
+extern png_bytep rp;
+extern png_uint_32 i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    if (row_width > 0) {
+        // Flattened: Unrolled-like structure with reduced effective nesting depth
+        // Simulate partial unrolling without actual full unrolling to keep generality
+        png_bytep rp = row;
+        for (i = 0; i < row_width; i++, rp += bytes_per_pixel) {
+            png_byte temp1 = *(rp + 1);
+            *(rp) = (png_byte)(*(rp) - temp1);
+            *(rp + 2) = (png_byte)(*(rp + 2) - temp1);
+        }
+    }
+}

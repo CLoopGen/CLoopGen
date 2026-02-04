@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct cell_s {
+    int index;
+    struct cell_s *next;
+} cell;
+
+typedef struct AVLFG {
+    unsigned int state[64];
+    int index;
+} AVLFG;
+
+typedef struct elbg_data {
+    int error;
+    int dim;
+    int numCB;
+    int *codebook;
+    cell **cells;
+    int *utility;
+    int64_t *utility_inc;
+    int *nearest_cb;
+    int *points;
+    AVLFG *rand_state;
+    int *scratchbuf;
+} elbg_data;
+
+extern elbg_data *elbg;
+extern int idx[3];
+extern int j;
+extern int k;
+extern int cont;
+extern int *newcentroid[3];
+extern cell *tempcell;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (k = 0; k < 2 && idx[2 * k] >= 0; k++) {
+        tempcell = elbg->cells[idx[2 * k]];
+        for (; tempcell != NULL; tempcell = tempcell->next) {
+            if (tempcell->index >= 0 && cont < 1000000) {
+                cont++;
+                for (j = 0; j < elbg->dim; j++) {
+                    int point_idx = tempcell->index * elbg->dim + j;
+                    if (point_idx >= 0) {
+                        newcentroid[2][j] += elbg->points[point_idx];
+                    }
+                }
+            }
+        }
+    }
+}

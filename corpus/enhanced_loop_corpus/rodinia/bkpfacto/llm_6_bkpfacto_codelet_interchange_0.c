@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    u_int m;
+    u_int n;
+    u_int max_m;
+    u_int max_n;
+    u_int max_size;
+    double **me;
+    double *base;
+} MAT;
+
+extern MAT *A;
+extern int i;
+extern int j;
+extern double tmp;
+extern int k;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    double temp_i, temp_j;
+    for (k = 0; k < i; k++) {
+        temp_i = (A)->me[k][i];
+        temp_j = (A)->me[k][j];
+        (A)->me[k][i] = temp_j;
+        (A)->me[k][j] = temp_i;
+    }
+}

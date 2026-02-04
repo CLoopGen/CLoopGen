@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int nj;
+extern int nk;
+extern double B[1100][900];
+extern int i;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+double temp;
+for (i = 0; i < nk; i++) {
+    temp = (double)(i % nj) / nj;
+    for (j = 0; j < nj; j++)
+        B[i][j] = temp * (j + 1);
+}
+}

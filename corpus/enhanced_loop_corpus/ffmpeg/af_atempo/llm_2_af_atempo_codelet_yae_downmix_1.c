@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef float FFTSample;
+
+extern  uint8_t *src;
+extern  uint8_t *src_end;
+extern FFTSample *xdat;
+extern uint8_t tmp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    ptrdiff_t offset = 0;
+    for (; src + offset < src_end; xdat++) {
+        tmp = *(const uint8_t *)(src + offset);
+        offset += sizeof(uint8_t);
+        *xdat = (FFTSample)tmp;
+    }
+}

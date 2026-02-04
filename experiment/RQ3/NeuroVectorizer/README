@@ -1,0 +1,4 @@
+# Loop Vectorization Factor Prediction(Neuro-Vectorizer)
+
+- Environment Setup https://github.com/intel/neuro-vectorizer.git
+- Replace the original training data with our corpus `corpus/`

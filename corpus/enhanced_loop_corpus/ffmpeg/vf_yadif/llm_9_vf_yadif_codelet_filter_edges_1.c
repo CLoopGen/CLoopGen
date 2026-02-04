@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int w;
+extern int prefs;
+extern int mrefs;
+extern int mode;
+extern uint8_t *dst;
+extern uint8_t *prev;
+extern uint8_t *cur;
+extern uint8_t *next;
+extern int x;
+extern uint8_t *prev2;
+extern uint8_t *next2;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (x = 0; x < ((2) > (w) ? (w) : (2)); x += 1) {
+    int c = cur[mrefs];
+    int d = (prev2[0] + next2[0]) >> 1;
+    int e = cur[prefs];
+    int temporal_diff0 = abs(prev2[0] - next2[0]);
+    int temporal_diff1 = abs(prev[mrefs] - c);
+    int temporal_diff2 = abs(next[mrefs] - c);
+    int diff = (temporal_diff0 >> 1) + temporal_diff1 + temporal_diff2;
+    diff >>= 2;
+    int spatial_pred = (c + e) >> 1;
+
+    if (!(mode & 2)) {
+        int b = (prev2[2 * mrefs] + next2[2 * mrefs]) >> 1;
+        int mid_diff = abs(b - c);
+        diff = (diff + mid_diff) >> 1;
+    }
+
+    if (spatial_pred > d + diff)
+        spatial_pred = d + diff;
+    else if (spatial_pred < d - diff)
+        spatial_pred = d - diff;
+
+    dst[0] = spatial_pred;
+    dst += 1;
+    cur += 1;
+    prev += 1;
+    next += 1;
+    prev2 += 1;
+    next2 += 1;
+}
+}

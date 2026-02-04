@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int end_x;
+extern int n;
+extern uint8_t *a;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (n = 1; n < end_x && (n + 7) < end_x; n += 8) {
+        a[n] = a[n - 1];
+        a[n + 1] = a[n];
+        a[n + 2] = a[n + 1];
+        a[n + 3] = a[n + 2];
+        a[n + 4] = a[n + 3];
+        a[n + 5] = a[n + 4];
+        a[n + 6] = a[n + 5];
+        a[n + 7] = a[n + 6];
+    }
+}

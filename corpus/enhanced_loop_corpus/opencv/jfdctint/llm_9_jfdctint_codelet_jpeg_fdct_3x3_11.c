@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef long INT32;
+
+typedef int DCTELEM;
+
+extern INT32 tmp0;
+extern INT32 tmp1;
+extern INT32 tmp2;
+extern DCTELEM *dataptr;
+extern int ctr;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (ctr = 0; ctr < 1; ctr++) {
+    for (int inner = 0; inner < 3; inner++) {
+        tmp0 = dataptr[8 * 0] + dataptr[8 * 2];
+        tmp1 = dataptr[8 * 1];
+        tmp2 = dataptr[8 * 0] - dataptr[8 * 2];
+
+        INT32 factor1 = (INT32)(1.7777777779999999 * ((INT32)1 << 13) + 0.5);
+        INT32 factor2 = (INT32)(1.2570787219999999 * ((INT32)1 << 13) + 0.5);
+        INT32 factor3 = (INT32)(2.1773242160000001 * ((INT32)1 << 13) + 0.5);
+        INT32 shift_val = (INT32)1 << 14;
+
+        dataptr[8 * 0] = (DCTELEM)((((tmp0 + tmp1) * factor1) + shift_val) >> 15);
+        dataptr[8 * 2] = (DCTELEM)((((tmp0 - 2 * tmp1) * factor2) + shift_val) >> 15);
+        dataptr[8 * 1] = (DCTELEM)(((tmp2 * factor3) + shift_val) >> 15);
+
+        dataptr++;
+    }
+}
+}

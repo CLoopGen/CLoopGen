@@ -1,0 +1,88 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef ptrdiff_t INT;
+
+typedef double R;
+
+typedef INT *stride;
+
+typedef R E;
+
+extern const INT fftw_an_INT_guaranteed_to_be_zero;
+extern R *R0;
+extern R *R1;
+extern R *Cr;
+extern R *Ci;
+extern stride rs;
+extern stride csr;
+extern stride csi;
+extern INT v;
+extern INT ivs;
+extern INT ovs;
+extern  E KP2_000000000;
+extern  E KP1_246979603;
+extern  E KP1_801937735;
+extern  E KP445041867;
+extern  E KP867767478;
+extern  E KP1_949855824;
+extern  E KP1_563662964;
+extern INT i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = v; i > 0; i = i - 2 , R0 = R0 + 2*ovs , R1 = R1 + 2*ovs , Cr = Cr + 2*ivs , Ci = Ci + 2*ivs , (rs) = (rs) + 2*fftw_an_INT_guaranteed_to_be_zero , (csr) = (csr) + 2*fftw_an_INT_guaranteed_to_be_zero , (csi) = (csi) + 2*fftw_an_INT_guaranteed_to_be_zero) {
+    E T9, Td, Tb, T1, T4, T2, T3, T5, Tc, Ta, T6, T8, T7;
+    E T9b, Tdb, Tbb, T1b, T4b, T2b, T3b, T5b, Tcb, Tab, T6b, T8b, T7b;
+
+    // First iteration (original index)
+    T6 = Ci[(csi[2])];
+    T8 = Ci[0];
+    T7 = Ci[(csi[1])];
+    T9 = (((KP1_563662964) * (T6)) + (KP1_949855824 * T7)) + (KP867767478 * T8);
+    Td = ((KP1_563662964 * T7) - ((KP1_949855824) * (T8))) - (KP867767478 * T6);
+    Tb = ((KP1_949855824 * T6) - ((KP1_563662964) * (T8))) - (KP867767478 * T7);
+    T1 = Cr[(csr[3])];
+    T4 = Cr[0];
+    T2 = Cr[(csr[2])];
+    T3 = Cr[(csr[1])];
+    T5 = (((KP445041867) * (T3)) + (KP1_801937735 * T4)) + (-(((KP1_246979603) * (T2)) + (T1)));
+    Tc = (((KP1_801937735) * (T2)) + (KP445041867 * T4)) + (-(((KP1_246979603) * (T3)) + (T1)));
+    Ta = (((KP1_246979603) * (T4)) + (T1)) + (-(((KP1_801937735) * (T3)) + (KP445041867 * T2)));
+    R1[0] = T5 - T9;
+    R0[(rs[3])] = -(T5 + T9);
+    R0[(rs[2])] = Td - Tc;
+    R1[(rs[1])] = Tc + Td;
+    R1[(rs[2])] = Tb - Ta;
+    R0[(rs[1])] = Ta + Tb;
+    R0[0] = (((KP2_000000000) * (T2 + T3 + T4)) + (T1));
+
+    // Second iteration (offset by 1)
+    T6b = Ci[(csi[2])+ivs];
+    T8b = Ci[ivs];
+    T7b = Ci[(csi[1])+ivs];
+    T9b = (((KP1_563662964) * (T6b)) + (KP1_949855824 * T7b)) + (KP867767478 * T8b);
+    Tdb = ((KP1_563662964 * T7b) - ((KP1_949855824) * (T8b))) - (KP867767478 * T6b);
+    Tbb = ((KP1_949855824 * T6b) - ((KP1_563662964) * (T8b))) - (KP867767478 * T7b);
+    T1b = Cr[(csr[3])+ivs];
+    T4b = Cr[ivs];
+    T2b = Cr[(csr[2])+ivs];
+    T3b = Cr[(csr[1])+ivs];
+    T5b = (((KP445041867) * (T3b)) + (KP1_801937735 * T4b)) + (-(((KP1_246979603) * (T2b)) + (T1b)));
+    Tcb = (((KP1_801937735) * (T2b)) + (KP445041867 * T4b)) + (-(((KP1_246979603) * (T3b)) + (T1b)));
+    Tab = (((KP1_246979603) * (T4b)) + (T1b)) + (-(((KP1_801937735) * (T3b)) + (KP445041867 * T2b)));
+    R1[ovs] = T5b - T9b;
+    R0[(rs[3])+ovs] = -(T5b + T9b);
+    R0[(rs[2])+ovs] = Tdb - Tcb;
+    R1[(rs[1])+ovs] = Tcb + Tdb;
+    R1[(rs[2])+ovs] = Tbb - Tab;
+    R0[(rs[1])+ovs] = Tab + Tbb;
+    R0[ovs] = (((KP2_000000000) * (T2b + T3b + T4b)) + (T1b));
+}
+}

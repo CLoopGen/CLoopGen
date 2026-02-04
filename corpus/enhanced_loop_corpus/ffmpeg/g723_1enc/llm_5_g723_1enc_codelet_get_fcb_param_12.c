@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int16_t impulse_r[60];
+extern int16_t temp_corr[60];
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < 60; i++) {
+        temp_corr[i] = 0;
+        if (i % 2 == 0) {
+            temp_corr[i] = impulse_r[i] >> 1;
+        }
+    }
+}

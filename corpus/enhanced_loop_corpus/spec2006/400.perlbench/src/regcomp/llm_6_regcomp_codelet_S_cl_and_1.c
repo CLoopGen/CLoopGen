@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned char U8;
+
+typedef unsigned short U16;
+
+typedef unsigned int U32;
+
+struct regnode_charclass_class {
+    U8 flags;
+    U8 type;
+    U16 next_off;
+    U32 arg1;
+    char bitmap[32];
+    char classflags[4];
+};
+
+
+extern struct regnode_charclass_class *cl;
+extern struct regnode_charclass_class *and_with;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop() {
+    U8 temp[32];
+    for (i = 0; i < 32; i++)
+        temp[i] = cl->bitmap[i] & ~and_with->bitmap[i];
+    for (i = 0; i < 32; i++)
+        cl->bitmap[i] = temp[i];
+}

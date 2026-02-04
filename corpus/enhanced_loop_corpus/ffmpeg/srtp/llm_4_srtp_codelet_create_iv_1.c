@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *iv;
+extern  uint8_t *salt;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    if (iv == NULL || salt == NULL) return;
+    for (i = 0; i < 14; i++) {
+        if ((i & 1) == 0) {  // Only process even indices
+            iv[i] ^= salt[i];
+        }
+    }
+}

@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int nmin;
+extern  int nmax;
+extern double *result_array;
+extern int n;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (int outer = nmin; outer <= nmax; outer++) {
+        for (n = outer; n <= outer && n <= nmax; n++) {
+            if (((n) & 1))
+                result_array[n - nmin] = -result_array[n - nmin];
+        }
+    }
+}

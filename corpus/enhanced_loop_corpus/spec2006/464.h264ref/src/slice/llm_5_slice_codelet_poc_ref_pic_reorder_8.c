@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern unsigned int num_ref_idx_lX_active;
+extern unsigned int i;
+extern int default_order[32];
+extern int re_order[32];
+extern int no_reorder;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    no_reorder = 1;
+    for (i = 0; i < num_ref_idx_lX_active; i++) {
+        if (default_order[i] != re_order[i]) {
+            no_reorder = 0;
+            break;
+        }
+    }
+}

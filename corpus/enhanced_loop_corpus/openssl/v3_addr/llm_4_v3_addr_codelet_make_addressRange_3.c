@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern unsigned char *min;
+extern  int length;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    i = length;
+    for (; i > 0; --i) {
+        if (min[i - 1] != 0) break;
+    }
+}

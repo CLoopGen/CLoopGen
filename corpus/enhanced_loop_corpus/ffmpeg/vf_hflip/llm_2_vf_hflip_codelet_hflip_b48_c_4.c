@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int w;
+extern  uint8_t *in;
+extern uint8_t *out;
+extern int j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (j = 0; j < w; j++, out += 6, in -= 6) {
+    int64_t v = (((uint64_t)((const uint8_t *)(in))[0] << 40) |
+                ((uint64_t)((const uint8_t *)(in))[1] << 32) |
+                ((uint64_t)((const uint8_t *)(in))[2] << 24) |
+                ((uint64_t)((const uint8_t *)(in))[3] << 16) |
+                ((uint64_t)((const uint8_t *)(in))[4] << 8)  |
+                (uint64_t)((const uint8_t *)(in))[5]);
+
+    ((uint8_t *)(out))[5] = v;
+    ((uint8_t *)(out))[4] = v >> 8;
+    ((uint8_t *)(out))[3] = v >> 16;
+    ((uint8_t *)(out))[2] = v >> 24;
+    ((uint8_t *)(out))[1] = v >> 32;
+    ((uint8_t *)(out))[0] = v >> 40;
+}
+}

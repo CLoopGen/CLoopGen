@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *dst;
+extern ptrdiff_t dststride;
+extern int h;
+extern  uint8_t *filter;
+extern  uint8_t *cm;
+extern int x;
+extern int y;
+extern uint8_t *tmp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (y = 0; y < h; y++) {
+    for (x = 0; x < 8; x += 2) {
+        int val1 = (filter[2] * tmp[x + 0 * 16] - filter[1] * tmp[x - 1 * 16] + filter[3] * tmp[x + 1 * 16] + 32) >> 6;
+        int val2 = (filter[2] * tmp[x + 1 + 0 * 16] - filter[1] * tmp[x + 1 - 1 * 16] + filter[3] * tmp[x + 1 + 1 * 16] + 32) >> 6;
+        dst[x]     = cm[val1];
+        dst[x + 1] = cm[val2];
+    }
+    dst += dststride;
+    tmp += 16;
+}
+}

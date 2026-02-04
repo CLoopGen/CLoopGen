@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int nal_length_size;
+extern  uint8_t *buf;
+extern int *buf_index;
+extern int i;
+extern int nalsize;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    unsigned int local_size = nalsize;
+    for (int k = 0; k < nal_length_size; k++) {
+        local_size = (local_size << 8) | buf[(*buf_index) + k];
+    }
+    *buf_index += nal_length_size;
+    nalsize = local_size;
+}

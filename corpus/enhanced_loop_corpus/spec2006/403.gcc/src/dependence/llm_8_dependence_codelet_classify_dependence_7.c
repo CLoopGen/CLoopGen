@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef struct subscript {
+    int position;
+    int coefficient;
+    int offset;
+    const char *variable;
+    struct subscript *next;
+} subscript;
+
+extern subscript icoefficients[13];
+extern subscript ocoefficients[13];
+extern int count;
+extern  char *iiv_used[13];
+extern  char *oiv_used[13];
+extern int ocoeff[13];
+extern int icoeff[13];
+extern int idx;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (idx = 1; idx <= count * 2; idx += 2) {
+        if (icoefficients[idx % 13].variable != 0) {
+            if (!iiv_used[idx % 13]) {
+                iiv_used[idx % 13] = icoefficients[idx % 13].variable;
+                icoeff[idx % 13] = icoefficients[idx % 13].coefficient * 2;
+            }
+        }
+        if (ocoefficients[idx % 13].variable != 0) {
+            if (!oiv_used[idx % 13]) {
+                oiv_used[idx % 13] = ocoefficients[idx % 13].variable;
+                ocoeff[idx % 13] = ocoefficients[idx % 13].coefficient * 2;
+            }
+        }
+    }
+}

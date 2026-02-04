@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int *hist;
+extern  double *median;
+extern int i;
+extern double err;
+extern double sum_sq_err;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    double prev_err = 0.0;
+    for (i = 0; i < (3 * 256); i++) {
+        err = median[i] - (double)hist[i] + prev_err; // Introduce loop-carried dependency (WAW/RAR)
+        sum_sq_err += err * err;
+        prev_err = err; // Create loop-carried dependence: current iteration affects next
+    }
+}

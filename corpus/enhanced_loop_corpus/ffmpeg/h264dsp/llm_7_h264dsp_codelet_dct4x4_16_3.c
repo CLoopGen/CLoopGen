@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int16_t *coef;
+extern int i;
+extern int16_t tmp[16];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+int prev_z0 = 0;
+for (i = 0; i < 4; i++) {
+    const int z0 = tmp[i * 4 + 0] + tmp[i * 4 + 3] + prev_z0;
+    const int z1 = tmp[i * 4 + 1] + tmp[i * 4 + 2];
+    const int z2 = tmp[i * 4 + 0] - tmp[i * 4 + 3];
+    const int z3 = tmp[i * 4 + 1] - tmp[i * 4 + 2];
+    coef[i * 4 + 0] = z0 + z1;
+    coef[i * 4 + 1] = 2 * z2 + z3;
+    coef[i * 4 + 2] = z0 - z1;
+    coef[i * 4 + 3] = z2 - 2 * z3;
+    prev_z0 = z0;
+}
+}

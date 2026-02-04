@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *dst;
+extern uint8_t *src;
+extern ptrdiff_t stride;
+extern int h;
+extern  int A;
+extern  int B;
+extern  int C;
+extern  int D;
+extern int i;
+extern int bias;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < h; i++) {
+        int j = 0;
+        for (; j < 4; j++) {
+            dst[j] = (((dst[j]) + (((A * src[j] + B * src[j+1] + C * src[stride + j] + D * src[stride + j + 1] + bias)) >> 6) + 1) >> 1);
+        }
+        for (; j < 8; j++) {
+            dst[j] = (((dst[j]) + (((A * src[j] + B * src[j+1] + C * src[stride + j] + D * src[stride + j + 1] + bias)) >> 6) + 1) >> 1);
+        }
+        dst += stride;
+        src += stride;
+    }
+}

@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+typedef long BLASLONG;
+
+extern float *b;
+extern BLASLONG ii;
+extern float *ao1;
+extern float *ao2;
+extern float *ao3;
+extern float *ao4;
+extern float *ao5;
+extern float *ao6;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Strided memory access - process every 2nd element (unrolled-like pattern with step of 2)
+    // Simulates a strided traversal by advancing pointers by 2 each iteration but adjusting loop count
+    BLASLONG i;
+    for (i = 0; i < 3; i++) {
+        b[0] = *(ao1 + 0);
+        b[1] = *(ao2 + 0);
+        b[2] = *(ao3 + 0);
+        b[3] = *(ao4 + 0);
+        b[4] = *(ao5 + 0);
+        b[5] = *(ao6 + 0);
+
+        b[6]  = *(ao1 + 1);
+        b[7]  = *(ao2 + 1);
+        b[8]  = *(ao3 + 1);
+        b[9]  = *(ao4 + 1);
+        b[10] = *(ao5 + 1);
+        b[11] = *(ao6 + 1);
+
+        ao1 += 2;
+        ao2 += 2;
+        ao3 += 2;
+        ao4 += 2;
+        ao5 += 2;
+        ao6 += 2;
+        b += 12;
+    }
+}

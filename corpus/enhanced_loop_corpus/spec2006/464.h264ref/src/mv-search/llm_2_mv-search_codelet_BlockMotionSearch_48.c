@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern short ref;
+extern int list;
+extern int blocktype;
+extern short mv_x;
+extern short mv_y;
+extern int i;
+extern int j;
+extern int block_x;
+extern int block_y;
+extern int bsx;
+extern int bsy;
+extern short ***mv_array;
+extern short ******all_mv;
+extern int h4x4blkno;
+extern int v4x4blkno;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided Memory Access Pattern
+    // Instead of iterating with unit stride in j, access every second element first, then fill gaps.
+    // This creates a strided access pattern to improve cache behavior under certain conditions.
+
+    int stride = 2;
+    // First pass: handle even indices (0, 2, 4, ...)
+    for (i = 0; i < (bsx >> 2); i++) {
+        for (j = 0; j < (bsy >> 2); j += stride) {
+            all_mv[block_x + i][block_y + j][list][ref][blocktype][0] = mv_x;
+            all_mv[block_x + i][block_y + j][list][ref][blocktype][1] = mv_y;
+            mv_array[h4x4blkno + i][v4x4blkno + j][0] = mv_x;
+            mv_array[h4x4blkno + i][v4x4blkno + j][1] = mv_y;
+        }
+    }
+    // Second pass: handle odd indices (1, 3, 5, ...)
+    for (i = 0; i < (bsx >> 2); i++) {
+        for (j = 1; j < (bsy >> 2); j += stride) {
+            all_mv[block_x + i][block_y + j][list][ref][blocktype][0] = mv_x;
+            all_mv[block_x + i][block_y + j][list][ref][blocktype][1] = mv_y;
+            mv_array[h4x4blkno + i][v4x4blkno + j][0] = mv_x;
+            mv_array[h4x4blkno + i][v4x4blkno + j][1] = mv_y;
+        }
+    }
+}

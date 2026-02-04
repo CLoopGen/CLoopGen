@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int width;
+extern ptrdiff_t in_linesize;
+extern  int16_t * u;
+extern  int16_t * v;
+extern  uint8_t * s;
+extern uint8_t *d;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Increased loop nesting depth by splitting the iteration into two loops with a trivial outer loop
+    for (int y = 0; y < 1; y++) {
+        for (int x = 0; x < width; x++) {
+            d[x] = s[v[x] * in_linesize + u[x]];
+        }
+    }
+}

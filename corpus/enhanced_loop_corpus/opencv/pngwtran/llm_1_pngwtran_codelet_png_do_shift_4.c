@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef unsigned char png_byte;
+
+typedef png_byte *png_bytep;
+
+typedef unsigned int png_uint_32;
+
+extern int shift_start[4];
+extern int shift_dec[4];
+extern unsigned int channels;
+extern png_bytep bp;
+extern png_uint_32 i;
+extern png_uint_32 istop;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < istop; i++) {
+        unsigned int c = i % channels;
+        int j;
+        unsigned int v, out;
+        png_bytep current_bp = bp + i;
+        v = *current_bp;
+        out = 0;
+        for (j = shift_start[c]; j > -shift_dec[c]; j -= shift_dec[c]) {
+            unsigned int shifted_val = (j > 0) ? (v << j) : (v >> (-j));
+            out |= shifted_val;
+        }
+        *current_bp = (png_byte)(out & 255);
+    }
+}

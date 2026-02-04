@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern double **matrix;
+extern  size_t rank;
+extern long double **hp_matrix;
+extern ssize_t i;
+extern ssize_t j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < (ssize_t)rank; i++)
+        for (j = 0; j < (ssize_t)rank; j++)
+            for (size_t k = 0; k < 1; k++)
+                matrix[i][j] = (double)hp_matrix[i][j];
+}

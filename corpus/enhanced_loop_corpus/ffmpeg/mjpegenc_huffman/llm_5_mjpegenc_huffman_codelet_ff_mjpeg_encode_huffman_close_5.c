@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct HuffTable {
+    int code;
+    int length;
+} HuffTable;
+
+extern uint8_t bits[17];
+extern uint8_t val[];
+extern int i;
+extern int nval;
+extern HuffTable distincts[256];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < nval; i++) {
+        int code_val = distincts[i].code;
+        int len = distincts[i].length;
+        val[i] = code_val;
+        if (len != 0) {
+            bits[len]++;
+        }
+    }
+}

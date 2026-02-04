@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int LevelScale8x8Luma_Intra[6][8][8];
+extern int LevelScale8x8Luma_Inter[6][8][8];
+extern int InvLevelScale8x8Luma_Intra[6][8][8];
+extern int InvLevelScale8x8Luma_Inter[6][8][8];
+extern const int quant_coef8[6][8][8];
+extern const int dequant_coef8[6][8][8];
+extern int i;
+extern int j;
+extern int k;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (k = 0; k < 6; k++)
+    for (j = 0; j < 8; j++)
+        for (i = 0; i < 8; i++) {
+            int idx = k * 64 + j * 8 + i;
+            LevelScale8x8Luma_Intra[idx / 64][(idx % 64) / 8][idx % 8] = quant_coef8[idx / 64][(idx % 64) / 8][idx % 8];
+            InvLevelScale8x8Luma_Intra[idx / 64][(idx % 64) / 8][idx % 8] = dequant_coef8[idx / 64][(idx % 64) / 8][idx % 8] << 4;
+            LevelScale8x8Luma_Inter[idx / 64][(idx % 64) / 8][idx % 8] = quant_coef8[idx / 64][(idx % 64) / 8][idx % 8];
+            InvLevelScale8x8Luma_Inter[idx / 64][(idx % 64) / 8][idx % 8] = dequant_coef8[idx / 64][(idx % 64) / 8][idx % 8] << 4;
+        }
+}

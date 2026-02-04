@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern void **d;
+extern void **p;
+extern  void **s;
+extern int nb_samples;
+extern int channels;
+extern int n;
+extern int c;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (c = 0; c < channels; c++) {
+    const float *src = s[c];
+    float *dst = d[c];
+    float *prv = p[c];
+    for (n = 0; n < nb_samples; n++) {
+        const float current = src[n];
+        if (n > 0 || c % 2 == 0) {
+            dst[n] = current - prv[0];
+        } else {
+            dst[n] = current;
+        }
+        prv[0] = current;
+    }
+}
+}

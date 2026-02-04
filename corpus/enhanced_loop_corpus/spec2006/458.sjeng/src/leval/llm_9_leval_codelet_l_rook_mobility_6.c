@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int board[144];
+extern int square;
+extern int l;
+extern int m;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (l = square + 1; l < 144 && board[l] == 13; l++)
+        if (l % 3 == 0) m++;
+}

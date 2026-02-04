@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+struct fftw_mpi_ddim_do_not_use_me {
+    ptrdiff_t n;
+    ptrdiff_t ib;
+    ptrdiff_t ob;
+};
+
+
+typedef struct fftw_mpi_ddim_do_not_use_me fftw_mpi_ddim;
+
+typedef ptrdiff_t INT;
+
+typedef struct {
+    INT n;
+    INT b[2];
+} ddim;
+
+typedef struct {
+    int rnk;
+    ddim dims[1];
+} dtensor;
+
+extern int rnk;
+extern  fftw_mpi_ddim *dims0;
+extern dtensor *sz;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    sz->dims[0].n = dims0[0].n;
+    for (i = 1; i < rnk; ++i) {
+        sz->dims[i].n = dims0[i].n + sz->dims[i-1].n;
+    }
+}

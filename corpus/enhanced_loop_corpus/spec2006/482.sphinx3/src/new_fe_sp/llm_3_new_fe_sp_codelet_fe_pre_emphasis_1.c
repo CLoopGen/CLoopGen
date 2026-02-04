@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef short int16;
+
+extern int16 *in;
+extern double *out;
+extern int len;
+extern float factor;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 1; i < len; i++) {
+    int index = len - i - 1;
+    out[index] = (double)in[index] - factor * (double)in[index - 1];
+}
+}

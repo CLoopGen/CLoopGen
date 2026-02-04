@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef ssize_t Py_ssize_t;
+
+typedef Py_ssize_t npy_intp;
+
+extern int ndim;
+extern npy_intp shape_it[64];
+extern npy_intp nitems;
+extern npy_intp i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    npy_intp outer_i;
+    if (ndim > 0) {
+        for (outer_i = 0; outer_i < ndim; outer_i++) {
+            nitems *= shape_it[outer_i];
+        }
+    }
+}

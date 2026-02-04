@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int16_t *out;
+extern  int16_t *in1;
+extern  int16_t *in2;
+extern int length;
+extern int shift;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (int i = 0; i < length; i++) {
+        int16_t sum = in1[i] + in2[i];
+        if (sum >= 0) {
+            out[i] = sum >> shift;
+        } else {
+            out[i] = -( (-sum) >> shift );
+        }
+    }
+}

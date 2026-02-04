@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *d;
+extern uint8_t *top;
+extern uint8_t *left;
+extern ptrdiff_t stride;
+extern int x;
+extern int y;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (y = 0; y < 8; y++)
+    for (x = 0; x < 8; x++) {
+        int ty = (top[(x + 1) - 1] + 2 * top[(x + 1)] + top[(x + 1) + 1] + 2) >> 2;
+        int ly = (left[(y + 1) - 1] + 2 * left[(y + 1)] + left[(y + 1) + 1] + 2) >> 2;
+        d[y * stride + x] = (ty + ly) >> 1;
+    }
+}

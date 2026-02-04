@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern unsigned long *out;
+extern int i;
+extern int out_len;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+void loop(){
+for (i = 0; i < out_len; i++)
+    out[i] = 0;
+
+}

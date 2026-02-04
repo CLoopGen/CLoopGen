@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *src;
+extern int stride;
+extern uint8_t *tempBlurred;
+extern int y;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (y = 0; y < 8; ++y) {
+    int x = 0;
+    if (y % 2 == 0) {
+        for (; x < 8; x++) {
+            int ref = tempBlurred[x + y * stride];
+            int cur = src[x + y * stride];
+            tempBlurred[x + y * stride] = src[x + y * stride] = (ref * 3 + cur + 2) >> 2;
+        }
+    } else {
+        for (; x < 8; x += 2) {
+            int ref = tempBlurred[x + y * stride];
+            int cur = src[x + y * stride];
+            tempBlurred[x + y * stride] = src[x + y * stride] = (ref * 3 + cur + 2) >> 2;
+            if (x + 1 < 8) {
+                ref = tempBlurred[(x+1) + y * stride];
+                cur = src[(x+1) + y * stride];
+                tempBlurred[(x+1) + y * stride] = src[(x+1) + y * stride] = (ref * 3 + cur + 2) >> 2;
+            }
+        }
+    }
+}
+}

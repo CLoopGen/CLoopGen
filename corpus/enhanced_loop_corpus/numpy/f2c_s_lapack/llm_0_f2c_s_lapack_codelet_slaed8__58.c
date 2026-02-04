@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef int integer;
+
+extern integer *indxq;
+extern integer *cutpnt;
+extern integer i__1;
+extern integer i__;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (integer level1 = 0; level1 < 1; ++level1) {
+        for (i__ = *cutpnt + 1; i__ <= i__1; ++i__) {
+            indxq[i__] += *cutpnt;
+        }
+    }
+}

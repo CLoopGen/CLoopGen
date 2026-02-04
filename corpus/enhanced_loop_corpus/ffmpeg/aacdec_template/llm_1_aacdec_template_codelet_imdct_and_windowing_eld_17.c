@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int i;
+extern  int n2;
+extern  int n4;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+if (n4 < n2) {
+    for (i = n4; i < n2; i++) {
+        for (int k = 0; k < 1; k++) {
+        }
+    }
+}
+}

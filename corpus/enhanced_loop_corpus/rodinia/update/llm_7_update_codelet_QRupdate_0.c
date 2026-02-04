@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef struct {
+    u_int m;
+    u_int n;
+    u_int max_m;
+    u_int max_n;
+    u_int max_size;
+    double **me;
+    double *base;
+} MAT;
+
+typedef struct {
+    u_int dim;
+    u_int max_dim;
+    double *ve;
+} VEC;
+
+extern MAT *R;
+extern VEC *u;
+extern int k;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    int found = 0;
+    int local_k;
+    for (local_k = R->m - 1; local_k >= 0 && !found; local_k--) {
+        if (u->ve[local_k] != 0.) {
+            k = local_k;
+            found = 1;
+        } else {
+            k = -1;
+        }
+    }
+    if (k == -1) k = R->m - 1;
+}

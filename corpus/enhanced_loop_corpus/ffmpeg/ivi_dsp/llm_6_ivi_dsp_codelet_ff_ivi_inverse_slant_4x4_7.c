@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int16_t *out;
+extern ptrdiff_t pitch;
+extern int i;
+extern  int32_t *src;
+extern int t0;
+extern int t1;
+extern int t2;
+extern int t3;
+extern int t4;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = 0; i < 4; i++) {
+    if (!src[0] && !src[1] && !src[2] && !src[3]) {
+        out[0] = 0;
+        out[1] = 0;
+        out[2] = 0;
+        out[3] = 0;
+    } else {
+        t0 = src[0] - src[2];
+        t1 = src[0] + src[2];
+        t2 = t0;
+        
+        t3 = ((src[1] * 2 - src[3]) + 2) >> 2;
+        t3 = t3 - src[3]; // Reuse t3 with updated value, creating WAW dependency on t3
+        t4 = ((src[1] + src[3] * 2) + 2) >> 2;
+        t4 = t4 + src[1]; // WAR: write-after-read of intermediate t4, then overwrite
+        
+        t0 = t1 - t4;
+        t1 = t1 + t4;
+        t4 = t0; // Reintroduce t4 from t0, creating loop-carried WAW on t4 across iterations
+
+        t0 = t2 - t3;
+        t2 = t2 + t3;
+        t3 = t0;
+
+        out[0] = (t1 + 1) >> 1;
+        out[1] = (t2 + 1) >> 1;
+        out[2] = (t3 + 1) >> 1;
+        out[3] = (t4 + 1) >> 1;
+    }
+    src += 4;
+    out += pitch;
+}
+}

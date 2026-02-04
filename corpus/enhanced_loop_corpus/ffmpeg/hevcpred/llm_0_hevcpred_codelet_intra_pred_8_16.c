@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+union __attribute__((packed)) __attribute__((may_alias)) unaligned_32 {
+    uint32_t l;
+};
+
+
+extern int i;
+extern uint8_t *left;
+extern int size_max_y;
+extern uint32_t pix;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (int j = 0; j < (size_max_y / 4); j += 1)
+        for (i = j * 4; i < (j + 1) * 4 && i < size_max_y; i++)
+            ((((union unaligned_32 *)(left + i))->l) = (pix));
+}

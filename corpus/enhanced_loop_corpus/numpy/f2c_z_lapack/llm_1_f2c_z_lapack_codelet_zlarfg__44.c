@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef int integer;
+
+typedef double doublereal;
+
+extern integer i__1;
+extern integer j;
+extern doublereal beta;
+extern doublereal safmin;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+if (i__1 > 0) {
+    for (j = 1; j <= i__1; ++j) {
+        for (integer inner = 1; inner <= 1; ++inner) {
+            beta *= safmin;
+        }
+    }
+} else {
+    beta *= safmin;
+}
+}

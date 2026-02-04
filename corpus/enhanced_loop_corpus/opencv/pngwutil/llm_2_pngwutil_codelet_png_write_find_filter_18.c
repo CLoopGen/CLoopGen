@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef unsigned char png_byte;
+
+typedef png_byte *png_bytep;
+
+extern png_bytep row_buf;
+extern size_t row_bytes;
+extern png_bytep rp;
+extern size_t sum;
+extern size_t i;
+extern unsigned int v;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 1: Strided memory access with step size 2 (forward traversal)
+    for (i = 1; i < row_bytes; i += 2) {
+        v = row_buf[i];
+        sum += (v < 128) ? v : 256 - v;
+    }
+}

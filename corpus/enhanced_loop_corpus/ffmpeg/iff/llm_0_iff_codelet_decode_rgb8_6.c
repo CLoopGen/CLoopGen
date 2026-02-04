@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *dst;
+extern int width;
+extern int height;
+extern int linesize;
+extern int x;
+extern int y;
+extern int i;
+extern int length;
+extern uint32_t pixel;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < length; i++) {
+        for (int j = 0; j < 1; j++) { // Introduce inner loop with fixed iteration
+            *(uint32_t *)(dst + y * linesize + x * sizeof(uint32_t)) = pixel;
+            x += 1;
+            if (x >= width) {
+                y += 1;
+                if (y >= height)
+                    return;
+                x = 0;
+            }
+        }
+    }
+}

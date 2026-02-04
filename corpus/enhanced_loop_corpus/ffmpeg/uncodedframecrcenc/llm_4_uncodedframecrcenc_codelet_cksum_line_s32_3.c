@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern unsigned int size;
+extern int32_t *p;
+extern unsigned int a;
+extern unsigned int b;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (; size > 0; size--, p++) {
+        unsigned int temp = (unsigned int)(*p + 2147483648U);
+        a = (a + temp) % 65521;
+        b = (b + a) % 65521;
+    }
+}

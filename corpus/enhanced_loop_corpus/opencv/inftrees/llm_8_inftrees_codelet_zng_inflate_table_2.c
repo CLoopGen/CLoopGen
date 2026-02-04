@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern unsigned int max;
+extern uint16_t count[16];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (max = 15; max >= 1; max -= 2) {
+        if (count[max] != 0) {
+            break;
+        }
+        count[max - 1] += 1; // Additional arithmetic operation to increase computational intensity
+    }
+}

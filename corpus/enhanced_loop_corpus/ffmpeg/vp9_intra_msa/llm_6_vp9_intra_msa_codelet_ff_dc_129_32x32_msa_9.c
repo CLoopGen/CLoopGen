@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern uint8_t *dst;
+extern ptrdiff_t dst_stride;
+extern uint32_t row;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    uint32_t temp_row = 16;
+    ptrdiff_t double_stride = dst_stride * 2;
+    for (row = temp_row; row--;) {
+        dst += double_stride;
+        temp_row = row; // Introduce RAW dependency: use of 'row' after update
+    }
+}

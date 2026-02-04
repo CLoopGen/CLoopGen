@@ -1,0 +1,65 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern long num[5];
+extern long den[4];
+extern long quo[4];
+extern int i;
+extern int j;
+extern unsigned long work;
+extern unsigned long carry;
+extern int num_hi_sig;
+extern int den_hi_sig;
+extern unsigned long quo_est;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (i = num_hi_sig - den_hi_sig - 1; i >= 0; i--) {
+    unsigned long tmp;
+    num_hi_sig = i + den_hi_sig + 1;
+    work = num[num_hi_sig] * ((unsigned long)1 << (8 * 8) / 2) + num[num_hi_sig - 1];
+    if (num[num_hi_sig] != den[den_hi_sig])
+        quo_est = work / den[den_hi_sig];
+    else
+        quo_est = ((unsigned long)1 << (8 * 8) / 2) - 1;
+    tmp = work - quo_est * den[den_hi_sig];
+    if (tmp < ((unsigned long)1 << (8 * 8) / 2) && (den[den_hi_sig - 1] * quo_est > (tmp * ((unsigned long)1 << (8 * 8) / 2) + num[num_hi_sig - 2])))
+        quo_est--;
+
+    carry = 0;
+    for (j = 0; j <= den_hi_sig; j++) {
+        work = quo_est * den[j] + carry;
+        carry = ((unsigned long)(work) >> (8 * 8) / 2);
+        work = num[i + j] - ((work) & (((unsigned long)1 << ((8 * 8) / 2)) - 1));
+        num[i + j] = ((work) & (((unsigned long)1 << ((8 * 8) / 2)) - 1));
+        carry += ((unsigned long)(work) >> (8 * 8) / 2) != 0;
+
+        // Additional nested loop: simulate extended precision correction with unrolled safety bound
+        for (int k = 0; k < 2 && j == den_hi_sig; k++) {
+            if (carry && num[i + j - k] < carry) {
+                carry = (carry - num[i + j - k]) > 0 ? 1 : 0;
+                num[i + j - k] = (num[i + j - k] + den[den_hi_sig - k]) & (((unsigned long)1 << ((8 * 8) / 2)) - 1);
+            } else if (carry) {
+                num[i + j - k] += carry;
+                carry = 0;
+            }
+        }
+    }
+
+    if (num[num_hi_sig] < carry) {
+        quo_est--;
+        carry = 0;
+        for (j = 0; j <= den_hi_sig; j++) {
+            work = num[i + j] + den[j] + carry;
+            carry = ((unsigned long)(work) >> (8 * 8) / 2);
+            num[i + j] = ((work) & (((unsigned long)1 << ((8 * 8) / 2)) - 1));
+        }
+        num[num_hi_sig] += carry;
+    }
+    quo[i] = quo_est;
+}
+}

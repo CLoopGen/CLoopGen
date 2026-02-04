@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned int RC2_INT;
+
+extern int i;
+extern int n;
+extern RC2_INT *p0;
+extern RC2_INT *p1;
+extern RC2_INT x0;
+extern RC2_INT x1;
+extern RC2_INT x2;
+extern RC2_INT x3;
+extern RC2_INT t;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (;;) {
+    RC2_INT next_x3 = ((x3 << 11) | (x3 >> 5)) & 65535;
+    RC2_INT next_x2 = ((x2 << 13) | (x2 >> 3)) & 65535;
+    RC2_INT next_x1 = ((x1 << 14) | (x1 >> 2)) & 65535;
+    RC2_INT next_x0 = ((x0 << 15) | (x0 >> 1)) & 65535;
+
+    x3 = (next_x3 - (x0 & ~x2) - (x1 & x2) - *(p0--)) & 65535;
+    x2 = (next_x2 - (x3 & ~x1) - (x0 & x1) - *(p0--)) & 65535;
+    x1 = (next_x1 - (x2 & ~x0) - (x3 & x0) - *(p0--)) & 65535;
+    x0 = (next_x0 - (x1 & ~x3) - (x2 & x3) - *(p0--)) & 65535;
+
+    if (--i == 0) {
+        if (--n == 0)
+            break;
+        i = (n == 2) ? 6 : 5;
+        RC2_INT val_x3 = p1[x2 & 63];
+        RC2_INT val_x2 = p1[x1 & 63];
+        RC2_INT val_x1 = p1[x0 & 63];
+        RC2_INT val_x0 = p1[x3 & 63];
+        x3 = (x3 - val_x3) & 65535;
+        x2 = (x2 - val_x2) & 65535;
+        x1 = (x1 - val_x1) & 65535;
+        x0 = (x0 - val_x0) & 65535;
+    }
+}
+}

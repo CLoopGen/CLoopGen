@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef float INTFLOAT;
+
+extern __attribute__((aligned(32))) INTFLOAT sbr_qmf_window_ds[320];
+extern __attribute__((aligned(32))) INTFLOAT sbr_qmf_window_us[640];
+extern int n;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (n = 0; n < 320; n += 4) {
+        sbr_qmf_window_ds[n] = sbr_qmf_window_us[2 * n];
+        if (n + 1 < 320) sbr_qmf_window_ds[n + 1] = sbr_qmf_window_us[2 * (n + 1)];
+        if (n + 2 < 320) sbr_qmf_window_ds[n + 2] = sbr_qmf_window_us[2 * (n + 2)];
+        if (n + 3 < 320) sbr_qmf_window_ds[n + 3] = sbr_qmf_window_us[2 * (n + 3)];
+    }
+}

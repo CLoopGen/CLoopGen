@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef float float32;
+
+typedef int int32;
+
+typedef double float64;
+
+extern float32 *vec;
+extern int32 len;
+extern float64 flr;
+extern int32 i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    float32 floor_val = (float32)flr;
+    float32 temp;
+    for (i = 0; i < len; i++) {
+        temp = vec[i];
+        if (temp < floor_val) {
+            temp = floor_val;
+        }
+        vec[i] = temp * 1.0001f; // Slight arithmetic perturbation
+    }
+}

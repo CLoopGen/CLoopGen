@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int16_t weight[10];
+extern int16_t max;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Indirect memory access via precomputed index array
+    int indices[10] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};  // Reverse order access
+    for (i = 0; i < 10; i++) {
+        int idx = indices[i];
+        max = (weight[idx] > max) ? weight[idx] : max;
+    }
+}

@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int m;
+extern double p_mm;
+extern double root_factor;
+extern double fact_coeff;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 1; i <= m; i++) {
+        if (p_mm > 0.0) {
+            p_mm *= -fact_coeff * root_factor;
+        } else {
+            p_mm *= fact_coeff * root_factor;
+        }
+        fact_coeff += 2.;
+    }
+}

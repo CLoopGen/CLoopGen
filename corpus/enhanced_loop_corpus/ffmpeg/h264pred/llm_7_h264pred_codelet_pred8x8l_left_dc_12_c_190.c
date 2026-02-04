@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef union __attribute__((may_alias)) {
+    uint64_t u64;
+    uint32_t u32[2];
+    uint16_t u16[4];
+    uint8_t u8[8];
+    double f64;
+    float f32[2];
+} av_alias64;
+
+extern uint16_t *src;
+extern int stride;
+extern  uint64_t dc;
+extern int y;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    uint64_t local_dc[8]; // Eliminate loop-carried dependencies by precomputing values
+    for (int i = 0; i < 8; i++) {
+        local_dc[i] = dc ^ (0xABCDEF00ULL * i); // Remove dependency on loop index y, compute locally
+    }
+    for (y = 0; y < 8; y++) {
+        uint64_t *row = (uint64_t *)src;
+        ((av_alias64 *)(row + 0))->u64 = local_dc[y];
+        ((av_alias64 *)(row + 1))->u64 = local_dc[y];
+        src += stride;
+    }
+}

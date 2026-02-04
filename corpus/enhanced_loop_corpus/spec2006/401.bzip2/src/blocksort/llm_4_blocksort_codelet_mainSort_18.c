@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned int UInt32;
+
+typedef unsigned char UChar;
+
+typedef int Int32;
+
+typedef unsigned short UInt16;
+
+extern UInt32 *ptr;
+extern UChar *block;
+extern UInt32 *ftab;
+extern Int32 i;
+extern Int32 j;
+extern UInt16 s;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (; i >= 3; i -= 4) {
+    if (block[i] != 0) {
+        s = (s >> 8) | (block[i] << 8);
+        j = ftab[s] - 1;
+        ftab[s] = j;
+        ptr[j] = i;
+    } else {
+        continue;
+    }
+    if (block[i - 1] != 0) {
+        s = (s >> 8) | (block[i - 1] << 8);
+        j = ftab[s] - 1;
+        ftab[s] = j;
+        ptr[j] = i - 1;
+    } else {
+        continue;
+    }
+    if (block[i - 2] != 0) {
+        s = (s >> 8) | (block[i - 2] << 8);
+        j = ftab[s] - 1;
+        ftab[s] = j;
+        ptr[j] = i - 2;
+    } else {
+        continue;
+    }
+    if (block[i - 3] != 0) {
+        s = (s >> 8) | (block[i - 3] << 8);
+        j = ftab[s] - 1;
+        ftab[s] = j;
+        ptr[j] = i - 3;
+    }
+}
+}

@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int bx;
+extern int by;
+extern short ******all_mv;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (bx = 0; bx < 4; bx++)
+        for (by = 0; by < 4; by++)
+            for (int i = 0; i < 2; i++)
+                all_mv[bx][by][0][0][0][i] = 0;
+}

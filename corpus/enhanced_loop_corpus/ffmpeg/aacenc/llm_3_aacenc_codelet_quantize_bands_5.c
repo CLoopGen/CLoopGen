@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int *out;
+extern  float *in;
+extern  float *scaled;
+extern int size;
+extern int is_signed;
+extern int maxval;
+extern  float Q34;
+extern  float rounding;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    // Variant 2: Reverse consecutive memory access (processing array from end to start)
+    for (i = size - 1; i >= 0; i--) {
+        float qc = scaled[i] * Q34;
+        int tmp = (int)((qc + rounding) > ((float)maxval) ? ((float)maxval) : (qc + rounding));
+        if (is_signed && in[i] < 0.F) {
+            tmp = -tmp;
+        }
+        out[i] = tmp;
+    }
+}

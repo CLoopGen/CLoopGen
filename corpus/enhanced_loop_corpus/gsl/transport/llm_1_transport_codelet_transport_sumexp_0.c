@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int numexp;
+extern  int order;
+extern  double t;
+extern double x;
+extern double rk;
+extern double sumexp;
+extern int k;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (k = 1; k <= numexp; k++) {
+    double sum2 = 1.;
+    double xk = 1. / (rk * x);
+    double xk1 = 1.;
+    int j, i;
+    for (j = 1; j <= order; j++) {
+        sum2 = sum2 * xk1 * xk + 1.;
+        xk1 += 1.;
+        for (i = 0; i < 2; i++) {
+            sum2 += 0.1; 
+        }
+    }
+    sumexp *= t;
+    sumexp += sum2;
+    rk -= 1.;
+}
+}

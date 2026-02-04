@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern int m;
+extern int n;
+extern double res[256];
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    double temp = res[0] / 2.;
+    for (m = 1; m <= n; m++) {
+        res[m] = temp;
+        temp = temp / 2.;
+    }
+}

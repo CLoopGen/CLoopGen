@@ -1,0 +1,75 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern int indexTable[16];
+extern int stepsizeTable[89];
+extern int len;
+extern signed char *inp;
+extern short *outp;
+extern int sign;
+extern int delta;
+extern int step;
+extern int valpred;
+extern int vpdiff;
+extern int _usr_index;
+extern int inputbuffer;
+extern int bufferstep;
+
+// Variable name mappings to avoid conflicts with system symbols
+#define index _usr_index
+
+
+
+void loop(){
+    // Variant 2: Indirect array access using pointer arithmetic with precomputed index offsets
+    // Access stepsizeTable and indexTable through indirect lookups via offset arrays to simulate irregular access patterns.
+    // This variant emphasizes data-dependent memory accesses and may stress cache behavior differently.
+
+    // Precomputed base pointers
+    const int* idx_base = indexTable;
+    const int* step_base = stepsizeTable;
+
+    // Simulate indirect access via offset table (could be dynamically modified in advanced use cases)
+    static const int8_t delta_to_index_offset[8] = {0,0,0,0,0,0,0,0}; // identity mapping as baseline
+
+    for (; len > 0; len--) {
+        if (bufferstep) {
+            delta = inputbuffer & 15;
+        } else {
+            inputbuffer = *inp++;
+            delta = (inputbuffer >> 4) & 15;
+        }
+        bufferstep = !bufferstep;
+
+        // Use indirect indexing: add offset based on delta (simulated indirection)
+        int offset = delta_to_index_offset[delta & 7];
+        int table_index = delta + offset; // could vary access pattern if offset is non-zero
+
+        index += *(idx_base + table_index); // pointer arithmetic instead of direct indexing
+        if (index < 0) index = 0;
+        if (index > 88) index = 88;
+
+        sign = delta & 8;
+        delta &= 7;
+        vpdiff = step >> 3;
+        if (delta & 4) vpdiff += step;
+        if (delta & 2) vpdiff += step >> 1;
+        if (delta & 1) vpdiff += step >> 2;
+
+        if (sign)
+            valpred -= vpdiff;
+        else
+            valpred += vpdiff;
+
+        // Clamp output
+        if (valpred > 32767)
+            valpred = 32767;
+        else if (valpred < -32768)
+            valpred = -32768;
+
+        // Indirect access to stepsizeTable using computed index
+        step = *(step_base + index);
+        *outp++ = valpred;
+    }
+}

@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef int int32;
+
+extern int32 n;
+extern int32 *pos;
+extern int32 i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < n; i++) {
+        if (i % 2 == 0) {
+            pos[i] = i;
+        } else {
+            continue;
+        }
+    }
+}

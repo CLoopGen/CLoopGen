@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef float real;
+
+typedef int integer;
+
+extern real *a;
+extern integer a_dim1;
+extern integer i__1;
+extern integer i__;
+extern integer j;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (j = 2; j <= i__1; ++j) {
+    for (integer k = 2; k <= j - 1; ++k) {
+        for (i__ = k; i__ >= 2 && i__ == k; --i__) {
+            a[i__ + j * a_dim1] = a[i__ - 1 + j * a_dim1];
+        }
+    }
+    a[j * a_dim1 + 1] = 0.F;
+}
+}

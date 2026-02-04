@@ -1,0 +1,105 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+typedef unsigned char Intersection;
+
+struct eyevalue {
+    unsigned char a;
+    unsigned char b;
+    unsigned char c;
+    unsigned char d;
+};
+
+
+struct eye_data {
+    int color;
+    int esize;
+    int msize;
+    int origin;
+    struct eyevalue value;
+    int attack_point;
+    int defense_point;
+    char marginal;
+    char type;
+    char neighbors;
+    char marginal_neighbors;
+    char cut;
+};
+
+
+struct half_eye_data {
+    float value;
+    char type;
+    int num_attacks;
+    int attack_point[4];
+    int num_defends;
+    int defense_point[4];
+};
+
+
+struct local_owl_data {
+    char goal[400];
+    char boundary[400];
+    char escape_values[400];
+    int color;
+    struct eye_data my_eye[400];
+    struct half_eye_data half_eye[400];
+    int lunch[10];
+    int lunch_attack_code[10];
+    int lunch_attack_point[10];
+    int lunch_defend_code[10];
+    int lunch_defense_point[10];
+    char inessential[400];
+    int lunches_are_current;
+    char safe_move_cache[400];
+    int restore_from;
+    int number_in_stack;
+};
+
+
+extern int delta[8];
+extern int board_size;
+extern Intersection board[421];
+extern struct local_owl_data *owl;
+extern int color;
+extern struct eye_data *eye;
+extern char mw[400];
+extern char mz[400];
+extern int m;
+extern int n;
+extern int k;
+extern int eye_color;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (m = 0; m < board_size; m++) {
+    for (n = 0; n < board_size; n++) {
+        int base_offset = (19 + 2) + (m) * (19 + 1);
+        int pos = base_offset + n;
+        if (board[pos] == color) {
+            int temp_origin;
+            int temp_color_match, temp_not_marginal, temp_board_cond;
+            for (k = 0; k < 8; k++) {
+                int pos2 = pos + delta[k];
+                // Precompute conditions to reduce memory accesses and increase arithmetic intensity
+                temp_board_cond = (board[pos2] != 3);
+                temp_color_match = (eye[pos2].color == eye_color);
+                temp_not_marginal = (!eye[pos2].marginal);
+                temp_origin = eye[pos2].origin;
+
+                if (temp_board_cond && temp_color_match && temp_origin != 0 && temp_not_marginal) {
+                    if (owl->goal[pos]) {
+                        mw[temp_origin] += 2;  // Increased operation intensity
+                    } else {
+                        mz[temp_origin] += 2;
+                    }
+                }
+            }
+        }
+    }
+}
+}

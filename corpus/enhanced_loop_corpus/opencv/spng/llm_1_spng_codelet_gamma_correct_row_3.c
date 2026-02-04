@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern unsigned char *row;
+extern uint32_t pixels;
+extern  uint16_t *gamma_lut;
+extern uint32_t i;
+extern unsigned char *px;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    uint32_t total_elements = pixels * 3;
+    for (i = 0; i < total_elements; i++) {
+        row[i] = gamma_lut[row[i]];
+    }
+}

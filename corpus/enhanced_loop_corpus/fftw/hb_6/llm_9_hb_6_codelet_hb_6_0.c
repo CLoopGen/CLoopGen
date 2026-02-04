@@ -1,0 +1,139 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+typedef ptrdiff_t INT;
+
+typedef double R;
+
+typedef INT *stride;
+
+typedef R E;
+
+extern const INT fftw_an_INT_guaranteed_to_be_zero;
+extern R *cr;
+extern R *ci;
+extern  R *W;
+extern stride rs;
+extern INT mb;
+extern INT me;
+extern INT ms;
+extern  E KP500000000;
+extern  E KP866025403;
+extern INT m;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (m = mb; m < me; m += 2 , cr = cr + (2*ms) , ci = ci - (2*ms) , W = W + 20 , (rs) = (rs) + 2*fftw_an_INT_guaranteed_to_be_zero) {
+    if (m + 1 >= me) break;
+    for (INT inner = 0; inner < 2; inner++) {
+        INT idx_c = inner * ms;
+        INT idx_W = inner * 10;
+        E T3, Ty, Ta, TO, Tr, TB, Td, TE, Tk, TL, Tn, TH;
+        {
+            E T1, T2, Tb, Tc;
+            T1 = cr[idx_c + 0];
+            T2 = ci[(rs[2])];
+            T3 = T1 + T2;
+            Ty = T1 - T2;
+            {
+                E T6, Tz, T9, TA;
+                {
+                    E T4, T5, T7, T8;
+                    T4 = cr[(rs[2]) + idx_c];
+                    T5 = ci[0];
+                    T6 = T4 + T5;
+                    Tz = T4 - T5;
+                    T7 = ci[(rs[1])];
+                    T8 = cr[(rs[1]) + idx_c];
+                    T9 = T7 + T8;
+                    TA = T7 - T8;
+                }
+                Ta = T6 + T9;
+                TO = KP866025403 * (Tz - TA);
+                Tr = KP866025403 * (T6 - T9);
+                TB = Tz + TA;
+            }
+            Tb = ci[(rs[5])];
+            Tc = cr[(rs[3]) + idx_c];
+            Td = Tb - Tc;
+            TE = Tb + Tc;
+            {
+                E Tg, TG, Tj, TF;
+                {
+                    E Te, Tf, Th, Ti;
+                    Te = ci[(rs[3])];
+                    Tf = cr[(rs[5]) + idx_c];
+                    Tg = Te - Tf;
+                    TG = Te + Tf;
+                    Th = ci[(rs[4])];
+                    Ti = cr[(rs[4]) + idx_c];
+                    Tj = Th - Ti;
+                    TF = Th + Ti;
+                }
+                Tk = Tg + Tj;
+                TL = KP866025403 * (TG + TF);
+                Tn = KP866025403 * (Tj - Tg);
+                TH = TF - TG;
+            }
+        }
+        cr[idx_c + 0] = T3 + Ta;
+        ci[idx_c + 0] = Td + Tk;
+        {
+            E TC, TI, Tx, TD;
+            TC = Ty + TB;
+            TI = TE - TH;
+            Tx = W[idx_W + 4];
+            TD = W[idx_W + 5];
+            cr[(rs[3]) + idx_c] = ((Tx * TC) - ((TD) * (TI)));
+            ci[(rs[3])] = (((TD) * (TC)) + (Tx * TI));
+        }
+        {
+            E To, Tu, Ts, Tw, Tm, Tq;
+            Tm = ((T3) - ((KP500000000) * (Ta)));
+            To = Tm - Tn;
+            Tu = Tm + Tn;
+            Tq = ((Td) - ((KP500000000) * (Tk)));
+            Ts = Tq - Tr;
+            Tw = Tr + Tq;
+            {
+                E Tl, Tp, Tt, Tv;
+                Tl = W[idx_W + 2];
+                Tp = W[idx_W + 3];
+                cr[(rs[2]) + idx_c] = ((Tl * To) - ((Tp) * (Ts)));
+                ci[(rs[2]) + idx_c] = (((Tl) * (Ts)) + (Tp * To));
+                Tt = W[idx_W + 6];
+                Tv = W[idx_W + 7];
+                cr[(rs[4]) + idx_c] = ((Tt * Tu) - ((Tv) * (Tw)));
+                ci[(rs[4]) + idx_c] = (((Tt) * (Tw)) + (Tv * Tu));
+            }
+        }
+        {
+            E TM, TS, TQ, TU, TK, TP;
+            TK = ((Ty) - ((KP500000000) * (TB)));
+            TM = TK - TL;
+            TS = TK + TL;
+            TP = (((KP500000000) * (TH)) + (TE));
+            TQ = TO + TP;
+            TU = TP - TO;
+            {
+                E TJ, TN, TR, TT;
+                TJ = W[idx_W + 0];
+                TN = W[idx_W + 1];
+                cr[(rs[1]) + idx_c] = ((TJ * TM) - ((TN) * (TQ)));
+                ci[(rs[1]) + idx_c] = (((TN) * (TM)) + (TJ * TQ));
+                TR = W[idx_W + 8];
+                TT = W[idx_W + 9];
+                cr[(rs[5]) + idx_c] = ((TR * TS) - ((TT) * (TU)));
+                ci[(rs[5]) + idx_c] = (((TT) * (TS)) + (TR * TU));
+            }
+        }
+    }
+}
+
+}

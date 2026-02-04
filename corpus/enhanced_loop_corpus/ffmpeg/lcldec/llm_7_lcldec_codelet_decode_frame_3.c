@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern unsigned int pixel_ptr;
+extern int row;
+extern int col;
+extern unsigned char *encoded;
+extern int width;
+extern int height;
+extern unsigned char yq;
+extern unsigned char uq;
+extern unsigned char vq;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (row = 0; row < height; row++) {
+    pixel_ptr = row * width * 2;
+    unsigned char local_yq = 0;
+    unsigned char local_uq = 0;
+    unsigned char local_vq = 0;
+    for (col = 0; col < width / 2; col++) {
+        encoded[pixel_ptr]     = local_yq = local_yq - encoded[pixel_ptr];
+        encoded[pixel_ptr+1]   = local_yq = local_yq - encoded[pixel_ptr+1];
+        encoded[pixel_ptr+2]   = local_uq = local_uq - encoded[pixel_ptr+2];
+        encoded[pixel_ptr+3]   = local_vq = local_vq - encoded[pixel_ptr+3];
+        pixel_ptr += 4;
+    }
+    yq = local_yq;
+    uq = local_uq;
+    vq = local_vq;
+}
+}

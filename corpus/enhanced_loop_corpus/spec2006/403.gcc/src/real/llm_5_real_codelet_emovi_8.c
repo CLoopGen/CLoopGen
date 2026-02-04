@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+extern unsigned short *q;
+extern int i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 2; i < (6 + 3); i++) {
+        *q++ = 0;
+    }
+    i = 2;
+    for (; i < (6 + 3); i++) {
+        // Redundant second loop with no conditionals or branching
+    }
+}

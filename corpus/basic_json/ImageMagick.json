@@ -1,0 +1,2762 @@
+[
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/tiff/tiff_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_tiff_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/tiff/tiff_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_tiff_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mpc/mpc_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mpc_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/tiff/tiff_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_tiff_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cache/cache_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cache_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/url/url_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_url_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/djvu/djvu_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_djvu_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mat/mat_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mat_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/msl/msl_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_msl_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ipl/ipl_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ipl_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/magick-cli/magick-cli_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_magick-cli_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cache/cache_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cache_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mvg/mvg_codelet_ReadMVGImage_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mvg_codelet_ReadMVGImage_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/hald/hald_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_hald_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mvg/mvg_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mvg_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/rle/rle_codelet_ReadRLEImage_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_rle_codelet_ReadRLEImage_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dot/dot_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dot_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/matte/matte_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_matte_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/operation/operation_codelet_CLISimpleOperatorImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_operation_codelet_CLISimpleOperatorImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/list/list_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_list_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/operation/operation_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_operation_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cache/cache_codelet_AcquirePixelCacheNexus_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cache_codelet_AcquirePixelCacheNexus_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/clip/clip_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_clip_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dpx/dpx_codelet_WriteDPXImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dpx_codelet_WriteDPXImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/rle/rle_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_rle_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/gif/gif_codelet_WriteGIFImage_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_gif_codelet_WriteGIFImage_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cache/cache_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cache_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mat/mat_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mat_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/gif/gif_codelet_WriteGIFImage_9.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_gif_codelet_WriteGIFImage_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/geometry/geometry_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_geometry_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cache-view/cache-view_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cache-view_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mpc/mpc_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mpc_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pcd/pcd_codelet_Upsample_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pcd_codelet_Upsample_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/option/option_codelet_DefineImageOption_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_option_codelet_DefineImageOption_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pcd/pcd_codelet_ReadPCDImage_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pcd_codelet_ReadPCDImage_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pcd/pcd_codelet_DecodeImage_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pcd_codelet_DecodeImage_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dpx/dpx_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dpx_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dpx/dpx_codelet_WriteDPXImage_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dpx_codelet_WriteDPXImage_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/random/random_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_random_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/operation/operation_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_operation_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/option/option_codelet_CommandOptionToMnemonic_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_option_codelet_CommandOptionToMnemonic_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/validate/validate_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_validate_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/random/random_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_random_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/rgb/rgb_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_rgb_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/gif/gif_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_gif_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/gif/gif_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_gif_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/option/option_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_option_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/jp2/jp2_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_jp2_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/option/option_codelet_GetCommandOptions_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_option_codelet_GetCommandOptions_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/msl/msl_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_msl_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cache-view/cache-view_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cache-view_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pcd/pcd_codelet_Upsample_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pcd_codelet_Upsample_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/kernel/kernel_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_kernel_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/compare/compare_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_compare_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pcd/pcd_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pcd_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/compare/compare_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_compare_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/operation/operation_codelet_CLINoImageOperator_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_operation_codelet_CLINoImageOperator_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sct/sct_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sct_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/gif/gif_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_gif_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/list/list_codelet_DeleteImages_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_list_codelet_DeleteImages_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/compare/compare_codelet_GetImageDistortions_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_compare_codelet_GetImageDistortions_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/operation/operation_codelet_CLISimpleOperatorImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_operation_codelet_CLISimpleOperatorImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/caption/caption_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_caption_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ps/ps_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ps_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/registry/registry_codelet_DefineImageRegistry_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_registry_codelet_DefineImageRegistry_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/gif/gif_codelet_WriteGIFImage_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_gif_codelet_WriteGIFImage_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/bmp/bmp_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_bmp_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pix/pix_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pix_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/bmp/bmp_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_bmp_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/registry/registry_codelet_OverAllocateMemory_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_registry_codelet_OverAllocateMemory_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pwp/pwp_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pwp_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ps/ps_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ps_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/operation/operation_codelet_CLINoImageOperator_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_operation_codelet_CLINoImageOperator_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/clipboard/clipboard_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_clipboard_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/paint/paint_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_paint_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/vicar/vicar_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_vicar_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/bmp/bmp_codelet_WriteBMPImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_bmp_codelet_WriteBMPImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/paint/paint_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_paint_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/otb/otb_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_otb_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/otb/otb_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_otb_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/emf/emf_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_emf_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/import/import_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_import_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/psd/psd_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_psd_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/art/art_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_art_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mono/mono_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mono_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/art/art_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_art_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/tile/tile_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_tile_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/semaphore/semaphore_codelet_SinglePrecisionToHalf_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_semaphore_codelet_SinglePrecisionToHalf_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mono/mono_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mono_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/jpeg/jpeg_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_jpeg_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/semaphore/semaphore_codelet_OverAllocateMemory_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_semaphore_codelet_OverAllocateMemory_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/jpeg/jpeg_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_jpeg_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/statistic/statistic_codelet_AddNodePixelList_11.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_statistic_codelet_AddNodePixelList_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/statistic/statistic_codelet_AddNodePixelList_12.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_statistic_codelet_AddNodePixelList_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xps/xps_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xps_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_ReadEndpoints_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_ReadEndpoints_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/statistic/statistic_codelet_ResetPixelList_13.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_statistic_codelet_ResetPixelList_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/statistic/statistic_codelet_ApplyEvaluateOperator_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_statistic_codelet_ApplyEvaluateOperator_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xps/xps_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xps_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/statistic/statistic_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_statistic_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_ReadEndpoints_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_ReadEndpoints_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/statistic/statistic_codelet_IntensityCompare_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_statistic_codelet_IntensityCompare_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_WriteAlphas_20.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_WriteAlphas_20.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_CompressAlpha_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_CompressAlpha_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/statistic/statistic_codelet_GetImageStatistics_10.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_statistic_codelet_GetImageStatistics_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_ComputeEndPoints_16.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_ComputeEndPoints_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/statistic/statistic_codelet_GetImageMoments_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_statistic_codelet_GetImageMoments_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_CompressAlpha_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_CompressAlpha_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/jpeg/jpeg_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_jpeg_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_ReadEndpoints_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_ReadEndpoints_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/psd/psd_codelet_PSDPackbitsEncodeImage_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_psd_codelet_PSDPackbitsEncodeImage_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_WriteIndices_21.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_WriteIndices_21.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_CompressClusterFit_11.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_CompressClusterFit_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_ComputeWeightedCovariance_17.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_ComputeWeightedCovariance_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_ComputeWeightedCovariance_18.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_ComputeWeightedCovariance_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_ReadEndpoints_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_ReadEndpoints_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_ConstructOrdering_9.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_ConstructOrdering_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_ConstructOrdering_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_ConstructOrdering_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/jp2/jp2_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_jp2_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/psd/psd_codelet_ReadPSDString_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_psd_codelet_ReadPSDString_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/palm/palm_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_palm_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/timer/timer_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_timer_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/statistic/statistic_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_statistic_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/timer/timer_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_timer_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/palm/palm_codelet_WritePALMImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_palm_codelet_WritePALMImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cin/cin_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cin_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/palm/palm_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_palm_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_WriteSingleColorFit_22.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_WriteSingleColorFit_22.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/static/static_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_static_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fpx/fpx_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fpx_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/transform/transform_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_transform_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/null/null_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_null_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fpx/fpx_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fpx_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ashlar/ashlar_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ashlar_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/transform/transform_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_transform_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/null/null_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_null_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ashlar/ashlar_codelet_PackAshlarTiles_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ashlar_codelet_PackAshlarTiles_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/widget/widget_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_widget_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pes/pes_codelet_ReadPESImage_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pes_codelet_ReadPESImage_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/widget/widget_codelet_XListBrowserWidget_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_widget_codelet_XListBrowserWidget_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/token/token_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_token_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/widget/widget_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_widget_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pes/pes_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pes_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/token/token_codelet_ConvertLatin1ToUTF8_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_token_codelet_ConvertLatin1ToUTF8_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/token/token_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_token_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/map/map_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_map_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/display/display_codelet_DisplayImageCommand_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_display_codelet_DisplayImageCommand_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/display/display_codelet_XRotateImage_10.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_display_codelet_XRotateImage_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/widget/widget_codelet_ConvertLatin1ToUTF8_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_widget_codelet_ConvertLatin1ToUTF8_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/display/display_codelet_XTileImage_12.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_display_codelet_XTileImage_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/map/map_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_map_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/display/display_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_display_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/linked-list/linked-list_codelet_GetValueFromLinkedList_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_linked-list_codelet_GetValueFromLinkedList_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/display/display_codelet_XOpenImage_9.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_display_codelet_XOpenImage_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/linked-list/linked-list_codelet_OverAllocateMemory_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_linked-list_codelet_OverAllocateMemory_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_CompressClusterFit_14.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_CompressClusterFit_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pgx/pgx_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pgx_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/linked-list/linked-list_codelet_InsertValueInLinkedList_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_linked-list_codelet_InsertValueInLinkedList_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_CompressClusterFit_13.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_CompressClusterFit_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/token/token_codelet_GetNextToken_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_token_codelet_GetNextToken_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/bayer/bayer_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_bayer_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/statistic/statistic_codelet_ApplyEvaluateOperator_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_statistic_codelet_ApplyEvaluateOperator_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_RemapIndices_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_RemapIndices_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantum/quantum_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantum_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ashlar/ashlar_codelet_PackAshlarTiles_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ashlar_codelet_PackAshlarTiles_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/token/token_codelet_GetNextToken_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_token_codelet_GetNextToken_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/token/token_codelet_IsGlob_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_token_codelet_IsGlob_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantum/quantum_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantum_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/wmf/wmf_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_wmf_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/webp/webp_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_webp_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/wmf/wmf_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_wmf_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/image-view/image-view_codelet_SinglePrecisionToHalf_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_image-view_codelet_SinglePrecisionToHalf_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/image-view/image-view_codelet_OverAllocateMemory_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_image-view_codelet_OverAllocateMemory_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantum/quantum_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantum_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/meta/meta_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_meta_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fourier/fourier_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fourier_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/linked-list/linked-list_codelet_RemoveElementFromLinkedList_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_linked-list_codelet_RemoveElementFromLinkedList_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/meta/meta_codelet_convertHTMLcodes_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_meta_codelet_convertHTMLcodes_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/widget/widget_codelet_ConvertLatin1ToUTF8_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_widget_codelet_ConvertLatin1ToUTF8_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/video/video_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_video_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/debug/debug_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_debug_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/x/x_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_x_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pattern/pattern_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pattern_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mogrify/mogrify_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mogrify_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/layer/layer_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_layer_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/debug/debug_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_debug_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/profile/profile_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_profile_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pcl/pcl_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pcl_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mogrify/mogrify_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mogrify_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/layer/layer_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_layer_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xc/xc_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xc_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/yuv/yuv_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_yuv_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pcl/pcl_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pcl_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xc/xc_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xc_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/locale/locale_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_locale_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/histogram/histogram_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_histogram_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/jbig/jbig_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_jbig_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/svg/svg_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_svg_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/locale/locale_codelet_ChopLocaleComponents_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_locale_codelet_ChopLocaleComponents_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/token/token_codelet_ConvertLatin1ToUTF8_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_token_codelet_ConvertLatin1ToUTF8_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/wpg/wpg_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_wpg_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dng/dng_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dng_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_CompressClusterFit_12.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_CompressClusterFit_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/vid/vid_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_vid_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/locale/locale_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_locale_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/svg/svg_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_svg_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/histogram/histogram_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_histogram_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/stegano/stegano_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_stegano_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pcl/pcl_codelet_PCLPackbitsCompressImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pcl_codelet_PCLPackbitsCompressImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/histogram/histogram_codelet_DefineImageHistogram_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_histogram_codelet_DefineImageHistogram_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/jbig/jbig_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_jbig_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/magick-image/magick-image_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_magick-image_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/channel/channel_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_channel_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/compress/compress_codelet_Ascii85Tuple_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_compress_codelet_Ascii85Tuple_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/compress/compress_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_compress_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/compress/compress_codelet_LZWEncodeImage_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_compress_codelet_LZWEncodeImage_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/compress/compress_codelet_HuffmanDecodeImage_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_compress_codelet_HuffmanDecodeImage_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sixel/sixel_codelet_sixel_decode_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sixel_codelet_sixel_decode_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sixel/sixel_codelet_sixel_decode_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sixel_codelet_sixel_decode_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pdb/pdb_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pdb_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sixel/sixel_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sixel_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/compress/compress_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_compress_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sixel/sixel_codelet_sixel_decode_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sixel_codelet_sixel_decode_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sixel/sixel_codelet_sixel_decode_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sixel_codelet_sixel_decode_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/wpg/wpg_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_wpg_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xcf/xcf_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xcf_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sixel/sixel_codelet_sixel_decode_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sixel_codelet_sixel_decode_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/widget/widget_codelet_XFontBrowserWidget_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_widget_codelet_XFontBrowserWidget_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/meta/meta_codelet_GetIPTCStream_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_meta_codelet_GetIPTCStream_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sixel/sixel_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sixel_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sixel/sixel_codelet_sixel_decode_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sixel_codelet_sixel_decode_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/miff/miff_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_miff_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_sRGBTransformImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_sRGBTransformImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pict/pict_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pict_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/miff/miff_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_miff_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pict/pict_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pict_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dds/dds_codelet_ComputeWeightedCovariance_19.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dds_codelet_ComputeWeightedCovariance_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_TransformsRGBImage_11.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_TransformsRGBImage_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/miff/miff_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_miff_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_sRGBTransformImage_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_sRGBTransformImage_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_TransformsRGBImage_10.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_TransformsRGBImage_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_TransformsRGBImage_9.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_TransformsRGBImage_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_TransformsRGBImage_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_TransformsRGBImage_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_sRGBTransformImage_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_sRGBTransformImage_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_sRGBTransformImage_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_sRGBTransformImage_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/braille/braille_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_braille_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_sRGBTransformImage_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_sRGBTransformImage_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_sRGBTransformImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_sRGBTransformImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/widget/widget_codelet_XFontBrowserWidget_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_widget_codelet_XFontBrowserWidget_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sgi/sgi_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sgi_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sgi/sgi_codelet_ReadSGIImage_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sgi_codelet_ReadSGIImage_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_TransformsRGBImage_13.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_TransformsRGBImage_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sgi/sgi_codelet_ReadSGIImage_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sgi_codelet_ReadSGIImage_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/braille/braille_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_braille_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/memory/memory_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_memory_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/memory/memory_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_memory_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xml-tree/xml-tree_codelet_SetXMLTreeAttribute_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xml-tree_codelet_SetXMLTreeAttribute_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colorspace/colorspace_codelet_TransformsRGBImage_12.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colorspace_codelet_TransformsRGBImage_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sgi/sgi_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sgi_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xml-tree/xml-tree_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xml-tree_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mask/mask_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mask_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sgi/sgi_codelet_SGIEncode_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sgi_codelet_SGIEncode_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pdb/pdb_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pdb_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantize/quantize_codelet_KmeansImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantize_codelet_KmeansImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantize/quantize_codelet_QuantizeImage_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantize_codelet_QuantizeImage_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xml-tree/xml-tree_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xml-tree_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantize/quantize_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantize_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pict/pict_codelet_EncodeImage_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pict_codelet_EncodeImage_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantize/quantize_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantize_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/signature/signature_codelet_OverAllocateMemory_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_signature_codelet_OverAllocateMemory_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantize/quantize_codelet_QuantizeImages_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantize_codelet_QuantizeImages_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/signature/signature_codelet_TransformSignature_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_signature_codelet_TransformSignature_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/accelerate/accelerate_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_accelerate_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/signature/signature_codelet_TransformSignature_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_signature_codelet_TransformSignature_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/signature/signature_codelet_TransformSignature_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_signature_codelet_TransformSignature_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/signature/signature_codelet_TransformSignature_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_signature_codelet_TransformSignature_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/signature/signature_codelet_TransformSignature_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_signature_codelet_TransformSignature_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/signature/signature_codelet_SinglePrecisionToHalf_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_signature_codelet_SinglePrecisionToHalf_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/accelerate/accelerate_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_accelerate_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resource/resource_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resource_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/uil/uil_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_uil_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colormap/colormap_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colormap_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pict/pict_codelet_UnpackScanline_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pict_codelet_UnpackScanline_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/thread/thread_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_thread_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/uil/uil_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_uil_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ftxt/ftxt_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ftxt_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xml-tree/xml-tree_codelet_ConvertLatin1ToUTF8_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xml-tree_codelet_ConvertLatin1ToUTF8_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/uil/uil_codelet_WriteUILImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_uil_codelet_WriteUILImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/hdr/hdr_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_hdr_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/colormap/colormap_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_colormap_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ftxt/ftxt_codelet_ReadFTXTImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ftxt_codelet_ReadFTXTImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mpr/mpr_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mpr_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ftxt/ftxt_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ftxt_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/txt/txt_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_txt_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/txt/txt_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_txt_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/signature/signature_codelet_FinalizeSignature_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_signature_codelet_FinalizeSignature_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cli_process/cli_process_codelet_main_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cli_process_codelet_main_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dcm/dcm_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dcm_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ftxt/ftxt_codelet_ReadFTXTImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ftxt_codelet_ReadFTXTImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fits/fits_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fits_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pnm/pnm_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pnm_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fits/fits_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fits_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dcm/dcm_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dcm_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/qoi/qoi_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_qoi_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pcl/pcl_codelet_PCLDeltaCompressImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pcl_codelet_PCLDeltaCompressImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dps/dps_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dps_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/matrix/matrix_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_matrix_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/matrix/matrix_codelet_GaussJordanElimination_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_matrix_codelet_GaussJordanElimination_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/matrix/matrix_codelet_LeastSquaresAddTerms_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_matrix_codelet_LeastSquaresAddTerms_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xml-tree/xml-tree_codelet_ConvertLatin1ToUTF8_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xml-tree_codelet_ConvertLatin1ToUTF8_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/exr/exr_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_exr_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ps3/ps3_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ps3_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dcm/dcm_codelet_ReadDCMImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dcm_codelet_ReadDCMImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/matrix/matrix_codelet_GaussJordanElimination_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_matrix_codelet_GaussJordanElimination_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ps3/ps3_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ps3_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dmr/dmr_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dmr_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xbm/xbm_codelet_ReadXBMImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xbm_codelet_ReadXBMImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xbm/xbm_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xbm_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pict/pict_codelet_UnpackScanline_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pict_codelet_UnpackScanline_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ept/ept_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ept_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/shear/shear_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_shear_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dcm/dcm_codelet_ReadDCMImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dcm_codelet_ReadDCMImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pango/pango_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pango_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xbm/xbm_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xbm_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fits/fits_codelet_SetFITSUnsignedPixels_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fits_codelet_SetFITSUnsignedPixels_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cals/cals_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cals_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/shear/shear_codelet_RadonTransform_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_shear_codelet_RadonTransform_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/log/log_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_log_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/shear/shear_codelet_ShearRotateImage_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_shear_codelet_ShearRotateImage_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pict/pict_codelet_UnpackScanline_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pict_codelet_UnpackScanline_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/shear/shear_codelet_CropToFitImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_shear_codelet_CropToFitImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/raw/raw_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_raw_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ps2/ps2_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ps2_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xwd/xwd_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xwd_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/opencl/opencl_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_opencl_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/shear/shear_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_shear_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/prepress/prepress_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_prepress_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/avs/avs_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_avs_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ps2/ps2_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ps2_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantum-import/quantum-import_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantum-import_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/info/info_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_info_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/viff/viff_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_viff_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantum-import/quantum-import_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantum-import_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/opencl/opencl_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_opencl_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xwd/xwd_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xwd_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantum-import/quantum-import_codelet_PushQuantumPixel_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantum-import_codelet_PushQuantumPixel_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/viff/viff_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_viff_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/viff/viff_codelet_ReadVIFFImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_viff_codelet_ReadVIFFImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/yaml/yaml_codelet_YAMLFormatLocaleFile_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_yaml_codelet_YAMLFormatLocaleFile_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/yaml/yaml_codelet_GetLocationStatistics_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_yaml_codelet_GetLocationStatistics_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/jnx/jnx_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_jnx_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/yaml/yaml_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_yaml_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ycbcr/ycbcr_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ycbcr_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/shear/shear_codelet_DeskewImage_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_shear_codelet_DeskewImage_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_TracePath_19.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_TracePath_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_CheckPrimitiveExtent_10.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_CheckPrimitiveExtent_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_DrawDashPolygon_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_DrawDashPolygon_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_DrawRoundLinecap_13.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_DrawRoundLinecap_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_Permutate_15.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_Permutate_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_TraceRectangle_20.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_TraceRectangle_20.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xml-tree/xml-tree_codelet_CanonicalXMLContent_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xml-tree_codelet_CanonicalXMLContent_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantize/quantize_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantize_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_CheckPrimitiveExtent_9.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_CheckPrimitiveExtent_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_ConvertPrimitiveToPath_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_ConvertPrimitiveToPath_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_GetFillAlpha_11.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_GetFillAlpha_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_TraceStrokePolygon_22.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_TraceStrokePolygon_22.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/stream/stream_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_stream_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_DrawAffineImage_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_DrawAffineImage_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_Permutate_14.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_Permutate_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/stream/stream_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_stream_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/strimg/strimg_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_strimg_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_DrawAffineImage_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_DrawAffineImage_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pnm/pnm_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pnm_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/identify/identify_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_identify_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/thumbnail/thumbnail_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_thumbnail_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/strimg/strimg_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_strimg_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_DrawBoundingRectangles_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_DrawBoundingRectangles_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/stream/stream_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_stream_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/identify/identify_codelet_GetLocationStatistics_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_identify_codelet_GetLocationStatistics_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/tim/tim_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_tim_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/flif/flif_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_flif_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_TraceBezier_17.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_TraceBezier_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_TraceRoundRectangle_21.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_TraceRoundRectangle_21.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_TraceStrokePolygon_23.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_TraceStrokePolygon_23.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/morphology/morphology_codelet_RotateKernelInfo_12.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_morphology_codelet_RotateKernelInfo_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/morphology/morphology_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_morphology_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/morphology/morphology_codelet_AcquireKernelBuiltIn_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_morphology_codelet_AcquireKernelBuiltIn_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/morphology/morphology_codelet_fact_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_morphology_codelet_fact_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/annotate/annotate_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_annotate_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/annotate/annotate_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_annotate_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/morphology/morphology_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_morphology_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/uhdr/uhdr_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_uhdr_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_ReversePoints_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_ReversePoints_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/morphology/morphology_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_morphology_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/blob/blob_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_blob_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/morphology/morphology_codelet_RotateKernelInfo_11.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_morphology_codelet_RotateKernelInfo_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/composite/composite_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_composite_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/composite/composite_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_composite_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/linked-list/linked-list_codelet_LinkedListToArray_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_linked-list_codelet_LinkedListToArray_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/annotate/annotate_codelet_ConvertLatin1ToUTF8_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_annotate_codelet_ConvertLatin1ToUTF8_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_DrawPolygonPrimitive_12.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_DrawPolygonPrimitive_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/annotate/annotate_codelet_AnnotateImage_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_annotate_codelet_AnnotateImage_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/policy/policy_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_policy_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/policy/policy_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_policy_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/blob/blob_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_blob_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/morphology/morphology_codelet_AcquireKernelBuiltIn_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_morphology_codelet_AcquireKernelBuiltIn_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/image/image_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_image_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cmyk/cmyk_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cmyk_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/image/image_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_image_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/version/version_codelet_CRC32_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_version_codelet_CRC32_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/image/image_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_image_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/magick/magick_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_magick_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/visual-effects/visual-effects_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_visual-effects_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/visual-effects/visual-effects_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_visual-effects_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/aai/aai_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_aai_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/magick/magick_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_magick_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/annotate/annotate_codelet_AnnotateImage_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_annotate_codelet_AnnotateImage_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/visual-effects/visual-effects_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_visual-effects_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/color/color_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_color_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/montage/montage_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_montage_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/montage/montage_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_montage_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/module/module_codelet_OverAllocateMemory_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_module_codelet_OverAllocateMemory_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/vision/vision_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_vision_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/color/color_codelet_QueryColorCompliance_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_color_codelet_QueryColorCompliance_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/color/color_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_color_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sf3/sf3_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sf3_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/gray/gray_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_gray_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/vision/vision_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_vision_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ttf/ttf_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ttf_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_TraceSVGClippath_12.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_TraceSVGClippath_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_TracePSClippath_11.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_TracePSClippath_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_DefineImageProperty_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_DefineImageProperty_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/visual-effects/visual-effects_codelet_HatTransform_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_visual-effects_codelet_HatTransform_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/version/version_codelet_CRC32_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_version_codelet_CRC32_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_GetXMPProperty_9.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_GetXMPProperty_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/visual-effects/visual-effects_codelet_ColorMatrixImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_visual-effects_codelet_ColorMatrixImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_ConvertLatin1ToUTF8_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_ConvertLatin1ToUTF8_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_ReadPropertyMSBShort_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_ReadPropertyMSBShort_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mtv/mtv_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mtv_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_TraceSVGClippath_13.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_TraceSVGClippath_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/annotate/annotate_codelet_ConvertLatin1ToUTF8_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_annotate_codelet_ConvertLatin1ToUTF8_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_TracePSClippath_10.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_TracePSClippath_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/rgf/rgf_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_rgf_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_ReadPropertyMSBLong_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_ReadPropertyMSBLong_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/utility/utility_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_utility_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_GetEXIFProperty_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_GetEXIFProperty_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/exception/exception_codelet_OverAllocateMemory_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_exception_codelet_OverAllocateMemory_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/utility/utility_codelet_ConvertLatin1ToUTF8_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_utility_codelet_ConvertLatin1ToUTF8_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/attribute/attribute_codelet_GetImageMinimumBoundingBox_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_attribute_codelet_GetImageMinimumBoundingBox_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/attribute/attribute_codelet_GetEdgeBackgroundColor_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_attribute_codelet_GetEdgeBackgroundColor_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/visual-effects/visual-effects_codelet_HatTransform_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_visual-effects_codelet_HatTransform_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/attribute/attribute_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_attribute_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resample/resample_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resample_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/attribute/attribute_codelet_GetImageDepth_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_attribute_codelet_GetImageDepth_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/attribute/attribute_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_attribute_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/decorate/decorate_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_decorate_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/gradient/gradient_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_gradient_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resample/resample_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resample_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/attribute/attribute_codelet_GetImageDepth_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_attribute_codelet_GetImageDepth_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/morphology/morphology_codelet_CloneKernelInfo_10.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_morphology_codelet_CloneKernelInfo_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/attribute/attribute_codelet_GetImageMinimumBoundingBox_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_attribute_codelet_GetImageMinimumBoundingBox_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/annotate/annotate_codelet_EscapeParenthesis_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_annotate_codelet_EscapeParenthesis_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/plasma/plasma_codelet_ReadPlasmaImage_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_plasma_codelet_ReadPlasmaImage_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/coder/coder_codelet_OverAllocateMemory_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_coder_codelet_OverAllocateMemory_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sfw/sfw_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sfw_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/attribute/attribute_codelet_GetImageDepth_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_attribute_codelet_GetImageDepth_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resample/resample_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resample_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/decorate/decorate_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_decorate_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/coder/coder_codelet_SinglePrecisionToHalf_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_coder_codelet_SinglePrecisionToHalf_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/plasma/plasma_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_plasma_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/magick-property/magick-property_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_magick-property_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/delegate/delegate_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_delegate_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/farbfeld/farbfeld_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_farbfeld_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/farbfeld/farbfeld_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_farbfeld_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/gradient/gradient_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_gradient_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/delegate/delegate_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_delegate_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/delegate/delegate_codelet_ConvertLatin1ToUTF8_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_delegate_codelet_ConvertLatin1ToUTF8_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resize/resize_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resize_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resize/resize_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resize_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resize/resize_codelet_P1_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resize_codelet_P1_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resize/resize_codelet_Q1_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resize_codelet_Q1_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/visual-effects/visual-effects_codelet_HatTransform_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_visual-effects_codelet_HatTransform_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/delegate/delegate_codelet_ConvertLatin1ToUTF8_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_delegate_codelet_ConvertLatin1ToUTF8_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/gradient/gradient_codelet_ReadGRADIENTImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_gradient_codelet_ReadGRADIENTImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_GetMagickProperty_17.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_GetMagickProperty_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resize/resize_codelet_Lagrange_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resize_codelet_Lagrange_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resize/resize_codelet_CopyPixels_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resize_codelet_CopyPixels_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resize/resize_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resize_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resize/resize_codelet_J1_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resize_codelet_J1_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resize/resize_codelet_Hq2XPatternToNumber_11.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resize_codelet_Hq2XPatternToNumber_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_GetMagickProperty_15.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_GetMagickProperty_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_TraceEllipse_18.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_TraceEllipse_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sfw/sfw_codelet_SFWScan_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sfw_codelet_SFWScan_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_GetMagickProperty_14.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_GetMagickProperty_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_ConvertLatin1ToUTF8_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_ConvertLatin1ToUTF8_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/utility/utility_codelet_ConvertLatin1ToUTF8_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_utility_codelet_ConvertLatin1ToUTF8_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resize/resize_codelet_I0_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resize_codelet_I0_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/uyvy/uyvy_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_uyvy_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/heic/heic_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_heic_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/distribute-cache/distribute-cache_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_distribute-cache_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/inline/inline_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_inline_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/image/image_codelet_ConvertLatin1ToUTF8_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_image_codelet_ConvertLatin1ToUTF8_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/image/image_codelet_ConvertLatin1ToUTF8_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_image_codelet_ConvertLatin1ToUTF8_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/html/html_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_html_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/heic/heic_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_heic_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sun/sun_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sun_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/tga/tga_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_tga_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/png/png_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_png_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/scr/scr_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_scr_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/artifact/artifact_codelet_DefineImageArtifact_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_artifact_codelet_DefineImageArtifact_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/tga/tga_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_tga_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/resize/resize_codelet_MixPixels_9.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_resize_codelet_MixPixels_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_OptimalTau_14.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_OptimalTau_14.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/sun/sun_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_sun_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_InitializeHistogram_9.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_InitializeHistogram_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/png/png_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_png_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_MeanStability_10.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_MeanStability_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/png/png_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_png_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/html/html_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_html_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_ZeroCrossHistogram_19.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_ZeroCrossHistogram_19.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_ScaleSpace_17.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_ScaleSpace_17.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_DefineRegion_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_DefineRegion_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_GetImageDynamicThreshold_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_GetImageDynamicThreshold_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_OptimalTau_12.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_OptimalTau_12.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_DefineRegion_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_DefineRegion_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_GetImageDynamicThreshold_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_GetImageDynamicThreshold_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/magic/magic_codelet_SinglePrecisionToHalf_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_magic_codelet_SinglePrecisionToHalf_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_ScaleSpace_18.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_ScaleSpace_18.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/magic/magic_codelet_OverAllocateMemory_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_magic_codelet_OverAllocateMemory_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_ZeroCrossHistogram_20.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_ZeroCrossHistogram_20.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cip/cip_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cip_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_Classify_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_Classify_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_OptimalTau_15.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_OptimalTau_15.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/tim2/tim2_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_tim2_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_ConsolidateCrossings_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_ConsolidateCrossings_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xpm/xpm_codelet_ReadXPMImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xpm_codelet_ReadXPMImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/jxl/jxl_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_jxl_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xpm/xpm_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xpm_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_OptimalTau_13.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_OptimalTau_13.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/magic/magic_codelet_GetMagicPatternExtent_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_magic_codelet_GetMagicPatternExtent_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xpm/xpm_codelet_WritePICONImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xpm_codelet_WritePICONImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/utility/utility_codelet_MultilineCensus_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_utility_codelet_MultilineCensus_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/json/json_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_json_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fx/fx_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fx_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_DerivativeHistogram_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_DerivativeHistogram_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fx/fx_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fx_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/json/json_codelet_JSONFormatLocaleFile_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_json_codelet_JSONFormatLocaleFile_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fx/fx_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fx_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fx/fx_codelet_CollectOneImgStats_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fx_codelet_CollectOneImgStats_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/json/json_codelet_GetLocationStatistics_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_json_codelet_GetLocationStatistics_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/property/property_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_property_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/gem/gem_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_gem_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/label/label_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_label_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/constitute/constitute_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_constitute_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/wand-view/wand-view_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_wand-view_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/attribute/attribute_codelet_GetImageConvexHull_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_attribute_codelet_GetImageConvexHull_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/string/string_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_string_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/string/string_codelet_FormatMagickSize_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_string_codelet_FormatMagickSize_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/screenshot/screenshot_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_screenshot_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/string/string_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_string_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/threshold/threshold_codelet_AutoThresholdImage_9.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_threshold_codelet_AutoThresholdImage_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/animate/animate_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_animate_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/threshold/threshold_codelet_KapurThreshold_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_threshold_codelet_KapurThreshold_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/constitute/constitute_codelet_ReadInlineImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_constitute_codelet_ReadInlineImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/constitute/constitute_codelet_ReadInlineImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_constitute_codelet_ReadInlineImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/animate/animate_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_animate_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/bgr/bgr_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_bgr_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/threshold/threshold_codelet_TriangleThreshold_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_threshold_codelet_TriangleThreshold_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xpm/xpm_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xpm_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/threshold/threshold_codelet_OrderedDitherImage_11.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_threshold_codelet_OrderedDitherImage_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/threshold/threshold_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_threshold_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/threshold/threshold_codelet_AutoThresholdImage_10.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_threshold_codelet_AutoThresholdImage_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/threshold/threshold_codelet_TriangleThreshold_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_threshold_codelet_TriangleThreshold_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/icon/icon_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_icon_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantum-export/quantum-export_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantum-export_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/deprecate/deprecate_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_deprecate_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pdf/pdf_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pdf_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/ora/ora_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_ora_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/feature/feature_codelet_GetImageFeatures_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_feature_codelet_GetImageFeatures_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/feature/feature_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_feature_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/string/string_codelet_StringInfoToHexString_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_string_codelet_StringInfoToHexString_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantum-export/quantum-export_codelet_PopQuantumPixel_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantum-export_codelet_PopQuantumPixel_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pixel/pixel_codelet_AcquirePixelChannelMap_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pixel_codelet_AcquirePixelChannelMap_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pixel/pixel_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pixel_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pixel/pixel_codelet_InterpolatePixelChannel_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pixel_codelet_InterpolatePixelChannel_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/threshold/threshold_codelet_OTSUThreshold_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_threshold_codelet_OTSUThreshold_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pixel/pixel_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pixel_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/icon/icon_codelet_WriteICONImage_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_icon_codelet_WriteICONImage_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pixel/pixel_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pixel_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/feature/feature_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_feature_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pdf/pdf_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pdf_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/splay-tree/splay-tree_codelet_OverAllocateMemory_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_splay-tree_codelet_OverAllocateMemory_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pdf/pdf_codelet_ConvertUTF8ToUTF16_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pdf_codelet_ConvertUTF8ToUTF16_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_OptimalTau_16.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_OptimalTau_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pixel/pixel_codelet_InterpolatePixelInfo_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pixel_codelet_InterpolatePixelInfo_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cube/cube_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cube_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/enhance/enhance_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_enhance_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/enhance/enhance_codelet_LinearStretchImage_11.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_enhance_codelet_LinearStretchImage_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/quantum-export/quantum-export_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_quantum-export_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/enhance/enhance_codelet_GenerateCLAHEHistogram_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_enhance_codelet_GenerateCLAHEHistogram_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/enhance/enhance_codelet_GenerateCLAHELut_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_enhance_codelet_GenerateCLAHELut_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/enhance/enhance_codelet_LinearStretchImage_10.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_enhance_codelet_LinearStretchImage_10.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/enhance/enhance_codelet_GenerateCLAHEHistogram_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_enhance_codelet_GenerateCLAHEHistogram_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/string/string_codelet_StringToStrings_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_string_codelet_StringToStrings_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/threshold/threshold_codelet_KapurThreshold_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_threshold_codelet_KapurThreshold_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/enhance/enhance_codelet_ClipCLAHEHistogram_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_enhance_codelet_ClipCLAHEHistogram_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/enhance/enhance_codelet_HaldClutImage_9.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_enhance_codelet_HaldClutImage_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/enhance/enhance_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_enhance_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/enhance/enhance_codelet_ClipCLAHEHistogram_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_enhance_codelet_ClipCLAHEHistogram_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/threshold/threshold_codelet_TriangleThreshold_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_threshold_codelet_TriangleThreshold_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pgx/pgx_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pgx_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cipher/cipher_codelet_SetAESKey_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cipher_codelet_SetAESKey_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cipher/cipher_codelet_FinalizeRoundKey_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cipher_codelet_FinalizeRoundKey_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/enhance/enhance_codelet_MapCLAHEHistogram_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_enhance_codelet_MapCLAHEHistogram_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cipher/cipher_codelet_IncrementCipherNonce_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cipher_codelet_IncrementCipherNonce_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/signature/signature_codelet_TransformSignature_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_signature_codelet_TransformSignature_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cipher/cipher_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cipher_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cipher/cipher_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cipher_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cipher/cipher_codelet_SetAESKey_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cipher_codelet_SetAESKey_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/enhance/enhance_codelet_ClipCLAHEHistogram_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_enhance_codelet_ClipCLAHEHistogram_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cipher/cipher_codelet_InitializeRoundKey_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cipher_codelet_InitializeRoundKey_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/hrz/hrz_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_hrz_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/effect/effect_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_effect_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/effect/effect_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_effect_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/effect/effect_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_effect_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/effect/effect_codelet_EmbossImage_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_effect_codelet_EmbossImage_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/effect/effect_codelet_SharpenImage_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_effect_codelet_SharpenImage_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/rla/rla_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_rla_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xwindow/xwindow_codelet_XDrawImage_9.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xwindow_codelet_XDrawImage_9.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/effect/effect_codelet_EmbossImage_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_effect_codelet_EmbossImage_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/distort/distort_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_distort_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/effect/effect_codelet_EdgeImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_effect_codelet_EdgeImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/effect/effect_codelet_GetMotionBlurKernel_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_effect_codelet_GetMotionBlurKernel_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xwindow/xwindow_codelet_XAnnotateImage_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xwindow_codelet_XAnnotateImage_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/distort/distort_codelet_GenerateCoefficients_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_distort_codelet_GenerateCoefficients_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/distort/distort_codelet_RotateImage_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_distort_codelet_RotateImage_7.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xwindow/xwindow_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xwindow_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xwindow/xwindow_codelet_FontToList_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xwindow_codelet_FontToList_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xwindow/xwindow_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xwindow_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fl32/fl32_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fl32_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/effect/effect_codelet_SharpenImage_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_effect_codelet_SharpenImage_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xwindow/xwindow_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xwindow_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/xwindow/xwindow_codelet_XDitherImage_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_xwindow_codelet_XDitherImage_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fl32/fl32_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fl32_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/vips/vips_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_vips_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pcx/pcx_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pcx_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/string/string_codelet_EscapeString_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_string_codelet_EscapeString_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cut/cut_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cut_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pcx/pcx_codelet_OverAllocateMemory_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pcx_codelet_OverAllocateMemory_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pcx/pcx_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pcx_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/distort/distort_codelet_GenerateCoefficients_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_distort_codelet_GenerateCoefficients_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/distort/distort_codelet_GenerateCoefficients_3.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_distort_codelet_GenerateCoefficients_3.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/fax/fax_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_fax_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/type/type_codelet_OverAllocateMemory_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_type_codelet_OverAllocateMemory_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cut/cut_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cut_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dib/dib_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dib_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dib/dib_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dib_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/type/type_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_type_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/wbmp/wbmp_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_wbmp_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/mac/mac_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_mac_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/string/string_codelet_StripMagickString_8.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_string_codelet_StripMagickString_8.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/drawing-wand/drawing-wand_codelet_SinglePrecisionToHalf_0.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_drawing-wand_codelet_SinglePrecisionToHalf_0.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/wbmp/wbmp_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_wbmp_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/dib/dib_codelet_WriteDIBImage_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_dib_codelet_WriteDIBImage_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/segment/segment_codelet_OptimalTau_11.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_segment_codelet_OptimalTau_11.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/drawing-wand/drawing-wand_codelet_DrawGetStrokeDashArray_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_drawing-wand_codelet_DrawGetStrokeDashArray_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/pdf/pdf_codelet_EscapeParenthesis_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_pdf_codelet_EscapeParenthesis_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/distort/distort_codelet_GenerateCoefficients_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_distort_codelet_GenerateCoefficients_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/distort/distort_codelet_GenerateCoefficients_6.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_distort_codelet_GenerateCoefficients_6.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/utility/utility_codelet_Base64Encode_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_utility_codelet_Base64Encode_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/distort/distort_codelet_GenerateCoefficients_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_distort_codelet_GenerateCoefficients_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cip/cip_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cip_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/threshold/threshold_codelet_OTSUThreshold_5.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_threshold_codelet_OTSUThreshold_5.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/constitute/constitute_codelet_ReadInlineImage_4.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_constitute_codelet_ReadInlineImage_4.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/cipher/cipher_codelet_AddRoundKey_2.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_cipher_codelet_AddRoundKey_2.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/draw/draw_codelet_TraceArcPath_16.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_draw_codelet_TraceArcPath_16.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/deprecate/deprecate_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_deprecate_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/rgf/rgf_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_rgf_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/gem/gem_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_gem_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/vision/vision_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_vision_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/threshold/threshold_codelet_GetColorRange_1.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_threshold_codelet_GetColorRange_1.c"
+    },
+    {
+        "codelet": "basic_loop_corpus/ImageMagick/statistic/statistic_codelet_ApplyFunction_7.c",
+        "input": "basic_loop_corpus/loop_input/ImageMagick/input_statistic_codelet_ApplyFunction_7.c"
+    }
+]

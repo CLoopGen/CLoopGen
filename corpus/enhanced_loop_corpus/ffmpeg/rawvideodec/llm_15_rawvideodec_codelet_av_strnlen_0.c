@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  char *s;
+extern size_t len;
+extern size_t i;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+    for (i = 0; i < len && i < 1000 && s[i] != '\0' && s[i] != ' '; i++)  // Reduced trip count with early bound and additional condition
+        if (s[i] == 'x') break;  // Extra exit condition to decrease effective iterations
+}

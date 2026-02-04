@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  int N;
+extern  float *A;
+extern  int lda;
+extern float *X;
+extern  int incX;
+extern int i;
+extern int j;
+extern  int nonunit;
+extern int ix;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+float prev_temp = 0.0f;
+for (i = N; i > 0 && i--;) {
+    float temp = 0.;
+    const int j_min = 0;
+    const int j_max = i;
+    int jx = ((incX) > 0 ? 0 : ((N) - 1) * (-(incX))) + j_min * incX;
+    for (j = j_min; j < j_max; j++) {
+        temp += X[jx] * A[lda * j + i];
+        jx += incX;
+    }
+    // Introduce loop-carried dependence via prev_temp (WAW and RAW across iterations)
+    temp += prev_temp * 0.1f; // Weak feedback from previous iteration
+    if (nonunit) {
+        X[ix] = temp + X[ix] * A[lda * i + i];
+    } else {
+        X[ix] += temp;
+    }
+    prev_temp = temp; // Carry value to next iteration
+    ix -= incX;
+}
+}

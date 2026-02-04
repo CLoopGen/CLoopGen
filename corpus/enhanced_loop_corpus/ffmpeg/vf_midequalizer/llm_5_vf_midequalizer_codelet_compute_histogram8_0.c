@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  uint8_t *src;
+extern ptrdiff_t linesize;
+extern int w;
+extern int h;
+extern float *histogram;
+extern int y;
+extern int x;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (y = 0; y < h; y++) {
+    for (x = 0; x < w; x++) {
+        float value = src[x];
+        if (value < 256.0f) {
+            histogram[(int)value] += 1;
+        }
+    }
+    src += linesize;
+}
+}

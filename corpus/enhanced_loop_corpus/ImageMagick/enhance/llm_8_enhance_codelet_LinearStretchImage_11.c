@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <inttypes.h>
+
+#include <stdlib.h>
+#include <stddef.h>
+extern  double white_point;
+extern double *histogram;
+extern double intensity;
+extern ssize_t white;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (white = (ssize_t)65535UL; white > 0; white -= 2) {
+    intensity += histogram[white];
+    if (intensity >= white_point)
+        break;
+    intensity += histogram[white - 1];
+    if (intensity >= white_point)
+        break;
+}
+}

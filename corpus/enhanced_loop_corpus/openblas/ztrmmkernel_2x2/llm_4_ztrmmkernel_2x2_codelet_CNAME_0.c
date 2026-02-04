@@ -1,0 +1,134 @@
+#include <stdio.h>
+
+typedef long BLASLONG;
+
+extern BLASLONG bm;
+extern BLASLONG bn;
+extern BLASLONG bk;
+extern float alphar;
+extern float alphai;
+extern float *ba;
+extern float *bb;
+extern float *C;
+extern BLASLONG ldc;
+extern BLASLONG i;
+extern BLASLONG j;
+extern BLASLONG k;
+extern float *C0;
+extern float *C1;
+extern float *ptrba;
+extern float *ptrbb;
+extern float res0;
+extern float res1;
+extern float res2;
+extern float res3;
+extern float res4;
+extern float res5;
+extern float res6;
+extern float res7;
+extern float load0;
+extern float load1;
+extern float load2;
+extern float load3;
+extern float load4;
+extern float load5;
+extern float load6;
+extern float load7;
+extern BLASLONG off;
+extern BLASLONG temp;
+
+// Variable name mappings to avoid conflicts with system symbols
+
+
+
+void loop(){
+for (j = 0; j < bn / 2; j += 1) {
+    C0 = C;
+    C1 = C0 + 2 * ldc;
+    ptrba = ba;
+    for (i = 0; i < bm / 2; i += 1) {
+        ptrbb = bb;
+        res0 = 0;
+        res1 = 0;
+        res2 = 0;
+        res3 = 0;
+        res4 = 0;
+        res5 = 0;
+        res6 = 0;
+        res7 = 0;
+        temp = off + 2;
+        if (temp >= 4) {
+            for (k = 0; k < temp / 4; k += 1) {
+                ptrba = ptrba + 16;
+                ptrbb = ptrbb + 16;
+            }
+        }
+        if (temp & 3) {
+            for (k = 0; k < (temp & 3); k += 1) {
+                ptrba = ptrba + 4;
+                ptrbb = ptrbb + 4;
+            }
+        }
+        load0 = res0 * alphar - res1 * alphai;
+        load1 = res1 * alphar + res0 * alphai;
+        C0[0] = load0;
+        C0[1] = load1;
+        load2 = res2 * alphar - res3 * alphai;
+        load3 = res3 * alphar + res2 * alphai;
+        C0[2] = load2;
+        C0[3] = load3;
+        load4 = res4 * alphar - res5 * alphai;
+        load5 = res5 * alphar + res4 * alphai;
+        C1[0] = load4;
+        C1[1] = load5;
+        load6 = res6 * alphar - res7 * alphai;
+        load7 = res7 * alphar + res6 * alphai;
+        C1[2] = load6;
+        C1[3] = load7;
+        temp = bk - off;
+        temp -= 2;
+        if (temp > 0) {
+            ptrba += temp * 4;
+            ptrbb += temp * 4;
+        }
+        C0 = C0 + 4;
+        C1 = C1 + 4;
+    }
+    if (bm & 1) {
+        for (i = 0; i < 1; i += 1) {
+            ptrbb = bb;
+            res0 = 0;
+            res1 = 0;
+            res2 = 0;
+            res3 = 0;
+            temp = off + 2;
+            if (temp > 0) {
+                for (k = 0; k < temp; k += 1) {
+                    ptrba = ptrba + 2;
+                    ptrbb = ptrbb + 4;
+                }
+            }
+            load0 = res0 * alphar - res1 * alphai;
+            load1 = res1 * alphar + res0 * alphai;
+            C0[0] = load0;
+            C0[1] = load1;
+            load2 = res2 * alphar - res3 * alphai;
+            load3 = res3 * alphar + res2 * alphai;
+            C1[0] = load2;
+            C1[1] = load3;
+            temp = bk - off;
+            temp -= 2;
+            if (temp > 0) {
+                ptrba += temp * 2;
+                ptrbb += temp * 4;
+            }
+            C0 = C0 + 2;
+            C1 = C1 + 2;
+        }
+    }
+    k = (bk << 2);
+    bb = bb + k;
+    i = (ldc << 2);
+    C = C + i;
+}
+}
